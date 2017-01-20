@@ -2114,3 +2114,1297 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1484796198.441
     'REQUEST_TIME' => 1484796198
 ]
+2017-01-19 21:51:25 [::1][-][ihc5smbfds6gmjev8ols5obi81][error][yii\base\ErrorException:8] yii\base\ErrorException: Array to string conversion in C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php:27
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php(27): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-01-19 21:51:25 [::1][-][ihc5smbfds6gmjev8ols5obi81][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ihc5smbfds6gmjev8ols5obi81'
+    '_csrf-frontend' => '997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g\";}'
+    'advanced-backend' => 'or9g8h9nh2i6n8dpgrc2t2bvq7'
+    '_csrf-backend' => '1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xzS_YhR1fDCgfVordx0fakVv-kmvt7Du\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=ihc5smbfds6gmjev8ols5obi81; _csrf-frontend=997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g%22%3B%7D; advanced-backend=or9g8h9nh2i6n8dpgrc2t2bvq7; _csrf-backend=1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xzS_YhR1fDCgfVordx0fakVv-kmvt7Du%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '54667'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484859085.849
+    'REQUEST_TIME' => 1484859085
+]
+2017-01-19 21:58:11 [::1][-][ihc5smbfds6gmjev8ols5obi81][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: name in C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php:27
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php(27): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-01-19 21:58:11 [::1][-][ihc5smbfds6gmjev8ols5obi81][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ihc5smbfds6gmjev8ols5obi81'
+    '_csrf-frontend' => '997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g\";}'
+    'advanced-backend' => 'or9g8h9nh2i6n8dpgrc2t2bvq7'
+    '_csrf-backend' => '1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xzS_YhR1fDCgfVordx0fakVv-kmvt7Du\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=ihc5smbfds6gmjev8ols5obi81; _csrf-frontend=997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g%22%3B%7D; advanced-backend=or9g8h9nh2i6n8dpgrc2t2bvq7; _csrf-backend=1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xzS_YhR1fDCgfVordx0fakVv-kmvt7Du%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '55213'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484859491.16
+    'REQUEST_TIME' => 1484859491
+]
+2017-01-19 21:59:47 [::1][-][ihc5smbfds6gmjev8ols5obi81][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 0 in C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php:27
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php(27): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-01-19 21:59:47 [::1][-][ihc5smbfds6gmjev8ols5obi81][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ihc5smbfds6gmjev8ols5obi81'
+    '_csrf-frontend' => '997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g\";}'
+    'advanced-backend' => 'or9g8h9nh2i6n8dpgrc2t2bvq7'
+    '_csrf-backend' => '1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xzS_YhR1fDCgfVordx0fakVv-kmvt7Du\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=ihc5smbfds6gmjev8ols5obi81; _csrf-frontend=997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g%22%3B%7D; advanced-backend=or9g8h9nh2i6n8dpgrc2t2bvq7; _csrf-backend=1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xzS_YhR1fDCgfVordx0fakVv-kmvt7Du%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '55293'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484859587.631
+    'REQUEST_TIME' => 1484859587
+]
+2017-01-19 21:59:49 [::1][-][ihc5smbfds6gmjev8ols5obi81][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 0 in C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php:27
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php(27): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-01-19 21:59:49 [::1][-][ihc5smbfds6gmjev8ols5obi81][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ihc5smbfds6gmjev8ols5obi81'
+    '_csrf-frontend' => '997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g\";}'
+    'advanced-backend' => 'or9g8h9nh2i6n8dpgrc2t2bvq7'
+    '_csrf-backend' => '1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xzS_YhR1fDCgfVordx0fakVv-kmvt7Du\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=ihc5smbfds6gmjev8ols5obi81; _csrf-frontend=997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g%22%3B%7D; advanced-backend=or9g8h9nh2i6n8dpgrc2t2bvq7; _csrf-backend=1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xzS_YhR1fDCgfVordx0fakVv-kmvt7Du%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '55294'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484859589.262
+    'REQUEST_TIME' => 1484859589
+]
+2017-01-19 21:59:59 [::1][-][ihc5smbfds6gmjev8ols5obi81][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 0 in C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php:27
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php(27): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-01-19 21:59:59 [::1][-][ihc5smbfds6gmjev8ols5obi81][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ihc5smbfds6gmjev8ols5obi81'
+    '_csrf-frontend' => '997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g\";}'
+    'advanced-backend' => 'or9g8h9nh2i6n8dpgrc2t2bvq7'
+    '_csrf-backend' => '1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xzS_YhR1fDCgfVordx0fakVv-kmvt7Du\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=ihc5smbfds6gmjev8ols5obi81; _csrf-frontend=997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g%22%3B%7D; advanced-backend=or9g8h9nh2i6n8dpgrc2t2bvq7; _csrf-backend=1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xzS_YhR1fDCgfVordx0fakVv-kmvt7Du%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '55295'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484859599.553
+    'REQUEST_TIME' => 1484859599
+]
+2017-01-19 22:00:00 [::1][-][ihc5smbfds6gmjev8ols5obi81][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 0 in C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php:27
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php(27): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-01-19 22:00:00 [::1][-][ihc5smbfds6gmjev8ols5obi81][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ihc5smbfds6gmjev8ols5obi81'
+    '_csrf-frontend' => '997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g\";}'
+    'advanced-backend' => 'or9g8h9nh2i6n8dpgrc2t2bvq7'
+    '_csrf-backend' => '1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xzS_YhR1fDCgfVordx0fakVv-kmvt7Du\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=ihc5smbfds6gmjev8ols5obi81; _csrf-frontend=997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g%22%3B%7D; advanced-backend=or9g8h9nh2i6n8dpgrc2t2bvq7; _csrf-backend=1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xzS_YhR1fDCgfVordx0fakVv-kmvt7Du%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '55296'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484859600.794
+    'REQUEST_TIME' => 1484859600
+]
+2017-01-19 22:00:09 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot use [] for reading in C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-01-19 22:00:09 [::1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ihc5smbfds6gmjev8ols5obi81'
+    '_csrf-frontend' => '997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g\";}'
+    'advanced-backend' => 'or9g8h9nh2i6n8dpgrc2t2bvq7'
+    '_csrf-backend' => '1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xzS_YhR1fDCgfVordx0fakVv-kmvt7Du\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=ihc5smbfds6gmjev8ols5obi81; _csrf-frontend=997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g%22%3B%7D; advanced-backend=or9g8h9nh2i6n8dpgrc2t2bvq7; _csrf-backend=1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xzS_YhR1fDCgfVordx0fakVv-kmvt7Du%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '55297'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484859609.726
+    'REQUEST_TIME' => 1484859609
+]
+2017-01-19 22:16:51 [::1][-][ihc5smbfds6gmjev8ols5obi81][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php:27
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php(27): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#6 [internal function]: frontend\controllers\SiteController->actionIndex()
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-01-19 22:16:51 [::1][-][ihc5smbfds6gmjev8ols5obi81][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ihc5smbfds6gmjev8ols5obi81'
+    '_csrf-frontend' => '997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g\";}'
+    'advanced-backend' => 'or9g8h9nh2i6n8dpgrc2t2bvq7'
+    '_csrf-backend' => '1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xzS_YhR1fDCgfVordx0fakVv-kmvt7Du\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=ihc5smbfds6gmjev8ols5obi81; _csrf-frontend=997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g%22%3B%7D; advanced-backend=or9g8h9nh2i6n8dpgrc2t2bvq7; _csrf-backend=1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xzS_YhR1fDCgfVordx0fakVv-kmvt7Du%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '55565'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484860611.762
+    'REQUEST_TIME' => 1484860611
+]
+2017-01-19 22:18:22 [::1][-][ihc5smbfds6gmjev8ols5obi81][error][Error] Error: Call to a member function getRoleName() on null in C:\xampp\htdocs\SistemasPage\frontend\views\layouts\main.php:27
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#4 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(70): yii\base\Controller->render('index')
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2017-01-19 22:18:22 [::1][-][ihc5smbfds6gmjev8ols5obi81][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ihc5smbfds6gmjev8ols5obi81'
+    '_csrf-frontend' => '997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g\";}'
+    'advanced-backend' => 'or9g8h9nh2i6n8dpgrc2t2bvq7'
+    '_csrf-backend' => '1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xzS_YhR1fDCgfVordx0fakVv-kmvt7Du\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=ihc5smbfds6gmjev8ols5obi81; _csrf-frontend=997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g%22%3B%7D; advanced-backend=or9g8h9nh2i6n8dpgrc2t2bvq7; _csrf-backend=1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xzS_YhR1fDCgfVordx0fakVv-kmvt7Du%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '55591'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484860702.015
+    'REQUEST_TIME' => 1484860702
+]
+2017-01-19 22:18:22 [::1][-][ihc5smbfds6gmjev8ols5obi81][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2017-01-19 22:18:22 [::1][-][ihc5smbfds6gmjev8ols5obi81][info][application] $_COOKIE = [
+    'advanced-frontend' => 'ihc5smbfds6gmjev8ols5obi81'
+    '_csrf-frontend' => '997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g\";}'
+    'advanced-backend' => 'or9g8h9nh2i6n8dpgrc2t2bvq7'
+    '_csrf-backend' => '1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xzS_YhR1fDCgfVordx0fakVv-kmvt7Du\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=ihc5smbfds6gmjev8ols5obi81; _csrf-frontend=997ab270671f059e179967add093d143a4932984bbdfe4a667e6b2c1ad3e0011a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22qYNlLw8_GZAy5nlAaK-KHj6hPWztQc4g%22%3B%7D; advanced-backend=or9g8h9nh2i6n8dpgrc2t2bvq7; _csrf-backend=1976536648e213a4179922eb8748d12a8823de9ad80926b370e8a28cc0298bc9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xzS_YhR1fDCgfVordx0fakVv-kmvt7Du%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '55591'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484860702.015
+    'REQUEST_TIME' => 1484860702
+]
+2017-01-20 05:47:47 [::1][-][4ia86cpc5dop84id4jgueb9ep0][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\rbac\DbManager.php(829): yii\db\Command->execute()
+#2 C:\xampp\htdocs\SistemasPage\frontend\models\SignupForm.php(57): yii\rbac\DbManager->assign(Object(yii\rbac\Role), NULL)
+#3 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(169): frontend\models\SignupForm->signup()
+#4 [internal function]: frontend\controllers\SiteController->actionSignup()
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/signup', Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_id' cannot be null
+The SQL being executed was: INSERT INTO `auth_assignment` (`user_id`, `item_name`, `created_at`) VALUES (NULL, 'cliente', 1484887667) in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Schema.php:631
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `au...')
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\rbac\DbManager.php(829): yii\db\Command->execute()
+#2 C:\xampp\htdocs\SistemasPage\frontend\models\SignupForm.php(57): yii\rbac\DbManager->assign(Object(yii\rbac\Role), NULL)
+#3 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(169): frontend\models\SignupForm->signup()
+#4 [internal function]: frontend\controllers\SiteController->actionSignup()
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/signup', Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'user_id' cannot be null
+)
+
+2017-01-20 05:47:46 [::1][-][4ia86cpc5dop84id4jgueb9ep0][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'TDBRNWtGMFB/XWNxBB9YPC4DNmBaL1E/KmcdUQghXjt/RwVYWxJbOQ=='
+    'SignupForm' => [
+        'username' => 'edson'
+        'email' => 'edson@gmail.com'
+        'password' => '123456789'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '4ia86cpc5dop84id4jgueb9ep0'
+    '_csrf-frontend' => 'c734b4a183ce09c54e4a2db20af8a77b92f9014d266ae673320af56214b0606ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3m2DoYhlb3gU1iaofWLdcgnk3wTm0Tki\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_COOKIE' => 'advanced-frontend=4ia86cpc5dop84id4jgueb9ep0; _csrf-frontend=c734b4a183ce09c54e4a2db20af8a77b92f9014d266ae673320af56214b0606ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223m2DoYhlb3gU1iaofWLdcgnk3wTm0Tki%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '202'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '52233'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484887666.799
+    'REQUEST_TIME' => 1484887666
+]
+2017-01-20 06:58:48 [::1][-][olpgiunvh07mpplje1ha6q6fo6][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\models\LoginForm' in file: C:\xampp\htdocs\SistemasPage/frontend/models/LoginForm.php. Namespace missing? in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\models...')
+#1 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(84): spl_autoload_call('frontend\\models...')
+#2 [internal function]: frontend\controllers\SiteController->actionLogin()
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/login', Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2017-01-20 06:58:48 [::1][-][olpgiunvh07mpplje1ha6q6fo6][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'olpgiunvh07mpplje1ha6q6fo6'
+    '_csrf-frontend' => 'c734b4a183ce09c54e4a2db20af8a77b92f9014d266ae673320af56214b0606ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3m2DoYhlb3gU1iaofWLdcgnk3wTm0Tki\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php'
+    'HTTP_COOKIE' => 'advanced-frontend=olpgiunvh07mpplje1ha6q6fo6; _csrf-frontend=c734b4a183ce09c54e4a2db20af8a77b92f9014d266ae673320af56214b0606ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223m2DoYhlb3gU1iaofWLdcgnk3wTm0Tki%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '52540'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484891928.325
+    'REQUEST_TIME' => 1484891928
+]
+2017-01-20 07:00:11 [::1][-][olpgiunvh07mpplje1ha6q6fo6][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'frontend\models\LoginForm' in file: C:\xampp\htdocs\SistemasPage/frontend/models/LoginForm.php. Namespace missing? in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\models...')
+#1 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(84): spl_autoload_call('frontend\\models...')
+#2 [internal function]: frontend\controllers\SiteController->actionLogin()
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/login', Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2017-01-20 07:00:11 [::1][-][olpgiunvh07mpplje1ha6q6fo6][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'olpgiunvh07mpplje1ha6q6fo6'
+    '_csrf-frontend' => 'c734b4a183ce09c54e4a2db20af8a77b92f9014d266ae673320af56214b0606ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3m2DoYhlb3gU1iaofWLdcgnk3wTm0Tki\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=olpgiunvh07mpplje1ha6q6fo6; _csrf-frontend=c734b4a183ce09c54e4a2db20af8a77b92f9014d266ae673320af56214b0606ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223m2DoYhlb3gU1iaofWLdcgnk3wTm0Tki%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '52553'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484892011.57
+    'REQUEST_TIME' => 1484892011
+]
+2017-01-20 07:01:35 [::1][-][olpgiunvh07mpplje1ha6q6fo6][error][Error] Error: Class 'frontend\models\User' not found in C:\xampp\htdocs\SistemasPage\frontend\models\LoginForm.php:73
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\models\LoginForm.php(44): frontend\models\LoginForm->getUser()
+#1 [internal function]: frontend\models\LoginForm->validatePassword('password', NULL)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\validators\Validator.php(265): yii\validators\InlineValidator->validateAttribute(Object(frontend\models\LoginForm), 'password')
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\LoginForm), Array)
+#5 C:\xampp\htdocs\SistemasPage\frontend\models\LoginForm.php(58): yii\base\Model->validate()
+#6 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(85): frontend\models\LoginForm->login()
+#7 [internal function]: frontend\controllers\SiteController->actionLogin()
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/login', Array)
+#12 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#14 {main}
+2017-01-20 07:01:35 [::1][-][olpgiunvh07mpplje1ha6q6fo6][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'aUxKSkRqWHdaIXgOKzMwGwt/LR91AzkYDxsGLicNNhxaOx4ndD4zHg=='
+    'LoginForm' => [
+        'username' => 'edson'
+        'password' => '123456'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'olpgiunvh07mpplje1ha6q6fo6'
+    '_csrf-frontend' => 'c734b4a183ce09c54e4a2db20af8a77b92f9014d266ae673320af56214b0606ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3m2DoYhlb3gU1iaofWLdcgnk3wTm0Tki\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'advanced-frontend=olpgiunvh07mpplje1ha6q6fo6; _csrf-frontend=c734b4a183ce09c54e4a2db20af8a77b92f9014d266ae673320af56214b0606ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223m2DoYhlb3gU1iaofWLdcgnk3wTm0Tki%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '208'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '52565'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484892095.568
+    'REQUEST_TIME' => 1484892095
+]
+2017-01-20 07:01:35 [::1][-][olpgiunvh07mpplje1ha6q6fo6][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2017-01-20 07:01:35 [::1][-][olpgiunvh07mpplje1ha6q6fo6][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'aUxKSkRqWHdaIXgOKzMwGwt/LR91AzkYDxsGLicNNhxaOx4ndD4zHg=='
+    'LoginForm' => [
+        'username' => 'edson'
+        'password' => '123456'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'olpgiunvh07mpplje1ha6q6fo6'
+    '_csrf-frontend' => 'c734b4a183ce09c54e4a2db20af8a77b92f9014d266ae673320af56214b0606ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3m2DoYhlb3gU1iaofWLdcgnk3wTm0Tki\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'advanced-frontend=olpgiunvh07mpplje1ha6q6fo6; _csrf-frontend=c734b4a183ce09c54e4a2db20af8a77b92f9014d266ae673320af56214b0606ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223m2DoYhlb3gU1iaofWLdcgnk3wTm0Tki%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '208'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '52565'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484892095.568
+    'REQUEST_TIME' => 1484892095
+]
+2017-01-20 07:05:18 [::1][-][clguc38lf6shevc3tqkh33i1o2][error][Error] Error: Call to a member function getRoleName() on null in C:\xampp\htdocs\SistemasPage\frontend\models\LoginForm.php:46
+Stack trace:
+#0 [internal function]: frontend\models\LoginForm->validatePassword('password', NULL)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\validators\Validator.php(265): yii\validators\InlineValidator->validateAttribute(Object(frontend\models\LoginForm), 'password')
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\LoginForm), Array)
+#4 C:\xampp\htdocs\SistemasPage\frontend\models\LoginForm.php(59): yii\base\Model->validate()
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(85): frontend\models\LoginForm->login()
+#6 [internal function]: frontend\controllers\SiteController->actionLogin()
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/login', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-01-20 07:05:17 [::1][-][clguc38lf6shevc3tqkh33i1o2][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'REdGZzNrNG53KnQjXDJcAiZ0ITICAlUBIhAKA1AMWgV3MBIKAz9fBw=='
+    'LoginForm' => [
+        'username' => 'edson'
+        'password' => '123456789'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'clguc38lf6shevc3tqkh33i1o2'
+    '_csrf-frontend' => 'c734b4a183ce09c54e4a2db20af8a77b92f9014d266ae673320af56214b0606ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3m2DoYhlb3gU1iaofWLdcgnk3wTm0Tki\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'advanced-frontend=clguc38lf6shevc3tqkh33i1o2; _csrf-frontend=c734b4a183ce09c54e4a2db20af8a77b92f9014d266ae673320af56214b0606ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223m2DoYhlb3gU1iaofWLdcgnk3wTm0Tki%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '209'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '52598'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484892317.334
+    'REQUEST_TIME' => 1484892317
+]
+2017-01-20 07:05:18 [::1][-][clguc38lf6shevc3tqkh33i1o2][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2017-01-20 07:05:17 [::1][-][clguc38lf6shevc3tqkh33i1o2][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'REdGZzNrNG53KnQjXDJcAiZ0ITICAlUBIhAKA1AMWgV3MBIKAz9fBw=='
+    'LoginForm' => [
+        'username' => 'edson'
+        'password' => '123456789'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'clguc38lf6shevc3tqkh33i1o2'
+    '_csrf-frontend' => 'c734b4a183ce09c54e4a2db20af8a77b92f9014d266ae673320af56214b0606ea:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3m2DoYhlb3gU1iaofWLdcgnk3wTm0Tki\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'advanced-frontend=clguc38lf6shevc3tqkh33i1o2; _csrf-frontend=c734b4a183ce09c54e4a2db20af8a77b92f9014d266ae673320af56214b0606ea%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223m2DoYhlb3gU1iaofWLdcgnk3wTm0Tki%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '209'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '52598'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484892317.334
+    'REQUEST_TIME' => 1484892317
+]

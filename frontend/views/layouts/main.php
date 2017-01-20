@@ -24,6 +24,9 @@ AppAlternate::register($this);
        
 </head>
 <body>
+    <?php if (!Yii::$app->user->isGuest) { ?>
+    <div class="user-role"><?= Yii::$app->user->identity->getRoleName() ?></div>
+<?php } ?>
 <?php $this->beginBody() ?>
 
 <!--[if lt IE 8]>

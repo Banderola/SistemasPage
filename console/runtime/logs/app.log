@@ -1,0 +1,215 @@
+2017-01-19 20:45:27 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(45): m140506_102106_rbac_init->getAuthManager()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(651): m140506_102106_rbac_init->up()
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(163): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#12 {main}
+2017-01-19 20:45:16 [-][-][-][info][application] $_SERVER = [
+    'ADSK_3DSMAX_x64_2017' => 'C:\\Program Files\\Autodesk\\3ds Max 2017\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\edson\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-DHIKCP9T'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\WINDOWS\\ConfigSetRoot'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\edson'
+    'LOCALAPPDATA' => 'C:\\Users\\edson\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-DHIKCP9T'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-DHIKCP9T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-DHIKCP9T'
+    'USERNAME' => 'edson'
+    'USERPROFILE' => 'C:\\Users\\edson'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\SistemasPage\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1484855116.085
+    'REQUEST_TIME' => 1484855116
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2017-01-20 05:27:37 [-][-][-][error][yii\console\Exception] yii\base\InvalidRouteException: Unable to resolve the request "init". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('init', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('init', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\Exception: Unknown command "init". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('init', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#3 {main}
+2017-01-20 05:27:37 [-][-][-][info][application] $_SERVER = [
+    'ADSK_3DSMAX_x64_2017' => 'C:\\Program Files\\Autodesk\\3ds Max 2017\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\edson\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-DHIKCP9T'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\WINDOWS\\ConfigSetRoot'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\edson'
+    'LOCALAPPDATA' => 'C:\\Users\\edson\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-DHIKCP9T'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-DHIKCP9T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-DHIKCP9T'
+    'USERNAME' => 'edson'
+    'USERPROFILE' => 'C:\\Users\\edson'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\SistemasPage\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1484886457.5781
+    'REQUEST_TIME' => 1484886457
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+        1 => 'init'
+    ]
+    'argc' => 2
+]
+2017-01-20 05:27:44 [-][-][-][error][yii\console\Exception] yii\base\InvalidRouteException: Unable to resolve the request "Init". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('Init', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('Init', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\Exception: Unknown command "Init". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('Init', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#3 {main}
+2017-01-20 05:27:44 [-][-][-][info][application] $_SERVER = [
+    'ADSK_3DSMAX_x64_2017' => 'C:\\Program Files\\Autodesk\\3ds Max 2017\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\edson\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-DHIKCP9T'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\WINDOWS\\ConfigSetRoot'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\edson'
+    'LOCALAPPDATA' => 'C:\\Users\\edson\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-DHIKCP9T'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-DHIKCP9T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-DHIKCP9T'
+    'USERNAME' => 'edson'
+    'USERPROFILE' => 'C:\\Users\\edson'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\SistemasPage\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1484886464.5653
+    'REQUEST_TIME' => 1484886464
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+        1 => 'Init'
+    ]
+    'argc' => 2
+]
