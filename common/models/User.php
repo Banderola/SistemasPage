@@ -12,14 +12,26 @@ use yii\web\IdentityInterface;
  *
  * @property integer $id
  * @property string $username
+ * @property string $auth_key
  * @property string $password_hash
  * @property string $password_reset_token
  * @property string $email
- * @property string $auth_key
  * @property integer $status
  * @property integer $created_at
  * @property integer $updated_at
- * @property string $password write-only password
+ * @property string $nombre
+ *
+ * @property Comentarioalumno[] $comentarioalumnos
+ * @property Comentarioespecialidad[] $comentarioespecialidads
+ * @property Comentarionoticia[] $comentarionoticias
+ * @property Comentarioproyecto[] $comentarioproyectos
+ * @property Contacto[] $contactos
+ * @property Especialidad[] $especialidads
+ * @property Evento[] $eventos
+ * @property Noticia[] $noticias
+ * @property Proyecto[] $proyectos
+ * @property Ratingespecialidad[] $ratingespecialidads
+ * @property Ratingproyecto[] $ratingproyectos
  */
 class User extends ActiveRecord implements IdentityInterface
 {
@@ -35,6 +47,7 @@ class User extends ActiveRecord implements IdentityInterface
         return '{{%user}}';
     }
 
+    
     /**
      * @inheritdoc
      */
@@ -199,5 +212,106 @@ class User extends ActiveRecord implements IdentityInterface
         $role = current($roles);
 
         return $role->name;
+    }
+    
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getComentarioalumnos()
+    {
+        return $this->hasMany(Comentarioalumno::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getComentarioespecialidads()
+    {
+        return $this->hasMany(Comentarioespecialidad::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getComentarionoticias()
+    {
+        return $this->hasMany(Comentarionoticia::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getComentarioproyectos()
+    {
+        return $this->hasMany(Comentarioproyecto::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getContactos()
+    {
+        return $this->hasMany(Contacto::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getEspecialidads()
+    {
+        return $this->hasMany(Especialidad::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getEventos()
+    {
+        return $this->hasMany(Evento::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getNoticias()
+    {
+        return $this->hasMany(Noticia::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProyectos()
+    {
+        return $this->hasMany(Proyecto::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getRatingespecialidads()
+    {
+        return $this->hasMany(Ratingespecialidad::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getRatingproyectos()
+    {
+        return $this->hasMany(Ratingproyecto::className(), ['user_id' => 'id']);
+    }
+    
+    
+    
+    
+    public function attributeLabels()
+    {
+        return [
+            'username' => 'Username',
+            'password_reset_token' => 'Password Reset Token',
+            'email' => 'Email',
+            'nombre' => 'Nombre',
+        ];
     }
 }
