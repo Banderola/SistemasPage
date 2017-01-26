@@ -263,7 +263,7 @@ class Util_ConfigurationTest extends PHPUnit_Framework_TestCase
             'ini'    => ['foo' => 'bar'],
             'const'  => ['FOO' => false, 'BAR' => true],
             'var'    => ['foo' => false],
-            'env'    => ['foo' => true],
+            'env'    => ['foo' => 'true'],
             'post'   => ['foo' => 'bar'],
             'get'    => ['foo' => 'bar'],
             'cookie' => ['foo' => 'bar'],
@@ -288,8 +288,8 @@ class Util_ConfigurationTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(false, FOO);
         $this->assertEquals(true, BAR);
         $this->assertEquals(false, $GLOBALS['foo']);
-        $this->assertEquals(true, $_ENV['foo']);
-        $this->assertEquals(true, getenv('foo'));
+        $this->assertEquals('true', $_ENV['foo']);
+        $this->assertEquals('true', getenv('foo'));
         $this->assertEquals('bar', $_POST['foo']);
         $this->assertEquals('bar', $_GET['foo']);
         $this->assertEquals('bar', $_COOKIE['foo']);
@@ -305,11 +305,11 @@ class Util_ConfigurationTest extends PHPUnit_Framework_TestCase
      */
     public function testHandlePHPConfigurationDoesNotOverwrittenExistingEnvArrayVariables()
     {
-        $_ENV['foo'] = false;
+        $_ENV['foo'] = 'false';
         $this->configuration->handlePHPConfiguration();
 
-        $this->assertEquals(false, $_ENV['foo']);
-        $this->assertEquals(true, getenv('foo'));
+        $this->assertEquals('false', $_ENV['foo']);
+        $this->assertEquals('true', getenv('foo'));
     }
 
     /**
@@ -322,7 +322,7 @@ class Util_ConfigurationTest extends PHPUnit_Framework_TestCase
         putenv('foo=putenv');
         $this->configuration->handlePHPConfiguration();
 
-        $this->assertEquals(true, $_ENV['foo']);
+        $this->assertEquals('true', $_ENV['foo']);
         $this->assertEquals('putenv', getenv('foo'));
     }
 
@@ -345,13 +345,14 @@ class Util_ConfigurationTest extends PHPUnit_Framework_TestCase
             'convertNoticesToExceptions'                 => true,
             'convertWarningsToExceptions'                => true,
             'forceCoversAnnotation'                      => false,
-            'printerClass'                               => 'PHPUnit_TextUI_ResultPrinter',
             'stopOnFailure'                              => false,
             'stopOnWarning'                              => false,
             'reportUselessTests'                         => false,
             'strictCoverage'                             => false,
             'disallowTestOutput'                         => false,
             'enforceTimeLimit'                           => false,
+            'extensionsDirectory'                        => '/tmp',
+            'printerClass'                               => 'PHPUnit_TextUI_ResultPrinter',
             'testSuiteLoaderClass'                       => 'PHPUnit_Runner_StandardTestSuiteLoader',
             'verbose'                                    => false,
             'timeoutForSmallTests'                       => 1,
