@@ -8,7 +8,7 @@ $this->title = 'About';
 
 ?>
 <!--Breadcrumb Banner Area Start-->
-                <div class="breadcrumb-banner-area">
+<div class="breadcrumb-banner-area" style="background-image: url('img/banner/<?= $portada->imagen ?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -42,20 +42,19 @@ $this->title = 'About';
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="about-text-container">
-                                    <p><span>Well come to Educat</span> come with us, we also teach children about the basic values of human beings as honesty, kindness, generosity, courage, freedom, equality and respect. Learn to celebrate diversity in a spirit of understanding and tolerance and develop a positive regard and awareness of other people. They are taught the values and responsibilities needed to become active members of the community, tolerance and develop something which the modern world is desperate for norem ipsum dolor sit amet desperate.<br>
-                                    Adipiscing signiferumque vix et. No alii docendi usu, pri graeco possim percipit ne.</p>
+                                    <p><span><?= $nosotros->titulo ?></span> <?= $nosotros->descripcion ?></p>
                                     <div class="about-us">
-                                        <span>Nam gravida magna vitae ante dignissim</span>
-                                        <span>Duis rhoncus lectus at velit hendrerit quis</span>
-                                        <span>Sed fringilla tempor arcu feugiat risus</span>
-                                        <span>Vivamus semper odio in nibh ultricies</span>
+                                        <?php foreach($incisos as $inciso): ?>
+                                            <span><?= $inciso->descripcion ?></span>
+                                        <?php endforeach; ?>
+                                        
                                     </div>    
-                                    <p>Snos trud exerci tation ullorper suscipit lobo maeisrn roester maeoirqs iserrtis nisl ut aliq poerwse thesr oper balinp asein hoinws mawsoib equat. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more tolerance and develop obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through makin of the word in classical literature.</p>
+                                    <p><?= $nosotros->descripcion2 ?></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="skill-image">
-                                    <img src="img/banner/6.jpg" alt="">
+                                    <img src="img/banner/<?= $nosotros->imagen ?>" alt="">
                                 </div>
                             </div>
                         </div>
@@ -76,17 +75,20 @@ $this->title = 'About';
                             </div>       
                         </div>
                         <div class="row">
+                            <?php foreach($experiencias as $experiencia): ?>
                             <div class="col-md-6 col-sm-6">
                                 <div class="experience-skill-wrapper">
+                                    <?php if($experiencia->orientacion==0): ?>
                                     <div class="skill-bar-item">
-                                        <span>Programming</span>
+                                        <span><?= $experiencia->descripcion ?></span>
                                         <div class="progress">
                                             <div class="progress-bar wow fadeInLeft" data-progress="80%" style="width: 80%;" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                <span class="text-top">80%</span>
+                                                <span class="text-top"><?= $experiencia->valor ?></span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="skill-bar-item">
+                                    <?php endif; ?>
+<!--                                    <div class="skill-bar-item">
                                         <span>Designing</span>
                                         <div class="progress">
                                             <div class="progress-bar wow fadeInLeft" data-progress="75%" style="width: 75%;" data-wow-duration="1.5s" data-wow-delay="1.2s">
@@ -109,20 +111,22 @@ $this->title = 'About';
                                                 <span class="text-top">70%</span>
                                             </div>
                                         </div>
-                                    </div>  
+                                    </div>  -->
                                 </div>    
                             </div>
                             <div class="col-md-6 col-sm-6">
                                 <div class="experience-skill-wrapper">
+                                    <?php if($experiencia->orientacion==1): ?>
                                     <div class="skill-bar-item">
-                                        <span>Programming</span>
+                                        <span><?= $experiencia->descripcion ?></span>
                                         <div class="progress">
                                             <div class="progress-bar wow fadeInLeft" data-progress="75%" style="width: 75%;" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                                                <span class="text-top">75%</span>
+                                                <span class="text-top"><?= $experiencia->valor ?></span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="skill-bar-item">
+                                    <?php endif; ?>
+<!--                                    <div class="skill-bar-item">
                                         <span>Creative Writing</span>
                                         <div class="progress">
                                             <div class="progress-bar wow fadeInLeft" data-progress="90%" style="width: 90%;" data-wow-duration="1.5s" data-wow-delay="1.2s">
@@ -145,9 +149,10 @@ $this->title = 'About';
                                                 <span class="text-top">100%</span>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>-->
                                 </div>    
                             </div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
@@ -166,25 +171,27 @@ $this->title = 'About';
                             </div>
                         </div>
                         <div class="row">
+                            <?php foreach($maestros as $maestro): ?>
                             <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="single-teacher-item">
                                     <div class="single-teacher-image">
-                                        <a href="#"><img src="img/teacher/1.png" alt=""></a>
+                                        <a href="#"><img src="img/teacher/<?= $maestro->imagen ?>" alt=""></a>
                                     </div>
                                     <div class="single-teacher-text">
-                                        <h3><a href="#">Louis Smith</a></h3>
-                                        <h4>Teacher</h4>
-                                        <p>There are many variaons of passa of Lorem Ipsuable, amrn in sofby injected humour, amr</p>
+                                        <h3><a href="#"><?= $maestro->nombre ?></a></h3>
+                                        <h4><?= $maestro->tipo ?></h4>
+                                        <p><?= $maestro->descripcion ?></p>
                                         <div class="social-links">
-                                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-google-old"></i></a>
-                                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                            <a href="<?= $maestro->linkFace ?>"><i class="zmdi zmdi-facebook"></i></a>
+                                            <a href="<?= $maestro->linkTwitter ?>"><i class="zmdi zmdi-twitter"></i></a>
+                                            <a href="<?= $maestro->linkGoogle ?>"><i class="zmdi zmdi-google-old"></i></a>
+                                            <a href="<?= $maestro->linkInstagram ?>"><i class="zmdi zmdi-instagram"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6">
+                            <?php endforeach; ?>
+<!--                            <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="single-teacher-item">
                                     <div class="single-teacher-image">
                                         <a href="#"><img src="img/teacher/l-2.jpg" alt=""></a>
@@ -237,7 +244,7 @@ $this->title = 'About';
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>

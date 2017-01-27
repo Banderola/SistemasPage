@@ -11,6 +11,8 @@ use common\widgets\Alert;
 
 AppAsset::register($this);
 AppAlternate::register($this);
+$contacto = $this->params['model'];
+$enlaces = $this->params['model_enlaces']
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -21,7 +23,7 @@ AppAlternate::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>   
-       
+     
 </head>
 <body>
     <?php if (!Yii::$app->user->isGuest) { ?>
@@ -43,7 +45,7 @@ AppAlternate::register($this);
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 col-md-6 col-sm-5 hidden-xs">
-                                    <span>Have any question? +968 547856 254</span>
+                                    <span>Have any question? <?= $contacto->telefono ?></span>
                                 </div>
                                 <div class="col-lg-5 col-md-6 col-sm-7 col-xs-12">
                                     <div class="header-top-right">
@@ -172,35 +174,33 @@ AppAlternate::register($this);
                                     <div class="footer-logo">
                                         <a href="index.html"><img src="img/logo/footer.png" alt=""></a>
                                     </div>
-                                    <p>There are many variations of passg of Lorem Ipsum available, but thmajority have suffered altem, </p>
+                                    <p><?= $contacto->PiePagina ?> </p>
                                     <div class="social-icons">
-                                        <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                        <a href="#"><i class="zmdi zmdi-rss"></i></a>
-                                        <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
-                                        <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
-                                        <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                        <a href="<?= $contacto->faceLink ?>"><i class="zmdi zmdi-facebook"></i></a>
+                                        <a href="<?= $contacto->rssLink ?>"><i class="zmdi zmdi-rss"></i></a>
+                                        <a href="<?= $contacto->googleLink ?>"><i class="zmdi zmdi-google-plus"></i></a>
+                                        <a href="<?= $contacto->pintLink ?>"><i class="zmdi zmdi-pinterest"></i></a>
+                                        <a href="<?= $contacto->instagramLink ?>"><i class="zmdi zmdi-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-4">
                                 <div class="single-footer-widget">
                                     <h3>GET IN TOUCH</h3>
-                                    <span><i class="fa fa-phone"></i>+88 018 785 4589</span>
-                                    <span><i class="fa fa-envelope"></i>devitems@email.com</span>
-                                    <span><i class="fa fa-globe"></i>www.devitems.com</span>
-                                    <span><i class="fa fa-map-marker"></i>ur address goes here,street.</span>
+                                    <span><i class="fa fa-phone"></i><?= $contacto->telefono ?></span>
+                                    <span><i class="fa fa-envelope"></i><?= $contacto->correo ?></span>
+                                    <span><i class="fa fa-globe"></i><?= $contacto->paginaWeb ?></span>
+                                    <span><i class="fa fa-map-marker"></i><?= $contacto->direccion ?></span>
                                 </div>
                             </div>
                             <div class="col-md-3 hidden-sm">
                                 <div class="single-footer-widget">
                                     <h3>Useful Links</h3>
                                     <ul class="footer-list">
-                                        <li><a href="#">Teachers &amp; Staff</a></li>
-                                        <li><a href="#">Our Courses</a></li>
-                                        <li><a href="#">Courses Categories</a></li>
-                                        <li><a href="#">Support</a></li>
-                                        <li><a href="#">Terms &amp; Conditions</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
+                                        <?php foreach($enlaces as $enlace): ?>
+                                        <li><a href="<?= $enlace->link ?>"><?= $enlace->titulo ?></a></li>
+                                        <?php endforeach; ?>
+                                        
                                     </ul>
                                 </div>
                             </div>

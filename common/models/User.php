@@ -28,10 +28,18 @@ use yii\web\IdentityInterface;
  * @property Contacto[] $contactos
  * @property Especialidad[] $especialidads
  * @property Evento[] $eventos
+ * @property Experiencia[] $experiencias
+ * @property Maestro[] $maestros
  * @property Noticia[] $noticias
+ * @property Paginacontacto[] $paginacontactos
+ * @property Paginaenlaces[] $paginaenlaces
+ * @property Paginaimagenportada[] $paginaimagenportadas
+ * @property Paginainicio[] $paginainicios
+ * @property Paginanosotros[] $paginanosotros
  * @property Proyecto[] $proyectos
  * @property Ratingespecialidad[] $ratingespecialidads
  * @property Ratingproyecto[] $ratingproyectos
+ * @property Slide[] $slides
  */
 class User extends ActiveRecord implements IdentityInterface
 {
@@ -273,9 +281,65 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * @return \yii\db\ActiveQuery
      */
+    public function getExperiencias()
+    {
+        return $this->hasMany(Experiencia::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getMaestros()
+    {
+        return $this->hasMany(Maestro::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
     public function getNoticias()
     {
         return $this->hasMany(Noticia::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPaginacontactos()
+    {
+        return $this->hasMany(Paginacontacto::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPaginaenlaces()
+    {
+        return $this->hasMany(Paginaenlaces::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPaginaimagenportadas()
+    {
+        return $this->hasMany(Paginaimagenportada::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPaginainicios()
+    {
+        return $this->hasOne(Paginainicio::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPaginanosotros()
+    {
+        return $this->hasMany(Paginanosotros::className(), ['user_id' => 'id']);
     }
 
     /**
@@ -300,6 +364,14 @@ class User extends ActiveRecord implements IdentityInterface
     public function getRatingproyectos()
     {
         return $this->hasMany(Ratingproyecto::className(), ['user_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getSlides()
+    {
+        return $this->hasMany(Slide::className(), ['user_id' => 'id']);
     }
     
     

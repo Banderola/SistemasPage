@@ -12,6 +12,15 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use common\models\Paginainicio;
+use common\models\Slide;
+use common\models\Paginaimagenportada;
+use common\models\Paginanosotros;
+use common\models\Experiencia;
+use common\models\Maestro;
+use common\models\Incisonosotros;
+use common\models\Paginacontacto;
+use common\models\Paginaenlaces;
 
 /**
  * Site controller
@@ -21,6 +30,7 @@ class SiteController extends Controller
     /**
      * @inheritdoc
      */
+    
     public function behaviors()
     {
         return [
@@ -49,6 +59,8 @@ class SiteController extends Controller
      */
     public function actions()
     {
+        $this->view->params['model'] = Paginacontacto::findOne(1);
+        $this->view->params['model_enlaces'] = Paginaenlaces::find()->all();
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
@@ -67,7 +79,13 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        
+        $model_inicio = Paginainicio::findOne(1);
+        $model_slide = Slide::find()->all();
+        $model_portada = Paginaimagenportada::findOne(1);
+        return $this->render('index', [
+                'inicio' => $model_inicio,'slide' => $model_slide,'portada' => $model_portada,
+            ]);
     }
 
     /**
@@ -110,6 +128,8 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
+        $model_portada = Paginaimagenportada::findOne(7);
+        
        // $model = new ContactForm();
       //  if ($model->load(Yii::$app->request->post()) && $model->validate()) {
           //  if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
@@ -120,7 +140,9 @@ class SiteController extends Controller
 
          //   return $this->refresh();
        // } else {
-        return $this->render('contact');
+        return $this->render('contact', [
+                'portada' => $model_portada,
+            ]);
            // return $this->render('contact', [
        //         'model' => $model,
       //      ]);
@@ -134,27 +156,46 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('about');
+        $model_nosotros = Paginanosotros::findOne(1);
+        $model_experiencia = Experiencia::find()->all();
+        $model_maestro = Maestro::find()->all();
+        $model_inciso = Incisonosotros::find()->all();
+        $model_portada = Paginaimagenportada::findOne(2);
+        return $this->render('about', [
+                'nosotros' => $model_nosotros,'experiencias' => $model_experiencia,'maestros' => $model_maestro,'incisos' => $model_inciso,'portada' => $model_portada,
+            ]);
     }
 
      public function actionCourses()
     {
-        return $this->render('courses');
+        $model_portada = Paginaimagenportada::findOne(3);
+        return $this->render('courses', [
+                'portada' => $model_portada,
+            ]);
     }
 
       public function actionShopgrid()
     {
-        return $this->render('shopgrid');
+        $model_portada = Paginaimagenportada::findOne(4);
+        return $this->render('shopgrid', [
+                'portada' => $model_portada,
+            ]);
     }
 
       public function actionLatestnews()
     {
-        return $this->render('latestnews');
+        $model_portada = Paginaimagenportada::findOne(5);
+        return $this->render('latestnews', [
+                'portada' => $model_portada,
+            ]);
     }
 
       public function actionEvent()
     {
-        return $this->render('event');
+        $model_portada = Paginaimagenportada::findOne(6);
+        return $this->render('event', [
+                'portada' => $model_portada,
+            ]);
     }
 
     /**

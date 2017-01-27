@@ -14,7 +14,7 @@ $this->title = 'Shopgrid';
 <div class="site-shopgrid">
     
 <!--Breadcrumb Banner Area Start-->
-                <div class="breadcrumb-banner-area">
+                <div class="breadcrumb-banner-area" style="background-image: url('img/banner/<?= $portada->imagen ?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">

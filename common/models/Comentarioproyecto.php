@@ -32,8 +32,8 @@ class Comentarioproyecto extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['Descripcion', 'Fecha', 'Proyecto_idProyecto', 'user_id'], 'required'],
             [['Fecha'], 'safe'],
-            [['Proyecto_idProyecto', 'user_id'], 'required'],
             [['Proyecto_idProyecto', 'user_id'], 'integer'],
             [['Descripcion'], 'string', 'max' => 255],
             [['Proyecto_idProyecto'], 'exist', 'skipOnError' => true, 'targetClass' => Proyecto::className(), 'targetAttribute' => ['Proyecto_idProyecto' => 'idProyecto']],

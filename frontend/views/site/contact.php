@@ -7,12 +7,12 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
-
+$contacto = $this->params['model'];
 $this->title = 'Contact';
 ?>
 <div class="site-contact">
  <!--Breadcrumb Banner Area Start-->
-                <div class="breadcrumb-banner-area">
+                <div class="breadcrumb-banner-area" style="background-image: url('img/banner/<?= $portada->imagen ?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -45,18 +45,20 @@ $this->title = 'Contact';
                             <div class="col-md-4">
                                 <h4 class="contact-title">contact info</h4>
                                 <div class="contact-text">
-                                    <p><span class="c-icon"><i class="zmdi zmdi-phone"></i></span><span class="c-text">+88 018 785 454 589</span></p>
-                                    <p><span class="c-icon"><i class="zmdi zmdi-email"></i></span><span class="c-text">devitems@email.com</span></p>
-                                    <p><span class="c-icon"><i class="zmdi zmdi-pin"></i></span><span class="c-text">House 09, Road 32, Mohammadpur,<br>
-                                    Dhaka-1200, UK</span></p>
+                                    <p><span class="c-icon"><i class="zmdi zmdi-phone"></i></span><span class="c-text"><?= $contacto->telefono ?></span></p>
+                                    <p><span class="c-icon"><i class="zmdi zmdi-email"></i></span><span class="c-text"><?= $contacto->correo ?></span></p>
+                                    <p><span class="c-icon"><i class="zmdi zmdi-pin"></i></span><span class="c-text"><?= $contacto->direccion ?>
+<!--                                            <br>
+                                    Dhaka-1200, UK-->
+                                        </span></p>
                                 </div>
                                 <h4 class="contact-title">social media</h4>
                                 <div class="link-social">
-                                    <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                    <a href="#"><i class="zmdi zmdi-rss"></i></a>
-                                    <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
-                                    <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
-                                    <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                    <a href="<?= $contacto->faceLink ?>"><i class="zmdi zmdi-facebook"></i></a>
+                                    <a href="<?= $contacto->rssLink ?>"><i class="zmdi zmdi-rss"></i></a>
+                                    <a href="<?= $contacto->googleLink ?>"><i class="zmdi zmdi-google-plus"></i></a>
+                                    <a href="<?= $contacto->pintLink ?>"><i class="zmdi zmdi-pinterest"></i></a>
+                                    <a href="<?= $contacto->instagramLink ?>"><i class="zmdi zmdi-instagram"></i></a>
                                 </div>
                             </div>
                             <div class="col-md-7">

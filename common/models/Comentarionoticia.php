@@ -10,6 +10,8 @@ use Yii;
  * @property integer $idcomentarioNoticia
  * @property integer $noticia_idnoticia
  * @property integer $user_id
+ * @property string $descripcion
+ * @property string $Fecha
  *
  * @property User $user
  * @property Noticia $noticiaIdnoticia
@@ -30,8 +32,10 @@ class Comentarionoticia extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['noticia_idnoticia', 'user_id'], 'required'],
+            [['noticia_idnoticia', 'user_id', 'descripcion', 'Fecha'], 'required'],
             [['noticia_idnoticia', 'user_id'], 'integer'],
+            [['Fecha'], 'safe'],
+            [['descripcion'], 'string', 'max' => 255],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
             [['noticia_idnoticia'], 'exist', 'skipOnError' => true, 'targetClass' => Noticia::className(), 'targetAttribute' => ['noticia_idnoticia' => 'idnoticia']],
         ];
@@ -46,6 +50,8 @@ class Comentarionoticia extends \yii\db\ActiveRecord
             'idcomentarioNoticia' => 'Idcomentario Noticia',
             'noticia_idnoticia' => 'Noticia Idnoticia',
             'user_id' => 'User ID',
+            'descripcion' => 'Descripcion',
+            'Fecha' => 'Fecha',
         ];
     }
 

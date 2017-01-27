@@ -3,6 +3,8 @@
 /* @var $this yii\web\View */
 
 $this->title = 'Home';
+
+
 ?>
 <div class="site-index">
                     <div class="mobile-menu-area">
@@ -139,22 +141,24 @@ $this->title = 'Home';
                  <!--Slider Area Start-->
                 <div class="slider-area slider-two">
                     <div class="preview-2">
-                        <div id="nivoslider" class="slides">    
-                            <img src="img/slider/1.jpg" alt="" title="#slider-1-caption1"/>
-                            <img src="img/slider/4.jpg" alt="" title="#slider-1-caption2"/>
+                        <div id="nivoslider" class="slides">   
+                            <?php $i = 1; foreach($slide as $slide_1): ?>
+                                <img src='img/slider/<?= $slide_1->Imagen ?>' alt='' title='#slider-1-caption<?= $i ?>'/> 
+                            <?php $i++; endforeach; ?>
+                            <!--<img src="img/slider/1.jpg" alt="" title="#slider-1-caption1"/>-->
+                            <!--<img src="img/slider/4.jpg" alt="" title="#slider-1-caption2"/>-->
                         </div> 
-                        <div id="slider-1-caption1" class="nivo-html-caption nivo-caption">
+                        <?php $i = 1; foreach($slide as $slide_1): ?>
+                        <div id="slider-1-caption<?= $i ?>" class="nivo-html-caption nivo-caption">
                             <div class="banner-content slider-1">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="text-content-wrapper">
                                                 <div class="text-content">
-                                                    <h1 class="title1">Education Needs<br>
-                                                    Complete Solution</h1>
-                                                    <p class="sub-title hidden-sm hidden-xs"> There are many variations of passages of Lorem Ipsum available, but the majority have<br>
-                                                    suffered alteration in some form, by injected humour, or randomised words which<br>
-                                                    don't look even slightly believable.</p>
+                                                    <h1 class="title1"><?= $slide_1->Titulo ?><br>
+                                                    <?= $slide_1->Titulo2 ?></h1>
+                                                    <p class="sub-title hidden-sm hidden-xs"> <?= $slide_1->Descripcion ?></p>
                                                     <div class="banner-readmore">
                                                         <a class="button-default bg-blue" href="#">View Courses</a>                 
                                                     </div>
@@ -165,7 +169,8 @@ $this->title = 'Home';
                                 </div>
                             </div>
                         </div>  
-                        <div id="slider-1-caption2" class="nivo-html-caption nivo-caption">
+                        <?php $i++; endforeach; ?>
+<!--                        <div id="slider-1-caption2" class="nivo-html-caption nivo-caption">
                             <div class="banner-content slider-2">
                                 <div class="container">
                                     <div class="row">
@@ -186,21 +191,19 @@ $this->title = 'Home';
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
 
                     </div>
                 </div>
                 <!--End of Slider Area-->
                 <!--About Area Start--> 
-                <div class="about-area">
+                <div class="about-area" style="background-image: url('img/banner/<?= $portada->imagen ?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="about-container">
-                                    <h3>¿ PORQUÉ UPIIZ ?</h3>
-                                    <p>La carrera de <b>Ingeniería en Sistemas Computacionales</b> pertenece a la Unidad Profesional Interdisciplinaria de Ingeniería Campus Zacatecas (UPIIZ) del Instituto Politécnico Nacional (IPN). El IPN ocupa el tercer lugar a nivel nacional como mejor universidad.</p>
-
-                                    <p>El IPN te ofrece beca desde el primer semestre, movilidad internacional, asistencia a eventos como Campus Party, concursos de programación, certificaciones, cursos extracurriculares y mucho más. </p>
+                                    <h3><?=$inicio->tituloPortada?></h3>
+                                    <?=$inicio->descripcionPortada?>
                                     <a class="button-default" href="#">Learn Now</a>          
                                 </div>
                             </div>
@@ -341,7 +344,7 @@ $this->title = 'Home';
                             <div class="col-md-3 col-sm-3">
                                 <div class="single-fun-factor">
                                     <h4>Alumnos</h4>
-                                    <h2><span class="counter">700</span>+</h2>
+                                    <h2><span class="counter"><?=$inicio->cantidadAlumnos?></span>+</h2>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-3">
@@ -359,7 +362,7 @@ $this->title = 'Home';
                             <div class="col-md-3 col-sm-3">
                                 <div class="single-fun-factor">
                                     <h4>Premios</h4>
-                                    <h2><span class="counter">6</span>+</h2>
+                                    <h2><span class="counter"><?=$inicio->cantidadPremios?></span>+</h2>
                                 </div>
                             </div>
                         </div>
@@ -575,7 +578,7 @@ $this->title = 'Home';
                 </div>
                 <!--End of Online Product Area-->
                 <!--Testimonial Area Start-->
-                <div class="testimonial-area">
+                <div class="testimonial-area" style="background-image: url('img/banner/<?=$inicio->imagenAlumnos?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">

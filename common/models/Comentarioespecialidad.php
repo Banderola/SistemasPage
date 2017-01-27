@@ -32,8 +32,8 @@ class Comentarioespecialidad extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['Descripcion', 'Fecha', 'Especialidad_idEspecialidades', 'user_id'], 'required'],
             [['Fecha'], 'safe'],
-            [['Especialidad_idEspecialidades', 'user_id'], 'required'],
             [['Especialidad_idEspecialidades', 'user_id'], 'integer'],
             [['Descripcion'], 'string', 'max' => 255],
             [['Especialidad_idEspecialidades'], 'exist', 'skipOnError' => true, 'targetClass' => Especialidad::className(), 'targetAttribute' => ['Especialidad_idEspecialidades' => 'idEspecialidades']],
