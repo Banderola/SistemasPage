@@ -26,6 +26,11 @@ class SiteController extends Controller
                         'allow' => true,
                     ],
                     [
+                        'actions' => ['news', 'uploadPhoto'],
+                        'allow' => true,
+                        'roles' => ['administrador']
+                    ],
+                    [
                         'actions' => ['logout', 'index'],
                         'allow' => true,
                         'roles' => ['@'],
@@ -50,6 +55,15 @@ class SiteController extends Controller
             'error' => [
                 'class' => 'yii\web\ErrorAction',
             ],
+            'uploadPhoto' => [
+                'class' => 'budyaga\cropper\actions\UploadAction',
+                //TODO: ver cual es el link para la foto
+                //'uploadParameter' => 'nombre unico de la imagen con extension',
+                'url' => 'http://localhost/SistemasPage/common/uploads/photos',
+                'path' => '@common/uploads/photos',
+                'width' => 700,
+                'height' => 300,
+        ]
         ];
     }
 
@@ -94,5 +108,15 @@ class SiteController extends Controller
         Yii::$app->user->logout();
 
         return $this->goHome();
+    }
+    
+    public function actionNews()
+    {
+        $model = new NewsForm();
+         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
+            return $this->render('index');
+        } else {
+            return $this->render('newform', ['model' => $model]);
+        }
     }
 }
