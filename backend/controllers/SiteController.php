@@ -6,6 +6,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use backend\models\LoginForm;
+use backend\models\NewsForm;
 
 /**
  * Site controller
@@ -22,11 +23,17 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
+                        //TODO: Borrar el action uploadPhoto de aquí y confoigurarlo para que solo se pueda usar por el admin
                         'actions' => ['login', 'error'],
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['news', 'uploadPhoto'],
+                        'actions' => ['news', 'uploadNewsImage'],
+                        'allow' => true,
+                        'roles' => ['administrador']
+                    ],
+                    [
+                        'actions' => ['news', 'uploadNewsImage'],
                         'allow' => true,
                         'roles' => ['administrador']
                     ],
@@ -55,12 +62,12 @@ class SiteController extends Controller
             'error' => [
                 'class' => 'yii\web\ErrorAction',
             ],
-            'uploadPhoto' => [
+            'uploadNewsImage' => [
                 'class' => 'budyaga\cropper\actions\UploadAction',
                 //TODO: ver cual es el link para la foto
                 //'uploadParameter' => 'nombre unico de la imagen con extension',
-                'url' => 'http://localhost/SistemasPage/common/uploads/photos',
-                'path' => '@common/uploads/photos',
+                'url' => 'http://localhost/SistemasPage/common/uploads/images/news',
+                'path' => '@common/uploads/images/news',
                 'width' => 700,
                 'height' => 300,
         ]
@@ -113,6 +120,8 @@ class SiteController extends Controller
     public function actionNews()
     {
         $model = new NewsForm();
+        $model->setScenario('insert');
+        $model->scenario='insert';
          if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
             return $this->render('index');
         } else {

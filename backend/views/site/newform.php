@@ -13,7 +13,7 @@
     <?= $form->field($model, 'link') -> textInput(); ?>
     <?= $form->field($model, 'imagen')->widget(Widget::className(), [
         //TODO: encontrar la forma de que nunca se repitan los nombres de las imágenes
-        'uploadUrl' => Url::toRoute('/site/uploadPhoto'),
+        'uploadUrl' => Url::toRoute('/site/uploadNewsImage'),
         'width' => 236,
         'height' => 234,
         'cropAreaWidth' => 500,
