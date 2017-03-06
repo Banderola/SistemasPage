@@ -156,8 +156,7 @@ $this->title = 'Home';
                                         <div class="col-md-12">
                                             <div class="text-content-wrapper">
                                                 <div class="text-content">
-                                                    <h1 class="title1"><?= $slide_1->Titulo ?><br>
-                                                    <?= $slide_1->Titulo2 ?></h1>
+                                                    <h1 class="title1"><?= $slide_1->Titulo ?></h1>
                                                     <p class="sub-title hidden-sm hidden-xs"> <?= $slide_1->Descripcion ?></p>
                                                     <div class="banner-readmore">
                                                         <a class="button-default bg-blue" href="#">View Courses</a>                 
@@ -328,7 +327,7 @@ $this->title = 'Home';
                 </div>
                 <!--End of Course Area-->
                 <!--Fun Factor Area Start-->
-                <div class="fun-factor-area">
+                <div class="fun-factor-area" style="background-image: url('img/banner/<?=$inicio->imagenCifras?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">

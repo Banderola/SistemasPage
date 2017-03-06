@@ -55,15 +55,14 @@ $enlaces = $this->params['model_enlaces']
                                                 <?php
                                                 if (Yii::$app->user->isGuest) {
                                                     echo '<li>'.Html::a('Login', ['site/login']).'</li>'.
-                                                    '<li>'.Html::a('Register', ['site/signup']).'</li>
-                                                    <li><a href="#">Blog</a></li>';
+                                                    '<li>'.Html::a('Register', ['site/signup']).'</li>';
                                                     
                                                    
                                                     
                                                 }
                                                 else{
-                                                    echo '<li><a href="#">My Account</a></li><li>'.Html::a('Logout', ['site/logout']).'</li>
-                                                    <li><a href="#">Blog</a></li>';
+                                                    echo '<li><a href="#">My Account</a></li><li>'.Html::a('Logout', ['site/logout']).'</li>';
+                                                   
                                                     
                                                 }
                                                 

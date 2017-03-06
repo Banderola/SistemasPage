@@ -12,7 +12,6 @@ use Yii;
  * @property string $Descripcion
  * @property string $Imagen
  * @property integer $user_id
- *
  * @property User $user
  */
 class Slide extends \yii\db\ActiveRecord

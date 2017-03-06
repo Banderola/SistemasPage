@@ -42,7 +42,7 @@ $this->title = 'About';
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="about-text-container">
-                                    <p><span><?= $nosotros->titulo ?></span> <?= $nosotros->descripcion ?></p>
+                                    <p><?= $nosotros->descripcion ?></p>
                                     <div class="about-us">
                                         <?php foreach($incisos as $inciso): ?>
                                             <span><?= $inciso->descripcion ?></span>
@@ -82,7 +82,7 @@ $this->title = 'About';
                                     <div class="skill-bar-item">
                                         <span><?= $experiencia->descripcion ?></span>
                                         <div class="progress">
-                                            <div class="progress-bar wow fadeInLeft" data-progress="80%" style="width: 80%;" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                                            <div class="progress-bar wow fadeInLeft" data-progress="<?= $experiencia->valor ?>%" style="width: <?= $experiencia->valor ?>%;" data-wow-duration="1.5s" data-wow-delay="1.2s">
                                                 <span class="text-top"><?= $experiencia->valor ?></span>
                                             </div>
                                         </div>
@@ -120,7 +120,7 @@ $this->title = 'About';
                                     <div class="skill-bar-item">
                                         <span><?= $experiencia->descripcion ?></span>
                                         <div class="progress">
-                                            <div class="progress-bar wow fadeInLeft" data-progress="75%" style="width: 75%;" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                                            <div class="progress-bar wow fadeInLeft" data-progress="<?= $experiencia->valor ?>%" style="width: <?= $experiencia->valor ?>%;" data-wow-duration="1.5s" data-wow-delay="1.2s">
                                                 <span class="text-top"><?= $experiencia->valor ?></span>
                                             </div>
                                         </div>

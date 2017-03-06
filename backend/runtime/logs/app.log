@@ -596,3 +596,75 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1484777346.042
     'REQUEST_TIME' => 1484777346
 ]
+2017-01-29 22:36:09 [::1][1][k1lkqbtc3p03i2do9hc0s3vv67][error][Error] Error: Class 'backend\controllers\NewsForm' not found in C:\xampp\htdocs\SistemasPage\backend\controllers\SiteController.php:115
+Stack trace:
+#0 [internal function]: backend\controllers\SiteController->actionNews()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('news', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/news', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-01-29 22:36:09 [::1][1][k1lkqbtc3p03i2do9hc0s3vv67][info][application] $_GET = [
+    'r' => 'site/news'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'icgq6h1lnepallfek21tpksap1'
+    '_csrf-frontend' => 'ae8ecf76f64d9b072d0fb10237dedfbf83d8394b444a1ef98f65e8cedadb4f31a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"_So2fR8xe-ZgQ6p8ViDLVsGQ_V1qi75W\";}'
+    'advanced-backend' => 'k1lkqbtc3p03i2do9hc0s3vv67'
+    '_csrf-backend' => 'c3b60433d5de9c001fd112dadd62154e0fd3959fc74af5345aa20c4af916f23da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"e6y8xxxYuOMFEGxQ3bVfsOjwQCAgqvNg\";}'
+    '_identity-backend' => '21b9e331db8b29510167c9dc89504bed2ef9812291619882466d566d44cadbd1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"ndpCxrUDBKKBI8ZRmg0hJ-QQ0VZZ23hM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/SistemasPage/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=icgq6h1lnepallfek21tpksap1; _csrf-frontend=ae8ecf76f64d9b072d0fb10237dedfbf83d8394b444a1ef98f65e8cedadb4f31a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22_So2fR8xe-ZgQ6p8ViDLVsGQ_V1qi75W%22%3B%7D; advanced-backend=k1lkqbtc3p03i2do9hc0s3vv67; _csrf-backend=c3b60433d5de9c001fd112dadd62154e0fd3959fc74af5345aa20c4af916f23da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22e6y8xxxYuOMFEGxQ3bVfsOjwQCAgqvNg%22%3B%7D; _identity-backend=21b9e331db8b29510167c9dc89504bed2ef9812291619882466d566d44cadbd1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ndpCxrUDBKKBI8ZRmg0hJ-QQ0VZZ23hM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '51316'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fnews'
+    'REQUEST_URI' => '/SistemasPage/backend/web/index.php?r=site%2Fnews'
+    'SCRIPT_NAME' => '/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485725769.333
+    'REQUEST_TIME' => 1485725769
+]
