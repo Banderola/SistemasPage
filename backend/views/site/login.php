@@ -5,31 +5,43 @@
 /* @var $model \common\models\LoginForm */
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'Login';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Inicio de sesión';
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
+    
+            <?php $form = ActiveForm::begin(['id' => 'login-form','options' => ['class' => 'sign-box'],]) ?>
+                    <div class="sign-avatar">
+                        <?php echo Html::img('@web/img/avatar-sign.png') ?>
+                    </div>
+                    <header class="sign-title">Inicio Sesión</header>
 
-    <p>Please fill out the following fields to login:</p>
-
-    <div class="row">
-        <div class="col-lg-5">
-            <?php $form = ActiveForm::begin(['id' => 'login-form']); ?>
-
-                <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
-
-                <?= $form->field($model, 'password')->passwordInput() ?>
-
-                <?= $form->field($model, 'rememberMe')->checkbox() ?>
+                    <div class="form-group">
+                        <?= $form->field($model, 'username')->textInput(['placeholder' => $model->getAttributeLabel('username'),'class' => 'form-control'])->label(false) ?>
+                    </div>
+                    <div class="form-group">
+                        
+                        <?= $form->field($model, 'password')->passwordInput(['placeholder' => $model->getAttributeLabel('password'),'class' => 'form-control'])->label(false) ?>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox float-left">
+                            <?= $form->field($model, 'rememberMe')->checkbox([
+            'template' => "<div class=\"col-lg-offset-1 col-lg-1\">{input} {label}</div>",
+        ]); ?>
+                        </div>
+                        <div class="float-right reset">
+                            <?= Html::a('Reiniciar Contraseña', ['site/request-password-reset']) ?>
+                        </div>
+                    </div>
 
                 <div class="form-group">
-                    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                    <?= Html::submitButton('Inicio de Sesión', ['class' => 'btn btn-rounded', 'name' => 'login-button']) ?>
                 </div>
+                
 
             <?php ActiveForm::end(); ?>
-        </div>
-    </div>
+        
 </div>

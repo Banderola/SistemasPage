@@ -6,13 +6,13 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use backend\models\LoginForm;
-use backend\models\NewsForm;
 
 /**
  * Site controller
  */
 class SiteController extends Controller
 {
+    public $layout = 'login';
     /**
      * @inheritdoc
      */
@@ -25,11 +25,6 @@ class SiteController extends Controller
                     [
                         'actions' => ['login', 'error'],
                         'allow' => true,
-                    ],
-                    [
-                        'actions' => ['news', 'uploadPhoto'],
-                        'allow' => true,
-                        'roles' => ['administrador']
                     ],
                     [
                         'actions' => ['logout', 'index'],
@@ -75,7 +70,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        return $this->actionLogin();
     }
 
     /**
@@ -85,13 +80,10 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-
+     
         $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+        if ($model->load(Yii::$app->request->post()) && $model->login()|| !Yii::$app->user->isGuest) {
+            return $this->redirect(Yii::$app->homeUrl.'?r=/admin/index');
         } else {
             return $this->render('login', [
                 'model' => $model,
@@ -111,13 +103,5 @@ class SiteController extends Controller
         return $this->goHome();
     }
     
-    public function actionNews()
-    {
-        $model = new NewsForm();
-         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
-            return $this->render('index');
-        } else {
-            return $this->render('newform', ['model' => $model]);
-        }
-    }
+    
 }
