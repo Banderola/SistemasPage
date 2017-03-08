@@ -14,9 +14,12 @@ class NewsForm extends Model
     
     public function rules()
     {
-        return [
-            [['titulo','descripcion','link'],'required'],
-        ];
+        return array(
+            array('titulo', 'required'),
+            array('descripcion', 'required'),
+            array('link', 'required'),
+            array('imagen','safe','on'=>'insert'),
+    );
     }
     
     public function addNew(){
@@ -25,10 +28,17 @@ class NewsForm extends Model
             $noticia->titulo=$this->titulo;
             $noticia->descripcion=$this->descripcion;
             $noticia->link=$this->link;
-            $noticia->imagen=$this->imagen;
+            $noticia->imagen=$this->getNombre();
             $noticia->user_id=Yii::$app->getUser()->getId();
             $noticia->visitas=0;
             return $noticia->save();
         }
+        else{
+        }
+    }
+    
+    public function getNombre(){
+        $array=explode('/',$this->imagen);
+        return $array[sizeof($array)-1];
     }
 }

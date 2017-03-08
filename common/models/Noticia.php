@@ -27,7 +27,6 @@ class Noticia extends \yii\db\ActiveRecord
     {
         return 'noticia';
     }
-
     /**
      * @inheritdoc
      */
@@ -36,12 +35,11 @@ class Noticia extends \yii\db\ActiveRecord
         return [
             [['visitas', 'user_id'], 'integer'],
             [['user_id'], 'required'],
-            [['titulo', 'imagen'], 'string', 'max' => 45],
+            [['titulo', 'imagen'], 'string', 'max' => 255],
             [['descripcion', 'link'], 'string', 'max' => 255],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
-
     /**
      * @inheritdoc
      */
@@ -57,7 +55,6 @@ class Noticia extends \yii\db\ActiveRecord
             'link' => 'Link',
         ];
     }
-
     /**
      * @return \yii\db\ActiveQuery
      */
@@ -65,7 +62,6 @@ class Noticia extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Comentarionoticia::className(), ['noticia_idnoticia' => 'idnoticia']);
     }
-
     /**
      * @return \yii\db\ActiveQuery
      */
