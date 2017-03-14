@@ -235,36 +235,41 @@ DashboardAsset::register($this);
             <li class="purple">
                 <span>
                     <i class="fa fa-file-text"></i>
-                    <span class="lbl">Facturacción</span>
+                    <span class="lbl">Especialidades</span>
                 </span>
                 
             </li>
             <li class="green">
                 <a href="mail.html">
                     <i class="font-icon font-icon-wallet"></i>
-                    <span class="lbl">Liquidaciones</span>
+                    <span class="lbl">Proyectos</span>
                 </a>
             </li>
             <li class="red">
                 <a href="mail.html">
                     <i class="font-icon font-icon-case-2"></i>
-                    <span class="lbl">Seguridad Social</span>
+                    <span class="lbl">Eventos</span>
                 </a>
             </li>
             <li class="gold with-sub">
                 <span>
                     <i class="font-icon font-icon-user"></i>
-                    <span class="lbl">Socios</span>
+                    <span class="lbl">Portadas</span>
                 </span>
                 <ul>
-                    <li><a href="ui-form.html"><span class="lbl">Listado</span></a></li>
-                    <li><a href="ui-buttons.html"><span class="lbl">Nuevo</span></a></li>
+                    <li><a href="ui-form.html"><span class="lbl">Inicio</span></a></li>
+                    <li><a href="ui-buttons.html"><span class="lbl">Nosotros</span></a></li>
+                    <li><a href="ui-buttons.html"><span class="lbl">Proyetos</span></a></li>
+                    <li><a href="ui-buttons.html"><span class="lbl">Especialidades</span></a></li>
+                    <li><a href="ui-buttons.html"><span class="lbl">Contacto</span></a></li>
+                    <li><a href="ui-buttons.html"><span class="lbl">Eventos</span></a></li>
+                    <li><a href="ui-buttons.html"><span class="lbl">Noticias</span></a></li>
                 </ul>
             </li>
             <li class="blue-sky with-sub">
                 <span>
                     <i class="font-icon font-icon-contacts"></i>
-                    <span class="lbl">Contactos</span>
+                    <span class="lbl">Nosotros</span>
                 </span>
                 <ul>
                     <li><a href="ui-form.html"><span class="lbl">Listado</span></a></li>
@@ -274,20 +279,14 @@ DashboardAsset::register($this);
             <li class="aquamarine">
                 <a href="tables.html">
                     <span class="fa fa-pencil-square-o"></span>
-                    <span class="lbl">Tareas</span>
+                    <span class="lbl">Contacto</span>
                 </a>
             </li>
-            <li class="gold with-sub">
-                 <span>
-                    <i class="fa fa-folder-open"></i>
-                    <span class="lbl">Catálogos</span>
-                 </span>
-                 <ul>
-                    <li><a href="ui-form.html"><span class="lbl">Profeciones</span></a></li>
-                    <li><a href="ui-buttons.html"><span class="lbl">Estado Socios</span></a></li>
-                    <li><a href="ui-buttons.html"><span class="lbl">Provincia</span></a></li>
-                    <li><a href="ui-buttons.html"><span class="lbl">Municipio</span></a></li>
-                </ul>
+           <li class="purple">
+                <a href="tables.html">
+                    <span class="glyphicon glyphicon-tasks"></span>
+                    <span class="lbl">Maestros</span>
+                </a>
             </li>
             <li class="red">
                 <a href="tables.html">
