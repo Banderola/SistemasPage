@@ -53,17 +53,9 @@ class Paginanosotros extends \yii\db\ActiveRecord
             'imagen' => 'Imagen',
             'user_id' => 'User ID',
             'titulo' => 'Titulo',
-            'descripcion2' => 'Descripcion2',
         ];
     }
 
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getIncisonosotros()
-    {
-        return $this->hasMany(Incisonosotros::className(), ['PaginaNosotros_idPaginaNosotros' => 'idPaginaNosotros']);
-    }
 
     /**
      * @return \yii\db\ActiveQuery

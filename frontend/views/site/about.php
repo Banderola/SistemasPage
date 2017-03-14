@@ -42,14 +42,7 @@ $this->title = 'About';
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="about-text-container">
-                                    <p><?= $nosotros->descripcion ?></p>
-                                    <div class="about-us">
-                                        <?php foreach($incisos as $inciso): ?>
-                                            <span><?= $inciso->descripcion ?></span>
-                                        <?php endforeach; ?>
-                                        
-                                    </div>    
-                                    <p><?= $nosotros->descripcion2 ?></p>
+                                    <?= $nosotros->descripcion ?>
                                 </div>
                             </div>
                             <div class="col-md-6">

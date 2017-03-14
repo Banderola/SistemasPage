@@ -1872,3 +1872,380 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1489009025.035
     'REQUEST_TIME' => 1489009025
 ]
+2017-03-08 22:50:19 [::1][2][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'cropper' does not exist: C:\xampp\htdocs\SistemasPage\vendor/budyaga/yii2-cropper/messages/es/cropper.php
+    in C:\xampp\htdocs\SistemasPage\vendor\budyaga\yii2-cropper\Widget.php:76
+    in C:\xampp\htdocs\SistemasPage\vendor\budyaga\yii2-cropper\Widget.php:51
+    in C:\xampp\htdocs\SistemasPage\backend\views\admin\newform.php:23
+2017-03-08 22:50:19 [::1][2][-][info][application] $_GET = [
+    'r' => '/admin/news'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'tdh0g3vjoofu6u5r1vfd3v4fb1'
+    '_csrf-backend' => '2152088b5c91fb25fabc2d4842c1a9c83b50b3834444fce127d7bdb7e88fa6f2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"HWsATAUxW44uUr7YvW9YpvmMwxA95AtI\";}'
+    'advanced-frontend' => 'hd5rvdsmr3ut0q546tbp5bc211'
+    '_csrf-frontend' => 'be7c156f9ed4d52648de709a9069268edabb6c2f5337ea4c5ffebb8a20c7816da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nXYHU7p8Zcp3zAQYM2zlJQPwbG86JaIY\";}'
+    '_identity-backend' => '42defb1098db7ac0d51e3790f4924f62f38614f266a4d17de7987ec0bf846afba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"yPtQjr6V7MErlI5Ln6UQ-sPBjNW4cMNB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/SistemasPage/backend/web/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-backend=tdh0g3vjoofu6u5r1vfd3v4fb1; _csrf-backend=2152088b5c91fb25fabc2d4842c1a9c83b50b3834444fce127d7bdb7e88fa6f2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22HWsATAUxW44uUr7YvW9YpvmMwxA95AtI%22%3B%7D; advanced-frontend=hd5rvdsmr3ut0q546tbp5bc211; _csrf-frontend=be7c156f9ed4d52648de709a9069268edabb6c2f5337ea4c5ffebb8a20c7816da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nXYHU7p8Zcp3zAQYM2zlJQPwbG86JaIY%22%3B%7D; _identity-backend=42defb1098db7ac0d51e3790f4924f62f38614f266a4d17de7987ec0bf846afba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22yPtQjr6V7MErlI5Ln6UQ-sPBjNW4cMNB%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '52087'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=/admin/news'
+    'REQUEST_URI' => '/SistemasPage/backend/web/index.php?r=/admin/news'
+    'SCRIPT_NAME' => '/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489009819.101
+    'REQUEST_TIME' => 1489009819
+]
+2017-03-08 22:50:48 [::1][2][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'cropper' does not exist: C:\xampp\htdocs\SistemasPage\vendor/budyaga/yii2-cropper/messages/es/cropper.php
+    in C:\xampp\htdocs\SistemasPage\vendor\budyaga\yii2-cropper\Widget.php:76
+    in C:\xampp\htdocs\SistemasPage\vendor\budyaga\yii2-cropper\Widget.php:51
+    in C:\xampp\htdocs\SistemasPage\backend\views\admin\newform.php:23
+2017-03-08 22:50:48 [::1][2][-][info][application] $_GET = [
+    'r' => '/admin/news'
+]
+
+$_POST = [
+    '_csrf-backend' => 'Sm1TVXl5Wi4COiAULTgPVh1ZZyAsC213PDpqDAkPN2M9FRJsTDguZw=='
+    'NewsForm' => [
+        'titulo' => ''
+        'descripcion' => ''
+        'link' => ''
+        'imagen' => ''
+    ]
+    'width' => '236'
+    'height' => '234'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'tdh0g3vjoofu6u5r1vfd3v4fb1'
+    '_csrf-backend' => '2152088b5c91fb25fabc2d4842c1a9c83b50b3834444fce127d7bdb7e88fa6f2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"HWsATAUxW44uUr7YvW9YpvmMwxA95AtI\";}'
+    'advanced-frontend' => 'hd5rvdsmr3ut0q546tbp5bc211'
+    '_csrf-frontend' => 'be7c156f9ed4d52648de709a9069268edabb6c2f5337ea4c5ffebb8a20c7816da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nXYHU7p8Zcp3zAQYM2zlJQPwbG86JaIY\";}'
+    '_identity-backend' => '42defb1098db7ac0d51e3790f4924f62f38614f266a4d17de7987ec0bf846afba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"yPtQjr6V7MErlI5Ln6UQ-sPBjNW4cMNB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/SistemasPage/backend/web/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/backend/web/index.php?r=/admin/news'
+    'HTTP_COOKIE' => 'advanced-backend=tdh0g3vjoofu6u5r1vfd3v4fb1; _csrf-backend=2152088b5c91fb25fabc2d4842c1a9c83b50b3834444fce127d7bdb7e88fa6f2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22HWsATAUxW44uUr7YvW9YpvmMwxA95AtI%22%3B%7D; advanced-frontend=hd5rvdsmr3ut0q546tbp5bc211; _csrf-frontend=be7c156f9ed4d52648de709a9069268edabb6c2f5337ea4c5ffebb8a20c7816da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nXYHU7p8Zcp3zAQYM2zlJQPwbG86JaIY%22%3B%7D; _identity-backend=42defb1098db7ac0d51e3790f4924f62f38614f266a4d17de7987ec0bf846afba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22yPtQjr6V7MErlI5Ln6UQ-sPBjNW4cMNB%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '186'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '52095'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=/admin/news'
+    'REQUEST_URI' => '/SistemasPage/backend/web/index.php?r=/admin/news'
+    'SCRIPT_NAME' => '/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489009848.036
+    'REQUEST_TIME' => 1489009848
+]
+2017-03-08 22:53:49 [::1][2][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'cropper' does not exist: C:\xampp\htdocs\SistemasPage\vendor/budyaga/yii2-cropper/messages/es/cropper.php
+    in C:\xampp\htdocs\SistemasPage\vendor\budyaga\yii2-cropper\Widget.php:76
+    in C:\xampp\htdocs\SistemasPage\vendor\budyaga\yii2-cropper\Widget.php:51
+    in C:\xampp\htdocs\SistemasPage\backend\views\admin\newform.php:23
+2017-03-08 22:53:49 [::1][2][-][info][application] $_GET = [
+    'r' => '/admin/news'
+]
+
+$_POST = [
+    '_csrf-backend' => 'Sm1TVXl5Wi4COiAULTgPVh1ZZyAsC213PDpqDAkPN2M9FRJsTDguZw=='
+    'NewsForm' => [
+        'titulo' => ''
+        'descripcion' => ''
+        'link' => ''
+        'imagen' => ''
+    ]
+    'width' => '236'
+    'height' => '234'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'tdh0g3vjoofu6u5r1vfd3v4fb1'
+    '_csrf-backend' => '2152088b5c91fb25fabc2d4842c1a9c83b50b3834444fce127d7bdb7e88fa6f2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"HWsATAUxW44uUr7YvW9YpvmMwxA95AtI\";}'
+    'advanced-frontend' => 'hd5rvdsmr3ut0q546tbp5bc211'
+    '_csrf-frontend' => 'be7c156f9ed4d52648de709a9069268edabb6c2f5337ea4c5ffebb8a20c7816da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nXYHU7p8Zcp3zAQYM2zlJQPwbG86JaIY\";}'
+    '_identity-backend' => '42defb1098db7ac0d51e3790f4924f62f38614f266a4d17de7987ec0bf846afba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"yPtQjr6V7MErlI5Ln6UQ-sPBjNW4cMNB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/SistemasPage/backend/web/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/backend/web/index.php?r=/admin/news'
+    'HTTP_COOKIE' => 'advanced-backend=tdh0g3vjoofu6u5r1vfd3v4fb1; _csrf-backend=2152088b5c91fb25fabc2d4842c1a9c83b50b3834444fce127d7bdb7e88fa6f2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22HWsATAUxW44uUr7YvW9YpvmMwxA95AtI%22%3B%7D; advanced-frontend=hd5rvdsmr3ut0q546tbp5bc211; _csrf-frontend=be7c156f9ed4d52648de709a9069268edabb6c2f5337ea4c5ffebb8a20c7816da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nXYHU7p8Zcp3zAQYM2zlJQPwbG86JaIY%22%3B%7D; _identity-backend=42defb1098db7ac0d51e3790f4924f62f38614f266a4d17de7987ec0bf846afba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22yPtQjr6V7MErlI5Ln6UQ-sPBjNW4cMNB%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '186'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '52112'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=/admin/news'
+    'REQUEST_URI' => '/SistemasPage/backend/web/index.php?r=/admin/news'
+    'SCRIPT_NAME' => '/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489010029.06
+    'REQUEST_TIME' => 1489010029
+]
+2017-03-08 22:53:56 [::1][2][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'cropper' does not exist: C:\xampp\htdocs\SistemasPage\vendor/budyaga/yii2-cropper/messages/es/cropper.php
+    in C:\xampp\htdocs\SistemasPage\vendor\budyaga\yii2-cropper\Widget.php:76
+    in C:\xampp\htdocs\SistemasPage\vendor\budyaga\yii2-cropper\Widget.php:51
+    in C:\xampp\htdocs\SistemasPage\backend\views\admin\newform.php:23
+2017-03-08 22:53:56 [::1][2][-][info][application] $_GET = [
+    'r' => '/admin/news'
+]
+
+$_POST = [
+    '_csrf-backend' => 'Sm1TVXl5Wi4COiAULTgPVh1ZZyAsC213PDpqDAkPN2M9FRJsTDguZw=='
+    'NewsForm' => [
+        'titulo' => ''
+        'descripcion' => ''
+        'link' => ''
+        'imagen' => ''
+    ]
+    'width' => '236'
+    'height' => '234'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'tdh0g3vjoofu6u5r1vfd3v4fb1'
+    '_csrf-backend' => '2152088b5c91fb25fabc2d4842c1a9c83b50b3834444fce127d7bdb7e88fa6f2a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"HWsATAUxW44uUr7YvW9YpvmMwxA95AtI\";}'
+    'advanced-frontend' => 'hd5rvdsmr3ut0q546tbp5bc211'
+    '_csrf-frontend' => 'be7c156f9ed4d52648de709a9069268edabb6c2f5337ea4c5ffebb8a20c7816da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"nXYHU7p8Zcp3zAQYM2zlJQPwbG86JaIY\";}'
+    '_identity-backend' => '42defb1098db7ac0d51e3790f4924f62f38614f266a4d17de7987ec0bf846afba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"yPtQjr6V7MErlI5Ln6UQ-sPBjNW4cMNB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/SistemasPage/backend/web/'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/backend/web/index.php?r=/admin/news'
+    'HTTP_COOKIE' => 'advanced-backend=tdh0g3vjoofu6u5r1vfd3v4fb1; _csrf-backend=2152088b5c91fb25fabc2d4842c1a9c83b50b3834444fce127d7bdb7e88fa6f2a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22HWsATAUxW44uUr7YvW9YpvmMwxA95AtI%22%3B%7D; advanced-frontend=hd5rvdsmr3ut0q546tbp5bc211; _csrf-frontend=be7c156f9ed4d52648de709a9069268edabb6c2f5337ea4c5ffebb8a20c7816da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22nXYHU7p8Zcp3zAQYM2zlJQPwbG86JaIY%22%3B%7D; _identity-backend=42defb1098db7ac0d51e3790f4924f62f38614f266a4d17de7987ec0bf846afba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22yPtQjr6V7MErlI5Ln6UQ-sPBjNW4cMNB%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '186'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '52120'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=/admin/news'
+    'REQUEST_URI' => '/SistemasPage/backend/web/index.php?r=/admin/news'
+    'SCRIPT_NAME' => '/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489010036.822
+    'REQUEST_TIME' => 1489010036
+]
+2017-03-12 00:10:26 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'cropper' does not exist: C:\xampp\htdocs\SistemasPage\vendor/budyaga/yii2-cropper/messages/es/cropper.php
+    in C:\xampp\htdocs\SistemasPage\vendor\budyaga\yii2-cropper\Widget.php:76
+    in C:\xampp\htdocs\SistemasPage\vendor\budyaga\yii2-cropper\Widget.php:51
+    in C:\xampp\htdocs\SistemasPage\backend\views\admin\newform.php:23
+2017-03-12 00:10:26 [::1][1][-][info][application] $_GET = [
+    'r' => '/admin/news'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'tiubu0eogeuuf5tq6ceafubkt5'
+    '_csrf-backend' => '2fd7a05fc5747e593df6ee97899848897278ec6e9b5963b3545f0b6809d003caa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"gCQEukgoiRqz4hw4J1g7y6p5TLPN5Vhm\";}'
+    'advanced-frontend' => 'vbciscq0hf1e17c9l9t5snrqp7'
+    '_csrf-frontend' => 'b489567a2c92a3c5ed86a57ce73082152f6d033f893526cf4f3aec3a1f175f19a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"mzdAik4gdrhrsnCNA1A1WzPshuF6tpTQ\";}'
+    '_identity-backend' => '489a403d6d0049d5cb256a8112943a970c88b3ae96d52fa59d58be0f8d74e7afa:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"pViFMS53S6Pa9Yfgc7PsDSYNxyNgKoLf\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/SistemasPage/backend/web/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-backend=tiubu0eogeuuf5tq6ceafubkt5; _csrf-backend=2fd7a05fc5747e593df6ee97899848897278ec6e9b5963b3545f0b6809d003caa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22gCQEukgoiRqz4hw4J1g7y6p5TLPN5Vhm%22%3B%7D; advanced-frontend=vbciscq0hf1e17c9l9t5snrqp7; _csrf-frontend=b489567a2c92a3c5ed86a57ce73082152f6d033f893526cf4f3aec3a1f175f19a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22mzdAik4gdrhrsnCNA1A1WzPshuF6tpTQ%22%3B%7D; _identity-backend=489a403d6d0049d5cb256a8112943a970c88b3ae96d52fa59d58be0f8d74e7afa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22pViFMS53S6Pa9Yfgc7PsDSYNxyNgKoLf%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '61888'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=/admin/news'
+    'REQUEST_URI' => '/SistemasPage/backend/web/index.php?r=/admin/news'
+    'SCRIPT_NAME' => '/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489273826.213
+    'REQUEST_TIME' => 1489273826
+]

@@ -24,6 +24,7 @@ use Yii;
  */
 class Especialidad extends \yii\db\ActiveRecord
 {
+    public $cnt;
     /**
      * @inheritdoc
      */

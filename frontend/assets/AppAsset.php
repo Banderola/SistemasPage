@@ -30,6 +30,7 @@ class AppAsset extends AssetBundle
         'css/color.css',
         'css/responsive.css',
         'https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800',
+        'css/starwars.css',
     ];
     public $js = [
         'js/vendor/modernizr-2.8.3.min.js',
@@ -52,6 +53,8 @@ class AppAsset extends AssetBundle
         'js/plugins.js',
         'js/styleswitch.js',
         'js/main.js',
+        'js/starwars.js',
+        
     ];
     public $depends = [
         'yii\web\YiiAsset',

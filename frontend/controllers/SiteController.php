@@ -18,10 +18,10 @@ use common\models\Paginaimagenportada;
 use common\models\Paginanosotros;
 use common\models\Experiencia;
 use common\models\Maestro;
-use common\models\Incisonosotros;
 use common\models\Paginacontacto;
 use common\models\Paginaenlaces;
-
+use common\models\Especialidad;
+use yii\data\Pagination;
 /**
  * Site controller
  */
@@ -159,18 +159,30 @@ class SiteController extends Controller
         $model_nosotros = Paginanosotros::findOne(1);
         $model_experiencia = Experiencia::find()->all();
         $model_maestro = Maestro::find()->all();
-        $model_inciso = Incisonosotros::find()->all();
         $model_portada = Paginaimagenportada::findOne(2);
         return $this->render('about', [
-                'nosotros' => $model_nosotros,'experiencias' => $model_experiencia,'maestros' => $model_maestro,'incisos' => $model_inciso,'portada' => $model_portada,
+                'nosotros' => $model_nosotros,'experiencias' => $model_experiencia,'maestros' => $model_maestro,'portada' => $model_portada,
             ]);
     }
 
      public function actionCourses()
     {
         $model_portada = Paginaimagenportada::findOne(3);
+        $model_especialidad = Especialidad::find()
+                ->select('especialidad.*, COUNT(idComentarioEspecialidad) AS cnt')
+                ->leftJoin('comentarioespecialidad','idEspecialidades=Especialidad_idEspecialidades')
+                ->groupBy('idEspecialidades')
+                ->with('comentarioespecialidads')
+                ->all();
+        $query = Especialidad::find();
+        $count = $query->count();
+        $pages = new Pagination(['totalCount' => $count]);
+        $models = $query->offset($pages->offset)
+        ->limit(2)
+        ->all();
+             
         return $this->render('courses', [
-                'portada' => $model_portada,
+                'portada' => $model_portada,'models' => $models,'pages' => $pages,
             ]);
     }
 

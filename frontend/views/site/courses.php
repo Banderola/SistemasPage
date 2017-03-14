@@ -5,10 +5,22 @@
 /* @var $model \frontend\models\ContactForm */
 
 use yii\helpers\Html;
+use yii\widgets\LinkPager;
 
 
 $this->title = 'Courses';
 
+?>
+<?php
+$script = <<< JS
+            $( document ).ready(function() {
+            $('.rate_row').starwarsjs({
+                stars : 5,
+                count : 1
+            });
+        });
+JS;
+$this->registerJs($script);
 ?>
 <div class="site-courses">
    
@@ -82,7 +94,43 @@ $this->title = 'Courses';
                 <div class="course-area section-padding course-page">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4 col-sm-6">
+                            <?php foreach($models as $model): ?>
+                                <div class="col-md-4 col-sm-6">
+                                <div class="single-item">
+                                    <div class="single-item-image overlay-effect">
+                                        <a href="courses-details.html"><img src="img/course/<?= $model->imagen ?>" alt=""></a>
+                                    </div>
+                                    <div class="single-item-text">
+                                        <h4><a href="courses-details.html"><?= $model->Titulo ?></a></h4>
+                                        <div class="single-item-text-info">
+                                       
+                                        </div>
+                                        <p><?= $model->Descripcion ?></p>
+                                        <div class="single-item-content">
+                                           <div class="single-item-comment-view">
+                                               <span><i class="zmdi zmdi-eye"></i><?= $model->Visitas ?></span>
+                                               <span><i class="zmdi zmdi-comments"></i><?= $model->cnt ?></span>
+                                           </div>
+                                            
+                                            
+                                            
+                                           <div class="single-item-rating">
+                                               <div class="rate_row"></div> <!-- Single Row -->
+<!--                                               <i class="zmdi zmdi-star"></i>
+                                               <i class="zmdi zmdi-star"></i>
+                                               <i class="zmdi zmdi-star"></i>
+                                               <i class="zmdi zmdi-star"></i>
+                                               <i class="zmdi zmdi-star-half"></i>-->
+                                           </div>
+                                        </div>   
+                                    </div>
+                                    <div class="button-bottom">
+                                        <a href="courses-details.html" class="button-default">Ver</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php endforeach; ?>
+<!--                            <div class="col-md-4 col-sm-6">
                                 <div class="single-item">
                                     <div class="single-item-image overlay-effect">
                                         <a href="courses-details.html"><img src="img/course/1.jpg" alt=""></a>
@@ -113,174 +161,20 @@ $this->title = 'Courses';
                                         <a href="courses-details.html" class="button-default">Learn Now</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="single-item">
-                                    <div class="single-item-image overlay-effect">
-                                        <a href="courses-details.html"><img src="img/course/2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-item-text">
-                                        <h4><a href="courses-details.html">Illustrator CC 2016</a></h4>
-                                        <div class="single-item-text-info">
-                                            <span>By: <span>Subas Das</span></span>
-                                            <span>Date: <span>20.5.15</span></span>
-                                        </div>
-                                        <p>There are many variations of sages of Lorem Ipsum available, but the mrity have suffered alteration in some orm, by injected humo
-        ur,There are many but the mri have suffered alteration in some </p>
-                                        <div class="single-item-content">
-                                           <div class="single-item-comment-view">
-                                               <span><i class="zmdi zmdi-eye"></i>59</span>
-                                               <span><i class="zmdi zmdi-comments"></i>19</span>
-                                           </div>
-                                           <div class="single-item-rating">
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star-half"></i>
-                                           </div>
-                                        </div>   
-                                    </div>
-                                    <div class="button-bottom">
-                                        <a href="courses-details.html" class="button-default">Learn Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="single-item">
-                                    <div class="single-item-image overlay-effect">
-                                        <a href="courses-details.html"><img src="img/course/3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-item-text">
-                                        <h4><a href="courses-details.html">Indesign CC 2016</a></h4>
-                                        <div class="single-item-text-info">
-                                            <span>By: <span>Momin Boss</span></span>
-                                            <span>Date: <span>20.5.15</span></span>
-                                        </div>
-                                        <p>There are many variations of sages of Lorem Ipsum available, but the mrity have suffered alteration in some orm, by injected humo
-        ur,There are many but the mri have suffered alteration in some </p>
-                                        <div class="single-item-content">
-                                           <div class="single-item-comment-view">
-                                               <span><i class="zmdi zmdi-eye"></i>59</span>
-                                               <span><i class="zmdi zmdi-comments"></i>19</span>
-                                           </div>
-                                           <div class="single-item-rating">
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star-half"></i>
-                                           </div>
-                                        </div>   
-                                    </div>
-                                    <div class="button-bottom">
-                                        <a href="courses-details.html" class="button-default">Learn Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="single-item">
-                                    <div class="single-item-image overlay-effect">
-                                        <a href="courses-details.html"><img src="img/course/4.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-item-text">
-                                        <h4><a href="courses-details.html">Photoshop CC 2016</a></h4>
-                                        <div class="single-item-text-info">
-                                            <span>By: <span>M S Nawaz</span></span>
-                                            <span>Date: <span>20.5.15</span></span>
-                                        </div>
-                                        <p>There are many variations of sages of Lorem Ipsum available, but the mrity have suffered alteration in some orm, by injected humo
-        ur,There are many but the mri have suffered alteration in some </p>
-                                        <div class="single-item-content">
-                                           <div class="single-item-comment-view">
-                                               <span><i class="zmdi zmdi-eye"></i>59</span>
-                                               <span><i class="zmdi zmdi-comments"></i>19</span>
-                                           </div>
-                                           <div class="single-item-rating">
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star-half"></i>
-                                           </div>
-                                        </div>   
-                                    </div>
-                                    <div class="button-bottom">
-                                        <a href="courses-details.html" class="button-default">Learn Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="single-item">
-                                    <div class="single-item-image overlay-effect">
-                                        <a href="courses-details.html"><img src="img/course/5.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-item-text">
-                                        <h4><a href="courses-details.html">Illustrator CC 2016</a></h4>
-                                        <div class="single-item-text-info">
-                                            <span>By: <span>Subas Das</span></span>
-                                            <span>Date: <span>20.5.15</span></span>
-                                        </div>
-                                        <p>There are many variations of sages of Lorem Ipsum available, but the mrity have suffered alteration in some orm, by injected humo
-        ur,There are many but the mri have suffered alteration in some </p>
-                                        <div class="single-item-content">
-                                           <div class="single-item-comment-view">
-                                               <span><i class="zmdi zmdi-eye"></i>59</span>
-                                               <span><i class="zmdi zmdi-comments"></i>19</span>
-                                           </div>
-                                           <div class="single-item-rating">
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star-half"></i>
-                                           </div>
-                                        </div>   
-                                    </div>
-                                    <div class="button-bottom">
-                                        <a href="courses-details.html" class="button-default">Learn Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="single-item">
-                                    <div class="single-item-image overlay-effect">
-                                        <a href="courses-details.html"><img src="img/course/6.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-item-text">
-                                        <h4><a href="courses-details.html">Indesign CC 2016</a></h4>
-                                        <div class="single-item-text-info">
-                                            <span>By: <span>Momin Boss</span></span>
-                                            <span>Date: <span>20.5.15</span></span>
-                                        </div>
-                                        <p>There are many variations of sages of Lorem Ipsum available, but the mrity have suffered alteration in some orm, by injected humo
-        ur,There are many but the mri have suffered alteration in some </p>
-                                        <div class="single-item-content">
-                                           <div class="single-item-comment-view">
-                                               <span><i class="zmdi zmdi-eye"></i>59</span>
-                                               <span><i class="zmdi zmdi-comments"></i>19</span>
-                                           </div>
-                                           <div class="single-item-rating">
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star-half"></i>
-                                           </div>
-                                        </div>   
-                                    </div>
-                                    <div class="button-bottom">
-                                        <a href="courses-details.html" class="button-default">Learn Now</a>
-                                    </div>
-                                </div>
-                            </div>
+                            </div>-->
+                            
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="pagination-content">
                                     <ul class="pagination">
-                                        <li><a href="#"><i class="zmdi zmdi-chevron-left"></i></a></li>
-                                        <li class="current"><a href="#"><i class="zmdi zmdi-chevron-right"></i></a></li>
+                                        <?php
+                                           echo LinkPager::widget([
+    'pagination' => $pages,
+]);                   
+                                        ?>
+<!--                                        <li><a href="#"><i class="zmdi zmdi-chevron-left"></i></a></li>
+                                        <li class="current"><a href="#"><i class="zmdi zmdi-chevron-right"></i></a></li>-->
                                     </ul>
                                 </div>
                             </div>
