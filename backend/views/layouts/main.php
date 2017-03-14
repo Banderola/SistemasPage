@@ -229,7 +229,7 @@ DashboardAsset::register($this);
             <li class="brown">
                 <span>
                     <i class="glyphicon glyphicon-tasks"></i>
-                    <span class="lbl">Informe General</span>
+                    <span class="lbl">Noticias</span>
                 </span>
             </li>
             <li class="purple">
