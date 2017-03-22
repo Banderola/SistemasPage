@@ -224,7 +224,7 @@ DashboardAsset::register($this);
                  <?= Html::a('<i class="font-icon font-icon-home"></i><span class="lbl">Inicio</span>', ['site/index'], ['class' => 'lbl']) ?>
             </li>
             <li class="brown">
-                <?= Html::a('<i class="glyphicon glyphicon-tasks"></i><span class="lbl">Noticias</span>', ['admin/news'], ['class' => 'lbl']) ?> 
+                <?= Html::a('<i class="glyphicon glyphicon-tasks"></i><span class="lbl">Noticias</span>', ['admin/newsmanager'], ['class' => 'lbl']) ?> 
             </li>
             <li class="purple">
                 <?= Html::a('<i class="fa fa-file-text"></i><span class="lbl">Especialidades</span>', ['site/index'], ['class' => 'lbl']) ?> 

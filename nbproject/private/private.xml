@@ -10,6 +10,9 @@
             <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/admin/newform.php</file>
             <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/frontend/views/layouts/main.php</file>
             <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/layouts/login.php</file>
+            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/models/LoginForm.php</file>
+            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/controllers/AdminController.php</file>
+            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/models/NewsForm.php</file>
         </group>
     </open-files>
 </project-private>
