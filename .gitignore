@@ -1,2 +1,5 @@
 *.data
 *.data
+*.data
+backend/runtime/debug/index.data
+*.log

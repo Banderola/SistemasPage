@@ -221,79 +221,47 @@ DashboardAsset::register($this);
     <nav class="side-menu">
         <ul class="side-menu-list">
             <li class="grey">
-                <span>
-                    <i class="font-icon font-icon-home"></i>
-                    <span class="lbl">Inicio</span>
-                
+                 <?= Html::a('<i class="font-icon font-icon-home"></i><span class="lbl">Inicio</span>', ['site/index'], ['class' => 'lbl']) ?>
             </li>
             <li class="brown">
-                <span>
-                    <i class="glyphicon glyphicon-tasks"></i>
-                    <span class="lbl">Noticias</span>
-                </span>
+                <?= Html::a('<i class="glyphicon glyphicon-tasks"></i><span class="lbl">Noticias</span>', ['admin/news'], ['class' => 'lbl']) ?> 
             </li>
             <li class="purple">
-                <span>
-                    <i class="fa fa-file-text"></i>
-                    <span class="lbl">Facturacción</span>
-                </span>
-                
+                <?= Html::a('<i class="fa fa-file-text"></i><span class="lbl">Especialidades</span>', ['site/index'], ['class' => 'lbl']) ?> 
             </li>
             <li class="green">
-                <a href="mail.html">
-                    <i class="font-icon font-icon-wallet"></i>
-                    <span class="lbl">Liquidaciones</span>
-                </a>
+                <?= Html::a('<i class="font-icon font-icon-wallet"></i><span class="lbl">Proyectos</span>', ['site/index'], ['class' => 'lbl']) ?>                
             </li>
             <li class="red">
-                <a href="mail.html">
-                    <i class="font-icon font-icon-case-2"></i>
-                    <span class="lbl">Seguridad Social</span>
-                </a>
+                <?= Html::a('<i class="font-icon font-icon-case-2"></i><span class="lbl">Eventos</span>', ['site/index'], ['class' => 'lbl']) ?> 
             </li>
             <li class="gold with-sub">
                 <span>
                     <i class="font-icon font-icon-user"></i>
-                    <span class="lbl">Socios</span>
+                    <span class="lbl">Portadas</span>
                 </span>
                 <ul>
-                    <li><a href="ui-form.html"><span class="lbl">Listado</span></a></li>
-                    <li><a href="ui-buttons.html"><span class="lbl">Nuevo</span></a></li>
+                    <li><?= Html::a('<span class="lbl">Eventos</span>', ['site/index'], ['class' => 'lbl']) ?></li>
+                    <li><?= Html::a('<span class="lbl">Nosotros</span>', ['site/index'], ['class' => 'lbl']) ?></li>
+                    <li><?= Html::a('<span class="lbl">Proyectos</span>', ['site/index'], ['class' => 'lbl']) ?></li>
+                    <li><?= Html::a('<span class="lbl">Especialidades</span>', ['site/index'], ['class' => 'lbl']) ?></li>
+                    <li><?= Html::a('<span class="lbl">Contacto</span>', ['site/index'], ['class' => 'lbl']) ?></li>
+                    <li><?= Html::a('<span class="lbl">Eventos</span>', ['site/index'], ['class' => 'lbl']) ?></a></li>
+                    <li><?= Html::a('<span class="lbl">Noticias</span>', ['site/index'], ['class' => 'lbl']) ?></a></li>
                 </ul>
             </li>
-            <li class="blue-sky with-sub">
-                <span>
-                    <i class="font-icon font-icon-contacts"></i>
-                    <span class="lbl">Contactos</span>
-                </span>
-                <ul>
-                    <li><a href="ui-form.html"><span class="lbl">Listado</span></a></li>
-                    <li><a href="ui-buttons.html"><span class="lbl">Nuevo</span></a></li>
-                </ul>
+            
+            <li class="blue-sky">
+                <?= Html::a('<i class="font-icon font-icon-contacts"></i><span class="lbl">Nosotros</span>', ['site/index'], ['class' => 'lbl']) ?> 
             </li>
             <li class="aquamarine">
-                <a href="tables.html">
-                    <span class="fa fa-pencil-square-o"></span>
-                    <span class="lbl">Tareas</span>
-                </a>
+                <?= Html::a('<i class="fa fa-pencil-square-o"></i><span class="lbl">Contactos</span>', ['site/index'], ['class' => 'lbl']) ?> 
             </li>
-            <li class="gold with-sub">
-                 <span>
-                    <i class="fa fa-folder-open"></i>
-                    <span class="lbl">Catálogos</span>
-                 </span>
-                 <ul>
-                    <li><a href="ui-form.html"><span class="lbl">Profeciones</span></a></li>
-                    <li><a href="ui-buttons.html"><span class="lbl">Estado Socios</span></a></li>
-                    <li><a href="ui-buttons.html"><span class="lbl">Provincia</span></a></li>
-                    <li><a href="ui-buttons.html"><span class="lbl">Municipio</span></a></li>
-                </ul>
+           <li class="purple">
+               <?= Html::a('<i class="glyphicon glyphicon-tasks"></i><span class="lbl">Maestros</span>', ['site/index'], ['class' => 'lbl']) ?> 
             </li>
             <li class="red">
-                <a href="tables.html">
-                    <span class="font-icon font-icon-del"></span>
-                    <span class="lbl">Salir</span>
-                </a>
+                <?= Html::a('<i class="font-icon font-icon-del"></i><span class="lbl">Salir</span>', ['site/index'], ['class' => 'lbl']) ?> 
             </li>
             
     </nav><!--.side-menu-->
