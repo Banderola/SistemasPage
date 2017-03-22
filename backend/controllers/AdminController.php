@@ -31,7 +31,7 @@ class AdminController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['news', 'uploadPhoto'],
+                        'actions' => ['news', 'uploadPhoto','newsmanager'],
                         'allow' => true,
                         'roles' => ['administrar']
                     ],
@@ -79,6 +79,10 @@ class AdminController extends Controller
         
         return $this->render('index');
     }
+	
+	public function actionNewsmanager(){
+		return $this->render('newsmanager');
+	}
     
     
     public function actionNews()

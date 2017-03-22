@@ -53,8 +53,9 @@ class Noticia extends \yii\db\ActiveRecord
             'descripcion' => 'Descripcion',
             'imagen' => 'Imagen',
             'visitas' => 'Visitas',
-            'user_id' => 'User ID',
+            'user_id' => 'User_ID',
             'link' => 'Link',
+			'fecha' => 'Fecha'
         ];
     }
 
@@ -73,4 +74,5 @@ class Noticia extends \yii\db\ActiveRecord
     {
         return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
+	
 }
