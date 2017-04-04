@@ -55,7 +55,7 @@ class SiteController extends Controller
                 'class' => 'budyaga\cropper\actions\UploadAction',
                 //TODO: ver cual es el link para la foto
                 //'uploadParameter' => 'nombre unico de la imagen con extension',
-                'url' => 'http://localhost/SistemasPage/common/uploads/photos',
+                'url' => 'http://localhost/Servicio/SistemasPage/common/uploads/photos',
                 'path' => '@common/uploads/photos',
                 'width' => 700,
                 'height' => 300,

@@ -25,7 +25,7 @@ class DashboardAsset extends AssetBundle
         'css/site.css',
     ];
     public $js = [
-        'js/lib/jquery/jquery.min.js',
+        
         'js/lib/tether/tether.min.js',
         'js/lib/bootstrap/bootstrap.min.js',
         'js/plugins.js',

@@ -4,13 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/admin/error.php</file>
-            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/admin/index.php</file>
             <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/site/login.php</file>
+            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/admin/index.php</file>
+            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/admin/newsmanager.php</file>
             <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/layouts/main.php</file>
             <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/admin/newform.php</file>
             <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/frontend/views/layouts/main.php</file>
             <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/layouts/login.php</file>
             <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/models/LoginForm.php</file>
+            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/controllers/SiteController.php</file>
             <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/controllers/AdminController.php</file>
             <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/models/NewsForm.php</file>
         </group>
