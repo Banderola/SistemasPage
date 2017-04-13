@@ -18,6 +18,8 @@ use Yii;
  */
 class Comentarioproyecto extends \yii\db\ActiveRecord
 {
+    public $nombre;
+    public $imagen;
     /**
      * @inheritdoc
      */

@@ -17,6 +17,7 @@ use Yii;
  */
 class Ratingproyecto extends \yii\db\ActiveRecord
 {
+    public $cnt;
     /**
      * @inheritdoc
      */

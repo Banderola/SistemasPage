@@ -11,20 +11,21 @@ use Yii;
  * @property string $Titulo
  * @property string $Descripcion
  * @property integer $Visitas
- * @property integer $Comentarios
  * @property integer $user_id
  * @property integer $CategoriaEspecialidad_idCategoriaEspecialidad
- * @property integer $TipoEspecialidad_idTipoEspecialidad
+ * @property string $imagen
+ * @property integer $Maestro_idMaestro
  *
  * @property Comentarioespecialidad[] $comentarioespecialidads
  * @property Categoriaespecialidad $categoriaEspecialidadIdCategoriaEspecialidad
- * @property Tipoespecialidad $tipoEspecialidadIdTipoEspecialidad
+ * @property Maestro $maestroIdMaestro
  * @property User $user
  * @property Ratingespecialidad[] $ratingespecialidads
  */
 class Especialidad extends \yii\db\ActiveRecord
 {
     public $cnt;
+    public $rating;
     /**
      * @inheritdoc
      */
@@ -39,12 +40,12 @@ class Especialidad extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['Visitas', 'Comentarios', 'user_id', 'CategoriaEspecialidad_idCategoriaEspecialidad', 'TipoEspecialidad_idTipoEspecialidad'], 'integer'],
-            [['user_id', 'CategoriaEspecialidad_idCategoriaEspecialidad', 'TipoEspecialidad_idTipoEspecialidad'], 'required'],
-            [['Titulo'], 'string', 'max' => 45],
+            [['Visitas', 'user_id', 'CategoriaEspecialidad_idCategoriaEspecialidad', 'Maestro_idMaestro'], 'integer'],
+            [['user_id', 'CategoriaEspecialidad_idCategoriaEspecialidad', 'Maestro_idMaestro'], 'required'],
+            [['Titulo', 'imagen'], 'string', 'max' => 45],
             [['Descripcion'], 'string', 'max' => 255],
             [['CategoriaEspecialidad_idCategoriaEspecialidad'], 'exist', 'skipOnError' => true, 'targetClass' => Categoriaespecialidad::className(), 'targetAttribute' => ['CategoriaEspecialidad_idCategoriaEspecialidad' => 'idCategoriaEspecialidad']],
-            [['TipoEspecialidad_idTipoEspecialidad'], 'exist', 'skipOnError' => true, 'targetClass' => Tipoespecialidad::className(), 'targetAttribute' => ['TipoEspecialidad_idTipoEspecialidad' => 'idTipoEspecialidad']],
+            [['Maestro_idMaestro'], 'exist', 'skipOnError' => true, 'targetClass' => Maestro::className(), 'targetAttribute' => ['Maestro_idMaestro' => 'idMaestro']],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
@@ -59,10 +60,10 @@ class Especialidad extends \yii\db\ActiveRecord
             'Titulo' => 'Titulo',
             'Descripcion' => 'Descripcion',
             'Visitas' => 'Visitas',
-            'Comentarios' => 'Comentarios',
             'user_id' => 'User ID',
             'CategoriaEspecialidad_idCategoriaEspecialidad' => 'Categoria Especialidad Id Categoria Especialidad',
-            'TipoEspecialidad_idTipoEspecialidad' => 'Tipo Especialidad Id Tipo Especialidad',
+            'imagen' => 'Imagen',
+            'Maestro_idMaestro' => 'Maestro Id Maestro',
         ];
     }
 
@@ -71,7 +72,19 @@ class Especialidad extends \yii\db\ActiveRecord
      */
     public function getComentarioespecialidads()
     {
-        return $this->hasMany(Comentarioespecialidad::className(), ['Especialidad_idEspecialidades' => 'idEspecialidades']);
+        return $this->hasMany(Comentarioespecialidad::className(), ['Especialidad_idEspecialidades' => 'idEspecialidades'])
+                ->select('comentarioespecialidad.*, nombre, imagen')
+                ->leftJoin('user','comentarioespecialidad.user_id=user.id')
+                ->groupBy('idComentarioEspecialidad')
+                ->with('user')
+                ->orderBy('Fecha DESC');
+                
+    }
+    
+    public function getCuentacomentario()
+    {
+        return $this->hasMany(Comentarioespecialidad::className(), ['Especialidad_idEspecialidades' => 'idEspecialidades'])
+                ->count();
     }
 
     /**
@@ -85,9 +98,9 @@ class Especialidad extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getTipoEspecialidadIdTipoEspecialidad()
+    public function getMaestroIdMaestro()
     {
-        return $this->hasOne(Tipoespecialidad::className(), ['idTipoEspecialidad' => 'TipoEspecialidad_idTipoEspecialidad']);
+        return $this->hasOne(Maestro::className(), ['idMaestro' => 'Maestro_idMaestro']);
     }
 
     /**
@@ -104,5 +117,22 @@ class Especialidad extends \yii\db\ActiveRecord
     public function getRatingespecialidads()
     {
         return $this->hasMany(Ratingespecialidad::className(), ['Especialidad_idEspecialidades' => 'idEspecialidades']);
+    }
+    
+    public function getCountrating()
+    {
+        if(Yii::$app->user->isGuest){
+            return $this->hasOne(Ratingespecialidad::className(), ['Especialidad_idEspecialidades' => 'idEspecialidades'])
+                ->select('AVG(Rating) AS cnt')
+                ->where('user_id=0');
+        }
+        else{
+            return $this->hasOne(Ratingespecialidad::className(), ['Especialidad_idEspecialidades' => 'idEspecialidades'])
+                ->select('AVG(Rating) AS cnt')
+                ->where('user_id='.Yii::$app->user->getId());
+            
+        }
+        
+                
     }
 }

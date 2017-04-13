@@ -21,6 +21,8 @@ use Yii;
  */
 class Proyecto extends \yii\db\ActiveRecord
 {
+    public $cnt;
+    public $rating;
     /**
      * @inheritdoc
      */
@@ -66,7 +68,12 @@ class Proyecto extends \yii\db\ActiveRecord
      */
     public function getComentarioproyectos()
     {
-        return $this->hasMany(Comentarioproyecto::className(), ['Proyecto_idProyecto' => 'idProyecto']);
+        return $this->hasMany(Comentarioproyecto::className(), ['Proyecto_idProyecto' => 'idProyecto'])
+                ->select('comentarioproyecto.*, nombre, imagen')
+                ->leftJoin('user','comentarioproyecto.user_id=user.id')
+                ->groupBy('idComentarioProyecto')
+                ->with('user')
+                ->orderBy('Fecha DESC');
     }
 
     /**
@@ -83,5 +90,28 @@ class Proyecto extends \yii\db\ActiveRecord
     public function getRatingproyectos()
     {
         return $this->hasMany(Ratingproyecto::className(), ['Proyecto_idProyecto' => 'idProyecto']);
+    }
+    
+    public function getCountrating()
+    {
+        if(Yii::$app->user->isGuest){
+            return $this->hasOne(Ratingproyecto::className(), ['Proyecto_idProyecto' => 'idProyecto'])
+                ->select('AVG(Rating) AS cnt')
+                ->where('user_id=0');
+        }
+        else{
+            return $this->hasOne(Ratingproyecto::className(), ['Proyecto_idProyecto' => 'idProyecto'])
+                ->select('AVG(Rating) AS cnt')
+                ->where('user_id='.Yii::$app->user->getId());
+            
+        }
+        
+                
+    }
+    
+    public function getCuentacomentario()
+    {
+        return $this->hasMany(Comentarioproyecto::className(), ['Proyecto_idProyecto' => 'idProyecto'])
+                ->count();
     }
 }

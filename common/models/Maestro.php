@@ -18,6 +18,7 @@ use Yii;
  * @property string $linkInstagram
  * @property integer $user_id
  *
+ * @property Especialidad[] $especialidads
  * @property User $user
  */
 class Maestro extends \yii\db\ActiveRecord
@@ -62,6 +63,14 @@ class Maestro extends \yii\db\ActiveRecord
             'linkInstagram' => 'Link Instagram',
             'user_id' => 'User ID',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getEspecialidads()
+    {
+        return $this->hasMany(Especialidad::className(), ['Maestro_idMaestro' => 'idMaestro']);
     }
 
     /**

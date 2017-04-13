@@ -30,11 +30,10 @@ class AppAsset extends AssetBundle
         'css/color.css',
         'css/responsive.css',
         'https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800',
-        'css/starwars.css',
+        'css/starability-basic.min.css',
     ];
     public $js = [
         'js/vendor/modernizr-2.8.3.min.js',
-        'js/vendor/jquery-1.12.4.min.js',
         'lib/nivo-slider/js/jquery.nivo.slider.js',
         'lib/nivo-slider/home.js',
         'js/jquery.meanmenu.js',
@@ -53,7 +52,6 @@ class AppAsset extends AssetBundle
         'js/plugins.js',
         'js/styleswitch.js',
         'js/main.js',
-        'js/starwars.js',
         
     ];
     public $depends = [

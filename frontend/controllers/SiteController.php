@@ -11,7 +11,7 @@ use frontend\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
-use frontend\models\ContactForm;
+use frontend\models\CalificarForm;
 use common\models\Paginainicio;
 use common\models\Slide;
 use common\models\Paginaimagenportada;
@@ -21,7 +21,13 @@ use common\models\Maestro;
 use common\models\Paginacontacto;
 use common\models\Paginaenlaces;
 use common\models\Especialidad;
+use common\models\Proyecto;
+use common\models\Noticia;
+use common\models\Evento;
 use yii\data\Pagination;
+use frontend\models\ComentarForm;
+use yii\db\Expression;
+
 /**
  * Site controller
  */
@@ -165,34 +171,142 @@ class SiteController extends Controller
             ]);
     }
 
-     public function actionCourses()
+    public function actionCourses($id = 0)
     {
         $model_portada = Paginaimagenportada::findOne(3);
-        $model_especialidad = Especialidad::find()
-                ->select('especialidad.*, COUNT(idComentarioEspecialidad) AS cnt')
-                ->leftJoin('comentarioespecialidad','idEspecialidades=Especialidad_idEspecialidades')
-                ->groupBy('idEspecialidades')
-                ->with('comentarioespecialidads')
-                ->all();
-        $query = Especialidad::find();
-        $count = $query->count();
-        $pages = new Pagination(['totalCount' => $count]);
-        $models = $query->offset($pages->offset)
-        ->limit(2)
-        ->all();
-             
+        $query = $this->getEspecialidad();
+        if($id!=0){
+            $query->where('CategoriaEspecialidad_idCategoriaEspecialidad='.$id);
+            
+        }
+                
+        $pagination = new Pagination([
+            'defaultPageSize' => 5,
+            'totalCount' => $query->count(),
+        ]);
+
+        $especialidades = $query->orderBy('idEspecialidades')
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+        
         return $this->render('courses', [
-                'portada' => $model_portada,'models' => $models,'pages' => $pages,
+                'portada' => $model_portada,'especialidades' => $especialidades,
+            'pagination' => $pagination,
             ]);
     }
-
-      public function actionShopgrid()
+    
+    public function actionCoursesdetail($id)
+    {
+        
+        $model_portada = Paginaimagenportada::findOne(3);
+        $model_course = Especialidad::findOne($id);
+        $model_maestro = $model_course->maestroIdMaestro;
+        $model_rating = $model_course->countrating;
+        $model_comentarios = $model_course->cuentacomentario;
+        $model_comm = $model_course->comentarioespecialidads;
+        $modelAl = $this->getEspecialidad()
+                ->where(['and',['CategoriaEspecialidad_idCategoriaEspecialidad' => $model_course->categoriaEspecialidadIdCategoriaEspecialidad],['not',['idEspecialidades'=>$model_course->idEspecialidades]]])
+                ->orderBy(new Expression('rand()'))
+                ->limit(1)
+                ->all();
+                
+        $model_form = new CalificarForm();
+        $model_formco = new ComentarForm();
+        if (Yii::$app->user->isGuest) {
+            $model_course->Visitas++;
+            $model_course->update('Visitas');
+        }
+        
+        if (($model_form->load(Yii::$app->request->post()) && $model_form->addCalificacionespecialidad()) || ($model_formco->load(Yii::$app->request->post()) && $model_formco->addComentarioespecialidad())) {
+            $model_course->Visitas++;
+            $model_course->update('Visitas');
+            return $this->render('courses_details', [
+                'portada' => $model_portada,'course'=>$model_course
+                    ,'maestro'=>$model_maestro, 'rating'=>$model_rating
+                    ,'comentarios'=>$model_comentarios,'model'=>$model_form
+                    ,'comentariosesp' => $model_comm, 'comentarios'=>$model_comentarios
+                    ,'model'=>$model_form,'model2' => $model_formco,'courseals' => $modelAl,
+            ]);
+        }else{
+            
+            return $this->render('courses_details', [
+                'portada' => $model_portada,'course'=>$model_course
+                    ,'maestro'=>$model_maestro, 'rating'=>$model_rating
+                    ,'comentarios'=>$model_comentarios,'model'=>$model_form
+                    ,'comentariosesp' => $model_comm, 'comentarios'=>$model_comentarios
+                    ,'model'=>$model_form,'model2' => $model_formco,'courseals' => $modelAl,
+            ]);
+            
+        }
+        
+         
+    }
+    
+    public function actionShopgrid()
     {
         $model_portada = Paginaimagenportada::findOne(4);
+        $query = $this->getProyectos();
+            
+                
+        $pagination = new Pagination([
+            'defaultPageSize' => 4,
+            'totalCount' => $query->count(),
+        ]);
+
+        $proyectos = $query->orderBy('idProyecto')
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+        
         return $this->render('shopgrid', [
-                'portada' => $model_portada,
+                'portada' => $model_portada,'proyectos' => $proyectos,
+            'pagination' => $pagination,
             ]);
     }
+    
+    public function actionProyectosdetail($id)
+    {
+        
+        $model_portada = Paginaimagenportada::findOne(4);
+        $model_proyecto = Proyecto::findOne($id);
+        $model_rating = $model_proyecto->countrating;
+        $model_comentarios = $model_proyecto->cuentacomentario;
+        $model_comm = $model_proyecto->comentarioproyectos;
+        $modelAl = $this->getProyectos()
+                ->where(['not',['idProyecto'=>$model_proyecto->idProyecto]])
+                ->orderBy(new Expression('rand()'))
+                ->limit(1)
+                ->all();
+                
+        $model_form = new CalificarForm();
+        $model_formco = new ComentarForm();
+        
+        
+        if (($model_form->load(Yii::$app->request->post()) && $model_form->addCalificacionproyecto()) || ($model_formco->load(Yii::$app->request->post()) && $model_formco->addComentarioproyecto())) {
+           
+            return $this->render('proyectos_details', [
+                'portada' => $model_portada,'proyecto'=>$model_proyecto
+                    , 'rating'=>$model_rating
+                    ,'comentarios'=>$model_comentarios,'model'=>$model_form
+                    ,'comentariospro' => $model_comm, 'comentarios'=>$model_comentarios
+                    ,'model'=>$model_form,'model2' => $model_formco,'proyectosal' => $modelAl,
+            ]);
+        }else{
+            
+            return $this->render('proyectos_details', [
+                'portada' => $model_portada,'proyecto'=>$model_proyecto
+                    , 'rating'=>$model_rating
+                    ,'comentarios'=>$model_comentarios,'model'=>$model_form
+                    ,'comentariospro' => $model_comm, 'comentarios'=>$model_comentarios
+                    ,'model'=>$model_form,'model2' => $model_formco,'proyectosal' => $modelAl,
+            ]);
+            
+        }
+        
+         
+    }
+    
 
       public function actionLatestnews()
     {
@@ -278,5 +392,27 @@ class SiteController extends Controller
         return $this->render('resetPassword', [
             'model' => $model,
         ]);
+    }
+    
+    private function getEspecialidad()
+    {
+        
+        return Especialidad::find()
+                ->select('especialidad.*, COUNT(idComentarioEspecialidad) AS cnt, (SELECT AVG(Rating) FROM ratingespecialidad WHERE Especialidad_idEspecialidades=idEspecialidades) AS rating')
+                ->leftJoin('comentarioespecialidad','idEspecialidades=Especialidad_idEspecialidades')
+                ->groupBy('idEspecialidades')
+                ->with('comentarioespecialidads');
+                
+    }
+    
+    private function getProyectos()
+    {
+        
+        return Proyecto::find()
+                ->select('proyecto.*, COUNT(idProyecto) AS cnt, (SELECT AVG(Rating) FROM ratingproyecto WHERE Proyecto_idProyecto=idProyecto) AS rating')
+                ->leftJoin('comentarioproyecto','Proyecto_idProyecto=idProyecto')
+                ->groupBy('idProyecto')
+                ->with('comentarioproyectos');
+                
     }
 }
