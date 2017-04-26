@@ -7,6 +7,7 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use backend\models\Speciality;
 use backend\models\NewsForm;
 
 /**
@@ -31,13 +32,13 @@ class AdminController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['news', 'uploadPhoto','newsmanager'],
+                        'actions' => ['news', 'uploadPhoto','newsmanager','newspeciality','speciality'],
                         'allow' => true,
                         'roles' => ['administrar']
                     ],
                     
                     [
-                        'actions' => ['index','news'],
+                        'actions' => ['index','news','speciality'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -90,9 +91,12 @@ class AdminController extends Controller
     }
 	
 	public function actionNewsmanager(){
-		return $this->render('newsmanager');
+		return $this->render('specialitymanager');
 	}
     
+        public function actionSpecialitymanager(){
+		return $this->render('specialitymanager');
+	}
     
     public function actionNews()
     {
@@ -104,7 +108,14 @@ class AdminController extends Controller
         }
     }
     
-    
-
-   
+    public function actionSpeciality()
+    {
+        $model = new Speciality();
+         if ($model->load(Yii::$app->request->post()) && $model->addSpeciality()) {
+            return $this->render('index');
+        } else {
+            return $this->render('newspeciality', ['model' => $model]);
+        }
+    }
+      
 }

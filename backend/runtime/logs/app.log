@@ -7165,3 +7165,1043 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1491331739.798
     'REQUEST_TIME' => 1491331739
 ]
+2017-04-25 21:17:56 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/newspeciality' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('newspeciality', Array)
+#1 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/newspecial...', Array)
+#2 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-04-25 21:17:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/newspeciality'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '56t0gf7mr1cd49ue7kqg3r63m1'
+    '_csrf-backend' => '4e61430b9fb63fb2a48a353faf24377701022bde1f1a2ee8c54713274735257ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mmtbqXpxXX9ITW573kaoapx0mt-m6MYl\";}'
+    'advanced-frontend' => '259i81k4nealv7ll5fmgs6odg4'
+    '_csrf-frontend' => 'f0b686641a05f4b8d54f7ea7261d4f42e3452b97ec70194e487d627b66be3b1ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"XL6MIm3dqa4xVE0cEmzYQj9vXz5n8nZH\";}'
+    '_identity-backend' => 'f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewsmanager'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=56t0gf7mr1cd49ue7kqg3r63m1; _csrf-backend=4e61430b9fb63fb2a48a353faf24377701022bde1f1a2ee8c54713274735257ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mmtbqXpxXX9ITW573kaoapx0mt-m6MYl%22%3B%7D; advanced-frontend=259i81k4nealv7ll5fmgs6odg4; _csrf-frontend=f0b686641a05f4b8d54f7ea7261d4f42e3452b97ec70194e487d627b66be3b1ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22XL6MIm3dqa4xVE0cEmzYQj9vXz5n8nZH%22%3B%7D; _identity-backend=f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Marco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Marco\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Servicio/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '55801'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fnewspeciality'
+    'REQUEST_URI' => '/Servicio/SistemasPage/backend/web/index.php?r=site%2Fnewspeciality'
+    'SCRIPT_NAME' => '/Servicio/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/Servicio/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493147876.694
+    'REQUEST_TIME' => 1493147876
+]
+2017-04-25 21:18:22 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/newspeciality' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('newspeciality', Array)
+#1 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/newspecial...', Array)
+#2 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-04-25 21:18:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/newspeciality'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '56t0gf7mr1cd49ue7kqg3r63m1'
+    '_csrf-backend' => '4e61430b9fb63fb2a48a353faf24377701022bde1f1a2ee8c54713274735257ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mmtbqXpxXX9ITW573kaoapx0mt-m6MYl\";}'
+    'advanced-frontend' => '259i81k4nealv7ll5fmgs6odg4'
+    '_csrf-frontend' => 'f0b686641a05f4b8d54f7ea7261d4f42e3452b97ec70194e487d627b66be3b1ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"XL6MIm3dqa4xVE0cEmzYQj9vXz5n8nZH\";}'
+    '_identity-backend' => 'f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewsmanager'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=56t0gf7mr1cd49ue7kqg3r63m1; _csrf-backend=4e61430b9fb63fb2a48a353faf24377701022bde1f1a2ee8c54713274735257ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mmtbqXpxXX9ITW573kaoapx0mt-m6MYl%22%3B%7D; advanced-frontend=259i81k4nealv7ll5fmgs6odg4; _csrf-frontend=f0b686641a05f4b8d54f7ea7261d4f42e3452b97ec70194e487d627b66be3b1ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22XL6MIm3dqa4xVE0cEmzYQj9vXz5n8nZH%22%3B%7D; _identity-backend=f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Marco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Marco\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Servicio/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '55810'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fnewspeciality'
+    'REQUEST_URI' => '/Servicio/SistemasPage/backend/web/index.php?r=site%2Fnewspeciality'
+    'SCRIPT_NAME' => '/Servicio/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/Servicio/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493147902.023
+    'REQUEST_TIME' => 1493147902
+]
+2017-04-25 21:19:06 [::1][1][56t0gf7mr1cd49ue7kqg3r63m1][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'No tiene permitido ejecutar esta acción.' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('newspeciality', Array)
+#8 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin/newspecia...', Array)
+#9 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-04-25 21:19:05 [::1][1][56t0gf7mr1cd49ue7kqg3r63m1][info][application] $_GET = [
+    'r' => 'admin/newspeciality'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '56t0gf7mr1cd49ue7kqg3r63m1'
+    '_csrf-backend' => '4e61430b9fb63fb2a48a353faf24377701022bde1f1a2ee8c54713274735257ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mmtbqXpxXX9ITW573kaoapx0mt-m6MYl\";}'
+    'advanced-frontend' => '259i81k4nealv7ll5fmgs6odg4'
+    '_csrf-frontend' => 'f0b686641a05f4b8d54f7ea7261d4f42e3452b97ec70194e487d627b66be3b1ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"XL6MIm3dqa4xVE0cEmzYQj9vXz5n8nZH\";}'
+    '_identity-backend' => 'f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewsmanager'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=56t0gf7mr1cd49ue7kqg3r63m1; _csrf-backend=4e61430b9fb63fb2a48a353faf24377701022bde1f1a2ee8c54713274735257ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mmtbqXpxXX9ITW573kaoapx0mt-m6MYl%22%3B%7D; advanced-frontend=259i81k4nealv7ll5fmgs6odg4; _csrf-frontend=f0b686641a05f4b8d54f7ea7261d4f42e3452b97ec70194e487d627b66be3b1ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22XL6MIm3dqa4xVE0cEmzYQj9vXz5n8nZH%22%3B%7D; _identity-backend=f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Marco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Marco\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Servicio/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '55819'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fnewspeciality'
+    'REQUEST_URI' => '/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewspeciality'
+    'SCRIPT_NAME' => '/Servicio/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/Servicio/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493147945.959
+    'REQUEST_TIME' => 1493147945
+]
+2017-04-25 21:20:01 [::1][1][56t0gf7mr1cd49ue7kqg3r63m1][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'No tiene permitido ejecutar esta acción.' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('newspeciality', Array)
+#8 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin/newspecia...', Array)
+#9 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-04-25 21:20:01 [::1][1][56t0gf7mr1cd49ue7kqg3r63m1][info][application] $_GET = [
+    'r' => 'admin/newspeciality'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '56t0gf7mr1cd49ue7kqg3r63m1'
+    '_csrf-backend' => '4e61430b9fb63fb2a48a353faf24377701022bde1f1a2ee8c54713274735257ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mmtbqXpxXX9ITW573kaoapx0mt-m6MYl\";}'
+    'advanced-frontend' => '259i81k4nealv7ll5fmgs6odg4'
+    '_csrf-frontend' => 'f0b686641a05f4b8d54f7ea7261d4f42e3452b97ec70194e487d627b66be3b1ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"XL6MIm3dqa4xVE0cEmzYQj9vXz5n8nZH\";}'
+    '_identity-backend' => 'f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewsmanager'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=56t0gf7mr1cd49ue7kqg3r63m1; _csrf-backend=4e61430b9fb63fb2a48a353faf24377701022bde1f1a2ee8c54713274735257ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mmtbqXpxXX9ITW573kaoapx0mt-m6MYl%22%3B%7D; advanced-frontend=259i81k4nealv7ll5fmgs6odg4; _csrf-frontend=f0b686641a05f4b8d54f7ea7261d4f42e3452b97ec70194e487d627b66be3b1ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22XL6MIm3dqa4xVE0cEmzYQj9vXz5n8nZH%22%3B%7D; _identity-backend=f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Marco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Marco\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Servicio/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '55831'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fnewspeciality'
+    'REQUEST_URI' => '/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewspeciality'
+    'SCRIPT_NAME' => '/Servicio/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/Servicio/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493148001.623
+    'REQUEST_TIME' => 1493148001
+]
+2017-04-26 17:20:44 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'No tiene permitido ejecutar esta acción.' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('newspeciality', Array)
+#8 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin/newspecia...', Array)
+#9 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-04-26 17:20:43 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][info][application] $_GET = [
+    'r' => 'admin/newspeciality'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'bjrtq7aa2ncakrk1un1mbfe1o6'
+    '_csrf-backend' => 'cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Go78H51f1exBtxReABvbjp9f212QxyZ8\";}'
+    '_identity-backend' => 'f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewsmanager'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bjrtq7aa2ncakrk1un1mbfe1o6; _csrf-backend=cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Go78H51f1exBtxReABvbjp9f212QxyZ8%22%3B%7D; _identity-backend=f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Marco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Marco\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Servicio/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '59003'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fnewspeciality'
+    'REQUEST_URI' => '/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewspeciality'
+    'SCRIPT_NAME' => '/Servicio/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/Servicio/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493220043.582
+    'REQUEST_TIME' => 1493220043
+]
+2017-04-26 17:24:49 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'No tiene permitido ejecutar esta acción.' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('newspeciality', Array)
+#8 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin/newspecia...', Array)
+#9 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-04-26 17:24:49 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][info][application] $_GET = [
+    'r' => 'admin/newspeciality'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'bjrtq7aa2ncakrk1un1mbfe1o6'
+    '_csrf-backend' => 'cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Go78H51f1exBtxReABvbjp9f212QxyZ8\";}'
+    '_identity-backend' => 'f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewsmanager'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bjrtq7aa2ncakrk1un1mbfe1o6; _csrf-backend=cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Go78H51f1exBtxReABvbjp9f212QxyZ8%22%3B%7D; _identity-backend=f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Marco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Marco\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Servicio/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '59030'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fnewspeciality'
+    'REQUEST_URI' => '/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewspeciality'
+    'SCRIPT_NAME' => '/Servicio/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/Servicio/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493220289.706
+    'REQUEST_TIME' => 1493220289
+]
+2017-04-26 17:28:59 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in C:\xampp\htdocs\Servicio\SistemasPage\backend\views\admin\newspeciality.php:18
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\backend\views\admin\newspeciality.php(18): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\AdminController))
+#4 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('newspeciality', Array, Object(backend\controllers\AdminController))
+#5 C:\xampp\htdocs\Servicio\SistemasPage\backend\controllers\AdminController.php(97): yii\base\Controller->render('newspeciality')
+#6 [internal function]: backend\controllers\AdminController->actionNewspeciality()
+#7 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('newspeciality', Array)
+#10 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin/newspecia...', Array)
+#11 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-04-26 17:28:59 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][info][application] $_GET = [
+    'r' => 'admin/newspeciality'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'bjrtq7aa2ncakrk1un1mbfe1o6'
+    '_csrf-backend' => 'cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Go78H51f1exBtxReABvbjp9f212QxyZ8\";}'
+    '_identity-backend' => 'f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewsmanager'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bjrtq7aa2ncakrk1un1mbfe1o6; _csrf-backend=cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Go78H51f1exBtxReABvbjp9f212QxyZ8%22%3B%7D; _identity-backend=f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Marco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Marco\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Servicio/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '59048'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fnewspeciality'
+    'REQUEST_URI' => '/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewspeciality'
+    'SCRIPT_NAME' => '/Servicio/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/Servicio/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493220539.062
+    'REQUEST_TIME' => 1493220539
+]
+2017-04-26 17:37:23 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: admin/specialitymanager' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('specialitymanag...', Array)
+#1 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin/specialit...', Array)
+#2 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-04-26 17:37:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/specialitymanager'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'bjrtq7aa2ncakrk1un1mbfe1o6'
+    '_csrf-backend' => 'cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Go78H51f1exBtxReABvbjp9f212QxyZ8\";}'
+    '_identity-backend' => 'f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewsmanager'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bjrtq7aa2ncakrk1un1mbfe1o6; _csrf-backend=cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Go78H51f1exBtxReABvbjp9f212QxyZ8%22%3B%7D; _identity-backend=f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Marco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Marco\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Servicio/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '59108'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fspecialitymanager'
+    'REQUEST_URI' => '/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fspecialitymanager'
+    'SCRIPT_NAME' => '/Servicio/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/Servicio/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493221042.917
+    'REQUEST_TIME' => 1493221042
+]
+2017-04-26 17:37:46 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: admin/specialityManager' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('specialityManag...', Array)
+#1 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin/specialit...', Array)
+#2 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-04-26 17:37:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/specialityManager'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'bjrtq7aa2ncakrk1un1mbfe1o6'
+    '_csrf-backend' => 'cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Go78H51f1exBtxReABvbjp9f212QxyZ8\";}'
+    '_identity-backend' => 'f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Servicio/SistemasPage/backend/web/index.php?r=/admin/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bjrtq7aa2ncakrk1un1mbfe1o6; _csrf-backend=cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Go78H51f1exBtxReABvbjp9f212QxyZ8%22%3B%7D; _identity-backend=f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Marco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Marco\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Servicio/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '59112'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2FspecialityManager'
+    'REQUEST_URI' => '/Servicio/SistemasPage/backend/web/index.php?r=admin%2FspecialityManager'
+    'SCRIPT_NAME' => '/Servicio/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/Servicio/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493221065.926
+    'REQUEST_TIME' => 1493221065
+]
+2017-04-26 17:38:57 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'No tiene permitido ejecutar esta acción.' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('specialitymanag...', Array)
+#8 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin/specialit...', Array)
+#9 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-04-26 17:38:57 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][info][application] $_GET = [
+    'r' => 'admin/specialitymanager'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'bjrtq7aa2ncakrk1un1mbfe1o6'
+    '_csrf-backend' => 'cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Go78H51f1exBtxReABvbjp9f212QxyZ8\";}'
+    '_identity-backend' => 'f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Servicio/SistemasPage/backend/web/index.php?r=/admin/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bjrtq7aa2ncakrk1un1mbfe1o6; _csrf-backend=cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Go78H51f1exBtxReABvbjp9f212QxyZ8%22%3B%7D; _identity-backend=f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Marco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Marco\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Servicio/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '59120'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fspecialitymanager'
+    'REQUEST_URI' => '/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fspecialitymanager'
+    'SCRIPT_NAME' => '/Servicio/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/Servicio/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493221136.991
+    'REQUEST_TIME' => 1493221136
+]
+2017-04-26 17:49:21 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'No tiene permitido ejecutar esta acción.' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('specialitymanag...', Array)
+#8 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin/specialit...', Array)
+#9 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-04-26 17:49:21 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][info][application] $_GET = [
+    'r' => 'admin/specialitymanager'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'bjrtq7aa2ncakrk1un1mbfe1o6'
+    '_csrf-backend' => 'cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Go78H51f1exBtxReABvbjp9f212QxyZ8\";}'
+    '_identity-backend' => 'f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Servicio/SistemasPage/backend/web/index.php?r=/admin/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bjrtq7aa2ncakrk1un1mbfe1o6; _csrf-backend=cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Go78H51f1exBtxReABvbjp9f212QxyZ8%22%3B%7D; _identity-backend=f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Marco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Marco\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Servicio/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '59137'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fspecialitymanager'
+    'REQUEST_URI' => '/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fspecialitymanager'
+    'SCRIPT_NAME' => '/Servicio/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/Servicio/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493221761.196
+    'REQUEST_TIME' => 1493221761
+]
+2017-04-26 17:52:51 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'No tiene permitido ejecutar esta acción.' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('specialitymanag...', Array)
+#8 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin/specialit...', Array)
+#9 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-04-26 17:52:50 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][info][application] $_GET = [
+    'r' => 'admin/specialitymanager'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'bjrtq7aa2ncakrk1un1mbfe1o6'
+    '_csrf-backend' => 'cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Go78H51f1exBtxReABvbjp9f212QxyZ8\";}'
+    '_identity-backend' => 'f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewsmanager'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bjrtq7aa2ncakrk1un1mbfe1o6; _csrf-backend=cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Go78H51f1exBtxReABvbjp9f212QxyZ8%22%3B%7D; _identity-backend=f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Marco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Marco\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Servicio/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '59158'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fspecialitymanager'
+    'REQUEST_URI' => '/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fspecialitymanager'
+    'SCRIPT_NAME' => '/Servicio/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/Servicio/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493221970.884
+    'REQUEST_TIME' => 1493221970
+]
+2017-04-26 17:57:44 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'No tiene permitido ejecutar esta acción.' in C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('specialitymanag...', Array)
+#8 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin/specialit...', Array)
+#9 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-04-26 17:57:44 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][info][application] $_GET = [
+    'r' => 'admin/specialitymanager'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'bjrtq7aa2ncakrk1un1mbfe1o6'
+    '_csrf-backend' => 'cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Go78H51f1exBtxReABvbjp9f212QxyZ8\";}'
+    '_identity-backend' => 'f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewsmanager'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bjrtq7aa2ncakrk1un1mbfe1o6; _csrf-backend=cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Go78H51f1exBtxReABvbjp9f212QxyZ8%22%3B%7D; _identity-backend=f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Marco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Marco\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Servicio/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '59170'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fspecialitymanager'
+    'REQUEST_URI' => '/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fspecialitymanager'
+    'SCRIPT_NAME' => '/Servicio/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/Servicio/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493222264.69
+    'REQUEST_TIME' => 1493222264
+]
+2017-04-26 17:59:01 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: IdEspecialidades' in C:\xampp\htdocs\Servicio\SistemasPage\backend\views\admin\specialitymanager.php:40
+Stack trace:
+#0 C:\xampp\htdocs\Servicio\SistemasPage\backend\views\admin\specialitymanager.php(40): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 [internal function]: yii\base\View->{closure}(Array, 0, 0, Object(yii\grid\DataColumn))
+#2 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\grid\DataColumn.php(211): call_user_func(Object(Closure), Array, 0, 0, Object(yii\grid\DataColumn))
+#3 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\grid\DataColumn.php(225): yii\grid\DataColumn->getDataCellValue(Array, 0, 0)
+#4 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\DataColumn->renderDataCellContent(Array, 0, 0)
+#5 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell(Array, 0, 0)
+#6 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow(Array, 0, 0)
+#7 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#8 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#9 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{items}')
+#10 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#14 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Widget.php(102): yii\grid\GridView->run()
+#15 C:\xampp\htdocs\Servicio\SistemasPage\backend\views\admin\specialitymanager.php(44): yii\base\Widget::widget(Array)
+#16 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#18 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\AdminController))
+#19 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('specialitymanag...', Array, Object(backend\controllers\AdminController))
+#20 C:\xampp\htdocs\Servicio\SistemasPage\backend\controllers\AdminController.php(94): yii\base\Controller->render('specialitymanag...')
+#21 [internal function]: backend\controllers\AdminController->actionNewsmanager()
+#22 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#23 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#24 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('newsmanager', Array)
+#25 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('admin/newsmanag...', Array)
+#26 C:\xampp\htdocs\Servicio\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\xampp\htdocs\Servicio\SistemasPage\backend\web\index.php(17): yii\base\Application->run()
+#28 {main}
+2017-04-26 17:59:00 [::1][1][bjrtq7aa2ncakrk1un1mbfe1o6][info][application] $_GET = [
+    'r' => 'admin/newsmanager'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'bjrtq7aa2ncakrk1un1mbfe1o6'
+    '_csrf-backend' => 'cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Go78H51f1exBtxReABvbjp9f212QxyZ8\";}'
+    '_identity-backend' => 'f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/Servicio/SistemasPage/backend/web/index.php?r=/admin/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bjrtq7aa2ncakrk1un1mbfe1o6; _csrf-backend=cb786451c78921edcb1d6849b25e2cf50106bd211431b9c0f3886ea6eaf42c3ea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Go78H51f1exBtxReABvbjp9f212QxyZ8%22%3B%7D; _identity-backend=f1c540510ce607a4cfc83cb402c379010cca5f8944c6b375e97c82dcf8dc9a7da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22oMyF2j-mcA6fyP_E3xiq2FOOlMPFjSBB%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files (x86)\\Autodesk\\Backburner\\;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;%SystemRoot%\\system32;%SystemRoot%;%SystemRoot%\\System32\\Wbem;%SYSTEMROOT%\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Marco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Marco\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/Servicio/SistemasPage/backend/web/index.php'
+    'REMOTE_PORT' => '59181'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fnewsmanager'
+    'REQUEST_URI' => '/Servicio/SistemasPage/backend/web/index.php?r=admin%2Fnewsmanager'
+    'SCRIPT_NAME' => '/Servicio/SistemasPage/backend/web/index.php'
+    'PHP_SELF' => '/Servicio/SistemasPage/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493222340.706
+    'REQUEST_TIME' => 1493222340
+]
