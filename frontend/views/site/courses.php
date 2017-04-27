@@ -97,9 +97,8 @@ $this->title = 'Courses';
                                             
                                             
                                            <div class="single-item-rating">
-                                               <?php for ($i = 0;$i<$especialidad->rating;$i++): ?>
-                                                <i class="zmdi zmdi-star"></i>
-                                               <?php endfor; ?>
+                                               <div class="starability-result" data-rating="<?=(int)$especialidad->rating?>" aria-describedby="rated-element"></div>
+                                               
 
                                            </div>
                                         </div>   

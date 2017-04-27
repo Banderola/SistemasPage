@@ -12,6 +12,9 @@ use yii\widgets\Pjax;
 $script = <<< JS
 $(document).ready(function() {
     setInterval(function(){ $("#refreshButton").click(); }, 2000);
+     $(".introStar").click(function() {
+        this.form.submit();    
+     });
 });
 JS;
 $script2 = <<< JS
@@ -21,6 +24,9 @@ $(document).ready(function() {
   });
     $("#alertButton2").click(function() {
     $('#alertA').show("slow");    
+  });
+    $(".introStar").click(function() {
+    $('#alertB').show("slow");     
   });
 });
 JS;
@@ -93,7 +99,7 @@ if($model->rating==null){
                                                            <span><i class="zmdi zmdi-comments"></i><?= Html::encode($comentarios) ?></span>
                                                        </div>
                                                         
-                                                       <div class="single-item-rating">
+                                                      
 
    
     
@@ -103,35 +109,28 @@ if($model->rating==null){
    
 
     
-
+                                                    <div class="single-item-rating">
                                                            <?php Pjax::begin(); ?>
                                                            <?php $form = ActiveForm::begin(['options' => ['data-pjax' => '']]); ?>
                                                            
-                                                           <?= $form->field($model, 'rating')->radioList(['5' => '', '4' => '', '3' => '', '2' => '', '1' => ''],['class' => 'starability-basic','item' => function($index, $label, $name, $checked, $value) {
+                                                           <?= $form->field($model, 'rating')->radioList(['5' => '', '4' => '', '3' => '', '2' => '', '1' => ''],['class' => 'starability-checkmark', 'item' => function($index, $label, $name, $checked, $value) {
                                                                 $check1='';
                                     if($checked==1){
                                         $check1='checked="true"';
                                     }
-                                    $return = '<input type="radio" '.$check1.' name="' . $name . '" value="' . $value . '" id="rate'.(5-$index).'"/>';
+                                    $return = '<input type="radio" '.$check1.' class="introStar" name="' . $name . '" value="' . $value . '" id="rate'.(5-$index).'"/>';
                                     $return .= '<label for="rate'.(5-$index).'" title="">'.$label.'</label>';
+                                   
                                     
 
                                     return $return;
                                 }])->label(false);?>
                                                             <?= $form->field($model, 'idEspecialidad')->hiddenInput(['value'=>$course->idEspecialidades])->label(false); ?>
-                                                     
-                                                           
+                 
                                                             
                                          
                                                            
-                                                        <?php if (!Yii::$app->user->isGuest): ?>
-                                                           <?= Html::submitButton('Calificar', ['class' => 'btn btn-success']) ?>
-                                                           
-                                                        <?php else: ?>
-                                                           <?= Html::button('Calificar', ['class' => 'btn btn-success','id' => 'alertButton']) ?>
-                                                           
-                                                           
-                                                        <?php endif ?>
+                                                      
                                                               
                                                            <?php ActiveForm::end(); ?>
                                                             <?php Pjax::end(); ?>
@@ -140,7 +139,7 @@ if($model->rating==null){
                                                            <i class="zmdi zmdi-star"></i>
                                                            <i class="zmdi zmdi-star"></i>
                                                            <i class="zmdi zmdi-star-half"></i>-->
-                                                       </div>
+                                                    </div>  
                                                         
                                                         
                                                     </div> 

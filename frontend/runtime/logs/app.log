@@ -26035,3 +26035,545 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1492048661.852
     'REQUEST_TIME' => 1492048661
 ]
+2017-04-26 18:24:47 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Use of undefined constant i - assumed 'i' in C:\xampp\htdocs\SistemasPage\frontend\views\site\courses.php:119
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\views\site\courses.php(119): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', 'C:\\xampp\\htdocs...', 119, Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('courses', Array, Object(frontend\controllers\SiteController))
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(195): yii\base\Controller->render('courses', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionCourses(0)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('courses', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/courses', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-04-26 18:24:47 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/courses'
+]
+
+$_COOKIE = [
+    '_identity-frontend' => '6c52603f31194fa67e519ba8ddd2e6ea637997afda483df7e4cc3611f287214da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"ZNgQlGbG0a4PpZIdfjQNQO2V_U26za7D\",2592000]\";}'
+    'advanced-frontend' => 'fn3nk3ogep6kq57mr9s2bqk8a4'
+    '_csrf-frontend' => 'f2773a3261df43e777c2263ed26e1aa3d526c17c8bb5176ecb395a79c14664b5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"gB-RXl4YWH0pUnX_tIQl_nA_t2bfEKk4\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php?r=site%2Fcoursesdetail&id=1'
+    'HTTP_COOKIE' => '_identity-frontend=6c52603f31194fa67e519ba8ddd2e6ea637997afda483df7e4cc3611f287214da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ZNgQlGbG0a4PpZIdfjQNQO2V_U26za7D%22%2C2592000%5D%22%3B%7D; advanced-frontend=fn3nk3ogep6kq57mr9s2bqk8a4; _csrf-frontend=f2773a3261df43e777c2263ed26e1aa3d526c17c8bb5176ecb395a79c14664b5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22gB-RXl4YWH0pUnX_tIQl_nA_t2bfEKk4%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '52724'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcourses'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Fcourses'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493223887.302
+    'REQUEST_TIME' => 1493223887
+]
+2017-04-26 21:05:09 [::1][-][h17qqleaqhp1c87ob0at2kmsa4][error][ParseError] ParseError: syntax error, unexpected 'endforeach' (T_ENDFOREACH) in C:\xampp\htdocs\SistemasPage\frontend\views\site\courses_details.php:275
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('courses_details', Array, Object(frontend\controllers\SiteController))
+#3 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(238): yii\base\Controller->render('courses_details', Array)
+#4 [internal function]: frontend\controllers\SiteController->actionCoursesdetail('2')
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('coursesdetail', Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/coursesdet...', Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-04-26 21:05:09 [::1][-][h17qqleaqhp1c87ob0at2kmsa4][info][application] $_GET = [
+    'r' => 'site/coursesdetail'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'h17qqleaqhp1c87ob0at2kmsa4'
+    '_csrf-frontend' => 'f2773a3261df43e777c2263ed26e1aa3d526c17c8bb5176ecb395a79c14664b5a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"gB-RXl4YWH0pUnX_tIQl_nA_t2bfEKk4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php?r=site%2Fcourses'
+    'HTTP_COOKIE' => 'advanced-frontend=h17qqleaqhp1c87ob0at2kmsa4; _csrf-frontend=f2773a3261df43e777c2263ed26e1aa3d526c17c8bb5176ecb395a79c14664b5a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22gB-RXl4YWH0pUnX_tIQl_nA_t2bfEKk4%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '54117'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcoursesdetail&id=2'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Fcoursesdetail&id=2'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493233509.143
+    'REQUEST_TIME' => 1493233509
+]
+2017-04-26 22:35:24 [::1][2][cqat97ap6p4hii9dh0606ia166][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: alert in C:\xampp\htdocs\SistemasPage\frontend\views\site\courses_details.php:26
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\views\site\courses_details.php(26): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('courses_details', Array, Object(frontend\controllers\SiteController))
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(238): yii\base\Controller->render('courses_details', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionCoursesdetail('1')
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('coursesdetail', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/coursesdet...', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-04-26 22:35:24 [::1][2][cqat97ap6p4hii9dh0606ia166][info][application] $_GET = [
+    'r' => 'site/coursesdetail'
+    'id' => '1'
+    '_pjax' => '#w2'
+]
+
+$_COOKIE = [
+    '_identity-frontend' => '6c52603f31194fa67e519ba8ddd2e6ea637997afda483df7e4cc3611f287214da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"ZNgQlGbG0a4PpZIdfjQNQO2V_U26za7D\",2592000]\";}'
+    'advanced-frontend' => 'cqat97ap6p4hii9dh0606ia166'
+    '_csrf-frontend' => 'd69ce6142cc9be4b45ebc337211cc258529a1a33d309332f43f1ffc4a03fd634a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3HaZvqHUnAKIGBpUsxLwiBJX7081euoe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'WFFKd1JjNEFrGSstJBJ8FDYQAT4VIUQUKykGADshfhlvYXJGNxZbJA=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w2'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php?r=site%2Fcoursesdetail&id=1'
+    'HTTP_COOKIE' => '_identity-frontend=6c52603f31194fa67e519ba8ddd2e6ea637997afda483df7e4cc3611f287214da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ZNgQlGbG0a4PpZIdfjQNQO2V_U26za7D%22%2C2592000%5D%22%3B%7D; advanced-frontend=cqat97ap6p4hii9dh0606ia166; _csrf-frontend=d69ce6142cc9be4b45ebc337211cc258529a1a33d309332f43f1ffc4a03fd634a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223HaZvqHUnAKIGBpUsxLwiBJX7081euoe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '50734'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcoursesdetail&id=1&_pjax=%23w2'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Fcoursesdetail&id=1&_pjax=%23w2'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493238924.77
+    'REQUEST_TIME' => 1493238924
+]
+2017-04-26 22:35:25 [::1][2][cqat97ap6p4hii9dh0606ia166][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: alert in C:\xampp\htdocs\SistemasPage\frontend\views\site\courses_details.php:26
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\views\site\courses_details.php(26): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('courses_details', Array, Object(frontend\controllers\SiteController))
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(238): yii\base\Controller->render('courses_details', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionCoursesdetail('1')
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('coursesdetail', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/coursesdet...', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-04-26 22:35:24 [::1][2][cqat97ap6p4hii9dh0606ia166][info][application] $_GET = [
+    'r' => 'site/coursesdetail'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_identity-frontend' => '6c52603f31194fa67e519ba8ddd2e6ea637997afda483df7e4cc3611f287214da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"ZNgQlGbG0a4PpZIdfjQNQO2V_U26za7D\",2592000]\";}'
+    'advanced-frontend' => 'cqat97ap6p4hii9dh0606ia166'
+    '_csrf-frontend' => 'd69ce6142cc9be4b45ebc337211cc258529a1a33d309332f43f1ffc4a03fd634a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3HaZvqHUnAKIGBpUsxLwiBJX7081euoe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php?r=site%2Fcoursesdetail&id=1'
+    'HTTP_COOKIE' => '_identity-frontend=6c52603f31194fa67e519ba8ddd2e6ea637997afda483df7e4cc3611f287214da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ZNgQlGbG0a4PpZIdfjQNQO2V_U26za7D%22%2C2592000%5D%22%3B%7D; advanced-frontend=cqat97ap6p4hii9dh0606ia166; _csrf-frontend=d69ce6142cc9be4b45ebc337211cc258529a1a33d309332f43f1ffc4a03fd634a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223HaZvqHUnAKIGBpUsxLwiBJX7081euoe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '50806'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcoursesdetail&id=1'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Fcoursesdetail&id=1'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493238924.942
+    'REQUEST_TIME' => 1493238924
+]
+2017-04-26 22:35:31 [::1][2][cqat97ap6p4hii9dh0606ia166][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: alert in C:\xampp\htdocs\SistemasPage\frontend\views\site\courses_details.php:26
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\views\site\courses_details.php(26): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('courses_details', Array, Object(frontend\controllers\SiteController))
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(238): yii\base\Controller->render('courses_details', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionCoursesdetail('1')
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('coursesdetail', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/coursesdet...', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-04-26 22:35:31 [::1][2][cqat97ap6p4hii9dh0606ia166][info][application] $_GET = [
+    'r' => 'site/coursesdetail'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_identity-frontend' => '6c52603f31194fa67e519ba8ddd2e6ea637997afda483df7e4cc3611f287214da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"ZNgQlGbG0a4PpZIdfjQNQO2V_U26za7D\",2592000]\";}'
+    'advanced-frontend' => 'cqat97ap6p4hii9dh0606ia166'
+    '_csrf-frontend' => 'd69ce6142cc9be4b45ebc337211cc258529a1a33d309332f43f1ffc4a03fd634a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3HaZvqHUnAKIGBpUsxLwiBJX7081euoe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php?r=site%2Fcoursesdetail&id=1'
+    'HTTP_COOKIE' => '_identity-frontend=6c52603f31194fa67e519ba8ddd2e6ea637997afda483df7e4cc3611f287214da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ZNgQlGbG0a4PpZIdfjQNQO2V_U26za7D%22%2C2592000%5D%22%3B%7D; advanced-frontend=cqat97ap6p4hii9dh0606ia166; _csrf-frontend=d69ce6142cc9be4b45ebc337211cc258529a1a33d309332f43f1ffc4a03fd634a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223HaZvqHUnAKIGBpUsxLwiBJX7081euoe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '50809'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcoursesdetail&id=1'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Fcoursesdetail&id=1'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493238931.584
+    'REQUEST_TIME' => 1493238931
+]
+2017-04-26 22:41:35 [::1][2][cqat97ap6p4hii9dh0606ia166][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: alert in C:\xampp\htdocs\SistemasPage\frontend\views\site\courses_details.php:26
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\views\site\courses_details.php(26): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('courses_details', Array, Object(frontend\controllers\SiteController))
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(238): yii\base\Controller->render('courses_details', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionCoursesdetail('1')
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('coursesdetail', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/coursesdet...', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-04-26 22:41:35 [::1][2][cqat97ap6p4hii9dh0606ia166][info][application] $_GET = [
+    'r' => 'site/coursesdetail'
+    'id' => '1'
+    '_pjax' => '#w2'
+]
+
+$_COOKIE = [
+    '_identity-frontend' => '6c52603f31194fa67e519ba8ddd2e6ea637997afda483df7e4cc3611f287214da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"ZNgQlGbG0a4PpZIdfjQNQO2V_U26za7D\",2592000]\";}'
+    'advanced-frontend' => 'cqat97ap6p4hii9dh0606ia166'
+    '_csrf-frontend' => 'd69ce6142cc9be4b45ebc337211cc258529a1a33d309332f43f1ffc4a03fd634a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3HaZvqHUnAKIGBpUsxLwiBJX7081euoe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'QkJtQ0YuMi1xCgwZMF96eCwDJgoBbEJ4MTohNC9seHV1clVyI1tdSA=='
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w2'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php?r=site%2Fcoursesdetail&id=1'
+    'HTTP_COOKIE' => '_identity-frontend=6c52603f31194fa67e519ba8ddd2e6ea637997afda483df7e4cc3611f287214da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ZNgQlGbG0a4PpZIdfjQNQO2V_U26za7D%22%2C2592000%5D%22%3B%7D; advanced-frontend=cqat97ap6p4hii9dh0606ia166; _csrf-frontend=d69ce6142cc9be4b45ebc337211cc258529a1a33d309332f43f1ffc4a03fd634a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223HaZvqHUnAKIGBpUsxLwiBJX7081euoe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '51107'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcoursesdetail&id=1&_pjax=%23w2'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Fcoursesdetail&id=1&_pjax=%23w2'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493239295.721
+    'REQUEST_TIME' => 1493239295
+]
+2017-04-26 22:41:36 [::1][2][cqat97ap6p4hii9dh0606ia166][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: alert in C:\xampp\htdocs\SistemasPage\frontend\views\site\courses_details.php:26
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\views\site\courses_details.php(26): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('courses_details', Array, Object(frontend\controllers\SiteController))
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(238): yii\base\Controller->render('courses_details', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionCoursesdetail('1')
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('coursesdetail', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/coursesdet...', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-04-26 22:41:36 [::1][2][cqat97ap6p4hii9dh0606ia166][info][application] $_GET = [
+    'r' => 'site/coursesdetail'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_identity-frontend' => '6c52603f31194fa67e519ba8ddd2e6ea637997afda483df7e4cc3611f287214da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"ZNgQlGbG0a4PpZIdfjQNQO2V_U26za7D\",2592000]\";}'
+    'advanced-frontend' => 'cqat97ap6p4hii9dh0606ia166'
+    '_csrf-frontend' => 'd69ce6142cc9be4b45ebc337211cc258529a1a33d309332f43f1ffc4a03fd634a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3HaZvqHUnAKIGBpUsxLwiBJX7081euoe\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php?r=site%2Fcoursesdetail&id=1'
+    'HTTP_COOKIE' => '_identity-frontend=6c52603f31194fa67e519ba8ddd2e6ea637997afda483df7e4cc3611f287214da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22ZNgQlGbG0a4PpZIdfjQNQO2V_U26za7D%22%2C2592000%5D%22%3B%7D; advanced-frontend=cqat97ap6p4hii9dh0606ia166; _csrf-frontend=d69ce6142cc9be4b45ebc337211cc258529a1a33d309332f43f1ffc4a03fd634a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223HaZvqHUnAKIGBpUsxLwiBJX7081euoe%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '51142'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcoursesdetail&id=1'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Fcoursesdetail&id=1'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493239296.002
+    'REQUEST_TIME' => 1493239296
+]

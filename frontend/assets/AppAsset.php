@@ -31,6 +31,7 @@ class AppAsset extends AssetBundle
         'css/responsive.css',
         'https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800',
         'css/starability-basic.min.css',
+        'css/starability-checkmark.css',
     ];
     public $js = [
         'js/vendor/modernizr-2.8.3.min.js',

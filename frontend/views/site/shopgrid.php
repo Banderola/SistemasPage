@@ -56,13 +56,16 @@ $this->title = 'Shopgrid';
                                            </div>
                                         </div>
                                         <div class="product-buttons">
+                                            <?= Html::a("Ver   ", ['site/proyectosdetail', 'id' => $proyecto->idProyecto], ['class' => 'button-default cart-btn']);?>
+                                            <button type="button" class="button-default"><i class="zmdi zmdi-favorite"></i></button>
                                             
                                         </div>
                                     </div>
                                     <div class="button-bottom">
-                                        <?= Html::a("Ver", ['site/proyectosdetail', 'id' => $proyecto->idProyecto], ['class' => 'button-default']);?>
+                                        
                                         
                                     </div>
+                                    
                                 </div>
                             </div>
                             <?php endforeach; ?>
