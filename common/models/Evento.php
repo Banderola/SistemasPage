@@ -16,11 +16,14 @@ use Yii;
  * @property string $hora_fin
  * @property string $lugar
  * @property integer $user_id
+ * @property string $ubicacion
  *
+ * @property Comentarioevento[] $comentarioeventos
  * @property User $user
  */
 class Evento extends \yii\db\ActiveRecord
 {
+    public $cnt;
     /**
      * @inheritdoc
      */
@@ -38,7 +41,7 @@ class Evento extends \yii\db\ActiveRecord
             [['fecha', 'hora_inicio', 'hora_fin'], 'safe'],
             [['user_id'], 'required'],
             [['user_id'], 'integer'],
-            [['titulo', 'imagen', 'lugar'], 'string', 'max' => 45],
+            [['titulo', 'imagen', 'lugar', 'ubicacion'], 'string', 'max' => 45],
             [['descripcion'], 'string', 'max' => 255],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
@@ -59,7 +62,27 @@ class Evento extends \yii\db\ActiveRecord
             'hora_fin' => 'Hora Fin',
             'lugar' => 'Lugar',
             'user_id' => 'User ID',
+            'ubicacion' => 'Ubicacion',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getComentarioeventos()
+    {
+        return $this->hasMany(Comentarioevento::className(), ['evento_idevento' => 'idevento'])
+                ->select('comentarioevento.*, nombre, imagen')
+                ->leftJoin('user','comentarioevento.user_id=user.id')
+                ->groupBy('idComentarioEvento')
+                ->with('user')
+                ->orderBy('Fecha DESC');
+    }
+    
+    public function getCuentacomentario()
+    {
+        return $this->hasMany(Comentarioevento::className(), ['evento_idevento' => 'idevento'])
+                ->count();
     }
 
     /**

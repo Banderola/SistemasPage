@@ -24,6 +24,8 @@ use common\models\Especialidad;
 use common\models\Proyecto;
 use common\models\Noticia;
 use common\models\Evento;
+use common\models\Comentarionoticia;
+use common\models\Alumno;
 use yii\data\Pagination;
 use frontend\models\ComentarForm;
 use yii\db\Expression;
@@ -87,10 +89,36 @@ class SiteController extends Controller
     {
         
         $model_inicio = Paginainicio::findOne(1);
+        $cuentaEspecialidades = Especialidad::find()->count();
+        $cuentaProyectos = Proyecto::find()->count();
         $model_slide = Slide::find()->all();
         $model_portada = Paginaimagenportada::findOne(1);
+        $model_especialidades = $this->getEspecialidad()
+                ->orderBy(new Expression('rand()'))
+                ->limit(3)
+                ->all();
+        $model_noticias = $this->getNoticias()
+                ->orderBy(new Expression('rand()'))
+                ->limit(4)
+                ->all();
+        $model_proyectos = $this->getProyectos()
+                ->orderBy(new Expression('rand()'))
+                ->limit(4)
+                ->all();
+        $model_alumnos = $this->getAlumnos()
+                ->orderBy(new Expression('rand()'))
+                ->all();
+        $model_eventos = $this->getEventos()
+                ->orderBy(new Expression('rand()'))
+                ->limit(3)
+                ->all();
         return $this->render('index', [
                 'inicio' => $model_inicio,'slide' => $model_slide,'portada' => $model_portada,
+            'especialidades' => $model_especialidades,'noticias' => $model_noticias,
+            'proyectos' => $model_proyectos,'alumnos' => $model_alumnos,
+            'eventos' => $model_eventos,'cespecialidades' => $cuentaEspecialidades,
+            'cproyectos' => $cuentaProyectos,
+          
             ]);
     }
 
@@ -102,7 +130,7 @@ class SiteController extends Controller
     public function actionLogin()
     {
         if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
+            return $this->goBack();
         }
 
         $model = new LoginForm();
@@ -164,7 +192,10 @@ class SiteController extends Controller
     {
         $model_nosotros = Paginanosotros::findOne(1);
         $model_experiencia = Experiencia::find()->all();
-        $model_maestro = Maestro::find()->all();
+        $model_maestro = Maestro::find()
+                ->orderBy(new Expression('rand()'))
+                ->limit(4)
+                ->all();
         $model_portada = Paginaimagenportada::findOne(2);
         return $this->render('about', [
                 'nosotros' => $model_nosotros,'experiencias' => $model_experiencia,'maestros' => $model_maestro,'portada' => $model_portada,
@@ -271,35 +302,33 @@ class SiteController extends Controller
         $model_portada = Paginaimagenportada::findOne(4);
         $model_proyecto = Proyecto::findOne($id);
         $model_rating = $model_proyecto->countrating;
-        $model_comentarios = $model_proyecto->cuentacomentario;
-        $model_comm = $model_proyecto->comentarioproyectos;
+        $model_categoria = $model_proyecto->categoriaProyectoIdcategoriaProyecto;
         $modelAl = $this->getProyectos()
-                ->where(['not',['idProyecto'=>$model_proyecto->idProyecto]])
+                ->where(['and',['categoriaProyecto_idcategoriaProyecto' => $model_proyecto->categoriaProyecto_idcategoriaProyecto],['not',['idProyecto'=>$model_proyecto->idProyecto]]])
                 ->orderBy(new Expression('rand()'))
-                ->limit(1)
+                ->limit(4)
                 ->all();
                 
         $model_form = new CalificarForm();
-        $model_formco = new ComentarForm();
         
         
-        if (($model_form->load(Yii::$app->request->post()) && $model_form->addCalificacionproyecto()) || ($model_formco->load(Yii::$app->request->post()) && $model_formco->addComentarioproyecto())) {
+        if ($model_form->load(Yii::$app->request->post()) && $model_form->addCalificacionproyecto()) {
            
             return $this->render('proyectos_details', [
                 'portada' => $model_portada,'proyecto'=>$model_proyecto
-                    , 'rating'=>$model_rating
-                    ,'comentarios'=>$model_comentarios,'model'=>$model_form
-                    ,'comentariospro' => $model_comm, 'comentarios'=>$model_comentarios
-                    ,'model'=>$model_form,'model2' => $model_formco,'proyectosal' => $modelAl,
+                    ,'rating'=>$model_rating
+                    ,'model'=>$model_form
+                    ,'proyectosals' => $modelAl
+                    ,'categoria' => $model_categoria,
             ]);
         }else{
             
             return $this->render('proyectos_details', [
                 'portada' => $model_portada,'proyecto'=>$model_proyecto
-                    , 'rating'=>$model_rating
-                    ,'comentarios'=>$model_comentarios,'model'=>$model_form
-                    ,'comentariospro' => $model_comm, 'comentarios'=>$model_comentarios
-                    ,'model'=>$model_form,'model2' => $model_formco,'proyectosal' => $modelAl,
+                    ,'rating'=>$model_rating
+                    ,'model'=>$model_form
+                    ,'proyectosals' => $modelAl
+                    ,'categoria' => $model_categoria,
             ]);
             
         }
@@ -308,20 +337,143 @@ class SiteController extends Controller
     }
     
 
-      public function actionLatestnews()
+    public function actionLatestnews()
     {
+        
         $model_portada = Paginaimagenportada::findOne(5);
+        $query = $this->getNoticias();
+            
+                
+        $pagination = new Pagination([
+            'defaultPageSize' => 6,
+            'totalCount' => $query->count(),
+        ]);
+
+        $noticias = $query->orderBy('idnoticia')
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
+        
+        
         return $this->render('latestnews', [
-                'portada' => $model_portada,
+                'portada' => $model_portada,'noticias' => $noticias,
+            'pagination' => $pagination,
             ]);
     }
+    
+    public function actionNewsdetails($id)
+    {
+        $model_portada = Paginaimagenportada::findOne(5);
+        $model_noticia = Noticia::findOne($id);
+        $modelAl = $this->getNoticias()
+                ->where(['not',['idnoticia'=>$model_noticia->idnoticia]])
+                ->orderBy('fecha')
+                ->limit(4)
+                ->all();
+        
+        $model_comentarios = $model_noticia->cuentacomentario;
+        $model_comm = $model_noticia->comentarionoticias;
+        
+        $modelAlCom = Comentarionoticia::find()
+                ->select('comentarionoticia.*, nombre, imagen')
+                ->leftJoin('user','comentarionoticia.user_id=user.id')
+                ->groupBy('idcomentarioNoticia')
+                ->with('user')
+                ->orderBy('Fecha')
+                ->limit(3)
+                ->all();
+                
+        $model_com = new ComentarForm();
+        if (Yii::$app->user->isGuest) {
+            $model_noticia->visitas++;
+            $model_noticia->update('visitas');
+        }
+        
+        if ($model_com->load(Yii::$app->request->post()) && $model_com->addComentarionoticia()) {
+           
+            return $this->render('news_details', [
+                'portada' => $model_portada,'noticia'=>$model_noticia
+                    ,'model'=>$model_com
+                    ,'noticiasals' => $modelAl
+                    ,'comentariocuenta' => $model_comentarios
+                    ,'comentarios' => $model_comm
+                    ,'comentariosals' => $modelAlCom,
+            ]);
+        }else{
+            
+            return $this->render('news_details', [
+                'portada' => $model_portada,'noticia'=>$model_noticia
+                    ,'model'=>$model_com
+                    ,'noticiasals' => $modelAl
+                    ,'comentariocuenta' => $model_comentarios
+                    ,'comentarios' => $model_comm
+                    ,'comentariosals' => $modelAlCom,
+            ]);
+            
+        }
+        
+    }
 
-      public function actionEvent()
+    public function actionEvent()
     {
         $model_portada = Paginaimagenportada::findOne(6);
+        $query = $this->getEventos();
+            
+                
+        $pagination = new Pagination([
+            'defaultPageSize' => 6,
+            'totalCount' => $query->count(),
+        ]);
+
+        $eventos = $query->orderBy('idevento')
+            ->offset($pagination->offset)
+            ->limit($pagination->limit)
+            ->all();
         return $this->render('event', [
                 'portada' => $model_portada,
+                'eventos' => $eventos,
+                'pagination' => $pagination,
             ]);
+    }
+    
+    public function actionEventdetail($id){
+        $model_portada = Paginaimagenportada::findOne(6);
+        $model_evento = Evento::findOne($id);
+        $modelAl = $this->getEventos()
+                ->where(['not',['idevento'=>$model_evento->idevento]])
+                ->orderBy('fecha')
+                ->limit(4)
+                ->all();
+        
+        $model_comentarios = $model_evento->cuentacomentario;
+        $model_comm = $model_evento->comentarioeventos;
+                
+        $model_com = new ComentarForm();
+        
+        if ($model_com->load(Yii::$app->request->post()) && $model_com->addComentarioevento()) {
+           
+            return $this->render('event_details', [
+                'portada' => $model_portada,'evento'=>$model_evento
+                    ,'model'=>$model_com
+                    ,'eventosals' => $modelAl
+                    ,'comentariocuenta' => $model_comentarios
+                    ,'comentarios' => $model_comm,
+                    
+            ]);
+        }else{
+            
+            return $this->render('event_details', [
+                'portada' => $model_portada,'evento'=>$model_evento
+                    ,'model'=>$model_com
+                    ,'eventosals' => $modelAl
+                    ,'comentariocuenta' => $model_comentarios
+                    ,'comentarios' => $model_comm,
+                    
+            ]);
+            
+        }
+        
+
     }
 
     /**
@@ -398,7 +550,7 @@ class SiteController extends Controller
     {
         
         return Especialidad::find()
-                ->select('especialidad.*, COUNT(idComentarioEspecialidad) AS cnt, (SELECT AVG(Rating) FROM ratingespecialidad WHERE Especialidad_idEspecialidades=idEspecialidades) AS rating')
+                ->select('especialidad.*, COUNT(idComentarioEspecialidad) AS cnt, (SELECT AVG(Rating) FROM ratingespecialidad WHERE Especialidad_idEspecialidades=idEspecialidades) AS rating, (SELECT nombre FROM maestro WHERE idMaestro=Maestro_idMaestro) AS maestro')
                 ->leftJoin('comentarioespecialidad','idEspecialidades=Especialidad_idEspecialidades')
                 ->groupBy('idEspecialidades')
                 ->with('comentarioespecialidads');
@@ -409,10 +561,43 @@ class SiteController extends Controller
     {
         
         return Proyecto::find()
-                ->select('proyecto.*, COUNT(idProyecto) AS cnt, (SELECT AVG(Rating) FROM ratingproyecto WHERE Proyecto_idProyecto=idProyecto) AS rating')
-                ->leftJoin('comentarioproyecto','Proyecto_idProyecto=idProyecto')
+                ->select('proyecto.*, Nombre AS nombre, (SELECT AVG(Rating) FROM ratingproyecto WHERE Proyecto_idProyecto=idProyecto) AS rating')
+                ->leftJoin('categoriaproyecto','idcategoriaProyecto=categoriaProyecto_idcategoriaProyecto')
                 ->groupBy('idProyecto')
-                ->with('comentarioproyectos');
+                ->with('categoriaProyectoIdcategoriaProyecto');
+                
+    }
+    
+    private function getNoticias()
+    {
+        
+        return Noticia::find()
+                ->select('noticia.*, COUNT(idcomentarioNoticia) AS cnt')
+                ->leftJoin('comentarionoticia','idnoticia=noticia_idnoticia')
+                ->groupBy('idnoticia')
+                ->with('comentarionoticias');
+                
+    }
+    
+    private function getEventos()
+    {
+        
+        return Evento::find()
+                ->select('evento.*, COUNT(idcomentarioevento) AS cnt')
+                ->leftJoin('comentarioevento','idevento=evento_idevento')
+                ->groupBy('idevento')
+                ->with('comentarioeventos');
+                
+    }
+    
+    private function getAlumnos()
+    {
+        
+        return Alumno::find()
+                ->select('alumno.*, Descripcion AS descripcion')
+                ->leftJoin('comentarioalumno','idComentarioAlumno=ComentarioAlumno_idComentarioAlumno')
+                ->groupBy('idAlumno')
+                ->with('comentarioAlumnoIdComentarioAlumno');
                 
     }
 }

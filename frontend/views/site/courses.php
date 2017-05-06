@@ -85,9 +85,9 @@ $this->title = 'Courses';
                                        
                                         <h4><?= Html::a(Html::encode($especialidad->Titulo), ['site/coursesdetail', 'id' => $especialidad->idEspecialidades]);?></h4>
                                         <div class="single-item-text-info">
-                                       
+                                            <span>Por: <span><?= Html::encode($especialidad->maestro) ?></span></span>
                                         </div>
-                                        <p><?= HtmlPurifier::process($especialidad->Descripcion) ?></p>
+                                        <?= HtmlPurifier::process($especialidad->Descripcion) ?>
                                         <div class="single-item-content">
                                            <div class="single-item-comment-view">
                                                <span><i class="zmdi zmdi-eye"></i><?= Html::encode($especialidad->Visitas) ?></span>

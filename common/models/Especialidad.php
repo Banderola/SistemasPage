@@ -26,6 +26,7 @@ class Especialidad extends \yii\db\ActiveRecord
 {
     public $cnt;
     public $rating;
+    public $maestro;
     /**
      * @inheritdoc
      */

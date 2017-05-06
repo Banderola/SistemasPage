@@ -1,7 +1,9 @@
 <?php
 
 /* @var $this yii\web\View */
-
+use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
+use yii\helpers\HtmlPurifier;
 $this->title = 'Home';
 
 
@@ -159,7 +161,8 @@ $this->title = 'Home';
                                                     <h1 class="title1"><?= $slide_1->Titulo ?></h1>
                                                     <p class="sub-title hidden-sm hidden-xs"> <?= $slide_1->Descripcion ?></p>
                                                     <div class="banner-readmore">
-                                                        <a class="button-default bg-blue" href="#">View Courses</a>                 
+                                                        
+                                                        <?= Html::a("Ver Cursos", ['site/courses'], ['class' => 'button-default bg-blue']);?>
                                                     </div>
                                                 </div>
                                             </div>
@@ -203,7 +206,8 @@ $this->title = 'Home';
                                 <div class="about-container">
                                     <h3><?=$inicio->tituloPortada?></h3>
                                     <?=$inicio->descripcionPortada?>
-                                    <a class="button-default" href="#">Learn Now</a>          
+                                    
+                                    <?= Html::a("Conócenos", ['site/about'], ['class' => 'button-default']);?>
                                 </div>
                             </div>
                         </div>
@@ -224,103 +228,48 @@ $this->title = 'Home';
                             </div>
                         </div>
                         <div class="row">
+                            
+                            <?php foreach ($especialidades as $especialidad): ?>
                             <div class="col-md-4 col-sm-6">
                                 <div class="single-item">
                                     <div class="single-item-image overlay-effect">
-                                        <a href="#"><img src="img/course/1.jpg" alt=""></a>
+                                        
+                                        <?= Html::a("<img src='img/course/".Html::encode($especialidad->imagen)."' alt=''>", ['site/coursesdetail', 'id' => $especialidad->idEspecialidades]);?>
                                     </div>
                                     <div class="single-item-text">
-                                        <h4><a href="#">Desarrollo web</a></h4>
+                                       
+                                        <h4><?= Html::a(Html::encode($especialidad->Titulo), ['site/coursesdetail', 'id' => $especialidad->idEspecialidades]);?></h4>
                                         <div class="single-item-text-info">
-                                            <span>Por: <span>H A Cid</span></span>
-                                            <span>Semestre: <span> Feb - Jul</span></span>
+                                            <span>Por: <span><?= Html::encode($especialidad->maestro) ?></span></span>
                                         </div>
-                                        <p>
-                                        Aprenderás a crear portales web usando PHP, Java, Java Script, CSS3, MySQL, JQuery y AJAX.
-                                        </p>
+                                        <?= HtmlPurifier::process($especialidad->Descripcion) ?>
                                         <div class="single-item-content">
                                            <div class="single-item-comment-view">
-                                               <span><i class="zmdi zmdi-eye"></i>59</span>
-                                               <span><i class="zmdi zmdi-comments"></i>19</span>
+                                               <span><i class="zmdi zmdi-eye"></i><?= Html::encode($especialidad->Visitas) ?></span>
+                                               <span><i class="zmdi zmdi-comments"></i><?= Html::encode($especialidad->cnt) ?></span>
                                            </div>
+                                            
+                                            
+                                            
                                            <div class="single-item-rating">
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star-half"></i>
+                                               <div class="starability-result" data-rating="<?=(int)$especialidad->rating?>" aria-describedby="rated-element"></div>
+                                               
+
                                            </div>
                                         </div>   
                                     </div>
                                     <div class="button-bottom">
-                                        <a href="#" class="button-default">Learn Now</a>
+                                        
+                                        <?= Html::a("Ver", ['site/coursesdetail', 'id' => $especialidad->idEspecialidades], ['class' => 'button-default']);?>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="single-item">
-                                    <div class="single-item-image overlay-effect">
-                                        <a href="#"><img src="img/course/2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-item-text">
-                                        <h4><a href="#">Aplicaciones Móviles</a></h4>
-                                        <div class="single-item-text-info">
-                                            <span>Por: <span>E A Morales</span></span>
-                                            <span>Semestre: <span>Ago - Ene</span></span>
-                                        </div>
-                                        <p>Desarrollarás aplicaciones móviles multiplataforma (Android e iOS), nativas e hibridas. </p>
-                                        <div class="single-item-content">
-                                           <div class="single-item-comment-view">
-                                               <span><i class="zmdi zmdi-eye"></i>59</span>
-                                               <span><i class="zmdi zmdi-comments"></i>19</span>
-                                           </div>
-                                           <div class="single-item-rating">
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star-half"></i>
-                                           </div>
-                                        </div>   
-                                    </div>
-                                    <div class="button-bottom">
-                                        <a href="#" class="button-default">Learn Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 hidden-sm">
-                                <div class="single-item">
-                                    <div class="single-item-image overlay-effect">
-                                        <a href="#"><img src="img/course/3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-item-text">
-                                        <h4><a href="#">Videojuegos</a></h4>
-                                        <div class="single-item-text-info">
-                                            <span>Por: <span>E A Morales</span></span>
-                                            <span>Semestre: <span>Feb - Jul</span></span>
-                                        </div>
-                                        <p>Diseñarás videojuegos en 2D y 3D, realidad virtual e inmersiva, realidad aumentada; diseño 3D. </p>
-                                        <div class="single-item-content">
-                                           <div class="single-item-comment-view">
-                                               <span><i class="zmdi zmdi-eye"></i>59</span>
-                                               <span><i class="zmdi zmdi-comments"></i>19</span>
-                                           </div>
-                                           <div class="single-item-rating">
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star-half"></i>
-                                           </div>
-                                        </div>   
-                                    </div>
-                                    <div class="button-bottom">
-                                        <a href="#" class="button-default">Learn Now</a>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php endforeach; ?>
+                            
+                            
                             <div class="col-md-12 col-sm-12 text-center">
-                                <a href="#" class="button-default button-large">Ver Todas las Especialidades <i class="zmdi zmdi-chevron-right"></i></a>
+                                
+                                <?= Html::a("Ver Todas las Especialidades <i class='zmdi zmdi-chevron-right'></i>", ['site/courses'], ['class' => 'button-default button-large']);?>
                             </div>
                         </div>
                     </div>
@@ -349,13 +298,13 @@ $this->title = 'Home';
                             <div class="col-md-3 col-sm-3">
                                 <div class="single-fun-factor">
                                     <h4>Especialidades</h4>
-                                    <h2><span class="counter">6</span>+</h2>
+                                    <h2><span class="counter"><?=Html::encode($cespecialidades)?></span>+</h2>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-3">
                                 <div class="single-fun-factor">
                                     <h4>Proyectos</h4>
-                                    <h2><span class="counter">25</span>+</h2>
+                                    <h2><span class="counter"><?=Html::encode($cproyectos)?></span>+</h2>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-3">
@@ -382,74 +331,35 @@ $this->title = 'Home';
                             </div>
                         </div>
                         <div class="row">
+                            
+                            <?php foreach ($noticias as $noticia): ?> 
                             <div class="col-md-6">
                                 <div class="single-latest-item">
                                     <div class="single-latest-image">
-                                        <a href="#"><img src="img/latest/1.jpg" alt=""></a>
+                                        
+                                        <?= Html::a("<img src='img/latest/".Html::encode($noticia->imagen)."' alt=''>", ['site/newsdetails', 'id' => $noticia->idnoticia]);?>
                                     </div>
                                     <div class="single-latest-text">
-                                        <h3><a href="#">Learn English in ease</a></h3>
+                                       
+                                        <h3><?= Html::a(Html::encode($noticia->titulo), ['site/newsdetails', 'id' => $noticia->idnoticia]);?></h3>
                                         <div class="single-item-comment-view">
-                                           <span><i class="zmdi zmdi-calendar-check"></i>25 jun 2050</span>
-                                           <span><i class="zmdi zmdi-eye"></i>59</span>
-                                           <span><i class="zmdi zmdi-comments"></i>19</span>
+                                           <span><i class="zmdi zmdi-calendar-check"></i><?=(new \DateTime($noticia->fecha))->format('d M Y')?></span>
+                                           <span><i class="zmdi zmdi-eye"></i><?=Html::encode($noticia->visitas)?></span>
+                                           <span><i class="zmdi zmdi-comments"></i><?=Html::encode($noticia->cnt)?></span>
                                        </div>
-                                       <p>There are many variaons of passages of Lorem Ipsuable, amrn in some by injected humour, </p>
-                                       <a href="#" class="button-default">LEARN Now</a>
+                                       <?= HtmlPurifier::process($noticia->descripcion) ?>
+                               
+                                       <?= Html::a("Leer", ['site/newsdetails', 'id' => $noticia->idnoticia], ['class' => 'button-default']);?>
                                     </div>
                                 </div>
+                                
+                                
                             </div>
-                            <div class="col-md-6">
-                                <div class="single-latest-item">
-                                    <div class="single-latest-image">
-                                        <a href="#"><img src="img/latest/2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-latest-text">
-                                        <h3><a href="#">Learn English in ease</a></h3>
-                                        <div class="single-item-comment-view">
-                                           <span><i class="zmdi zmdi-calendar-check"></i>25 jun 2050</span>
-                                           <span><i class="zmdi zmdi-eye"></i>59</span>
-                                           <span><i class="zmdi zmdi-comments"></i>19</span>
-                                       </div>
-                                       <p>There are many variaons of passages of Lorem Ipsuable, amrn in some by injected humour, </p>
-                                       <a href="#" class="button-default">LEARN Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="single-latest-item">
-                                    <div class="single-latest-image">
-                                        <a href="#"><img src="img/latest/3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-latest-text">
-                                        <h3><a href="#">Learn English in ease</a></h3>
-                                        <div class="single-item-comment-view">
-                                           <span><i class="zmdi zmdi-calendar-check"></i>25 jun 2050</span>
-                                           <span><i class="zmdi zmdi-eye"></i>59</span>
-                                           <span><i class="zmdi zmdi-comments"></i>19</span>
-                                       </div>
-                                       <p>There are many variaons of passages of Lorem Ipsuable, amrn in some by injected humour, </p>
-                                       <a href="#" class="button-default">LEARN Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="single-latest-item">
-                                    <div class="single-latest-image">
-                                        <a href="#"><img src="img/latest/4.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-latest-text">
-                                        <h3><a href="#">Learn English in ease</a></h3>
-                                        <div class="single-item-comment-view">
-                                           <span><i class="zmdi zmdi-calendar-check"></i>25 jun 2050</span>
-                                           <span><i class="zmdi zmdi-eye"></i>59</span>
-                                           <span><i class="zmdi zmdi-comments"></i>19</span>
-                                       </div>
-                                       <p>There are many variaons of passages of Lorem Ipsuable, amrn in some by injected humour, </p>
-                                       <a href="#" class="button-default">LEARN Now</a>
-                                    </div>
-                                </div>
-                            </div>
+                            
+                            <?php endforeach; ?>
+                            
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -468,110 +378,41 @@ $this->title = 'Home';
                             </div>
                         </div>
                         <div class="row">
+                            <?php foreach ($proyectos as $proyecto): ?>
                             <div class="col-md-3 col-sm-4">
                                 <div class="single-product-item">
                                     <div class="single-product-image">
-                                        <a href="#"><img src="img/product/1.jpg" alt=""></a>
+                                        
+                                        <?= Html::a("<img src='img/product/".Html::encode($proyecto->Imagen)."' alt=''>", ['site/proyectosdetail', 'id' => $proyecto->idProyecto]);?>
                                     </div>
                                     <div class="single-product-text">
-                                        <h4><a href="#">Nutri Task</a></h4>
-                                        <h5>Portal web</h5>
+                                        
+                                        <h4><?= Html::a(Html::encode($proyecto->Titulo), ['site/proyectosdetail', 'id' => $proyecto->idProyecto]);?></h4>
+                                        <h5><p><?= HtmlPurifier::process($proyecto->nombre) ?></p></h5>
                                         <div class="product-price">
-                                            <h3>A: 3</h3>
+                                 
                                            <div class="single-item-rating">
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star-half"></i>
+                                               
+                                                <div class="starability-result" data-rating="<?=(int)$proyecto->rating?>" aria-describedby="rated-element"></div>
                                            </div>
                                         </div>
                                         <div class="product-buttons">
-                                            <button type="button" class="button-default cart-btn">Leer más</button>
+                                            <?= Html::a("Ver   ", ['site/proyectosdetail', 'id' => $proyecto->idProyecto], ['class' => 'button-default cart-btn']);?>
                                             <button type="button" class="button-default"><i class="zmdi zmdi-favorite"></i></button>
-                                            <button type="button" class="button-default"><i class="zmdi zmdi-refresh-alt"></i></button>
+                                            
                                         </div>
                                     </div>
+                                    <div class="button-bottom">
+                                        
+                                        
+                                    </div>
+                                    
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-4">
-                                <div class="single-product-item">
-                                    <div class="single-product-image">
-                                        <a href="#"><img src="img/product/2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-product-text">
-                                        <h4><a href="#">Contador de bacterias</a></h4>
-                                        <h5>Aplicación móvil</h5>
-                                        <div class="product-price">
-                                            <h3>A: 1</h3>
-                                           <div class="single-item-rating">
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star-half"></i>
-                                           </div>
-                                        </div>
-                                        <div class="product-buttons">
-                                            <button type="button" class="button-default cart-btn">LEER MÁS</button>
-                                            <button type="button" class="button-default"><i class="zmdi zmdi-favorite"></i></button>
-                                            <button type="button" class="button-default"><i class="zmdi zmdi-refresh-alt"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4">
-                                <div class="single-product-item">
-                                    <div class="single-product-image">
-                                        <a href="#"><img src="img/product/3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-product-text">
-                                        <h4><a href="#">Videojuego Ambiental</a></h4>
-                                        <h5>Aplicación móvil</h5>
-                                        <div class="product-price">
-                                            <h3>A: 4</h3>
-                                           <div class="single-item-rating">
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star-half"></i>
-                                           </div>
-                                        </div>
-                                        <div class="product-buttons">
-                                            <button type="button" class="button-default cart-btn">LEER MÁS</button>
-                                            <button type="button" class="button-default"><i class="zmdi zmdi-favorite"></i></button>
-                                            <button type="button" class="button-default"><i class="zmdi zmdi-refresh-alt"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 hidden-sm">
-                                <div class="single-product-item">
-                                    <div class="single-product-image">
-                                        <a href="#"><img src="img/product/4.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-product-text">
-                                        <h4><a href="#">Noti Push</a></h4>
-                                        <h5>Aplicación móvil</h5>
-                                        <div class="product-price">
-                                            <h3>A: 3</h3>
-                                           <div class="single-item-rating">
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star"></i>
-                                               <i class="zmdi zmdi-star-half"></i>
-                                           </div>
-                                        </div>
-                                        <div class="product-buttons">
-                                            <button type="button" class="button-default cart-btn">LEER MÁS</button>
-                                            <button type="button" class="button-default"><i class="zmdi zmdi-favorite"></i></button>
-                                            <button type="button" class="button-default"><i class="zmdi zmdi-refresh-alt"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php endforeach; ?>
+                            
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -584,52 +425,22 @@ $this->title = 'Home';
                                 <div class="row">
                                     <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
                                         <div class="testimonial-image-slider text-center">
+                                            <?php foreach ($alumnos as $alumno): ?>
                                             <div class="sin-testiImage">
-                                                <img src="img/testimonial/1.jpg" alt="testimonial 1" />
+                                                <img src="img/testimonial/<?=Html::encode($alumno->foto)?>" alt="testimonial 1" />
                                             </div>
-                                            <div class="sin-testiImage">
-                                                <img src="img/testimonial/2.jpg" alt="testimonial 2" />
-                                            </div>
-                                            <div class="sin-testiImage">
-                                                <img src="img/testimonial/3.jpg" alt="testimonial 3" />
-                                            </div>
-                                            <div class="sin-testiImage">
-                                                <img src="img/testimonial/1.jpg" alt="testimonial 1" />
-                                            </div>
-                                            <div class="sin-testiImage">
-                                                <img src="img/testimonial/2.jpg" alt="testimonial 2" />
-                                            </div>
-                                            <div class="sin-testiImage">
-                                                <img src="img/testimonial/3.jpg" alt="testimonial 3" />
-                                            </div>
+                                            <?php endforeach; ?>
                                         </div>
                                     </div>
                                 </div> 
                                 <div class="testimonial-text-slider text-center">
+                                    <?php foreach ($alumnos as $alumno): ?>
                                     <div class="sin-testiText">
-                                        <h2>Juan Eduardo Lujan </h2>
-                                        <p>La carrera es muy gratificante ya que uno puede desarrollar aplicaciones, programas, sitios web, videojuegos y solo limitados a la imaginación de quien los realiza.</p>
+                                        <h2><?=Html::encode($alumno->nombre)?></h2>
+                                        <p><?=HtmlPurifier::process($alumno->descripcion)?></p>
                                     </div>
-                                    <div class="sin-testiText">
-                                        <h2>German Rodriguez</h2>
-                                        <p>"La integridad y multidisiplinaridad de la licenciatura tanto de software (sistemas expertos, sistemas web, aplicaciones, etc.) y hardware (electrónica, sistemas embebidos, robótica, etc.)".</p>
-                                    </div>
-                                    <div class="sin-testiText">
-                                        <h2>Ariadna Moya</h2>
-                                        <p>Proporciona muy buenas bases para aplicar los conocimientos en la industria, haciéndonos autodidactas.</p>
-                                    </div>
-                                    <div class="sin-testiText">
-                                        <h2>M S Nawaz </h2>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                    </div>
-                                    <div class="sin-testiText">
-                                        <h2>Chowchilla Madera</h2>
-                                        <p>Nam nec tellus a odio tincidunt This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, aliquet lorem quis tellus velit bibendum auctor, nisi elit consequat ipsum</p>
-                                    </div>
-                                    <div class="sin-testiText">
-                                        <h2>Kattie Luis</h2>
-                                        <p>Nam nec tellus a odio tincidunt This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem gravida tincidunt quis bibendum auctor, nisi elit consequat ipsum</p>
-                                    </div>
+                                    <?php endforeach; ?>
+                                    
                                 </div>   
                             </div>
                         </div>
@@ -650,63 +461,30 @@ $this->title = 'Home';
                             </div>
                         </div>
                         <div class="row">
+                            <?php foreach ($eventos as $evento): ?>
                             <div class="col-md-4 col-sm-6">
                                 <div class="single-event-item">
                                     <div class="single-event-image">
-                                        <a href="#">
-                                            <img src="img/event/1.jpg" alt="">
-                                            <span><span>15</span>Jun</span>
-                                        </a>
+                                        <?= Html::a("<img src='img/event/".Html::encode($evento->imagen)."' alt=''><span>".(new \DateTime($evento->fecha))->format('d M')."</span>", ['site/eventdetail', 'id' => $evento->idevento]);?>
+                                        
+                                       
                                     </div>
                                     <div class="single-event-text">
-                                        <h3><a href="#">Learn English in ease</a></h3>
+                                        
+                                        <h3><?= Html::a(Html::encode($evento->titulo), ['site/eventdetail', 'id' => $evento->idevento]);?></h3>
                                         <div class="single-item-comment-view">
-                                           <span><i class="zmdi zmdi-time"></i>4.00 pm - 8.00 pm</span>
-                                           <span><i class="zmdi zmdi-pin"></i>Dhaka Bangladesh</span>
+                                           <span><i class="zmdi zmdi-time"></i><?= (new \DateTime($evento->hora_inicio))->format('h.i a')?> - <?= (new \DateTime($evento->hora_fin))->format('h.i a')?></span>
+                                           <span><i class="zmdi zmdi-pin"></i><?= Html::encode($evento->lugar)?></span>
                                        </div>
-                                       <p>There are many variaons of passa of Lorem Ipsuable, amrn in sofby injected humour, amr sarata din megla....</p>
-                                       <a class="button-default" href="#">LEARN Now</a>
+                                       <p><?= HtmlPurifier::process($evento->descripcion) ?></p>
+                                       
+                                       <?= Html::a("Leer", ['site/eventdetail', 'id' => $evento->idevento], ['class' => 'button-default']);?>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6">
-                                <div class="single-event-item">
-                                    <div class="single-event-image">
-                                        <a href="#">
-                                            <img src="img/event/2.jpg" alt="">
-                                            <span><span>20</span>Apr</span>
-                                        </a>
-                                    </div>
-                                    <div class="single-event-text">
-                                        <h3><a href="#">Learn English in ease</a></h3>
-                                        <div class="single-item-comment-view">
-                                           <span><i class="zmdi zmdi-time"></i>4.00 pm - 8.00 pm</span>
-                                           <span><i class="zmdi zmdi-pin"></i>Jessore Bangladesh</span>
-                                       </div>
-                                       <p>There are many variaons of passa of Lorem Ipsuable, amrn in sofby injected humour, amr sarata din megla....</p>
-                                       <a class="button-default" href="#">LEARN Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 hidden-sm">
-                                <div class="single-event-item">
-                                    <div class="single-event-image">
-                                        <a href="#">
-                                            <img src="img/event/3.jpg" alt="">
-                                            <span><span>06</span>Dec</span>
-                                        </a>
-                                    </div>
-                                    <div class="single-event-text">
-                                        <h3><a href="#">Learn English in ease</a></h3>
-                                        <div class="single-item-comment-view">
-                                           <span><i class="zmdi zmdi-time"></i>4.00 pm - 8.00 pm</span>
-                                           <span><i class="zmdi zmdi-pin"></i>Dhaka. Bangladesh</span>
-                                       </div>
-                                       <p>There are many variaons of passa of Lorem Ipsuable, amrn in sofby injected humour, amr sarata din megla....</p>
-                                       <a class="button-default" href="#">LEARN Now</a>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php endforeach; ?>
+                            
+                            
                         </div>
                     </div>
                 </div>

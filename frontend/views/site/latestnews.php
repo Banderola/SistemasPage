@@ -5,8 +5,9 @@
 /* @var $model \frontend\models\ContactForm */
 
 use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
+use yii\widgets\LinkPager;
+use yii\helpers\HtmlPurifier;
 
 $this->title = 'Latestnews';
 
@@ -14,7 +15,7 @@ $this->title = 'Latestnews';
 <div class="site-latestnews">
   
 <!--Breadcrumb Banner Area Start-->
-                <div class="breadcrumb-banner-area" style="background-image: url('img/banner/<?= $portada->imagen ?>');">
+                <div class="breadcrumb-banner-area" style="background-image: url('img/banner/<?= Html::encode($portada->imagen) ?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -36,108 +37,37 @@ $this->title = 'Latestnews';
                 <div class="latest-area section-padding latest-page">
                     <div class="container">
                         <div class="row">
+                           <?php foreach ($noticias as $noticia): ?> 
                             <div class="col-md-6">
                                 <div class="single-latest-item">
                                     <div class="single-latest-image">
-                                        <a href="news-details.html"><img src="img/latest/1.jpg" alt=""></a>
+                                        
+                                        <?= Html::a("<img src='img/latest/".Html::encode($noticia->imagen)."' alt=''>", ['site/newsdetails', 'id' => $noticia->idnoticia]);?>
                                     </div>
                                     <div class="single-latest-text">
-                                        <h3><a href="news-details.html">Learn English in ease</a></h3>
+                                       
+                                        <h3><?= Html::a(Html::encode($noticia->titulo), ['site/newsdetails', 'id' => $noticia->idnoticia]);?></h3>
                                         <div class="single-item-comment-view">
-                                           <span><i class="zmdi zmdi-calendar-check"></i>25 jun 2050</span>
-                                           <span><i class="zmdi zmdi-eye"></i>59</span>
-                                           <span><i class="zmdi zmdi-comments"></i>19</span>
+                                           <span><i class="zmdi zmdi-calendar-check"></i><?=(new \DateTime($noticia->fecha))->format('d M Y')?></span>
+                                           <span><i class="zmdi zmdi-eye"></i><?=Html::encode($noticia->visitas)?></span>
+                                           <span><i class="zmdi zmdi-comments"></i><?=Html::encode($noticia->cnt)?></span>
                                        </div>
-                                       <p>There are many variaons of passages of Lorem Ipsuable, amrn in some by injected humour, </p>
-                                       <a href="news-details.html" class="button-default">LEARN Now</a>
+                                       <?= HtmlPurifier::process($noticia->descripcion) ?>
+                               
+                                       <?= Html::a("Leer", ['site/newsdetails', 'id' => $noticia->idnoticia], ['class' => 'button-default']);?>
                                     </div>
                                 </div>
-                                <div class="single-latest-item">
-                                    <div class="single-latest-image">
-                                        <a href="news-details.html"><img src="img/latest/2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-latest-text">
-                                        <h3><a href="news-details.html">Learn English in ease</a></h3>
-                                        <div class="single-item-comment-view">
-                                           <span><i class="zmdi zmdi-calendar-check"></i>25 jun 2050</span>
-                                           <span><i class="zmdi zmdi-eye"></i>59</span>
-                                           <span><i class="zmdi zmdi-comments"></i>19</span>
-                                       </div>
-                                       <p>There are many variaons of passages of Lorem Ipsuable, amrn in some by injected humour, </p>
-                                       <a href="news-details.html" class="button-default">LEARN Now</a>
-                                    </div>
-                                </div>
-                                <div class="single-latest-item">
-                                    <div class="single-latest-image">
-                                        <a href="news-details.html"><img src="img/latest/5.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-latest-text">
-                                        <h3><a href="news-details.html">Learn English in ease</a></h3>
-                                        <div class="single-item-comment-view">
-                                           <span><i class="zmdi zmdi-calendar-check"></i>25 jun 2050</span>
-                                           <span><i class="zmdi zmdi-eye"></i>59</span>
-                                           <span><i class="zmdi zmdi-comments"></i>19</span>
-                                       </div>
-                                       <p>There are many variaons of passages of Lorem Ipsuable, amrn in some by injected humour, </p>
-                                       <a href="news-details.html" class="button-default">LEARN Now</a>
-                                    </div>
-                                </div>
+                                
+                                
                             </div>
-                            <div class="col-md-6">
-                                <div class="single-latest-item">
-                                    <div class="single-latest-image">
-                                        <a href="news-details.html"><img src="img/latest/3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-latest-text">
-                                        <h3><a href="news-details.html">Learn English in ease</a></h3>
-                                        <div class="single-item-comment-view">
-                                           <span><i class="zmdi zmdi-calendar-check"></i>25 jun 2050</span>
-                                           <span><i class="zmdi zmdi-eye"></i>59</span>
-                                           <span><i class="zmdi zmdi-comments"></i>19</span>
-                                       </div>
-                                       <p>There are many variaons of passages of Lorem Ipsuable, amrn in some by injected humour, </p>
-                                       <a href="news-details.html" class="button-default">LEARN Now</a>
-                                    </div>
-                                </div>
-                                <div class="single-latest-item">
-                                    <div class="single-latest-image">
-                                        <a href="news-details.html"><img src="img/latest/4.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-latest-text">
-                                        <h3><a href="news-details.html">Learn English in ease</a></h3>
-                                        <div class="single-item-comment-view">
-                                           <span><i class="zmdi zmdi-calendar-check"></i>25 jun 2050</span>
-                                           <span><i class="zmdi zmdi-eye"></i>59</span>
-                                           <span><i class="zmdi zmdi-comments"></i>19</span>
-                                       </div>
-                                       <p>There are many variaons of passages of Lorem Ipsuable, amrn in some by injected humour, </p>
-                                       <a href="news-details.html" class="button-default">LEARN Now</a>
-                                    </div>
-                                </div>
-                                <div class="single-latest-item">
-                                    <div class="single-latest-image">
-                                        <a href="news-details.html"><img src="img/latest/6.jpg" alt=""></a>
-                                    </div>
-                                    <div class="single-latest-text">
-                                        <h3><a href="news-details.html">Learn English in ease</a></h3>
-                                        <div class="single-item-comment-view">
-                                           <span><i class="zmdi zmdi-calendar-check"></i>25 jun 2050</span>
-                                           <span><i class="zmdi zmdi-eye"></i>59</span>
-                                           <span><i class="zmdi zmdi-comments"></i>19</span>
-                                       </div>
-                                       <p>There are many variaons of passages of Lorem Ipsuable, amrn in some by injected humour, </p>
-                                       <a href="news-details.html" class="button-default">LEARN Now</a>
-                                    </div>
-                                </div>
-                            </div>
+                            
+                            <?php endforeach; ?>
+                            
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="pagination-content">
-                                    <ul class="pagination">
-                                        <li><a href="#"><i class="zmdi zmdi-chevron-left"></i></a></li>
-                                        <li class="current"><a href="#"><i class="zmdi zmdi-chevron-right"></i></a></li>
-                                    </ul>
+                                    <?= LinkPager::widget(['pagination' => $pagination]) ?>
                                 </div>
                             </div>
                         </div>

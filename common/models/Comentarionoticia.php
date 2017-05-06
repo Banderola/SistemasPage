@@ -18,6 +18,8 @@ use Yii;
  */
 class Comentarionoticia extends \yii\db\ActiveRecord
 {
+    public $nombre;
+    public $imagen;
     /**
      * @inheritdoc
      */

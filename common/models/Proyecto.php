@@ -14,15 +14,16 @@ use Yii;
  * @property string $Imagen
  * @property integer $user_id
  * @property string $Fecha
+ * @property integer $categoriaProyecto_idcategoriaProyecto
  *
- * @property Comentarioproyecto[] $comentarioproyectos
  * @property User $user
+ * @property Categoriaproyecto $categoriaProyectoIdcategoriaProyecto
  * @property Ratingproyecto[] $ratingproyectos
  */
 class Proyecto extends \yii\db\ActiveRecord
 {
-    public $cnt;
     public $rating;
+    public $nombre;
     /**
      * @inheritdoc
      */
@@ -37,13 +38,14 @@ class Proyecto extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['user_id', 'Fecha'], 'required'],
-            [['user_id'], 'integer'],
+            [['user_id', 'Fecha', 'categoriaProyecto_idcategoriaProyecto'], 'required'],
+            [['user_id', 'categoriaProyecto_idcategoriaProyecto'], 'integer'],
             [['Fecha'], 'safe'],
             [['Titulo', 'Imagen'], 'string', 'max' => 45],
             [['Descripcion'], 'string', 'max' => 255],
             [['Url'], 'string', 'max' => 100],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
+            [['categoriaProyecto_idcategoriaProyecto'], 'exist', 'skipOnError' => true, 'targetClass' => Categoriaproyecto::className(), 'targetAttribute' => ['categoriaProyecto_idcategoriaProyecto' => 'idcategoriaProyecto']],
         ];
     }
 
@@ -60,20 +62,8 @@ class Proyecto extends \yii\db\ActiveRecord
             'Imagen' => 'Imagen',
             'user_id' => 'User ID',
             'Fecha' => 'Fecha',
+            'categoriaProyecto_idcategoriaProyecto' => 'Categoria Proyecto Idcategoria Proyecto',
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getComentarioproyectos()
-    {
-        return $this->hasMany(Comentarioproyecto::className(), ['Proyecto_idProyecto' => 'idProyecto'])
-                ->select('comentarioproyecto.*, nombre, imagen')
-                ->leftJoin('user','comentarioproyecto.user_id=user.id')
-                ->groupBy('idComentarioProyecto')
-                ->with('user')
-                ->orderBy('Fecha DESC');
     }
 
     /**
@@ -82,6 +72,14 @@ class Proyecto extends \yii\db\ActiveRecord
     public function getUser()
     {
         return $this->hasOne(User::className(), ['id' => 'user_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCategoriaProyectoIdcategoriaProyecto()
+    {
+        return $this->hasOne(Categoriaproyecto::className(), ['idcategoriaProyecto' => 'categoriaProyecto_idcategoriaProyecto']);
     }
 
     /**
@@ -107,11 +105,5 @@ class Proyecto extends \yii\db\ActiveRecord
         }
         
                 
-    }
-    
-    public function getCuentacomentario()
-    {
-        return $this->hasMany(Comentarioproyecto::className(), ['Proyecto_idProyecto' => 'idProyecto'])
-                ->count();
     }
 }

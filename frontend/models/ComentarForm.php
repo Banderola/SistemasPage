@@ -7,6 +7,7 @@ use yii\base\Model;
 use common\models\Comentarioespecialidad;
 use common\models\Comentarioproyecto;
 use common\models\Comentarionoticia;
+use common\models\Comentarioevento;
 
 /**
  * CalificarForm is the model behind the contact form.
@@ -68,6 +69,38 @@ class ComentarForm extends Model
             $comentario->Descripcion = $this->descripcion;
             $comentario->Fecha = (new \DateTime("now", new \DateTimeZone('America/Mexico_City')))->format('Y-m-d H:i:s');
             $comentario->Proyecto_idProyecto = $this->idEspecialidad;
+            $comentario->user_id = Yii::$app->getUser()->getId();
+            return $comentario->save();
+            
+        }
+        return false;
+        
+    }
+    
+    public function addComentarionoticia()
+    {
+        
+        if($this->validate()){
+            $comentario = new Comentarionoticia();
+            $comentario->descripcion = $this->descripcion;
+            $comentario->Fecha = (new \DateTime("now", new \DateTimeZone('America/Mexico_City')))->format('Y-m-d H:i:s');
+            $comentario->noticia_idnoticia = $this->idEspecialidad;
+            $comentario->user_id = Yii::$app->getUser()->getId();
+            return $comentario->save();
+            
+        }
+        return false;
+        
+    }
+    
+    public function addComentarioevento()
+    {
+        
+        if($this->validate()){
+            $comentario = new Comentarioevento();
+            $comentario->descripcion = $this->descripcion;
+            $comentario->fecha = (new \DateTime("now", new \DateTimeZone('America/Mexico_City')))->format('Y-m-d H:i:s');
+            $comentario->evento_idevento = $this->idEspecialidad;
             $comentario->user_id = Yii::$app->getUser()->getId();
             return $comentario->save();
             

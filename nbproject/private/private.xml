@@ -3,15 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/admin/newspeciality.php</file>
-            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/admin/newsmanager.php</file>
-            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/common/models/Especialidad.php</file>
-            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/models/Speciality.php</file>
-            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/common/models/Noticia.php</file>
-            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/layouts/main.php</file>
-            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/admin/newform.php</file>
-            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/controllers/AdminController.php</file>
-            <file>file:/C:/xampp/htdocs/Servicio/SistemasPage/backend/views/admin/specialityManager.php</file>
+            <file>file:/C:/xampp/htdocs/SistemasPage/frontend/controllers/SiteController.php</file>
         </group>
     </open-files>
 </project-private>

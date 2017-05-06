@@ -150,6 +150,7 @@ if($model->rating==null){
                                     </div>
                                     
                                     <div class="comments" >
+                                        <h4 class="title">Comentarios</h4>
                                         <div style="overflow-y:scroll; height:300px;">
                                         <?php Pjax::begin(); ?>
                                         <?= Html::a("", ['site/coursesdetail', 'id'=>$course->idEspecialidades], ['id' => 'refreshButton']) ?>

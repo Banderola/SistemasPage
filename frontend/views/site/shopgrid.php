@@ -46,13 +46,12 @@ $this->title = 'Shopgrid';
                                     <div class="single-product-text">
                                         
                                         <h4><?= Html::a(Html::encode($proyecto->Titulo), ['site/proyectosdetail', 'id' => $proyecto->idProyecto]);?></h4>
-                                        <h5><p><?= HtmlPurifier::process($proyecto->Descripcion) ?></p></h5>
+                                        <h5><p><?= HtmlPurifier::process($proyecto->nombre) ?></p></h5>
                                         <div class="product-price">
                                  
                                            <div class="single-item-rating">
-                                               <?php for ($i = 0;$i<$proyecto->rating;$i++): ?>
-                                                <i class="zmdi zmdi-star"></i>
-                                               <?php endfor; ?>
+                                               
+                                                <div class="starability-result" data-rating="<?=(int)$proyecto->rating?>" aria-describedby="rated-element"></div>
                                            </div>
                                         </div>
                                         <div class="product-buttons">

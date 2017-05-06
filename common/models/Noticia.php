@@ -20,6 +20,7 @@ use Yii;
  */
 class Noticia extends \yii\db\ActiveRecord
 {
+    public $cnt;
     /**
      * @inheritdoc
      */
@@ -64,7 +65,18 @@ class Noticia extends \yii\db\ActiveRecord
      */
     public function getComentarionoticias()
     {
-        return $this->hasMany(Comentarionoticia::className(), ['noticia_idnoticia' => 'idnoticia']);
+        return $this->hasMany(Comentarionoticia::className(), ['noticia_idnoticia' => 'idnoticia'])
+                ->select('comentarionoticia.*, nombre, imagen')
+                ->leftJoin('user','comentarionoticia.user_id=user.id')
+                ->groupBy('idcomentarioNoticia')
+                ->with('user')
+                ->orderBy('Fecha DESC');
+    }
+    
+    public function getCuentacomentario()
+    {
+        return $this->hasMany(Comentarionoticia::className(), ['noticia_idnoticia' => 'idnoticia'])
+                ->count();
     }
 
     /**
