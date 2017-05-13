@@ -11,17 +11,12 @@
     <?= $form->field($model, 'titulo') -> textInput();?>
     <?= $form->field($model, 'descripcion') -> textInput(); ?>
     <?= $form->field($model, 'link') -> textInput(); ?>
-    <?= $form->field($model, 'imagen')->widget(Widget::className(), [
-        //TODO: encontrar la forma de que nunca se repitan los nombres de las imágenes
-        'uploadUrl' => Url::toRoute('/admin/uploadPhoto'),
-        'width' => 236,
-        'height' => 234,
-        'cropAreaWidth' => 500,
-        'cropAreaHeight' => 500,
-        'thumbnailWidth' => 236,
-        'thumbnailHeight' => 234,
-        'label' => 'Arrastra una imagen, o has click aquí para subir una.'
-        ]);?>
+    <?php echo $form->field($model, '_image')->widget(\bilginnet\cropper\Cropper::className(), [
+    'cropperOptions' => [
+        'width' => 236, // must be specified
+        'height' => 234, // must be specified
+     ]
+]);?>
     <div class="form-group">
         <?= Html::submitButton('Guardar', ['class' => 'btn btn-primary']); ?>
     </div>

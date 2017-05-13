@@ -7,12 +7,12 @@
  */
 
 use yii\grid\GridView;
-use backend\data\NewsProvider;
+use backend\data\SpecialityProvider;
 use yii\helpers\Html;
 /* @var $this yii\web\View */
 
 $this->title = 'Bienvenido';
-$dataProvider=new NewsProvider();
+$dataProvider=new SpecialityProvider();
 ?>
 <div class="site-index">
 

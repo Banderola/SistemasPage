@@ -48,4 +48,13 @@ return array (
       '@yii/debug' => $vendorDir . '/yiisoft/yii2-debug',
     ),
   ),
+  'bilginnet/yii2-cropper' => 
+  array (
+    'name' => 'bilginnet/yii2-cropper',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@bilginnet/cropper' => $vendorDir . '/bilginnet/yii2-cropper/src',
+    ),
+  ),
 );

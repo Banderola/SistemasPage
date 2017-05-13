@@ -2942,5 +2942,51 @@
             }
         ],
         "description": "BDD assertion library for PHPUnit"
+    },
+    {
+        "name": "bilginnet/yii2-cropper",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bilginnet/yii2-cropper.git",
+            "reference": "9ee7b1a0d4ca042acc86f29be33a393470d61797"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bilginnet/yii2-cropper/zipball/9ee7b1a0d4ca042acc86f29be33a393470d61797",
+            "reference": "9ee7b1a0d4ca042acc86f29be33a393470d61797",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "*",
+            "yiisoft/yii2-bootstrap": "*"
+        },
+        "time": "2017-04-03T12:23:45+00:00",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "bilginnet\\cropper\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Ercan Bilgin",
+                "email": "bilginnet@gmail.com",
+                "homepage": "https://github.com/bilginnet?tab=repositories"
+            }
+        ],
+        "description": "Yii2 Bootstrap Cropper Input Widget",
+        "keywords": [
+            "cropper",
+            "extension",
+            "widget",
+            "yii2"
+        ]
     }
 ]

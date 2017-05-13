@@ -33,6 +33,10 @@ class ComposerStaticInitfcfa288df89d0761a1c62bfcf644b93e
         array (
             'cebe\\markdown\\' => 14,
         ),
+        'b' => 
+        array (
+            'bilginnet\\cropper\\' => 18,
+        ),
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
@@ -112,6 +116,10 @@ class ComposerStaticInitfcfa288df89d0761a1c62bfcf644b93e
         'cebe\\markdown\\' => 
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
+        ),
+        'bilginnet\\cropper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/bilginnet/yii2-cropper/src',
         ),
         'Webmozart\\Assert\\' => 
         array (

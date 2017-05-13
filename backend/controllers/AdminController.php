@@ -91,7 +91,7 @@ class AdminController extends Controller
     }
 	
 	public function actionNewsmanager(){
-		return $this->render('specialitymanager');
+		return $this->render('newsmanager');
 	}
     
         public function actionSpecialitymanager(){

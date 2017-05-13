@@ -57,14 +57,14 @@ class Especialidad extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idEspecialidades' => 'Id Especialidades',
+            'idEspecialidades' => 'IdEspecialidades',
             'Titulo' => 'Titulo',
             'Descripcion' => 'Descripcion',
             'Visitas' => 'Visitas',
-            'user_id' => 'User ID',
-            'CategoriaEspecialidad_idCategoriaEspecialidad' => 'Categoria Especialidad Id Categoria Especialidad',
+            'user_id' => 'UserID',
+            'CategoriaEspecialidad_idCategoriaEspecialidad' => 'CategoriaEspecialidadIdCategoriaEspecialidad',
             'imagen' => 'Imagen',
-            'Maestro_idMaestro' => 'Maestro Id Maestro',
+            'Maestro_idMaestro' => 'MaestroIdMaestro',
         ];
     }
 

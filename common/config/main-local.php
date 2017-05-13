@@ -1,4 +1,9 @@
 <?php
+	$baseUrl = str_replace('/backend/web', '', Yii::$app->BaseUrl);
+    $baseUrl = str_replace('/frontend/web', '', $baseUrl);
+    Yii::setAlias('@uploadUrl', $baseUrl.'/uploads/');
+    Yii::setAlias('@uploadPath', realpath(dirname(__FILE__).'/../../uploads/'));
+    // image file will upload in //root/uploads   folder
 return [
     'components' => [
         'db' => [
