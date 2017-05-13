@@ -36,6 +36,32 @@ $I->selectOption(['model' => 'customerId'], '3');
 
 ## Actions
 
+### _findClickable
+
+*hidden API method, expected to be used from Helper classes*
+ 
+Locates a clickable element.
+
+Use it in Helpers or GroupObject or Extension classes:
+
+```php
+<?php
+$module = $this->getModule('WebDriver');
+$page = $module->webDriver;
+
+// search a link or button on a page
+$el = $module->_findClickable($page, 'Click Me');
+
+// search a link or button within an element
+$topBar = $module->_findElements('.top-bar')[0];
+$el = $module->_findClickable($topBar, 'Click Me');
+
+```
+ * `param` $page WebDriver instance or an element to search within
+ * `param` $link a link text or locator to click
+ * `return` WebDriverElement
+
+
 ### _findElements
 
 *hidden API method, expected to be used from Helper classes*
@@ -633,13 +659,6 @@ $I->fillField(['name' => 'email'], 'jon@mail.com');
  * `param` $value
 
 
-### getVisibleText
- 
-Grabs all visible text from the current page.
-
- * `return` string
-
-
 ### grabAttributeFrom
  
 Grabs the value of the given attribute value from the given element.
@@ -707,6 +726,15 @@ $aLinks = $I->grabMultiple('a', 'href');
  * `param` $cssOrXpath
  * `param` $attribute
  * `return` string[]
+
+
+### grabPageSource
+ 
+Grabs current page source code.
+
+@throws ModuleException if no page was opened.
+
+ * `return` string Current page source code.
 
 
 ### grabTextFrom
@@ -826,6 +854,51 @@ To proceed test press "ENTER" in console.
 
 This method is useful while writing tests,
 since it allows you to inspect the current page in the middle of a test case.
+
+
+### performOn
+ 
+Waits for element and runs a sequence of actions inside its context.
+Actions can be defined with array, callback, or `Codeception\Util\ActionSequence` instance.
+
+Actions as array are recommended for simple to combine "waitForElement" with assertions;
+`waitForElement($el)` and `see('text', $el)` can be simplified to:
+
+```php
+<?php
+$I->performOn($el, ['see' => 'text']);
+```
+
+List of actions can be pragmatically build using `Codeception\Util\ActionSequence`:
+
+```php
+<?php
+$I->performOn('.model', ActionSequence::build()
+    ->see('Warning')
+    ->see('Are you sure you want to delete this?')
+    ->click('Yes')
+);
+```
+
+Actions executed from array or ActionSequence will print debug output for actions, and adds an action name to
+exception on failure.
+
+Whenever you need to define more actions a callback can be used. A WebDriver module is passed for argument:
+
+```php
+<?php
+$I->performOn('.rememberMe', function (WebDriver $I) {
+     $I->see('Remember me next time');
+     $I->seeElement('#LoginForm_rememberMe');
+     $I->dontSee('Login');
+});
+```
+
+In 3rd argument you can set number a seconds to wait for element to appear
+
+ * `param` $element
+ * `param` $actions
+ * `param int` $timeout
 
 
 ### pressKey

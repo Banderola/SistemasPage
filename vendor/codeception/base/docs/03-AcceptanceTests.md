@@ -313,11 +313,12 @@ $user_id = $I->grabFromCurrentUrl('~$/user/(\d+)/~');
 
 ## Selenium WebDriver
 
-A nice feature of Codeception is that most scenarios can be easily ported between the testing backends.
-The PhpBrowser tests we wrote previously can be executed inside a real browser (or PhantomJS) with Selenium WebDriver.
+A nice feature of Codeception is that most scenarios are similar no matter of how they are executed.
+PhpBrowser was emulating browser requests but how to execute such test in a real browser like Chrome or Firefox? 
+Selenium WebDriver can drive them so in our acceptance tests we can automate scenarios we used to test manually.
+Such tests we should concentrate more on **testing the UI** than on testing functionality.
 
-The only thing we need to change is to reconfigure and rebuild the AcceptanceTester class,
-and to use **WebDriver** instead of PhpBrowser.
+To execute test in a browser we need to change suite configuration to use **WebDriver** instead of PhpBrowser.
 
 Modify your `acceptance.suite.yml` file:
 
@@ -327,17 +328,14 @@ modules:
     enabled:
         - WebDriver:
             url: {{your site URL}}
-            browser: firefox
+            browser: chrome
         - \Helper\Acceptance
 ```
 
-In order to run Selenium tests you need to [download Selenium Server](http://seleniumhq.org/download/)
-and get it running. Alternatively you may use [PhantomJS](http://phantomjs.org/) headless browser in `ghostdriver` mode.
+In order to run browser tests you will need Selenium Server or PhantomJS. 
+WebDriver module contains a manual on [how to start them](http://codeception.com/docs/modules/WebDriver#Local-Testing).
 
-If you run your acceptance tests with Selenium, Firefox will be started
-and all the actions will be performed step by step using the browser engine.
-
-In this case `seeElement` won't just check that the element exists on a page,
+Please note that actions executed in a browser will behave differently. For instance, `seeElement` won't just check that the element exists on a page,
 but it will also check that element is actually visible to the user:
 
 ```php
@@ -345,11 +343,14 @@ but it will also check that element is actually visible to the user:
 $I->seeElement('#modal');
 ```
 
+While WebDriver duplicate the functionality of PhpBrowser it has its limitations: it can't check headers, perform HTTP requests, as browsers don't provide APIs for that. 
+WebDriver also adds browser-specific functionality which will be listed in next sections.
+
 #### Wait
 
 While testing web application, you may need to wait for JavaScript events to occur. Due to its asynchronous nature,
-complex JavaScript interactions are hard to test. That's why you may need to use `wait` actions,
-which can be used to specify what event you expect to occur on a page, before continuing the test.
+complex JavaScript interactions are hard to test. That's why you may need to use waiters, actions with *wait* prefix. 
+They can be used to specify what event you expect to occur on a page, before continuing the test.
 
 For example:
 
@@ -360,9 +361,41 @@ $I->click('#agree_button');
 ```
 
 In this case we are waiting for the 'agree' button to appear and then clicking it. If it didn't appear after 30 seconds,
-the test will fail. There are other `wait` methods you may use.
+the test will fail. There are other `wait` methods you may use, like [waitForText](http://codeception.com/docs/modules/WebDriver#waitForText), 
+[waitForElementVisible](http://codeception.com/docs/modules/WebDriver#waitForElementVisible) and others.
 
-See Codeception's [WebDriver module documentation](http://codeception.com/docs/modules/WebDriver) for the full reference.
+If you don't know what exact element you need to wait for, you can simply pause execution with using `$I->wait()`
+
+```php
+<?php
+$I->wait(3); // wait for 3 secs
+```
+
+#### Wait and Act
+
+To combine `waitForElement` with actions inside that element you can use [performOn](http://codeception.com/docs/modules/WebDriver#performOn) method. 
+Let's see how can you perform some actions inside an HTML popup:
+
+```php
+<?php
+$I->performOn('.confirm', \Codeception\Util\ActionSequence::build()
+    ->see('Warning')
+    ->see('Are you sure you want to delete this?')
+    ->click('Yes')
+);
+```
+Alternatively, this can be executed using callback, in this case WebDriver module instance is passed as argument
+
+```php
+<?php
+$I->performOn('.confirm', function(\Codeception\Module\WebDriver $I) {
+    $I->see('Warning');
+    $I->see('Are you sure you want to delete this?');
+    $I->click('Yes');
+});
+```
+
+For more options see [`performOn` reference]([performOn](http://codeception.com/docs/modules/WebDriver#performOn) ).
 
 ### Multi Session Testing
 
@@ -439,27 +472,6 @@ we implemented [AngularJS module](http://codeception.com/docs/modules/AngularJS)
 before the previous actions are completed and uses the AngularJS API to check the application state.
 
 The AngularJS module extends WebDriver so that all the configuration options from it are available.
-
-### Cleaning Things Up
-
-While testing, your actions may change the data on the site. Tests will fail if trying to create
-or update the same data twice. To avoid this problem, your database should be repopulated for each test.
-Codeception provides a `Db` module for that purpose. It will load a database dump after each passed test.
-To make repopulation work, create an SQL dump of your database and put it into the `tests/_data` directory.
-Set the database connection and path to the dump in the global Codeception config.
-
-```yaml
-# in codeception.yml:
-modules:
-    config:
-        Db:
-            dsn: '[set PDO DSN here]'
-            user: '[set user]'
-            password: '[set password]'
-            dump: tests/_data/dump.sql
-```
-
-After we have configured the Db module, we should have it enabled in the `acceptance.suite.yml` configuration file.
 
 ### Debugging
 

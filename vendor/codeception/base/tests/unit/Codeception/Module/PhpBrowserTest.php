@@ -628,4 +628,51 @@ class PhpBrowserTest extends TestsForBrowsers
         $this->module->dontSee('ERROR');
     }
 
+    /**
+     * @issue https://github.com/Codeception/Codeception/issues/3953
+     */
+    public function testFillFieldInGetFormWithoutId()
+    {
+        $this->module->amOnPage('/form/bug3953');
+        $this->module->selectOption('select_name', 'two');
+        $this->module->fillField('search_name', 'searchterm');
+        $this->module->click('Submit');
+        $params = data::get('query');
+        $this->assertEquals('two', $params['select_name']);
+        $this->assertEquals('searchterm', $params['search_name']);
+    }
+
+    public function testGrabPageSourceWhenNotOnPage()
+    {
+        $this->setExpectedException(
+            '\Codeception\Exception\ModuleException',
+            'Page not loaded. Use `$I->amOnPage` (or hidden API methods `_request` and `_loadPage`) to open it'
+        );
+        $this->module->grabPageSource();
+    }
+
+    public function testGrabPageSourceWhenOnPage()
+    {
+        $this->module->amOnPage('/minimal');
+        $sourceExpected =
+<<<HTML
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Minimal page
+        </title>
+    </head>
+    <body>
+        <h1>
+            Minimal page
+        </h1>
+    </body>
+</html>
+
+HTML
+        ;
+        $sourceActual = $this->module->grabPageSource();
+        $this->assertXmlStringEqualsXmlString($sourceExpected, $sourceActual);
+    }
 }

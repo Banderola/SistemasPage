@@ -1,8 +1,6 @@
 <?php
 namespace Codeception\Lib\Connector;
 
-use Codeception\Exception\ConfigurationException;
-use Codeception\Exception\ModuleConfigException;
 use Codeception\Util\Uri;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Cookie\CookieJar;
@@ -228,7 +226,7 @@ class Guzzle6 extends Client
 
     protected function extractFormData(BrowserKitRequest $request)
     {
-        if (!in_array(strtoupper($request->getMethod()), ['POST', 'PUT', 'PATCH'])) {
+        if (!in_array(strtoupper($request->getMethod()), ['POST', 'PUT', 'PATCH', 'DELETE'])) {
             return null;
         }
 
