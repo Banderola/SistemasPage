@@ -32,7 +32,7 @@ class AdminController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['news', 'uploadPhoto','newsmanager','newspeciality','speciality'],
+                        'actions' => ['news', 'uploadPhoto','newsmanager','newspeciality','speciality','specialitymanager'],
                         'allow' => true,
                         'roles' => ['administrar']
                     ],

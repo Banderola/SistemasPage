@@ -3,7 +3,7 @@ namespace backend\data;
 
 use \common\models\Especialidad;
 
-class NewsProvider extends \yii\data\ArrayDataProvider
+class SpecialityProvider extends \yii\data\ArrayDataProvider
 {
 	/**
      * Initialize the dataprovider by filling allModels
@@ -20,9 +20,9 @@ class NewsProvider extends \yii\data\ArrayDataProvider
 				'Descripcion' => $esp->Descripcion,
 				'Visitas' => $esp->Visitas,
 				'UserID' => $esp->user_id,
-				'CategoriaEspecialidadIdCategoriaEspecialidad' => $esp->CategoriaEspecialidad_idCategoriaEspecialidad,
-				'Imagen' => $esp->Imagen,
-				'MaestroIdMaestro' => $esp->Maestro_idMaestro
+				'CategoriaEspecialidad' => $esp->CategoriaEspecialidad_idCategoriaEspecialidad,
+				'Imagen' => $esp->imagen,
+				'MaestroId' => $esp->Maestro_idMaestro
 			];
 		}
 	}

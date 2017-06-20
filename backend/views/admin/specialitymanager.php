@@ -28,10 +28,9 @@ $dataProvider=new SpecialityProvider();
 					'Titulo',
 					'Imagen',
 					'Visitas',
-					'User_ID',
-					'Categoría',
-                                        'Tipo',
-					'Fecha',
+					'UserID',
+					'CategoriaEspecialidad',
+					'MaestroId',
 					[
 						//TODO: agregar boton con acción para  eliminar noticia en base a id
 						'attribute' => 'Accion',
