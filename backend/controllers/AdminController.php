@@ -9,6 +9,7 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use backend\models\Speciality;
 use backend\models\NewsForm;
+use backend\models\ProjectForm;
 
 /**
  * Site controller
@@ -32,7 +33,7 @@ class AdminController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['news', 'uploadPhoto','newsmanager','newspeciality','speciality','specialitymanager'],
+                        'actions' => ['news', 'uploadPhoto','newsmanager','newspeciality','speciality','specialitymanager','projectsmanager','project'],
                         'allow' => true,
                         'roles' => ['administrar']
                     ],
@@ -94,7 +95,7 @@ class AdminController extends Controller
 		return $this->render('newsmanager');
 	}
     
-        public function actionSpecialitymanager(){
+	public function actionSpecialitymanager(){
 		return $this->render('specialitymanager');
 	}
     
@@ -117,5 +118,18 @@ class AdminController extends Controller
             return $this->render('newspeciality', ['model' => $model]);
         }
     }
+	
+	public function actionProjectsmanager(){
+		return $this->render('projectsmanager');
+	}
+	
+	public function actionProject(){
+		$model = new ProjectForm();
+         if ($model->load(Yii::$app->request->post()) && $model->addSpeciality()) {
+            return $this->render('index');
+        } else {
+            return $this->render('newspeciality', ['model' => $model]);
+        }
+	}
       
 }

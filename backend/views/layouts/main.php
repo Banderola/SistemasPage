@@ -231,7 +231,7 @@ DashboardAsset::register($this);
                 <?= Html::a('<i class="fa fa-file-text"></i><span class="lbl">Especialidades</span>', ['admin/specialitymanager'], ['class' => 'lbl']) ?> 
             </li>
             <li class="green">
-                <?= Html::a('<i class="font-icon font-icon-wallet"></i><span class="lbl">Proyectos</span>', ['site/index'], ['class' => 'lbl']) ?>                
+                <?= Html::a('<i class="font-icon font-icon-case"></i><span class="lbl">Proyectos</span>', ['admin/projectsmanager'], ['class' => 'lbl']) ?>                
             </li>
             <li class="red">
                 <?= Html::a('<i class="font-icon font-icon-case-2"></i><span class="lbl">Eventos</span>', ['site/index'], ['class' => 'lbl']) ?> 

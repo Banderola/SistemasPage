@@ -14,10 +14,8 @@ use Yii;
  * @property string $Imagen
  * @property integer $user_id
  * @property string $Fecha
- * @property integer $categoriaProyecto_idcategoriaProyecto
  *
  * @property User $user
- * @property Categoriaproyecto $categoriaProyectoIdcategoriaProyecto
  * @property Ratingproyecto[] $ratingproyectos
  */
 class Proyecto extends \yii\db\ActiveRecord
@@ -38,14 +36,13 @@ class Proyecto extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['user_id', 'Fecha', 'categoriaProyecto_idcategoriaProyecto'], 'required'],
-            [['user_id', 'categoriaProyecto_idcategoriaProyecto'], 'integer'],
+            [['user_id', 'Fecha'], 'required'],
+            [['user_id'], 'integer'],
             [['Fecha'], 'safe'],
             [['Titulo', 'Imagen'], 'string', 'max' => 45],
             [['Descripcion'], 'string', 'max' => 255],
             [['Url'], 'string', 'max' => 100],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
-            [['categoriaProyecto_idcategoriaProyecto'], 'exist', 'skipOnError' => true, 'targetClass' => Categoriaproyecto::className(), 'targetAttribute' => ['categoriaProyecto_idcategoriaProyecto' => 'idcategoriaProyecto']],
         ];
     }
 
@@ -55,14 +52,13 @@ class Proyecto extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idProyecto' => 'Id Proyecto',
+            'idProyecto' => 'IdProyecto',
             'Titulo' => 'Titulo',
             'Descripcion' => 'Descripcion',
             'Url' => 'Url',
             'Imagen' => 'Imagen',
-            'user_id' => 'User ID',
+            'user_id' => 'UserID',
             'Fecha' => 'Fecha',
-            'categoriaProyecto_idcategoriaProyecto' => 'Categoria Proyecto Idcategoria Proyecto',
         ];
     }
 
@@ -77,10 +73,6 @@ class Proyecto extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getCategoriaProyectoIdcategoriaProyecto()
-    {
-        return $this->hasOne(Categoriaproyecto::className(), ['idcategoriaProyecto' => 'categoriaProyecto_idcategoriaProyecto']);
-    }
 
     /**
      * @return \yii\db\ActiveQuery

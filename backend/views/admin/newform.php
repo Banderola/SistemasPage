@@ -1,7 +1,6 @@
 <?php
     use yii\helpers\Html;
     use yii\widgets\ActiveForm;
-    use budyaga\cropper\Widget;
     use yii\helpers\Url;
     
     $this->title='Subir Noticia';
