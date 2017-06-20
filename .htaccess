@@ -1,0 +1,1 @@
+RewriteRule ^common/uploads/(.*)$ common/uploads/$1 [L]

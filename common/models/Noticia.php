@@ -20,6 +20,7 @@ use Yii;
  */
 class Noticia extends \yii\db\ActiveRecord
 {
+	public $_image;
     public $cnt;
     /**
      * @inheritdoc
@@ -32,6 +33,31 @@ class Noticia extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+	 
+	public function beforeSave($insert)
+    {
+        if (is_string($this->_image) && strstr($this->_image, 'data:image')) {
+
+            // creating image file as png
+            $data = $this->_image;
+            $data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $data));
+            $fileName = time() . '-' . rand(100000, 999999) . '.png';
+            file_put_contents(Yii::getAlias('@uploadPath') . '\\' . $fileName, $data);
+            // deleting old image 
+            // $this->image is real attribute for filename in table
+            // customize your code for your attribute            
+            if (!$this->isNewRecord && !empty($this->imagen)) {
+                unlink(Yii::getAlias('@uploadPath'.'\\'.$this->imagen));
+            }
+            
+            // set new filename
+            $this->imagen = $fileName;
+        }
+
+        return parent::beforeSave($insert);
+    }
+	
+	
     public function rules()
     {
         return [
@@ -40,6 +66,7 @@ class Noticia extends \yii\db\ActiveRecord
             [['titulo', 'imagen'], 'string', 'max' => 45],
             [['descripcion', 'link'], 'string', 'max' => 255],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
+			['_image', 'safe'],
         ];
     }
 

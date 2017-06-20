@@ -160,7 +160,7 @@ DashboardAsset::register($this);
                                                 <span class="mess-item-txt">Morgan was bothering about something! Morgan was bothering about something.</span>
                                             </a>
                                             <a href="#" class="mess-item">
-                                                <span class="avatar-preview avatar-preview-32"><img src="img/img/ava.jpg" alt=""></span>
+                                                <span class="avatar-preview avatar-preview-32"><img src="img/ava.jpg" alt=""></span>
                                                 <span class="mess-item-name">Christian Burtons</span>
                                                 <span class="mess-item-txt">Morgan was bothering about something!</span>
                                             </a>
