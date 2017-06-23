@@ -97,13 +97,7 @@ class Proyecto extends \yii\db\ActiveRecord
         return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
 
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getCategoriaProyectoIdcategoriaProyecto()
-    {
-        return $this->hasOne(Categoriaproyecto::className(), ['idcategoriaProyecto' => 'categoriaProyecto_idcategoriaProyecto']);
-    }
+
 
     /**
      * @return \yii\db\ActiveQuery
