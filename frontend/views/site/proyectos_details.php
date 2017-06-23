@@ -34,6 +34,7 @@ JS;
  }
  else{
      $this->registerJs($script2);
+     Yii::$app->user->setReturnUrl(Yii::$app->getRequest()->getUrl());
  }
 
 $this->title = 'Courses_detalles';

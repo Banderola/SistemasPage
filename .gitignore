@@ -3,3 +3,6 @@
 *.data
 backend/runtime/debug/index.data
 *.log
+frontend/runtime/logs/app.log
+frontend/runtime/logs/app.log
+backend/runtime/debug/index.data
