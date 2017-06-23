@@ -9,8 +9,7 @@
 <?php $form = ActiveForm::begin(); ?>
     <?= $form->field($model, 'titulo') -> textInput();?>
     <?= $form->field($model, 'descripcion') -> textInput(); ?>
-    <?= $form->field($model, 'categoria') -> textInput(); ?>
-    <?= $form->field($model, 'tipo') -> textInput(); ?>
+    <?= $form->field($model, 'link') -> textInput(); ?>
     <?php echo $form->field($model, '_image')->widget(\bilginnet\cropper\Cropper::className(), [
     'cropperOptions' => [
         'width' => 236, // must be specified

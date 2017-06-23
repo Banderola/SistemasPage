@@ -27,6 +27,7 @@ class NewsForm extends Model
             $noticia->link=$this->link;
             $noticia->user_id=Yii::$app->getUser()->getId();
             $noticia->visitas=0;
+			$noticia->fecha=date("Y-m-d H:i:s");
             return $noticia->save();
         }
     }

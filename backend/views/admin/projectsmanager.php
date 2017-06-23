@@ -42,7 +42,7 @@ $dataProvider=new ProjectProvider();
 			]);
 			?>
             <br>
-            <?= Html::a('<p class="btn btn-default">Agregar Proyecto</p>', ['admin/speciality']) ?>
+            <?= Html::a('<p class="btn btn-default">Agregar Proyecto</p>', ['admin/project']) ?>
             
         </div>
 

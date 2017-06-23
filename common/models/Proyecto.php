@@ -15,6 +15,8 @@ use Yii;
  * @property integer $user_id
  * @property string $Fecha
  *
+ * @property integer $categoriaProyecto_idcategoriaProyecto
+ * @property Categoriaproyecto $categoriaProyectoIdcategoriaProyecto
  * @property User $user
  * @property Ratingproyecto[] $ratingproyectos
  */
@@ -22,12 +24,36 @@ class Proyecto extends \yii\db\ActiveRecord
 {
     public $rating;
     public $nombre;
+	public $_image;
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
         return 'proyecto';
+    }
+	
+	public function beforeSave($insert)
+    {
+        if (is_string($this->_image) && strstr($this->_image, 'data:image')) {
+
+            // creating image file as png
+            $data = $this->_image;
+            $data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $data));
+            $fileName = time() . '-' . rand(100000, 999999) . '.png';
+            file_put_contents(Yii::getAlias('@uploadPath') . '\\' . $fileName, $data);
+            // deleting old image 
+            // $this->image is real attribute for filename in table
+            // customize your code for your attribute            
+            if (!$this->isNewRecord && !empty($this->imagen)) {
+                unlink(Yii::getAlias('@uploadPath'.'\\'.$this->imagen));
+            }
+            
+            // set new filename
+            $this->imagen = $fileName;
+        }
+
+        return parent::beforeSave($insert);
     }
 
     /**
@@ -36,13 +62,14 @@ class Proyecto extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['user_id', 'Fecha'], 'required'],
-            [['user_id'], 'integer'],
+            [['user_id', 'Fecha', 'categoriaProyecto_idcategoriaProyecto'], 'required'],
+			[['user_id', 'categoriaProyecto_idcategoriaProyecto'], 'integer'],
             [['Fecha'], 'safe'],
             [['Titulo', 'Imagen'], 'string', 'max' => 45],
             [['Descripcion'], 'string', 'max' => 255],
             [['Url'], 'string', 'max' => 100],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
+			[['categoriaProyecto_idcategoriaProyecto'], 'exist', 'skipOnError' => true, 'targetClass' => Categoriaproyecto::className(), 'targetAttribute' => ['categoriaProyecto_idcategoriaProyecto' => 'idcategoriaProyecto']],
         ];
     }
 
@@ -80,6 +107,11 @@ class Proyecto extends \yii\db\ActiveRecord
     public function getRatingproyectos()
     {
         return $this->hasMany(Ratingproyecto::className(), ['Proyecto_idProyecto' => 'idProyecto']);
+    }
+	
+	public function getCategoriaProyectoIdcategoriaProyecto()
+    {
+        return $this->hasOne(Categoriaproyecto::className(), ['idcategoriaProyecto' => 'categoriaProyecto_idcategoriaProyecto']);
     }
     
     public function getCountrating()

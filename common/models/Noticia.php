@@ -14,6 +14,7 @@ use Yii;
  * @property integer $visitas
  * @property integer $user_id
  * @property string $link
+ * @property string $fecha
  *
  * @property Comentarionoticia[] $comentarionoticias
  * @property User $user

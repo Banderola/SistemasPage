@@ -33,13 +33,26 @@ class AdminController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['news', 'uploadPhoto','newsmanager','newspeciality','speciality','specialitymanager','projectsmanager','project'],
+                        'actions' => [
+							'news',
+							'uploadPhoto',
+							'newsmanager',
+							'newspeciality',
+							'speciality',
+							'specialitymanager',
+							'projectsmanager',
+							'project'
+							],
                         'allow' => true,
                         'roles' => ['administrar']
                     ],
                     
                     [
-                        'actions' => ['index','news','speciality'],
+                        'actions' => [
+							'index',
+							'news',
+							'speciality'
+							],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -125,10 +138,10 @@ class AdminController extends Controller
 	
 	public function actionProject(){
 		$model = new ProjectForm();
-         if ($model->load(Yii::$app->request->post()) && $model->addSpeciality()) {
+         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
             return $this->render('index');
         } else {
-            return $this->render('newspeciality', ['model' => $model]);
+            return $this->render('newproject', ['model' => $model]);
         }
 	}
       
