@@ -17,7 +17,8 @@ $this->title = 'Signup';
     <div class="row">
         <div class="col-lg-5">
             <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
-
+                <?= $form->field($model, 'nombre')->textInput(['autofocus' => true]) ?>
+                
                 <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
 
                 <?= $form->field($model, 'email') ?>

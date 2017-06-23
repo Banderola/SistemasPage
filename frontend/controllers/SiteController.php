@@ -130,7 +130,7 @@ class SiteController extends Controller
     public function actionLogin()
     {
         if (!Yii::$app->user->isGuest) {
-            return $this->goBack();
+            return $this->goHome();
         }
 
         $model = new LoginForm();

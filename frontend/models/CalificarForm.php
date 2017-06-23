@@ -6,7 +6,7 @@ use Yii;
 use yii\base\Model;
 use common\models\Ratingespecialidad;
 use common\models\Ratingproyecto;
-
+use yii\helpers\Html;
 /**
  * CalificarForm is the model behind the contact form.
  */
@@ -24,7 +24,20 @@ class CalificarForm extends Model
         return [
             // name, email, subject and body are required
             [['idEspecialidad', 'rating'], 'required'],
+            ['rating', 'validateCal'],
         ];
+    }
+    
+    public function validateCal($attribute, $params)
+    {
+        if (!$this->hasErrors()) {
+       
+            if (Yii::$app->user->isGuest) {
+                
+                $resent = Html::a('Requiere Iniciar Sesion para Calificar', ['site/login'], ['class' => 'profile-link']);
+                $this->addError($attribute,$resent);
+            }
+        }
     }
 
     /**
