@@ -11,11 +11,13 @@ class ProjectForm extends Model
     public $titulo;
     public $descripcion;
     public $link;
+	public $categoria_id;
     
     public function rules()
     {
         return [
-            [['titulo','descripcion','link'],'required']
+            [['titulo','descripcion','link', 'categoria_id'],'required'],
+			['imagen', 'safe']
         ];
     }
     
@@ -26,6 +28,7 @@ class ProjectForm extends Model
             $proyecto->Descripcion=$this->descripcion;
             $proyecto->Url=$this->link;
             $proyecto->user_id=Yii::$app->getUser()->getId();
+			$proyecto->categoriaProyecto_idcategoriaProyecto=$this->categoria_id;
 			$proyecto->Fecha=date("Y-m-d H:i:s");
             return $proyecto->save();
         }

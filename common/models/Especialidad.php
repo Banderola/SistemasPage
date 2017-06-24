@@ -24,6 +24,7 @@ use Yii;
  */
 class Especialidad extends \yii\db\ActiveRecord
 {
+	const SCENARIO_ONE="one";
     public $cnt;
     public $rating;
     public $maestro;
@@ -72,6 +73,7 @@ class Especialidad extends \yii\db\ActiveRecord
             [['CategoriaEspecialidad_idCategoriaEspecialidad'], 'exist', 'skipOnError' => true, 'targetClass' => Categoriaespecialidad::className(), 'targetAttribute' => ['CategoriaEspecialidad_idCategoriaEspecialidad' => 'idCategoriaEspecialidad']],
             [['Maestro_idMaestro'], 'exist', 'skipOnError' => true, 'targetClass' => Maestro::className(), 'targetAttribute' => ['Maestro_idMaestro' => 'idMaestro']],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
+			[['_image','Maestro_idMaestro'],'safe']
         ];
     }
 

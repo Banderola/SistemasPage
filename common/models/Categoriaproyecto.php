@@ -38,7 +38,7 @@ class Categoriaproyecto extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idcategoriaProyecto' => 'Idcategoria Proyecto',
+            'idcategoriaProyecto' => 'Idcategoria',
             'Nombre' => 'Nombre',
         ];
     }

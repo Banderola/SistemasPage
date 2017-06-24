@@ -21,7 +21,8 @@ class ProjectProvider extends \yii\data\ArrayDataProvider
 				'Url' => $pro->Url,
 				'Imagen' => $pro->Imagen,
 				'UserID' => $pro->user_id,
-				'Fecha' => $pro->Fecha
+				'Fecha' => $pro->Fecha,
+				'CategoriaID' =>$pro->categoriaProyecto_idcategoriaProyecto
 			];
 		}
 	}

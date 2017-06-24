@@ -107,6 +107,23 @@ Returns URL of a host.
 @throws ModuleConfigException
 
 
+### _restart
+
+*hidden API method, expected to be used from Helper classes*
+ 
+Restarts a web browser.
+Can be used with `_reconfigure` to open browser with different configuration
+
+```php
+<?php
+// inside a Helper
+$this->getModule('WebDriver')->_restart(); // just restart
+$this->getModule('WebDriver')->_restart(['browser' => $browser]); // reconfigure + restart
+```
+
+ * `param array` $config
+
+
 ### _savePageSource
 
 *hidden API method, expected to be used from Helper classes*
@@ -788,6 +805,8 @@ Takes a screenshot of the current window and saves it to `tests/_output/debug`.
 $I->amOnPage('/user/edit');
 $I->makeScreenshot('edit_page');
 // saved to: tests/_output/debug/edit_page.png
+$I->makeScreenshot();
+// saved to: tests/_output/debug/2017-05-26_14-24-11_4b3403665fea6.png
 ?>
 ```
 
@@ -1754,4 +1773,4 @@ $I->waitForText('foo', 30, '.title'); // secs
  * `param null` $selector
 @throws \Exception
 
-<p>&nbsp;</p><div class="alert alert-warning">Module reference is taken from the source code. <a href="https://github.com/Codeception/Codeception/tree/2.2/src/Codeception/Module/AngularJS.php">Help us to improve documentation. Edit module reference</a></div>
+<p>&nbsp;</p><div class="alert alert-warning">Module reference is taken from the source code. <a href="https://github.com/Codeception/Codeception/tree/2.3/src/Codeception/Module/AngularJS.php">Help us to improve documentation. Edit module reference</a></div>

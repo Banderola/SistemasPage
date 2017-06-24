@@ -2,6 +2,8 @@
 	use yii\helpers\Html;
     use yii\widgets\ActiveForm;
     use yii\helpers\Url;
+	use yii\helpers\ArrayHelper;
+	use common\models\Categoriaproyecto;
     
     $this->title='Subir Proyecto';
 ?>
@@ -10,6 +12,10 @@
     <?= $form->field($model, 'titulo') -> textInput();?>
     <?= $form->field($model, 'descripcion') -> textInput(); ?>
     <?= $form->field($model, 'link') -> textInput(); ?>
+	<?= $form->field($model, 'categoria_id') -> dropDownList(
+		ArrayHelper::map(Categoriaproyecto::find()->all(),'idcategoriaProyecto','Nombre'),
+		['prompt' => 'Selecciona categoria']
+	); ?>
     <?php echo $form->field($model, '_image')->widget(\bilginnet\cropper\Cropper::className(), [
     'cropperOptions' => [
         'width' => 236, // must be specified

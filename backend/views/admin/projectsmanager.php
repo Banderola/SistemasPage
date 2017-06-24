@@ -28,6 +28,7 @@ $dataProvider=new ProjectProvider();
 					'Titulo',
 					'Url',
 					'Imagen',
+					'CategoriaID',
 					'UserID',
 					'Fecha',
 					[

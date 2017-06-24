@@ -44,6 +44,7 @@ class Evento extends \yii\db\ActiveRecord
             [['titulo', 'imagen', 'lugar', 'ubicacion'], 'string', 'max' => 45],
             [['descripcion'], 'string', 'max' => 255],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
+			[['fecha'], 'default', 'value' => date('Y-m-d')]
         ];
     }
 

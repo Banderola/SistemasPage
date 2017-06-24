@@ -7,9 +7,11 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use backend\models\Speciality;
+use backend\models\SpecialityForm;
 use backend\models\NewsForm;
 use backend\models\ProjectForm;
+use backend\models\EventForm;
+use backend\models\SpecialityCategoryForm;
 
 /**
  * Site controller
@@ -41,7 +43,11 @@ class AdminController extends Controller
 							'speciality',
 							'specialitymanager',
 							'projectsmanager',
-							'project'
+							'project',
+							'event',
+							'eventsmanager',
+							'specialitycategory',
+							'specialitycategorymanager'
 							],
                         'allow' => true,
                         'roles' => ['administrar']
@@ -103,6 +109,10 @@ class AdminController extends Controller
         
         return $this->render('index');
     }
+	//MANAGERS
+	public function actionProjectsmanager(){
+		return $this->render('projectsmanager');
+	}
 	
 	public function actionNewsmanager(){
 		return $this->render('newsmanager');
@@ -112,6 +122,16 @@ class AdminController extends Controller
 		return $this->render('specialitymanager');
 	}
     
+	public function actionEventsmanager(){
+		return $this->render('eventsmanager');
+	}
+	
+	public function actionSpecialitycategorymanager(){
+		return $this->render('specialitycategorymanager');
+	}
+	
+	
+	//ADDERS
     public function actionNews()
     {
         $model = new NewsForm();
@@ -124,17 +144,13 @@ class AdminController extends Controller
     
     public function actionSpeciality()
     {
-        $model = new Speciality();
-         if ($model->load(Yii::$app->request->post()) && $model->addSpeciality()) {
+        $model = new SpecialityForm();
+         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
             return $this->render('index');
         } else {
             return $this->render('newspeciality', ['model' => $model]);
         }
     }
-	
-	public function actionProjectsmanager(){
-		return $this->render('projectsmanager');
-	}
 	
 	public function actionProject(){
 		$model = new ProjectForm();
@@ -144,5 +160,22 @@ class AdminController extends Controller
             return $this->render('newproject', ['model' => $model]);
         }
 	}
-      
+	
+	public function actionEvent(){
+		$model = new EventForm();
+         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
+            return $this->render('index');
+        } else {
+            return $this->render('newevent', ['model' => $model]);
+        }
+	}
+	
+	public function actionSpecialitycategory(){
+		$model = new SpecialityCategoryForm();
+         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
+            return $this->render('index');
+        } else {
+            return $this->render('newspecialitycategory', ['model' => $model]);
+        }
+	}
 }

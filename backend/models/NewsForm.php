@@ -15,7 +15,8 @@ class NewsForm extends Model
     public function rules()
     {
         return [
-            [['titulo','descripcion','link'],'required']
+            [['titulo','descripcion','link'],'required'],
+			['imagen', 'safe']
         ];
     }
     

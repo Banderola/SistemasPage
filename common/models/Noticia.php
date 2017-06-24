@@ -67,7 +67,7 @@ class Noticia extends \yii\db\ActiveRecord
             [['titulo', 'imagen'], 'string', 'max' => 45],
             [['descripcion', 'link'], 'string', 'max' => 255],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
-			['_image', 'safe'],
+			[['_image','imagen'], 'safe'],
         ];
     }
 

@@ -68,6 +68,7 @@ class Proyecto extends \yii\db\ActiveRecord
             [['Titulo', 'Imagen'], 'string', 'max' => 45],
             [['Descripcion'], 'string', 'max' => 255],
             [['Url'], 'string', 'max' => 100],
+			['_image','safe'],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
 			[['categoriaProyecto_idcategoriaProyecto'], 'exist', 'skipOnError' => true, 'targetClass' => Categoriaproyecto::className(), 'targetAttribute' => ['categoriaProyecto_idcategoriaProyecto' => 'idcategoriaProyecto']],
         ];
@@ -86,6 +87,7 @@ class Proyecto extends \yii\db\ActiveRecord
             'Imagen' => 'Imagen',
             'user_id' => 'UserID',
             'Fecha' => 'Fecha',
+			'categoriaProyecto_idcategoriaProyecto' => 'CategoriaID'
         ];
     }
 
