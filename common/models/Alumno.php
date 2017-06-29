@@ -17,7 +17,6 @@ use Yii;
  */
 class Alumno extends \yii\db\ActiveRecord
 {
-    public $descripcion;
     /**
      * @inheritdoc
      */
@@ -53,13 +52,6 @@ class Alumno extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getComentarioAlumnoIdComentarioAlumno()
-    {
-        return $this->hasOne(Comentarioalumno::className(), ['idComentarioAlumno' => 'ComentarioAlumno_idComentarioAlumno']);
-    }
 
     /**
      * @return \yii\db\ActiveQuery

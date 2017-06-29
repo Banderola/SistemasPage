@@ -32211,3 +32211,333 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1498257999.196
     'REQUEST_TIME' => 1498257999
 ]
+2017-06-29 05:22:34 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii2.comentarioalumno' doesn't exist in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php:915
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(915): PDOStatement->execute()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all(NULL)
+#4 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(110): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii2.comentarioalumno' doesn't exist
+The SQL being executed was: SELECT `alumno`.*, `Descripcion` AS `descripcion` FROM `alumno` LEFT JOIN `comentarioalumno` ON idComentarioAlumno=ComentarioAlumno_idComentarioAlumno GROUP BY `idAlumno` ORDER BY rand() in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(930): yii\db\Schema->convertException(Object(PDOException), 'SELECT `alumno`...')
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all(NULL)
+#4 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(110): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'yii2.comentarioalumno' doesn't exist
+)
+
+2017-06-29 05:22:34 [::1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'd0e112lbblb8lbarsm34kvjub2'
+    '_csrf-frontend' => '9043b4726ccd935d028906145d189ac3e7af12f1d6c14d8a7347c7b9a516cbbaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"äòç¶Œø8 ÍœŽÇBæ¸¢Nj,žiÜi¡Ú÷¦4\";}'
+    '_identity-frontend' => '52ba2205e92669e3484912413e30ac6992d640ed69cdf23614f293c04e25357da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"pG7q5lhMNBRdK-cMrC0kRgupaui_7fES\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/'
+    'HTTP_COOKIE' => 'advanced-frontend=d0e112lbblb8lbarsm34kvjub2; _csrf-frontend=9043b4726ccd935d028906145d189ac3e7af12f1d6c14d8a7347c7b9a516cbbaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%E4%F2%E7%B6%8C%F88+%CD%9C%8E%C7B%E6%B8%A2Nj%2C%9Ei%15%DC%14%10%03i%A1%DA%F7%A64%22%3B%7D; _identity-frontend=52ba2205e92669e3484912413e30ac6992d640ed69cdf23614f293c04e25357da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22pG7q5lhMNBRdK-cMrC0kRgupaui_7fES%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\nodejs\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\edson\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '52139'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SistemasPage/frontend/web/'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498706554.816
+    'REQUEST_TIME' => 1498706554
+]
+2017-06-29 05:23:03 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii2.comentarioalumno' doesn't exist in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php:915
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(915): PDOStatement->execute()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all(NULL)
+#4 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(110): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii2.comentarioalumno' doesn't exist
+The SQL being executed was: SELECT `alumno`.*, `Descripcion` AS `descripcion` FROM `alumno` LEFT JOIN `comentarioalumno` ON idComentarioAlumno=ComentarioAlumno_idComentarioAlumno GROUP BY `idAlumno` ORDER BY rand() in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(930): yii\db\Schema->convertException(Object(PDOException), 'SELECT `alumno`...')
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all(NULL)
+#4 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(110): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'yii2.comentarioalumno' doesn't exist
+)
+
+2017-06-29 05:23:03 [::1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'd0e112lbblb8lbarsm34kvjub2'
+    '_csrf-frontend' => '9043b4726ccd935d028906145d189ac3e7af12f1d6c14d8a7347c7b9a516cbbaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"äòç¶Œø8 ÍœŽÇBæ¸¢Nj,žiÜi¡Ú÷¦4\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=d0e112lbblb8lbarsm34kvjub2; _csrf-frontend=9043b4726ccd935d028906145d189ac3e7af12f1d6c14d8a7347c7b9a516cbbaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%E4%F2%E7%B6%8C%F88+%CD%9C%8E%C7B%E6%B8%A2Nj%2C%9Ei%15%DC%14%10%03i%A1%DA%F7%A64%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\nodejs\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\edson\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '52150'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SistemasPage/frontend/web/'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498706583.678
+    'REQUEST_TIME' => 1498706583
+]
+2017-06-29 05:26:50 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii2.comentarioalumno' doesn't exist in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php:915
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(915): PDOStatement->execute()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all(NULL)
+#4 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(110): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii2.comentarioalumno' doesn't exist
+The SQL being executed was: SELECT `alumno`.*, `Descripcion` AS `descripcion` FROM `alumno` LEFT JOIN `comentarioalumno` ON idComentarioAlumno=ComentarioAlumno_idComentarioAlumno GROUP BY `idAlumno` ORDER BY rand() in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(930): yii\db\Schema->convertException(Object(PDOException), 'SELECT `alumno`...')
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Query.php(213): yii\db\Command->queryAll()
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\ActiveQuery.php(135): yii\db\Query->all(NULL)
+#4 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(110): yii\db\ActiveQuery->all()
+#5 [internal function]: frontend\controllers\SiteController->actionIndex()
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'yii2.comentarioalumno' doesn't exist
+)
+
+2017-06-29 05:26:50 [::1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'd0e112lbblb8lbarsm34kvjub2'
+    '_csrf-frontend' => '9043b4726ccd935d028906145d189ac3e7af12f1d6c14d8a7347c7b9a516cbbaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"äòç¶Œø8 ÍœŽÇBæ¸¢Nj,žiÜi¡Ú÷¦4\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=d0e112lbblb8lbarsm34kvjub2; _csrf-frontend=9043b4726ccd935d028906145d189ac3e7af12f1d6c14d8a7347c7b9a516cbbaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%E4%F2%E7%B6%8C%F88+%CD%9C%8E%C7B%E6%B8%A2Nj%2C%9Ei%15%DC%14%10%03i%A1%DA%F7%A64%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\nodejs\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\edson\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '52169'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SistemasPage/frontend/web/'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498706810.81
+    'REQUEST_TIME' => 1498706810
+]
+2017-06-29 05:29:15 [::1][-][-][error][Error] Error: Call to a member function orderBy() on array in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:109
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionIndex()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-06-29 05:29:15 [::1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'd0e112lbblb8lbarsm34kvjub2'
+    '_csrf-frontend' => '9043b4726ccd935d028906145d189ac3e7af12f1d6c14d8a7347c7b9a516cbbaa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"äòç¶Œø8 ÍœŽÇBæ¸¢Nj,žiÜi¡Ú÷¦4\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=d0e112lbblb8lbarsm34kvjub2; _csrf-frontend=9043b4726ccd935d028906145d189ac3e7af12f1d6c14d8a7347c7b9a516cbbaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%E4%F2%E7%B6%8C%F88+%CD%9C%8E%C7B%E6%B8%A2Nj%2C%9Ei%15%DC%14%10%03i%A1%DA%F7%A64%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\nodejs\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\edson\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.8'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '52176'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/SistemasPage/frontend/web/'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498706955.388
+    'REQUEST_TIME' => 1498706955
+]

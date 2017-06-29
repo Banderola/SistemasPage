@@ -593,11 +593,7 @@ class SiteController extends Controller
     private function getAlumnos()
     {
         
-        return Alumno::find()
-                ->select('alumno.*, Descripcion AS descripcion')
-                ->leftJoin('comentarioalumno','idComentarioAlumno=ComentarioAlumno_idComentarioAlumno')
-                ->groupBy('idAlumno')
-                ->with('comentarioAlumnoIdComentarioAlumno');
+        return Alumno::find();
                 
     }
 }
