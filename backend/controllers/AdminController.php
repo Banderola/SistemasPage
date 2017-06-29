@@ -12,6 +12,9 @@ use backend\models\NewsForm;
 use backend\models\ProjectForm;
 use backend\models\EventForm;
 use backend\models\SpecialityCategoryForm;
+use backend\models\ProjectCategoryForm;
+use backend\models\StudentForm;
+use common\models\Alumno;
 
 /**
  * Site controller
@@ -47,7 +50,13 @@ class AdminController extends Controller
 							'event',
 							'eventsmanager',
 							'specialitycategory',
-							'specialitycategorymanager'
+							'specialitycategorymanager',
+							'projectcategory',
+							'projectcategorymanager',
+							'teacher',
+							'teachersmanager',
+							'student',
+							'studentsmanager'
 							],
                         'allow' => true,
                         'roles' => ['administrar']
@@ -86,16 +95,7 @@ class AdminController extends Controller
             'captcha' => [
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
-            'uploadPhoto' => [
-                'class' => 'budyaga\cropper\actions\UploadAction',
-                //TODO: ver cual es el link para la foto
-                //'uploadParameter' => 'nombre unico de la imagen con extension',
-                'url' => 'http://localhost/Servicio/SistemasPage/common/uploads/photos',
-                'path' => '@common/uploads/photos',
-                'width' => 700,
-                'height' => 300,
-        ]
+            ]
         ];
     }
 
@@ -130,6 +130,13 @@ class AdminController extends Controller
 		return $this->render('specialitycategorymanager');
 	}
 	
+	public function actionProjectcategorymanager(){
+		return $this->render('projectcategorymanager');
+	}
+	
+	public function actionStudentsmanager(){
+		return $this->render('studentsmanager');
+	}
 	
 	//ADDERS
     public function actionNews()
@@ -178,4 +185,45 @@ class AdminController extends Controller
             return $this->render('newspecialitycategory', ['model' => $model]);
         }
 	}
+	
+	public function actionProjectcategory(){
+		$model = new ProjectCategoryForm();
+         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
+            return $this->render('index');
+        } else {
+            return $this->render('newprojectcategory', ['model' => $model]);
+        }
+	}
+	
+	public function actionStudent()
+    {
+        $user = User::findOne($id);
+        if (!$user) {
+            throw new NotFoundHttpException("The user was not found.");
+        }
+        
+        $profile = Profile::findOne($user->profile_id);
+        
+        if (!$profile) {
+            throw new NotFoundHttpException("The user has no profile.");
+        }
+        
+        $user->scenario = 'update';
+        $profile->scenario = 'update';
+        
+        if ($user->load(Yii::$app->request->post()) && $profile->load(Yii::$app->request->post())) {
+            $isValid = $user->validate();
+            $isValid = $profile->validate() && $isValid;
+            if ($isValid) {
+                $user->save(false);
+                $profile->save(false);
+                return $this->redirect(['user/view', 'id' => $id]);
+            }
+        }
+        
+        return $this->render('update', [
+            'user' => $user,
+            'profile' => $profile,
+        ]);
+    }
 }

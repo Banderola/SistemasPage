@@ -96,31 +96,25 @@ DashboardAsset::register($this);
 					<li><?= Html::a('<span class="lbl">Categoría</span>', ['admin/specialitycategorymanager'], ['class' => 'lbl']) ?></li>
 				</ul>
             </li>
-            <li class="green">
-                <?= Html::a('<i class="font-icon font-icon-case"></i><span class="lbl">Proyectos</span>', ['admin/projectsmanager'], ['class' => 'lbl']) ?>                
+            <li class="green with-sub">
+				<span>
+                    <i class="font-icon font-icon-user"></i>
+                    <span class="lbl">Proyectos</span>
+                </span>
+				<ul>
+					<li><?= Html::a('<span class="lbl">Proyecto</span>', ['admin/projectsmanager'], ['class' => 'lbl']) ?></li>
+					<li><?= Html::a('<span class="lbl">Categoría</span>', ['admin/projectcategorymanager'], ['class' => 'lbl']) ?></li>
+				</ul>              
             </li>
-            <li class="red">
+            <li class="red with-sub">
                 <?= Html::a('<i class="font-icon font-icon-case-2"></i><span class="lbl">Eventos</span>', ['admin/eventsmanager'], ['class' => 'lbl']) ?> 
             </li>
+			<li class="silver">
+                <?= Html::a('<i class="font-icon font-icon-case-2"></i><span class="lbl">Alumnos</span>', ['admin/studentsmanager'], ['class' => 'lbl']) ?> 
+            </li>
 			<li class="gold">
-                <?= Html::a('<i class="font-icon font-icon-case-2"></i><span class="lbl">Maestros</span>', ['admin/maestrosmanager'], ['class' => 'lbl']) ?> 
+                <?= Html::a('<i class="font-icon font-icon-case-2"></i><span class="lbl">Maestros</span>', ['admin/teachersmanager'], ['class' => 'lbl']) ?> 
             </li>
-            <!--<li class="gold with-sub">
-                <span>
-                    <i class="font-icon font-icon-user"></i>
-                    <span class="lbl">Portadas</span>
-                </span>
-                <ul>
-                    <li><?= Html::a('<span class="lbl">Eventos</span>', ['site/index'], ['class' => 'lbl']) ?></li>
-                    <li><?= Html::a('<span class="lbl">Nosotros</span>', ['site/index'], ['class' => 'lbl']) ?></li>
-                    <li><?= Html::a('<span class="lbl">Proyectos</span>', ['site/index'], ['class' => 'lbl']) ?></li>
-                    <li><?= Html::a('<span class="lbl">Especialidades</span>', ['site/index'], ['class' => 'lbl']) ?></li>
-                    <li><?= Html::a('<span class="lbl">Contacto</span>', ['site/index'], ['class' => 'lbl']) ?></li>
-                    <li><?= Html::a('<span class="lbl">Eventos</span>', ['site/index'], ['class' => 'lbl']) ?></a></li>
-                    <li><?= Html::a('<span class="lbl">Noticias</span>', ['site/index'], ['class' => 'lbl']) ?></a></li>
-                </ul>
-            </li>
-            -->
             <li class="blue-sky">
                 <?= Html::a('<i class="font-icon font-icon-contacts"></i><span class="lbl">Nosotros</span>', ['site/index'], ['class' => 'lbl']) ?> 
             </li>

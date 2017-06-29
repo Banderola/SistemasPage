@@ -11,12 +11,14 @@ use Yii;
  * @property string $nombre
  * @property integer $user_id
  * @property integer $ComentarioAlumno_idComentarioAlumno
+ * @property string $foto
  *
  * @property Comentarioalumno $comentarioAlumnoIdComentarioAlumno
  * @property User $user
  */
 class Alumno extends \yii\db\ActiveRecord
 {
+    public $descripcion;
     /**
      * @inheritdoc
      */
@@ -31,9 +33,10 @@ class Alumno extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idAlumno', 'user_id', 'ComentarioAlumno_idComentarioAlumno'], 'required'],
+            [['idAlumno', 'user_id'], 'required'],
             [['idAlumno', 'user_id', 'ComentarioAlumno_idComentarioAlumno'], 'integer'],
             [['nombre'], 'string', 'max' => 255],
+			[['foto'], 'string', 'max' => 255],
             [['ComentarioAlumno_idComentarioAlumno'], 'exist', 'skipOnError' => true, 'targetClass' => Comentarioalumno::className(), 'targetAttribute' => ['ComentarioAlumno_idComentarioAlumno' => 'idComentarioAlumno']],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
@@ -48,10 +51,19 @@ class Alumno extends \yii\db\ActiveRecord
             'idAlumno' => 'Id Alumno',
             'nombre' => 'Nombre',
             'user_id' => 'User ID',
-            'ComentarioAlumno_idComentarioAlumno' => 'Comentario Alumno Id Comentario Alumno',
+            'ComentarioAlumno_idComentarioAlumno' => 'ComentarioAlumnoIdComentarioAlumno',
+			'foto' => 'Foto'
         ];
     }
 
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getComentarioAlumnoIdComentarioAlumno()
+    {
+        return $this->hasOne(Comentarioalumno::className(), ['idComentarioAlumno' => 'ComentarioAlumno_idComentarioAlumno']);
+    }
+	
 
     /**
      * @return \yii\db\ActiveQuery
