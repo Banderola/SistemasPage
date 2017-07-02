@@ -33,7 +33,7 @@ $dataProvider=new SpecialityProvider();
 								return Html::a('<span class="glyphicon glyphicon-pencil"></span>', ['admin/modifyspeciality' , 'id'=>$model['IdEspecialidades']], ['title' => 'Actualizar']);
 							},
 							'delete'=>function ($url, $model) {
-								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deletespeciality' , 'id'=>$model['IdEspecialidades']], ['title' => 'Eliminar']);
+								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deletespeciality' , 'id'=>$model['IdEspecialidades']], ['title' => 'Eliminar','data-confirm' => '¿Desea eliminar el elemento '.$model['IdEspecialidades'].'?']);
 							},
 						],
 					],

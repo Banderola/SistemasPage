@@ -27,7 +27,7 @@ $dataProvider=new EventProvider();
 								return Html::a('<span class="glyphicon glyphicon-pencil"></span>', ['admin/modifyevent' , 'id'=>$model['IdEvento']], ['title' => 'Actualizar']);
 							},
 							'delete'=>function ($url, $model) {
-								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deleteevent' , 'id'=>$model['IdEvento']], ['title' => 'Eliminar']);
+								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deleteevent' , 'id'=>$model['IdEvento']], ['title' => 'Eliminar','data-confirm' => '¿Desea eliminar el elemento '.$model['IdEvento'].'?']);
 							},
 						],
 					],

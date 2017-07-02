@@ -16,7 +16,7 @@ $dataProvider=new SpecialityCategoryProvider();
 ?>
 <div class="site-index">
 
-    <h1>Especialidades</h1>
+    <h1>Categoria de especialidades</h1>
 
     <div class="body-content">
 
@@ -33,7 +33,7 @@ $dataProvider=new SpecialityCategoryProvider();
 								return Html::a('<span class="glyphicon glyphicon-pencil"></span>', ['admin/modifyspecialitycategory' , 'id'=>$model['idCategoriaEspecialidad']], ['title' => 'Actualizar']);
 							},
 							'delete'=>function ($url, $model) {
-								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deletespecialitycategory' , 'id'=>$model['idCategoriaEspecialidad']], ['title' => 'Eliminar']);
+								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deletespecialitycategory' , 'id'=>$model['idCategoriaEspecialidad']], ['title' => 'Eliminar','data-confirm' => '¿Desea eliminar el elemento '.$model['idCategoriaEspecialidad'].'?']);
 							},
 						],
 					],

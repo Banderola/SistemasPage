@@ -16,7 +16,7 @@ $dataProvider=new StudentProvider();
 ?>
 <div class="site-index">
 
-    <h1>Maestros</h1>
+    <h1>Alumnos</h1>
         <div class="row">
 			<?= GridView::widget([
 				'dataProvider' => $dataProvider,
@@ -30,7 +30,7 @@ $dataProvider=new StudentProvider();
 								return Html::a('<span class="glyphicon glyphicon-pencil"></span>', ['admin/modifystudent' , 'id'=>$model['IdAlumno']], ['title' => 'Actualizar']);
 							},
 							'delete'=>function ($url, $model) {
-								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deletestudent' , 'id'=>$model['IdAlumno']], ['title' => 'Eliminar']);
+								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deletestudent' , 'id'=>$model['IdAlumno']], ['title' => 'Eliminar','data-confirm' => '¿Desea eliminar el elemento '.$model['IdAlumno'].'?']);
 							},
 						],
 					],

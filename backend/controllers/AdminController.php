@@ -339,11 +339,57 @@ class AdminController extends Controller
 	//DELETERS
 	public function actionDeletenew($id)
     {
-        $model = new TeacherForm();
-         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
-            return $this->render('newsmanager');
-        } else {
-            return $this->render('newform', ['model' => $model]);
-        }
+        $found=Noticia::findOne($id);
+		$found->delete();
+		return $this->render('newsmanager');
+    }
+	
+	public function actionDeleteevent($id)
+    {
+        $found=Evento::findOne($id);
+		$found->delete();
+		return $this->render('eventsmanager');
+    }
+	
+	public function actionDeletespeciality($id)
+    {
+        $found=Especialidad::findOne($id);
+		$found->delete();
+		return $this->render('specialitymanager');
+    }
+	
+	public function actionDeleteproject($id)
+    {
+        $found=Proyecto::findOne($id);
+		$found->delete();
+		return $this->render('projectsmanager');
+    }
+	
+	public function actionDeleteprojectcategory($id)
+    {
+        $found=Categoriaproyecto::findOne($id);
+		$found->delete();
+		return $this->render('projectcategorymanager');
+    }
+	
+	public function actionDeletespecialitycategory($id)
+    {
+        $found=CategoriaEspecialidad::findOne($id);
+		$found->delete();
+		return $this->render('specialitycategorymanager');
+    }
+	
+	public function actionDeleteteacher($id)
+    {
+        $found=Maestro::findOne($id);
+		$found->delete();
+		return $this->render('teachersmanager');
+    }
+	
+	public function actionDeletestudent($id)
+    {
+        $found=Alumno::findOne($id);
+		$found->delete();
+		return $this->render('studentsmanager');
     }
 }

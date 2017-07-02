@@ -16,7 +16,7 @@ $dataProvider=new ProjectCategoryProvider();
 ?>
 <div class="site-index">
 
-    <h1>Projectos</h1>
+    <h1>Categorias de proyectos</h1>
 
     <div class="body-content">
 
@@ -33,7 +33,7 @@ $dataProvider=new ProjectCategoryProvider();
 								return Html::a('<span class="glyphicon glyphicon-pencil"></span>', ['admin/modifyprojectcategory' , 'id'=>$model['idCategoriaProyecto']], ['title' => 'Actualizar']);
 							},
 							'delete'=>function ($url, $model) {
-								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deleteprojectcategory' , 'id'=>$model['idCategoriaProyecto']], ['title' => 'Eliminar']);
+								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deleteprojectcategory' , 'id'=>$model['idCategoriaProyecto']], ['title' => 'Eliminar','data-confirm' => '¿Desea eliminar el elemento '.$model['idCategoriaProyecto'].'?']);
 							},
 						],
 					],

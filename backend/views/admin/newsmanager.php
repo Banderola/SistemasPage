@@ -27,7 +27,7 @@ $dataProvider=new NewsProvider();
 								return Html::a('<span class="glyphicon glyphicon-pencil"></span>', ['admin/modifynew' , 'id'=>$model['Idnoticia']], ['title' => 'Actualizar']);
 							},
 							'delete'=>function ($url, $model) {
-								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deletenew' , 'id'=>$model['Idnoticia']], ['title' => 'Eliminar']);
+								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deletenew' , 'id'=>$model['Idnoticia']], ['title' => 'Eliminar','data-confirm' => '¿Desea eliminar el elemento '.$model['Idnoticia'].'?']);
 							},
 						],
 					],
