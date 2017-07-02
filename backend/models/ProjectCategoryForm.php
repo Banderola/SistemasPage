@@ -31,4 +31,15 @@ class ProjectCategoryForm extends Model
             return $especialidad->save();
         }
     }
+	
+	public function modifyExisting($found){
+		if($this->validate()){
+			$found->Nombre=$this->nombre;
+			return $found->save();
+		}
+	}
+	
+	public function fillFromExisting($found){
+		$this->nombre=$found->Nombre;
+	}
 }

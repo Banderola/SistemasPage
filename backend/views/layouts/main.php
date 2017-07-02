@@ -42,14 +42,10 @@ DashboardAsset::register($this);
                                 <img src="img/upiiz.jpeg" alt="">
                             </button>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd-user-menu">
-                                <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-user"></span>Profile</a>
-                                <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-cog"></span>Settings</a>
-                                <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-question-sign"></span>Help</a>
+                                <!--<a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-user"></span>Profile</a>-->
                                 <div class="dropdown-divider"></div>
-                                <!--<a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-log-out"></span>Logout</a>-->
-                                
                                 <?php $form = ActiveForm::begin(['action' =>['site/logout'],]) ?>
-                                <?= Html::submitButton('<span class="font-icon glyphicon glyphicon-log-out"></span>Logout (admin)', ['class' => 'dropdown-item btn-link', 'name' => 'login-button']) ?>
+                                <?= Html::submitButton('<span class="font-icon glyphicon glyphicon-log-out"></span>Salir (admin)', ['class' => 'dropdown-item btn-link', 'name' => 'login-button']) ?>
                                 <?php ActiveForm::end(); ?>
                                 
                             </div>
@@ -59,23 +55,6 @@ DashboardAsset::register($this);
                             <i class="font-icon-menu-addl"></i>
                         </button>
                     </div><!--.site-header-shown-->
-    
-                    <div class="mobile-menu-right-overlay"></div>
-                    <div class="site-header-collapsed">
-                        <div class="site-header-collapsed-in">
-                            <div class="dropdown dropdown-typical">
-                                <div class="dropdown-menu" aria-labelledby="dd-header-sales">
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
-                                </div>
-                            </div>
-                      
-                            
-                </div><!--site-header-content-in-->
-            </div><!--.site-header-content-->
         </div><!--.container-fluid-->
     </header><!--.site-header-->
     <nav class="side-menu">
@@ -115,19 +94,6 @@ DashboardAsset::register($this);
 			<li class="gold">
                 <?= Html::a('<i class="font-icon font-icon-case-2"></i><span class="lbl">Maestros</span>', ['admin/teachersmanager'], ['class' => 'lbl']) ?> 
             </li>
-            <li class="blue-sky">
-                <?= Html::a('<i class="font-icon font-icon-contacts"></i><span class="lbl">Nosotros</span>', ['site/index'], ['class' => 'lbl']) ?> 
-            </li>
-            <li class="aquamarine">
-                <?= Html::a('<i class="fa fa-pencil-square-o"></i><span class="lbl">Contactos</span>', ['site/index'], ['class' => 'lbl']) ?> 
-            </li>
-           <li class="purple">
-               <?= Html::a('<i class="glyphicon glyphicon-tasks"></i><span class="lbl">Maestros</span>', ['site/index'], ['class' => 'lbl']) ?> 
-            </li>
-            <li class="red">
-                <?= Html::a('<i class="font-icon font-icon-del"></i><span class="lbl">Salir</span>', ['site/index'], ['class' => 'lbl']) ?> 
-            </li>
-            
     </nav><!--.side-menu-->
     
     <div class="page-content">
@@ -137,9 +103,6 @@ DashboardAsset::register($this);
         <?= $content ?>
     </div>
 </div>
-
-
-
 <?php $this->endBody() ?>
 </body>
 </html>

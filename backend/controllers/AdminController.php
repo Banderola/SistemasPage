@@ -14,7 +14,15 @@ use backend\models\EventForm;
 use backend\models\SpecialityCategoryForm;
 use backend\models\ProjectCategoryForm;
 use backend\models\StudentForm;
+use backend\models\TeacherForm;
+use common\models\Noticia;
+use common\models\Evento;
+use common\models\Especialidad;
+use common\models\Categoriaespecialidad;
+use common\models\Maestro;
 use common\models\Alumno;
+use common\models\Proyecto;
+use common\models\Categoriaproyecto;
 
 /**
  * Site controller
@@ -40,7 +48,6 @@ class AdminController extends Controller
                     [
                         'actions' => [
 							'news',
-							'uploadPhoto',
 							'newsmanager',
 							'newspeciality',
 							'speciality',
@@ -56,7 +63,23 @@ class AdminController extends Controller
 							'teacher',
 							'teachersmanager',
 							'student',
-							'studentsmanager'
+							'studentsmanager',
+							'modifynew',
+							'modifyevent',
+							'modifyspeciality',
+							'modifyproject',
+							'modifyprojectcategory',
+							'modifyspecialitycategory',
+							'modifyteacher',
+							'modifystudent',
+							'deletenew',
+							'deleteevent',
+							'deletespeciality',
+							'deleteproject',
+							'deleteprojectcategory',
+							'deletespecialitycategory',
+							'deleteteacher',
+							'deletestudent'
 							],
                         'allow' => true,
                         'roles' => ['administrar']
@@ -138,6 +161,10 @@ class AdminController extends Controller
 		return $this->render('studentsmanager');
 	}
 	
+	public function actionTeachersmanager(){
+		return $this->render('teachersmanager');
+	}
+	
 	//ADDERS
     public function actionNews()
     {
@@ -153,7 +180,7 @@ class AdminController extends Controller
     {
         $model = new SpecialityForm();
          if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
-            return $this->render('index');
+            return $this->render('specialitymanager');
         } else {
             return $this->render('newspeciality', ['model' => $model]);
         }
@@ -162,7 +189,7 @@ class AdminController extends Controller
 	public function actionProject(){
 		$model = new ProjectForm();
          if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
-            return $this->render('index');
+            return $this->render('projectsmanager');
         } else {
             return $this->render('newproject', ['model' => $model]);
         }
@@ -171,7 +198,7 @@ class AdminController extends Controller
 	public function actionEvent(){
 		$model = new EventForm();
          if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
-            return $this->render('index');
+            return $this->render('eventsmanager');
         } else {
             return $this->render('newevent', ['model' => $model]);
         }
@@ -180,7 +207,7 @@ class AdminController extends Controller
 	public function actionSpecialitycategory(){
 		$model = new SpecialityCategoryForm();
          if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
-            return $this->render('index');
+            return $this->render('specialitycategorymanager');
         } else {
             return $this->render('newspecialitycategory', ['model' => $model]);
         }
@@ -189,7 +216,7 @@ class AdminController extends Controller
 	public function actionProjectcategory(){
 		$model = new ProjectCategoryForm();
          if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
-            return $this->render('index');
+            return $this->render('projectcategorymanager');
         } else {
             return $this->render('newprojectcategory', ['model' => $model]);
         }
@@ -197,33 +224,126 @@ class AdminController extends Controller
 	
 	public function actionStudent()
     {
-        $user = User::findOne($id);
-        if (!$user) {
-            throw new NotFoundHttpException("The user was not found.");
+        $model = new StudentForm();
+         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
+            return $this->render('studentsmanager');
+        } else {
+            return $this->render('newstudent', ['model' => $model]);
         }
-        
-        $profile = Profile::findOne($user->profile_id);
-        
-        if (!$profile) {
-            throw new NotFoundHttpException("The user has no profile.");
+    }
+	
+	public function actionTeacher()
+    {
+        $model = new TeacherForm();
+         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
+            return $this->render('teachersmanager');
+        } else {
+            return $this->render('newteacher', ['model' => $model]);
         }
-        
-        $user->scenario = 'update';
-        $profile->scenario = 'update';
-        
-        if ($user->load(Yii::$app->request->post()) && $profile->load(Yii::$app->request->post())) {
-            $isValid = $user->validate();
-            $isValid = $profile->validate() && $isValid;
-            if ($isValid) {
-                $user->save(false);
-                $profile->save(false);
-                return $this->redirect(['user/view', 'id' => $id]);
-            }
+    }
+	
+	//MODDIFIERS
+	public function actionModifynew($id)
+    {
+		$found=Noticia::findOne($id);
+        $model = new NewsForm();
+		$model->fillFromExisting($found);
+         if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+            return $this->render('newsmanager');
+        } else {
+            return $this->render('newform', ['model' => $model]);
         }
-        
-        return $this->render('update', [
-            'user' => $user,
-            'profile' => $profile,
-        ]);
+    }
+	
+	public function actionModifyevent($id)
+    {
+		$found=Evento::findOne($id);
+        $model = new EventForm();
+		$model->fillFromExisting($found);
+         if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+            return $this->render('eventsmanager');
+        } else {
+            return $this->render('newevent', ['model' => $model]);
+        }
+    }
+	
+	public function actionModifyspeciality($id)
+    {
+		$found=Especialidad::findOne($id);
+        $model = new SpecialityForm();
+		$model->fillFromExisting($found);
+         if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+            return $this->render('specialitymanager');
+        } else {
+            return $this->render('newspeciality', ['model' => $model]);
+        }
+    }
+	
+	public function actionModifyspecialitycategory($id){
+		$found=CategoriaEspecialidad::findOne($id);
+		$model= new SpecialityCategoryForm();
+		$model->fillFromExisting($found);
+         if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+            return $this->render('specialitycategorymanager');
+        } else {
+            return $this->render('newspecialitycategory', ['model' => $model]);
+        }
+	}
+	
+	public function actionModifyproject($id)
+    {
+		$found=Proyecto::findOne($id);
+        $model = new ProjectForm();
+		$model->fillFromExisting($found);
+         if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+            return $this->render('projectsmanager');
+        } else {
+            return $this->render('newproject', ['model' => $model]);
+        }
+    }
+	
+	public function actionModifyprojectcategory($id){
+		$found=Categoriaproyecto::findOne($id);
+		$model= new ProjectCategoryForm();
+		$model->fillFromExisting($found);
+         if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+            return $this->render('projectcategorymanager');
+        } else {
+            return $this->render('newprojectcategory', ['model' => $model]);
+        }
+	}
+	
+	public function actionModifyteacher($id){
+		$found=Maestro::findOne($id);
+		$model= new TeacherForm();
+		$model->fillFromExisting($found);
+         if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+            return $this->render('teachersmanager');
+        } else {
+            return $this->render('newteacher', ['model' => $model]);
+        }
+	}
+	
+	public function actionModifystudent($id){
+		$found=Alumno::findOne($id);
+		$model= new StudentForm();
+		$model->fillFromExisting($found);
+         if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+            return $this->render('studentsmanager');
+        } else {
+            return $this->render('newstudent', ['model' => $model]);
+        }
+	}
+	
+	
+	//DELETERS
+	public function actionDeletenew($id)
+    {
+        $model = new TeacherForm();
+         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
+            return $this->render('newsmanager');
+        } else {
+            return $this->render('newform', ['model' => $model]);
+        }
     }
 }

@@ -311,3 +311,101 @@ Array
     ]
     'argc' => 2
 ]
+2017-06-29 23:58:32 [-][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'calificar' for key 'PRIMARY'' in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php:842
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(842): PDOStatement->execute()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\rbac\DbManager.php(276): yii\db\Command->execute()
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\rbac\BaseManager.php(128): yii\rbac\DbManager->addItem(Object(yii\rbac\Permission))
+#3 C:\xampp\htdocs\SistemasPage\console\controllers\RbacController.php(16): yii\rbac\BaseManager->add(Object(yii\rbac\Permission))
+#4 [internal function]: console\controllers\RbacController->actionInit()
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('init', Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('init', Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('rbac/init', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('rbac/init', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'calificar' for key 'PRIMARY'
+The SQL being executed was: INSERT INTO `auth_item` (`name`, `type`, `description`, `rule_name`, `data`, `created_at`, `updated_at`) VALUES ('calificar', 2, 'calificar especialidad y proyectos', NULL, NULL, 1498773512, 1498773512)' in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\db\Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `au...')
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\rbac\DbManager.php(276): yii\db\Command->execute()
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\rbac\BaseManager.php(128): yii\rbac\DbManager->addItem(Object(yii\rbac\Permission))
+#3 C:\xampp\htdocs\SistemasPage\console\controllers\RbacController.php(16): yii\rbac\BaseManager->add(Object(yii\rbac\Permission))
+#4 [internal function]: console\controllers\RbacController->actionInit()
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('init', Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('init', Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('rbac/init', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('rbac/init', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry 'calificar' for key 'PRIMARY'
+)
+
+2017-06-29 23:58:32 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\emnga\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-551OJSA'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\emnga'
+    'LOCALAPPDATA' => 'C:\\Users\\emnga\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-551OJSA'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\emnga\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Users\\emnga\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\emnga\\AppData\\Local\\Microsoft\\WindowsApps'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules\\;C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\PowerShell\\ResourceManager\\AzureResourceManager\\;C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\PowerShell\\ServiceManagement\\;C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\PowerShell\\Storage\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\emnga\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\emnga\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-551OJSA'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-551OJSA'
+    'USERNAME' => 'emnga'
+    'USERPROFILE' => 'C:\\Users\\emnga'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'VS120COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\SistemasPage\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1498773512.1253
+    'REQUEST_TIME' => 1498773512
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]

@@ -18,6 +18,19 @@ $dataProvider=new EventProvider();
 			<?= GridView::widget([
 				'dataProvider' => $dataProvider,
 				'columns' => [
+					[
+						//TODO: agregar boton con acción para  eliminar noticia en base a id
+						'class' => yii\grid\ActionColumn::className(),
+						'template' => '{update} {delete}',
+						'buttons'=>[
+							'update'=>function ($url, $model) {
+								return Html::a('<span class="glyphicon glyphicon-pencil"></span>', ['admin/modifyevent' , 'id'=>$model['IdEvento']], ['title' => 'Actualizar']);
+							},
+							'delete'=>function ($url, $model) {
+								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deleteevent' , 'id'=>$model['IdEvento']], ['title' => 'Eliminar']);
+							},
+						],
+					],
 					'IdEvento',
 					'Titulo',
 					'Imagen',
@@ -26,14 +39,6 @@ $dataProvider=new EventProvider();
 					'HoraInicio',
 					'HoraFin',
 					'User_ID',
-					[
-						//TODO: agregar boton con acción para  eliminar noticia en base a id
-						'attribute' => 'Accion',
-						'format' => 'raw',
-						'value' => function ($model) {       
-								return '<a class="btn btn-default">'.$model['IdEvento'].'</a>';
-						},
-					],
 				],
 			]);
 			?>

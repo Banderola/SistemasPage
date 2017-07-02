@@ -24,16 +24,21 @@ $dataProvider=new SpecialityCategoryProvider();
 			<?= GridView::widget([
 				'dataProvider' => $dataProvider,
 				'columns' => [
-					'idCategoriaEspecialidad',
-					'Nombre',
 					[
 						//TODO: agregar boton con acción para  eliminar noticia en base a id
-						'attribute' => 'Accion',
-						'format' => 'raw',
-						'value' => function ($model) {       
-								return '<a class="btn btn-default">'.$model['idCategoriaEspecialidad'].'</a>';
-						},
+						'class' => yii\grid\ActionColumn::className(),
+						'template' => '{update} {delete}',
+						'buttons'=>[
+							'update'=>function ($url, $model) {
+								return Html::a('<span class="glyphicon glyphicon-pencil"></span>', ['admin/modifyspecialitycategory' , 'id'=>$model['idCategoriaEspecialidad']], ['title' => 'Actualizar']);
+							},
+							'delete'=>function ($url, $model) {
+								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deletespecialitycategory' , 'id'=>$model['idCategoriaEspecialidad']], ['title' => 'Eliminar']);
+							},
+						],
 					],
+					'idCategoriaEspecialidad',
+					'Nombre',
 				],
 			]);
 			?>

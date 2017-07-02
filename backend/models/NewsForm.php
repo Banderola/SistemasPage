@@ -32,4 +32,21 @@ class NewsForm extends Model
             return $noticia->save();
         }
     }
+	
+	public function modifyExisting($found){
+		if($this->validate()){
+			$found->imagen=$this->imagen;
+			$found->titulo=$this->titulo;
+			$found->descripcion=$this->descripcion;
+			$found->link=$this->link;
+			return $found->save();
+		}
+	}
+	
+	public function fillFromExisting($found){
+		$this->imagen=$found->imagen;
+		$this->titulo=$found->titulo;
+		$this->descripcion=$found->descripcion;
+		$this->link=$found->link;
+	}
 }

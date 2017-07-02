@@ -11,6 +11,6 @@ $this->title = 'Bienvenido';
 
         <p class="lead">Página de administración de UPIIZ</p>
 
-        <p><a class="btn btn-lg btn-success" href="../../frontend/web">Ir a la´página oficial</a></p>
+        <p><a class="btn btn-lg btn-success" href="../../frontend/web">Ir a la página oficial</a></p>
     </div>
 </div>

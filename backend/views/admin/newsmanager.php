@@ -18,6 +18,19 @@ $dataProvider=new NewsProvider();
 			<?= GridView::widget([
 				'dataProvider' => $dataProvider,
 				'columns' => [
+					[
+						//TODO: agregar boton con acción para  eliminar noticia en base a id
+						'class' => yii\grid\ActionColumn::className(),
+						'template' => '{update} {delete}',
+						'buttons'=>[
+							'update'=>function ($url, $model) {
+								return Html::a('<span class="glyphicon glyphicon-pencil"></span>', ['admin/modifynew' , 'id'=>$model['Idnoticia']], ['title' => 'Actualizar']);
+							},
+							'delete'=>function ($url, $model) {
+								return Html::a('<span class="glyphicon glyphicon-trash"></span>', ['admin/deletenew' , 'id'=>$model['Idnoticia']], ['title' => 'Eliminar']);
+							},
+						],
+					],
 					'Idnoticia',
 					'Titulo',
 					'Imagen',
@@ -25,14 +38,6 @@ $dataProvider=new NewsProvider();
 					'User_ID',
 					'Link',
 					'Fecha',
-					[
-						//TODO: agregar boton con acción para  eliminar noticia en base a id
-						'attribute' => 'Accion',
-						'format' => 'raw',
-						'value' => function ($model) {       
-								return '<a class="btn btn-default">'.$model['Idnoticia'].'</a>';
-						},
-					],
 				],
 			]);
 			?>

@@ -39,4 +39,33 @@ class EventForm extends Model
             return $evento->save();
         }
     }
+	
+	public function modifyExisting($found){
+		if($this->validate()){
+			$found->imagen=$this->imagen;
+			$found->titulo=$this->titulo;
+			$found->descripcion=$this->descripcion;
+			$found->fecha=$this->fecha;
+			$found->lugar=$this->lugar;
+			$found->hora_inicio=$this->horai;
+			$found->hora_fin=$this->horaf;
+			$found->user_id=Yii::$app->getUser()->getId();
+			return $found->save();
+		}
+	}
+	
+	public function fillFromExisting($found){
+		$this->imagen=$found->imagen;
+		$this->titulo=$found->titulo;
+		$this->descripcion=$found->descripcion;
+		$this->fecha=$found->fecha;
+		$this->lugar=$found->lugar;
+		$this->horai=$this->getHour($found->hora_inicio);
+		$this->horaf=$this->getHour($found->hora_fin);
+	}
+	
+	private function getHour($hora){
+		$array=explode(':',$hora);
+		return $array[0].$array[1];
+	}
 }

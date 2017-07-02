@@ -10,15 +10,14 @@ use Yii;
  * @property integer $idAlumno
  * @property string $nombre
  * @property integer $user_id
- * @property integer $ComentarioAlumno_idComentarioAlumno
  * @property string $foto
+ * @property string $descripcion
+ * @property string $fecha
  *
- * @property Comentarioalumno $comentarioAlumnoIdComentarioAlumno
  * @property User $user
  */
 class Alumno extends \yii\db\ActiveRecord
 {
-    public $descripcion;
     /**
      * @inheritdoc
      */
@@ -33,12 +32,13 @@ class Alumno extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['idAlumno', 'user_id'], 'required'],
-            [['idAlumno', 'user_id', 'ComentarioAlumno_idComentarioAlumno'], 'integer'],
-            [['nombre'], 'string', 'max' => 255],
+            [['user_id'], 'required'],
+            [['user_id'], 'integer'],
+			['fecha', 'safe'],
+            [['nombre','descripcion','fecha'], 'string', 'max' => 255],
 			[['foto'], 'string', 'max' => 255],
-            [['ComentarioAlumno_idComentarioAlumno'], 'exist', 'skipOnError' => true, 'targetClass' => Comentarioalumno::className(), 'targetAttribute' => ['ComentarioAlumno_idComentarioAlumno' => 'idComentarioAlumno']],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
+			[['fecha'], 'default', 'value' => date('Y-m-d')]
         ];
     }
 
@@ -48,22 +48,18 @@ class Alumno extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'idAlumno' => 'Id Alumno',
+            'idAlumno' => 'IdAlumno',
             'nombre' => 'Nombre',
-            'user_id' => 'User ID',
-            'ComentarioAlumno_idComentarioAlumno' => 'ComentarioAlumnoIdComentarioAlumno',
-			'foto' => 'Foto'
+            'user_id' => 'UserID',
+			'foto' => 'Foto',
+			'descripcion' => 'Descripcion',
+			'fecha' => 'Fecha'
         ];
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getComentarioAlumnoIdComentarioAlumno()
-    {
-        return $this->hasOne(Comentarioalumno::className(), ['idComentarioAlumno' => 'ComentarioAlumno_idComentarioAlumno']);
-    }
-	
 
     /**
      * @return \yii\db\ActiveQuery

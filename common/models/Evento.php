@@ -16,7 +16,6 @@ use Yii;
  * @property string $hora_fin
  * @property string $lugar
  * @property integer $user_id
- * @property string $ubicacion
  *
  * @property Comentarioevento[] $comentarioeventos
  * @property User $user
@@ -41,7 +40,7 @@ class Evento extends \yii\db\ActiveRecord
             [['fecha', 'hora_inicio', 'hora_fin'], 'safe'],
             [['user_id'], 'required'],
             [['user_id'], 'integer'],
-            [['titulo', 'imagen', 'lugar', 'ubicacion'], 'string', 'max' => 45],
+            [['titulo', 'imagen', 'lugar'], 'string', 'max' => 45],
             [['descripcion'], 'string', 'max' => 255],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
 			[['fecha'], 'default', 'value' => date('Y-m-d')]
@@ -63,7 +62,6 @@ class Evento extends \yii\db\ActiveRecord
             'hora_fin' => 'Hora Fin',
             'lugar' => 'Lugar',
             'user_id' => 'User ID',
-            'ubicacion' => 'Ubicacion',
         ];
     }
 

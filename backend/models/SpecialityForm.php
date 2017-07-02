@@ -42,4 +42,24 @@ class SpecialityForm extends Model
             return $especialidad->save();
         }
     }
+	
+	public function modifyExisting($found){
+		if($this->validate()){
+			$found->imagen=$this->imagen;
+			$found->Titulo=$this->titulo;
+			$found->Descripcion=$this->descripcion;
+			$found->Maestro_idMaestro=$this->maestro_id;
+			$found->user_id=Yii::$app->getUser()->getId();
+			$found->CategoriaEspecialidad_idCategoriaEspecialidad=$this->categoria;
+			return $found->save();
+		}
+	}
+	
+	public function fillFromExisting($found){
+		$this->imagen=$found->imagen;
+		$this->titulo=$found->Titulo;
+		$this->descripcion=$found->Descripcion;
+		$this->categoria=$found->CategoriaEspecialidad_idCategoriaEspecialidad;
+		$this->maestro_id=$found->Maestro_idMaestro;
+	}
 }
