@@ -10,7 +10,7 @@ use yii\helpers\ArrayHelper;
 use yii\helpers\HtmlPurifier;
 
 
-$this->title = 'Courses';
+$this->title = 'Especialidades';
 
 ?>
 
@@ -22,11 +22,10 @@ $this->title = 'Courses';
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="breadcrumb-text">
-                                    <h1 class="text-center">POPULAR COURSES</h1>
+                                    <h1 class="text-center">Especialidades</h1>
                                     <div class="breadcrumb-bar">
                                         <ul class="breadcrumb text-center">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li>Courses</li>
+                                            
                                         </ul>
                                     </div>
                                 </div>

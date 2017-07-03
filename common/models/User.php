@@ -381,7 +381,7 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return [
             'username' => 'Username',
-            'password_reset_token' => 'Password Reset Token',
+            'password_reset_token' => 'Restablecer Contraseña Token',
             'email' => 'Email',
             'nombre' => 'Nombre',
         ];

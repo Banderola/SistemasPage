@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 $contacto = $this->params['model'];
-$this->title = 'Contact';
+$this->title = 'Contacto';
 ?>
 <div class="site-contact">
  <!--Breadcrumb Banner Area Start-->
@@ -17,11 +17,10 @@ $this->title = 'Contact';
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="breadcrumb-text">
-                                    <h1 class="text-center">CONTACT US</h1>
+                                    <h1 class="text-center">CONTACTO</h1>
                                     <div class="breadcrumb-bar">
                                         <ul class="breadcrumb text-center">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li>CONTACT</li>
+                                            
                                         </ul>
                                     </div>
                                 </div>

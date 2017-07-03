@@ -31,7 +31,7 @@ JS;
      Yii::$app->user->setReturnUrl(Yii::$app->getRequest()->getUrl());
  }
 
-$this->title = 'Eventos_detalles';
+$this->title = 'Evento';
 $model->descripcion='';
 
 
@@ -45,11 +45,10 @@ $model->descripcion='';
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="breadcrumb-text">
-                                    <h1 class="text-center">EVENT DETAILS</h1>
+                                    <h1 class="text-center">Evento</h1>
                                     <div class="breadcrumb-bar">
                                         <ul class="breadcrumb text-center">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li>EVENTS</li>
+                                            
                                         </ul>
                                     </div>
                                 </div>

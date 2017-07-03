@@ -9,7 +9,7 @@ use yii\captcha\Captcha;
 use yii\widgets\LinkPager;
 use yii\helpers\HtmlPurifier;
 
-$this->title = 'Latestnews';
+$this->title = 'Noticias';
 
 ?>
 <div class="site-latestnews">
@@ -20,11 +20,10 @@ $this->title = 'Latestnews';
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="breadcrumb-text">
-                                    <h1 class="text-center">Latest News</h1>
+                                    <h1 class="text-center">Noticias</h1>
                                     <div class="breadcrumb-bar">
                                         <ul class="breadcrumb text-center">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li>Latest News</li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -52,7 +51,7 @@ $this->title = 'Latestnews';
                                            <span><i class="zmdi zmdi-eye"></i><?=Html::encode($noticia->visitas)?></span>
                                            <span><i class="zmdi zmdi-comments"></i><?=Html::encode($noticia->cnt)?></span>
                                        </div>
-                                       <?= HtmlPurifier::process($noticia->descripcion) ?>
+                                        <p><?= HtmlPurifier::process($noticia->descripcion) ?></p>
                                
                                        <?= Html::a("Leer", ['site/newsdetails', 'id' => $noticia->idnoticia], ['class' => 'button-default']);?>
                                     </div>

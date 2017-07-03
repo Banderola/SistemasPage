@@ -5,7 +5,6 @@ use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
-use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use frontend\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
@@ -26,8 +25,10 @@ use common\models\Noticia;
 use common\models\Evento;
 use common\models\Comentarionoticia;
 use common\models\Alumno;
+use common\models\User;
 use yii\data\Pagination;
 use frontend\models\ComentarForm;
+use frontend\models\CuentaForm;
 use yii\db\Expression;
 
 /**
@@ -44,7 +45,7 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout', 'signup'],
+                'only' => ['logout', 'signup', 'cuenta'],
                 'rules' => [
                     [
                         'actions' => ['signup'],
@@ -53,6 +54,11 @@ class SiteController extends Controller
                     ],
                     [
                         'actions' => ['logout'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                    [
+                        'actions' => ['cuenta'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -181,6 +187,27 @@ class SiteController extends Controller
        //         'model' => $model,
       //      ]);
      //   }
+    }
+    
+    public function actionCuenta()
+    {
+      $model_form = new CuentaForm();  
+      $found=User::findOne(Yii::$app->user->id);
+      $model_form->fillFromExisting($found);
+      if ($model_form->load(Yii::$app->request->post()) && $model_form->registrar($found)) {
+           
+             return $this->render('cuenta', [
+                'model' => $model_form,
+            ]);
+        }else{
+            
+             return $this->render('cuenta', [
+                'model' => $model_form,
+            ]);
+            
+        }
+       
+          
     }
 
     /**

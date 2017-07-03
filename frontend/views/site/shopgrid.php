@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\widgets\LinkPager;
 use yii\helpers\HtmlPurifier;
 
-$this->title = 'Shopgrid';
+$this->title = 'Proyectos';
 
 ?>
 <div class="site-shopgrid">
@@ -19,11 +19,10 @@ $this->title = 'Shopgrid';
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="breadcrumb-text">
-                                    <h1 class="text-center">ONLINE LIBRARY</h1>
+                                    <h1 class="text-center">Proyectos</h1>
                                     <div class="breadcrumb-bar">
                                         <ul class="breadcrumb text-center">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li>LIBRARY</li>
+                                            
                                         </ul>
                                     </div>
                                 </div>

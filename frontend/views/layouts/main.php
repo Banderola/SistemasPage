@@ -26,9 +26,6 @@ $enlaces = $this->params['model_enlaces']
      
 </head>
 <body>
-    <?php if (!Yii::$app->user->isGuest) { ?>
-    <div class="user-role"><?= Yii::$app->user->identity->getRoleName() ?></div>
-<?php } ?>
 <?php $this->beginBody() ?>
 
 <!--[if lt IE 8]>
@@ -45,23 +42,23 @@ $enlaces = $this->params['model_enlaces']
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 col-md-6 col-sm-5 hidden-xs">
-                                    <span>Have any question? <?= $contacto->telefono ?></span>
+                                    <span>Tienes alguna pregunta? <?= $contacto->telefono ?></span>
                                 </div>
                                 <div class="col-lg-5 col-md-6 col-sm-7 col-xs-12">
                                     <div class="header-top-right">
-                                        <div class="content"><a href="#"><i class="zmdi zmdi-account"></i> My Account</a>
+                                        <div class="content"><a href="#"><i class="zmdi zmdi-account"></i>Cuenta</a>
                                             <ul class="account-dropdown">
                                                 
                                                 <?php
                                                 if (Yii::$app->user->isGuest) {
-                                                    echo '<li>'.Html::a('Login', ['site/login']).'</li>'.
-                                                    '<li>'.Html::a('Register', ['site/signup']).'</li>';
+                                                    echo '<li>'.Html::a('Inicio de Sesión', ['site/login']).'</li>'.
+                                                    '<li>'.Html::a('Registro', ['site/signup']).'</li>';
                                                     
                                                    
                                                     
                                                 }
                                                 else{
-                                                    echo '<li><a href="#">My Account</a></li><li>'.Html::a('Logout', ['site/logout']).'</li>';
+                                                    echo '<li>'.Html::a('Mi Cuenta', ['site/cuenta']).'</li><li>'.Html::a('Cerrar Sesión', ['site/logout']).'</li>';
                                                    
                                                     
                                                 }
@@ -70,7 +67,7 @@ $enlaces = $this->params['model_enlaces']
                                             </ul>
                                         </div>
                                         <div class="content"><a href="#"><i class="zmdi zmdi-favorite"></i> Wishlist</a></div>
-                                        <div class="content"><a href="#"><i class="zmdi zmdi-shopping-basket"></i> Chechout</a></div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -121,17 +118,39 @@ $enlaces = $this->params['model_enlaces']
                             </div>
                         </div>
                     </div> 
-                
+                    <div class="mobile-menu-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="mobile-menu">
+                                        <nav id="dropdown">
+                                            <ul>
+                                                    <li><?= Html::a('Inicio', ['site/index']) ?></li>
+                                                    <li><?= Html::a('Nosotros', ['site/about']) ?></li>
+                                                    <li><?= Html::a('Especialidades', ['site/courses']) ?></li>
+                                                    <li><?= Html::a('Proyectos', ['site/shopgrid']) ?></li>
+                                                    <li><?= Html::a('Noticias', ['site/latestnews']) ?></li>
+                                                    <li><?= Html::a('Eventos', ['site/event']) ?></li>
+                                                    <li><?= Html::a('Contacto', ['site/contact']) ?></li>
+                                            </ul>
+                                        </nav>
+                                    </div>                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu Area end -->    
+                </header>
+                <!--End of Header Area-->        
 
-<div class="wrap">
-    <div class="container">
+    
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
-    </div>
-</div>
+   
+
 
  <!--Newsletter Area Start-->
                 <div class="newsletter-area">

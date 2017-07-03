@@ -31,7 +31,7 @@ JS;
      Yii::$app->user->setReturnUrl(Yii::$app->getRequest()->getUrl());
  }
 
-$this->title = 'Noticias_detalles';
+$this->title = 'Noticia';
 $model->descripcion='';
 
 
@@ -45,11 +45,10 @@ $model->descripcion='';
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="breadcrumb-text">
-                                    <h1 class="text-center">NEWS DETAILS</h1>
+                                    <h1 class="text-center">Noticia</h1>
                                     <div class="breadcrumb-bar">
                                         <ul class="breadcrumb text-center">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li>NEWS DETAILS</li>
+                                            
                                         </ul>
                                     </div>
                                 </div>

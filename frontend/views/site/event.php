@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\widgets\LinkPager;
 use yii\helpers\HtmlPurifier;
 
-$this->title = 'Events';
+$this->title = 'Eventos';
 ?>
 <div class="site-contact">
   
@@ -18,11 +18,10 @@ $this->title = 'Events';
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="breadcrumb-text">
-                                    <h1 class="text-center">Our Events</h1>
+                                    <h1 class="text-center">Eventos</h1>
                                     <div class="breadcrumb-bar">
                                         <ul class="breadcrumb text-center">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li>Events</li>
+                                            
                                         </ul>
                                     </div>
                                 </div>

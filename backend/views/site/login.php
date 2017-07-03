@@ -32,9 +32,7 @@ $this->title = 'Inicio de sesión';
             'template' => "<div class=\"col-lg-offset-1 col-lg-1\">{input} {label}</div>",
         ]); ?>
                         </div>
-                        <div class="float-right reset">
-                            <?= Html::a('Reiniciar Contraseña', ['site/request-password-reset']) ?>
-                        </div>
+                        
                     </div>
 
                 <div class="form-group">

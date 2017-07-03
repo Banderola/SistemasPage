@@ -37,7 +37,7 @@ JS;
      Yii::$app->user->setReturnUrl(Yii::$app->getRequest()->getUrl());
  }
 
-$this->title = 'Courses_detalles';
+$this->title = 'Proyecto';
 if($rating->cnt==null){
     $rating->cnt=0;
 }
@@ -54,11 +54,10 @@ if($model->rating==null){
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="breadcrumb-text">
-                                    <h1 class="text-center">PRODUCT DETAILS</h1>
+                                    <h1 class="text-center">Proyecto</h1>
                                     <div class="breadcrumb-bar">
                                         <ul class="breadcrumb text-center">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li>PRODUCT DETAILS</li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
