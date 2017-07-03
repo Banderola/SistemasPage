@@ -5,8 +5,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
-use app\assets\DashboardAsset;
 use yii\bootstrap\ActiveForm;
+use app\assets\DashboardAsset;
 
 DashboardAsset::register($this);
 ?>
@@ -59,15 +59,15 @@ DashboardAsset::register($this);
     </header><!--.site-header-->
     <nav class="side-menu">
         <ul class="side-menu-list">
-            <li class="grey">
-                 <?= Html::a('<i class="font-icon font-icon-case"></i><span class="lbl">Inicio</span>', ['site/index'], ['class' => 'lbl']) ?>
+            <li class="magenta">
+                 <?= Html::a('<i class="glyphicon glyphicon-home"></i><span class="lbl">Inicio</span>', ['site/index'], ['class' => 'lbl']) ?>
             </li>
-            <li class="brown">
+            <li class="grey">
                 <?= Html::a('<i class="font-icon font-icon-case"></i><span class="lbl">Noticias</span>', ['admin/newsmanager'], ['class' => 'lbl']) ?> 
             </li>
-            <li class="purple with-sub">
+            <li class="orange-red with-sub">
 				<span>
-                    <i class="font-icon font-icon-user"></i>
+                    <i class="glyphicon glyphicon-star"></i>
                     <span class="lbl">Especialidades</span>
                 </span>
 				<ul>
@@ -75,9 +75,9 @@ DashboardAsset::register($this);
 					<li><?= Html::a('<span class="lbl">Categoría</span>', ['admin/specialitycategorymanager'], ['class' => 'lbl']) ?></li>
 				</ul>
             </li>
-            <li class="green with-sub">
+            <li class="magenta with-sub">
 				<span>
-                    <i class="font-icon font-icon-user"></i>
+                    <i class="glyphicon glyphicon-star"></i>
                     <span class="lbl">Proyectos</span>
                 </span>
 				<ul>
@@ -85,15 +85,35 @@ DashboardAsset::register($this);
 					<li><?= Html::a('<span class="lbl">Categoría</span>', ['admin/projectcategorymanager'], ['class' => 'lbl']) ?></li>
 				</ul>              
             </li>
-            <li class="red with-sub">
+            <li class="grey with-sub">
                 <?= Html::a('<i class="font-icon font-icon-case-2"></i><span class="lbl">Eventos</span>', ['admin/eventsmanager'], ['class' => 'lbl']) ?> 
             </li>
-			<li class="silver">
+			<li class="orange-red">
                 <?= Html::a('<i class="font-icon font-icon-case-2"></i><span class="lbl">Alumnos</span>', ['admin/studentsmanager'], ['class' => 'lbl']) ?> 
             </li>
-			<li class="gold">
+			<li class="magenta">
                 <?= Html::a('<i class="font-icon font-icon-case-2"></i><span class="lbl">Maestros</span>', ['admin/teachersmanager'], ['class' => 'lbl']) ?> 
             </li>
+			<li class="grey">
+                <?= Html::a('<i class="font-icon font-icon-case-2"></i><span class="lbl">Slides</span>', ['admin/slidesmanager'], ['class' => 'lbl']) ?> 
+            </li>
+			<li class="orange-red">
+                <?= Html::a('<i class="font-icon font-icon-case-2"></i><span class="lbl">Experiencia</span>', ['admin/experiencemanager'], ['class' => 'lbl']) ?> 
+            </li>
+			 <li class="magenta with-sub">
+				<span>
+                    <i class="glyphicon glyphicon-list-alt"></i>
+                    <span class="lbl">Páginas</span>
+                </span>
+				<ul>
+					<li><?= Html::a('<span class="lbl">Contacto</span>', ['admin/contactmanager'], ['class' => 'lbl']) ?></li>
+					<li><?= Html::a('<span class="lbl">Enlaces</span>', ['admin/linksmanager'], ['class' => 'lbl']) ?></li>
+					<li><?= Html::a('<span class="lbl">Imagenes Portada</span>', ['admin/frontpagemanager'], ['class' => 'lbl']) ?></li>
+					<li><?= Html::a('<span class="lbl">Inicio</span>', ['admin/indexmanager'], ['class' => 'lbl']) ?></li>
+					<li><?= Html::a('<span class="lbl">Nosotros</span>', ['admin/usmanager'], ['class' => 'lbl']) ?></li>
+				</ul>              
+            </li>
+			
     </nav><!--.side-menu-->
     
     <div class="page-content">

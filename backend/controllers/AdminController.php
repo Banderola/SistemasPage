@@ -7,6 +7,7 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+
 use backend\models\SpecialityForm;
 use backend\models\NewsForm;
 use backend\models\ProjectForm;
@@ -15,6 +16,14 @@ use backend\models\SpecialityCategoryForm;
 use backend\models\ProjectCategoryForm;
 use backend\models\StudentForm;
 use backend\models\TeacherForm;
+use backend\models\SlideForm;
+use backend\models\ExperienceForm;
+use backend\models\ContactForm;
+use backend\models\LinkForm;
+use backend\models\FrontpageForm;
+use backend\models\IndexForm;
+use backend\models\UsForm;
+
 use common\models\Noticia;
 use common\models\Evento;
 use common\models\Especialidad;
@@ -23,6 +32,14 @@ use common\models\Maestro;
 use common\models\Alumno;
 use common\models\Proyecto;
 use common\models\Categoriaproyecto;
+use common\models\Slide;
+use common\models\Experiencia;
+use common\models\Paginacontacto;
+use common\models\Paginaenlaces;
+use common\models\Paginaimagenportada;
+use common\models\Paginainicio;
+use common\models\Paginanosotros;
+
 
 /**
  * Site controller
@@ -47,6 +64,7 @@ class AdminController extends Controller
                     ],
                     [
                         'actions' => [
+							//ADDERS & MANAGERS
 							'news',
 							'newsmanager',
 							'newspeciality',
@@ -64,6 +82,19 @@ class AdminController extends Controller
 							'teachersmanager',
 							'student',
 							'studentsmanager',
+							'slide',
+							'slidesmanager',
+							'experience',
+							'experiencemanager',
+							'contactmanager',
+							'link',
+							'linksmanager',
+							'frontpage',
+							'frontpagemanager',
+							'indexmanager',
+							'usmanager',
+							
+							//MODIFIERS
 							'modifynew',
 							'modifyevent',
 							'modifyspeciality',
@@ -72,6 +103,12 @@ class AdminController extends Controller
 							'modifyspecialitycategory',
 							'modifyteacher',
 							'modifystudent',
+							'modifyslide',
+							'modifyexperience',
+							'modifylink',
+							'modifyfrontpage',
+							
+							//DELETERS
 							'deletenew',
 							'deleteevent',
 							'deletespeciality',
@@ -79,7 +116,11 @@ class AdminController extends Controller
 							'deleteprojectcategory',
 							'deletespecialitycategory',
 							'deleteteacher',
-							'deletestudent'
+							'deletestudent',
+							'deleteslide',
+							'deleteexperience',
+							'deletelink',
+							'deletefrontpage',
 							],
                         'allow' => true,
                         'roles' => ['administrar']
@@ -165,12 +206,79 @@ class AdminController extends Controller
 		return $this->render('teachersmanager');
 	}
 	
+	public function actionSlidesmanager(){
+		return $this->render('slidesmanager');
+	}
+	
+	public function actionExperiencemanager(){
+		return $this->render('experiencemanager');
+	}
+	
+	public function actionContactmanager(){
+		$model= new ContactForm();
+		if($found=Paginacontacto::findOne(1)){
+			$model->fillFromExisting($found);
+			if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+				$model->fillFromExisting(Paginacontacto::findOne(1));
+				return $this->render('contactmanager', ['model'=>$model]);
+			} else {
+				return $this->render('contactmanager', ['model' => $model]);
+			}
+		}
+		else{
+			return $this->render('contactmanager', ['model' => $model]);
+		}
+		return $this->render('contactmanager');
+	}
+	
+	public function actionLinksmanager(){
+		return $this->render('linksmanager');
+	}
+	
+	public function actionFrontpagemanager(){
+		return $this->render('frontpagemanager');
+	}
+	
+	public function actionIndexmanager(){
+		$model= new IndexForm();
+		if($found=Paginainicio::findOne(1)){
+			$model->fillFromExisting($found);
+			if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+				$model->fillFromExisting(Paginainicio::findOne(1));
+				return $this->render('indexmanager', ['model'=>$model]);
+			} else {
+				return $this->render('indexmanager', ['model' => $model]);
+			}
+		}
+		else{
+			return $this->render('indexmanager', ['model' => $model]);
+		}
+		return $this->render('indexmanager');
+	}
+	
+	public function actionUsmanager(){
+		$model= new UsForm();
+		if($found=Paginanosotros::findOne(1)){
+			$model->fillFromExisting($found);
+			if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+				$model->fillFromExisting(Paginanosotros::findOne(1));
+				return $this->render('usmanager', ['model'=>$model]);
+			} else {
+				return $this->render('usmanager', ['model' => $model]);
+			}
+		}
+		else{
+			return $this->render('usmanager', ['model' => $model]);
+		}
+		return $this->render('indexmanager');
+	}
+	
 	//ADDERS
     public function actionNews()
     {
         $model = new NewsForm();
          if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
-            return $this->render('index');
+            return $this->render('newsmanager');
         } else {
             return $this->render('newform', ['model' => $model]);
         }
@@ -241,6 +349,46 @@ class AdminController extends Controller
             return $this->render('newteacher', ['model' => $model]);
         }
     }
+	
+	public function actionSlide()
+	{
+		$model = new SlideForm();
+         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
+            return $this->render('slidesmanager');
+        } else {
+            return $this->render('newslide', ['model' => $model]);
+        }
+	}
+	
+	public function actionExperience()
+	{
+		$model = new ExperienceForm();
+         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
+            return $this->render('experiencemanager');
+        } else {
+            return $this->render('newexperience', ['model' => $model]);
+        }
+	}
+	
+	public function actionLink()
+	{
+		$model = new LinkForm();
+         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
+            return $this->render('linksmanager');
+        } else {
+            return $this->render('newlink', ['model' => $model]);
+        }
+	}
+	
+	public function actionFrontpage()
+	{
+		$model = new FrontpageForm();
+         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
+            return $this->render('frontpagemanager');
+        } else {
+            return $this->render('newfrontpage', ['model' => $model]);
+        }
+	}
 	
 	//MODDIFIERS
 	public function actionModifynew($id)
@@ -335,6 +483,49 @@ class AdminController extends Controller
         }
 	}
 	
+	public function actionModifyslide($id){
+		$found=Slide::findOne($id);
+		$model= new SlideForm();
+		$model->fillFromExisting($found);
+         if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+            return $this->render('slidesmanager');
+        } else {
+            return $this->render('newslide', ['model' => $model]);
+        }
+	}
+	
+	public function actionModifyexperience($id){
+		$found=Experiencia::findOne($id);
+		$model= new ExperienceForm();
+		$model->fillFromExisting($found);
+         if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+            return $this->render('experiencemanager');
+        } else {
+            return $this->render('newexperience', ['model' => $model]);
+        }
+	}
+	
+	public function actionModifylink($id){
+		$found=Paginaenlaces::findOne($id);
+		$model= new LinkForm();
+		$model->fillFromExisting($found);
+         if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+            return $this->render('linksmanager');
+        } else {
+            return $this->render('newlink', ['model' => $model]);
+        }
+	}
+	
+	public function actionModifyfrontpage($id){
+		$found=Paginaimagenportada::findOne($id);
+		$model= new FrontpageForm();
+		$model->fillFromExisting($found);
+         if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
+            return $this->render('frontpagemanager');
+        } else {
+            return $this->render('newfrontpage', ['model' => $model]);
+        }
+	}
 	
 	//DELETERS
 	public function actionDeletenew($id)
@@ -391,5 +582,33 @@ class AdminController extends Controller
         $found=Alumno::findOne($id);
 		$found->delete();
 		return $this->render('studentsmanager');
+    }
+	
+	public function actionDeleteslide($id)
+    {
+        $found=Slide::findOne($id);
+		$found->delete();
+		return $this->render('slidesmanager');
+    }
+	
+	public function actionDeleteexperience($id)
+    {
+        $found=Experiencia::findOne($id);
+		$found->delete();
+		return $this->render('experiencemanager');
+    }
+	
+	public function actionDeletelink($id)
+    {
+        $found=Paginaenlaces::findOne($id);
+		$found->delete();
+		return $this->render('linksmanager');
+    }
+	
+	public function actionDeletefrontpage($id)
+    {
+        $found=Paginaimagenportada::findOne($id);
+		$found->delete();
+		return $this->render('frontpagemanager');
     }
 }

@@ -11,8 +11,6 @@ use Yii;
  * @property string $descripcion
  * @property string $imagen
  * @property integer $user_id
- * @property string $titulo
- * @property string $descripcion2
  *
  * @property Incisonosotros[] $incisonosotros
  * @property User $user
@@ -35,9 +33,8 @@ class Paginanosotros extends \yii\db\ActiveRecord
         return [
             [['imagen', 'user_id'], 'required'],
             [['user_id'], 'integer'],
-            [['descripcion', 'descripcion2'], 'string', 'max' => 800],
+            [['descripcion'], 'string', 'max' => 800],
             [['imagen'], 'string', 'max' => 100],
-            [['titulo'], 'string', 'max' => 45],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
@@ -52,7 +49,6 @@ class Paginanosotros extends \yii\db\ActiveRecord
             'descripcion' => 'Descripcion',
             'imagen' => 'Imagen',
             'user_id' => 'User ID',
-            'titulo' => 'Titulo',
         ];
     }
 
