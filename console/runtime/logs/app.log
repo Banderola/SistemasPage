@@ -409,3 +409,793 @@ Array
     ]
     'argc' => 2
 ]
+2017-07-04 02:34:13 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "index". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('index', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('index', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "index". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('index', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#3 {main}
+2017-07-04 02:34:13 [-][-][-][info][application] $_SERVER = [
+    'ADSK_3DSMAX_x64_2017' => 'C:\\Program Files\\Autodesk\\3ds Max 2017\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\edson\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-DHIKCP9T'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\WINDOWS\\ConfigSetRoot'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\edson'
+    'KICAD_PTEMPLATES' => 'C:\\Program Files\\KiCad\\share\\kicad\\template'
+    'KISYS3DMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules\\packages3d'
+    'KISYSMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules'
+    'LOCALAPPDATA' => 'C:\\Users\\edson\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-DHIKCP9T'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\edson\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\nodejs\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\edson\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SSLKEYLOGFILE' => '%HOMEPATH%\\Desktop\\premaster.txt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TVT' => 'C:\\Program Files (x86)\\Lenovo'
+    'USERDOMAIN' => 'LAPTOP-DHIKCP9T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-DHIKCP9T'
+    'USERNAME' => 'edson'
+    'USERPROFILE' => 'C:\\Users\\edson'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\SistemasPage\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1499128453.3703
+    'REQUEST_TIME' => 1499128453
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+        1 => 'index'
+    ]
+    'argc' => 2
+]
+2017-07-04 02:46:22 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "index". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('index', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('index', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "index". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('index', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#3 {main}
+2017-07-04 02:46:22 [-][-][-][info][application] $_SERVER = [
+    'ADSK_3DSMAX_x64_2017' => 'C:\\Program Files\\Autodesk\\3ds Max 2017\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\edson\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-DHIKCP9T'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\WINDOWS\\ConfigSetRoot'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\edson'
+    'KICAD_PTEMPLATES' => 'C:\\Program Files\\KiCad\\share\\kicad\\template'
+    'KISYS3DMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules\\packages3d'
+    'KISYSMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules'
+    'LOCALAPPDATA' => 'C:\\Users\\edson\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-DHIKCP9T'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\edson\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\nodejs\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\edson\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SSLKEYLOGFILE' => '%HOMEPATH%\\Desktop\\premaster.txt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TVT' => 'C:\\Program Files (x86)\\Lenovo'
+    'USERDOMAIN' => 'LAPTOP-DHIKCP9T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-DHIKCP9T'
+    'USERNAME' => 'edson'
+    'USERPROFILE' => 'C:\\Users\\edson'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\SistemasPage\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1499129182.0601
+    'REQUEST_TIME' => 1499129182
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+        1 => 'index'
+    ]
+    'argc' => 2
+]
+2017-07-04 02:46:33 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "frontend/index". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('frontend/index', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('frontend/index', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "frontend/index". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('frontend/index', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#3 {main}
+2017-07-04 02:46:33 [-][-][-][info][application] $_SERVER = [
+    'ADSK_3DSMAX_x64_2017' => 'C:\\Program Files\\Autodesk\\3ds Max 2017\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\edson\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-DHIKCP9T'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\WINDOWS\\ConfigSetRoot'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\edson'
+    'KICAD_PTEMPLATES' => 'C:\\Program Files\\KiCad\\share\\kicad\\template'
+    'KISYS3DMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules\\packages3d'
+    'KISYSMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules'
+    'LOCALAPPDATA' => 'C:\\Users\\edson\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-DHIKCP9T'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\edson\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\nodejs\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\edson\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SSLKEYLOGFILE' => '%HOMEPATH%\\Desktop\\premaster.txt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TVT' => 'C:\\Program Files (x86)\\Lenovo'
+    'USERDOMAIN' => 'LAPTOP-DHIKCP9T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-DHIKCP9T'
+    'USERNAME' => 'edson'
+    'USERPROFILE' => 'C:\\Users\\edson'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\SistemasPage\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1499129193.7007
+    'REQUEST_TIME' => 1499129193
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+        1 => 'frontend/index'
+    ]
+    'argc' => 2
+]
+2017-07-04 02:46:43 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "frontend/index.php". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('frontend/index....', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('frontend/index....', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "frontend/index.php". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('frontend/index....', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#3 {main}
+2017-07-04 02:46:43 [-][-][-][info][application] $_SERVER = [
+    'ADSK_3DSMAX_x64_2017' => 'C:\\Program Files\\Autodesk\\3ds Max 2017\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\edson\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-DHIKCP9T'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\WINDOWS\\ConfigSetRoot'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\edson'
+    'KICAD_PTEMPLATES' => 'C:\\Program Files\\KiCad\\share\\kicad\\template'
+    'KISYS3DMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules\\packages3d'
+    'KISYSMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules'
+    'LOCALAPPDATA' => 'C:\\Users\\edson\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-DHIKCP9T'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\edson\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\nodejs\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\edson\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SSLKEYLOGFILE' => '%HOMEPATH%\\Desktop\\premaster.txt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TVT' => 'C:\\Program Files (x86)\\Lenovo'
+    'USERDOMAIN' => 'LAPTOP-DHIKCP9T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-DHIKCP9T'
+    'USERNAME' => 'edson'
+    'USERPROFILE' => 'C:\\Users\\edson'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\SistemasPage\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1499129203.5359
+    'REQUEST_TIME' => 1499129203
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+        1 => 'frontend/index.php'
+    ]
+    'argc' => 2
+]
+2017-07-04 03:00:15 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "backend/index.php". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('backend/index.p...', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('backend/index.p...', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "backend/index.php". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('backend/index.p...', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#3 {main}
+2017-07-04 03:00:15 [-][-][-][info][application] $_SERVER = [
+    'ADSK_3DSMAX_x64_2017' => 'C:\\Program Files\\Autodesk\\3ds Max 2017\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\edson\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-DHIKCP9T'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\WINDOWS\\ConfigSetRoot'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\edson'
+    'KICAD_PTEMPLATES' => 'C:\\Program Files\\KiCad\\share\\kicad\\template'
+    'KISYS3DMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules\\packages3d'
+    'KISYSMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules'
+    'LOCALAPPDATA' => 'C:\\Users\\edson\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-DHIKCP9T'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\edson\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\nodejs\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\edson\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SSLKEYLOGFILE' => '%HOMEPATH%\\Desktop\\premaster.txt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TVT' => 'C:\\Program Files (x86)\\Lenovo'
+    'USERDOMAIN' => 'LAPTOP-DHIKCP9T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-DHIKCP9T'
+    'USERNAME' => 'edson'
+    'USERPROFILE' => 'C:\\Users\\edson'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\SistemasPage\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1499130015.5353
+    'REQUEST_TIME' => 1499130015
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+        1 => 'backend/index.php'
+    ]
+    'argc' => 2
+]
+2017-07-04 03:00:20 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "backend/index.php". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('backend/index.p...', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('backend/index.p...', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "backend/index.php". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('backend/index.p...', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#3 {main}
+2017-07-04 03:00:20 [-][-][-][info][application] $_SERVER = [
+    'ADSK_3DSMAX_x64_2017' => 'C:\\Program Files\\Autodesk\\3ds Max 2017\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\edson\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-DHIKCP9T'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\WINDOWS\\ConfigSetRoot'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\edson'
+    'KICAD_PTEMPLATES' => 'C:\\Program Files\\KiCad\\share\\kicad\\template'
+    'KISYS3DMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules\\packages3d'
+    'KISYSMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules'
+    'LOCALAPPDATA' => 'C:\\Users\\edson\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-DHIKCP9T'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\edson\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\nodejs\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\edson\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SSLKEYLOGFILE' => '%HOMEPATH%\\Desktop\\premaster.txt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TVT' => 'C:\\Program Files (x86)\\Lenovo'
+    'USERDOMAIN' => 'LAPTOP-DHIKCP9T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-DHIKCP9T'
+    'USERNAME' => 'edson'
+    'USERPROFILE' => 'C:\\Users\\edson'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\SistemasPage\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1499130020.1896
+    'REQUEST_TIME' => 1499130020
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+        1 => 'backend/index.php'
+    ]
+    'argc' => 2
+]
+2017-07-04 03:00:38 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "backend/web/index.php". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('backend/web/ind...', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('backend/web/ind...', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "backend/web/index.php". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('backend/web/ind...', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#3 {main}
+2017-07-04 03:00:38 [-][-][-][info][application] $_SERVER = [
+    'ADSK_3DSMAX_x64_2017' => 'C:\\Program Files\\Autodesk\\3ds Max 2017\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\edson\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-DHIKCP9T'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\WINDOWS\\ConfigSetRoot'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\edson'
+    'KICAD_PTEMPLATES' => 'C:\\Program Files\\KiCad\\share\\kicad\\template'
+    'KISYS3DMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules\\packages3d'
+    'KISYSMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules'
+    'LOCALAPPDATA' => 'C:\\Users\\edson\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-DHIKCP9T'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\edson\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\nodejs\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\edson\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SSLKEYLOGFILE' => '%HOMEPATH%\\Desktop\\premaster.txt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TVT' => 'C:\\Program Files (x86)\\Lenovo'
+    'USERDOMAIN' => 'LAPTOP-DHIKCP9T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-DHIKCP9T'
+    'USERNAME' => 'edson'
+    'USERPROFILE' => 'C:\\Users\\edson'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\SistemasPage\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1499130038.7998
+    'REQUEST_TIME' => 1499130038
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+        1 => 'backend/web/index.php'
+    ]
+    'argc' => 2
+]
+2017-07-04 03:00:41 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "backend/web/index". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('backend/web/ind...', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('backend/web/ind...', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "backend/web/index". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('backend/web/ind...', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#3 {main}
+2017-07-04 03:00:41 [-][-][-][info][application] $_SERVER = [
+    'ADSK_3DSMAX_x64_2017' => 'C:\\Program Files\\Autodesk\\3ds Max 2017\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\edson\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-DHIKCP9T'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\WINDOWS\\ConfigSetRoot'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\edson'
+    'KICAD_PTEMPLATES' => 'C:\\Program Files\\KiCad\\share\\kicad\\template'
+    'KISYS3DMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules\\packages3d'
+    'KISYSMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules'
+    'LOCALAPPDATA' => 'C:\\Users\\edson\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-DHIKCP9T'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\edson\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\nodejs\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\edson\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SSLKEYLOGFILE' => '%HOMEPATH%\\Desktop\\premaster.txt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TVT' => 'C:\\Program Files (x86)\\Lenovo'
+    'USERDOMAIN' => 'LAPTOP-DHIKCP9T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-DHIKCP9T'
+    'USERNAME' => 'edson'
+    'USERPROFILE' => 'C:\\Users\\edson'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\SistemasPage\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1499130041.7497
+    'REQUEST_TIME' => 1499130041
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+        1 => 'backend/web/index'
+    ]
+    'argc' => 2
+]
+2017-07-04 03:00:47 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "backend/index". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('backend/index', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('backend/index', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "backend/index". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('backend/index', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#3 {main}
+2017-07-04 03:00:47 [-][-][-][info][application] $_SERVER = [
+    'ADSK_3DSMAX_x64_2017' => 'C:\\Program Files\\Autodesk\\3ds Max 2017\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\edson\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-DHIKCP9T'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\WINDOWS\\ConfigSetRoot'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\edson'
+    'KICAD_PTEMPLATES' => 'C:\\Program Files\\KiCad\\share\\kicad\\template'
+    'KISYS3DMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules\\packages3d'
+    'KISYSMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules'
+    'LOCALAPPDATA' => 'C:\\Users\\edson\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-DHIKCP9T'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\edson\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\nodejs\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\edson\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SSLKEYLOGFILE' => '%HOMEPATH%\\Desktop\\premaster.txt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TVT' => 'C:\\Program Files (x86)\\Lenovo'
+    'USERDOMAIN' => 'LAPTOP-DHIKCP9T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-DHIKCP9T'
+    'USERNAME' => 'edson'
+    'USERPROFILE' => 'C:\\Users\\edson'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\SistemasPage\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1499130047.124
+    'REQUEST_TIME' => 1499130047
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+        1 => 'backend/index'
+    ]
+    'argc' => 2
+]
+2017-07-04 03:00:52 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "index". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('index', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('index', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "index". in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('index', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\SistemasPage\yii(27): yii\base\Application->run()
+#3 {main}
+2017-07-04 03:00:52 [-][-][-][info][application] $_SERVER = [
+    'ADSK_3DSMAX_x64_2017' => 'C:\\Program Files\\Autodesk\\3ds Max 2017\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\edson\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-DHIKCP9T'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\WINDOWS\\ConfigSetRoot'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GTK_BASEPATH' => 'C:\\Program Files (x86)\\GtkSharp\\2.12\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\edson'
+    'KICAD_PTEMPLATES' => 'C:\\Program Files\\KiCad\\share\\kicad\\template'
+    'KISYS3DMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules\\packages3d'
+    'KISYSMOD' => 'C:\\Program Files\\KiCad\\share\\kicad\\modules'
+    'LOCALAPPDATA' => 'C:\\Users\\edson\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-DHIKCP9T'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\edson\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Users\\edson\\Downloads\\curl\\;C:\\cygwin64\\bin\\;C:\\Users\\edson\\Downloads\\hydra\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Users\\edson\\Downloads\\oc-3.4.1.2-1-windows;C:\\Users\\edson\\Downloads\\sqlite-tools-win32-x86-3170000\\sqlite-tools-win32-x86-3170000\\;C:\\Program Files\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\nodejs\\;C:\\Ruby23-x64\\bin;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\edson\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\edson\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 78 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SSLKEYLOGFILE' => '%HOMEPATH%\\Desktop\\premaster.txt'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\edson\\AppData\\Local\\Temp'
+    'TVT' => 'C:\\Program Files (x86)\\Lenovo'
+    'USERDOMAIN' => 'LAPTOP-DHIKCP9T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-DHIKCP9T'
+    'USERNAME' => 'edson'
+    'USERPROFILE' => 'C:\\Users\\edson'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\SistemasPage\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1499130052.8653
+    'REQUEST_TIME' => 1499130052
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\SistemasPage\\yii'
+        1 => 'index'
+    ]
+    'argc' => 2
+]
