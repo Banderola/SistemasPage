@@ -49,7 +49,7 @@ if($model->rating==null){
 ?>
 <div class="site-courses">
    <!--Breadcrumb Banner Area Start-->
-                <div class="breadcrumb-banner-area " style="background-image: url('img/banner/<?= Html::encode($portada->imagen) ?>');">
+                <div class="breadcrumb-banner-area " style="background-image: url('<?= Html::encode($portada->imagen) ?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -72,7 +72,7 @@ if($model->rating==null){
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="product-details-image">
-                                    <img src="img/details/<?= Html::encode($proyecto->Imagen) ?>" alt="">
+                                    <img src="<?= Html::encode($proyecto->Imagen) ?>" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">

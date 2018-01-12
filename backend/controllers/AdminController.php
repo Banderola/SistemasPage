@@ -159,7 +159,15 @@ class AdminController extends Controller
             'captcha' => [
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ]
+            ],
+            'uploadPhoto' => [
+                'class' => 'budyaga\cropper\actions\UploadAction',
+                //TODO: ver cual es el link para la foto
+                //'uploadParameter' => 'nombre unico de la imagen con extension',
+                'url' => 'http://localhost/Servicio/SistemasPage/common/uploads/photos',
+                'path' => '@common/uploads/photos',
+                'width' => 700,
+                'height' => 300,],
         ];
     }
 

@@ -4,8 +4,10 @@
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \frontend\models\SignupForm */
 
+use yii\helpers\Url;
 use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
+use yii\widgets\ActiveForm;
+use budyaga\cropper\Widget;
 
 $this->title = 'Cuenta';
 ?>
@@ -14,6 +16,7 @@ $this->title = 'Cuenta';
 
     <div class="row">
         <div class="col-lg-5">
+            <div class="col-izq">
             <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
                 <?= $form->field($model, 'nombre')->textInput(['autofocus' => true]) ?>
 
@@ -21,18 +24,16 @@ $this->title = 'Cuenta';
 
                 <?= $form->field($model, 'password')->passwordInput() ?>
             
-            <?php echo $form->field($model, 'imagen')->widget(\bilginnet\cropper\Cropper::className(), [
-    'cropperOptions' => [
-        'width' => 236, // must be specified
-        'height' => 234, // must be specified
-     ]
-]);?>
+            <?= $form->field($model, 'photo')->widget(Widget::className(), [
+                    'uploadUrl' => Url::toRoute('/site/uploadPhoto'),
+                        ]) ?>
 
                 <div class="form-group">
                     <?= Html::submitButton('Actualizar', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
                 </div>
 
             <?php ActiveForm::end(); ?>
+            </div>
         </div>
     </div>
 </div>

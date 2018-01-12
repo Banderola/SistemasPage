@@ -64,7 +64,7 @@ $model->descripcion='';
                             <div class="col-lg-9 col-md-8">
                                 <div class="news-details-content">
                                    <div class="single-latest-item">
-                                        <img src="img/details/<?= Html::encode($noticia->imagen) ?>" alt="">  
+                                        <img src="<?= Html::encode($noticia->imagen) ?>" alt="">  
                                         <div class="single-latest-text">
                                             <h3><?= Html::encode($noticia->titulo) ?></h3> 
                                             <div class="single-item-comment-view">
@@ -97,7 +97,7 @@ $model->descripcion='';
                                         <div class="single-comment">
                                             
                                             <div class="author-image">
-                                                <img src="img/comment/<?= Html::encode($comentarioe->imagen) ?>" alt="">
+                                                <img src="<?= Html::encode($comentarioe->imagen) ?>" alt="">
                                             </div>
                                             <div class="comment-text">
                                                 <div class="author-info">
@@ -155,7 +155,7 @@ $model->descripcion='';
                                             <?php foreach ($noticiasals as $noticial): ?>
                                             <div class="recent-content-item">
                                                
-                                                <?= Html::a("<img src='img/event/".Html::encode($noticial->imagen)."' alt='' height='67' width='67'>", ['site/newsdetails', 'id' => $noticial->idnoticia]);?>
+                                                <?= Html::a("<img src='".Html::encode($noticial->imagen)."' alt='' height='67' width='67'>", ['site/newsdetails', 'id' => $noticial->idnoticia]);?>
                                                 <div class="recent-text">
                                                     
                                                     <h4><?= Html::a(Html::encode($noticial->titulo), ['site/newsdetails', 'id' => $noticial->idnoticia]);?></h4>
@@ -175,7 +175,7 @@ $model->descripcion='';
                                         <div class="recent-content">
                                             <?php foreach ($comentariosals as $comentario): ?>
                                             <div class="recent-content-item">
-                                                <a href="#"><img src="img/comment/<?= Html::encode($comentario->imagen) ?>" alt=""></a>
+                                                <a href="#"><img src="<?= Html::encode($comentario->imagen) ?>" alt=""></a>
                                                 <div class="recent-text">
                                                     <h4><a href="#"><?= Html::encode($comentario->nombre) ?></a></h4>
                                                     <p><?= HtmlPurifier::process($comentario->descripcion) ?></p>

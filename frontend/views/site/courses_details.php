@@ -80,7 +80,7 @@ if($model->rating==null){
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="overlay-effect">
-                                                    <a href="#"><img alt="" src="img/details/<?= Html::encode($course->imagen) ?>"></a>
+                                                    <a href="#"><img alt="" src="<?= Html::encode($course->imagen) ?>"></a>
                                                 </div>
                                             </div>  
                                             <div class="col-md-6">
@@ -160,7 +160,7 @@ if($model->rating==null){
                                         <div class="single-comment">
                                             
                                             <div class="author-image">
-                                                <img src="img/comment/<?= Html::encode($comentarioe->imagen) ?>" alt="">
+                                                <img src="<?= Html::encode($comentarioe->imagen) ?>" alt="">
                                             </div>
                                             <div class="comment-text">
                                                 <div class="author-info">
@@ -226,7 +226,7 @@ if($model->rating==null){
                                                 <h1>Imparte</h1>
                                             </div>
                                             <div class="tutor-image">
-                                                <img src="img/teacher/<?= Html::encode($maestro->imagen) ?>" height="126" width="126">
+                                                <img src="<?= Html::encode($maestro->imagen) ?>" height="126" width="126">
                                             </div>
                                             <div class="single-teacher-text">
                                                 <h3><a href="#"><?= Html::encode($maestro->nombre) ?></a></h3>
@@ -247,7 +247,7 @@ if($model->rating==null){
                                         <div class="single-item">
                                             <?php foreach ($courseals as $courseal): ?>
                                             <div class="single-item-image overlay-effect">
-                                                <a href="#"><img alt="" src="img/course/<?= Html::encode($courseal->imagen) ?>"></a>
+                                                <a href="#"><img alt="" src="<?= Html::encode($courseal->imagen) ?>"></a>
                                             </div>
                                             <div class="single-item-text">
                                                 <h4><a href="#"><?= Html::encode($courseal->Titulo) ?></a></h4>

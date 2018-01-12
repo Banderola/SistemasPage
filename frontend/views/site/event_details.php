@@ -40,7 +40,7 @@ $model->descripcion='';
 <div class="site-courses">
     
     <!--Breadcrumb Banner Area Start-->
-                <div class="breadcrumb-banner-area" style="background-image: url('img/banner/<?= Html::encode($portada->imagen) ?>')">
+                <div class="breadcrumb-banner-area" style="background-image: url('<?= Html::encode($portada->imagen) ?>')">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -66,7 +66,7 @@ $model->descripcion='';
                                     <div class="single-event-item">
                                         <div class="single-event-image">
                                             <a href="#">
-                                                <img alt="" src="img/event/<?= Html::encode($evento->imagen) ?>" height="801" width="285">
+                                                <img alt="" src="<?= Html::encode($evento->imagen) ?>" height="801" width="285">
                                                 <span><?= (new \DateTime($evento->fecha))->format('d M') ?></span>
                                             </a>
                                         </div>
@@ -90,7 +90,7 @@ $model->descripcion='';
                                         <div class="single-comment">
                                             
                                             <div class="author-image">
-                                                <img src="img/comment/<?= Html::encode($comentarioe->imagen) ?>" alt="">
+                                                <img src="<?= Html::encode($comentarioe->imagen) ?>" alt="">
                                             </div>
                                             <div class="comment-text">
                                                 <div class="author-info">
@@ -148,7 +148,7 @@ $model->descripcion='';
                                             <?php foreach ($eventosals as $evento): ?>
                                             <div class="recent-content-item">
                                                 
-                                                <?= Html::a("<img src='img/event/".Html::encode($evento->imagen)."' alt='' height='67' width='67'>", ['site/eventdetail', 'id' => $evento->idevento]);?>
+                                                <?= Html::a("<img src='".Html::encode($evento->imagen)."' alt='' height='67' width='67'>", ['site/eventdetail', 'id' => $evento->idevento]);?>
                                                 <div class="recent-text">
                                                     <h4><?= Html::a(Html::encode($evento->titulo), ['site/eventdetail', 'id' => $evento->idevento]);?></h4>
                                                     <div class="single-item-comment-view">

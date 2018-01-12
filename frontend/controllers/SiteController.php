@@ -83,6 +83,11 @@ class SiteController extends Controller
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
+            'uploadPhoto' => [
+                'class' => 'budyaga\cropper\actions\UploadAction',
+                'url' => 'http://127.0.0.1/sistemaspage/frontend/web/uploads/user/photo',
+                'path' => '@frontend/web/uploads/user/photo',
+            ],
         ];
     }
 

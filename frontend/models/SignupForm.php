@@ -13,7 +13,7 @@ class SignupForm extends Model
     public $email;
     public $password;
     public $nombre;
-
+    public $photo;
 
     /**
      * @inheritdoc
@@ -37,6 +37,22 @@ class SignupForm extends Model
             
             ['nombre', 'required'],
             ['nombre', 'string', 'min' => 5, 'max' => 255],
+            
+            ['photo', 'required'],
+        ];
+    }
+    
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'photo' => 'Avatar',
+            'username' => 'Nombre de Usuario',
+            'email' => 'Correo Electronico',
+            'password' => 'Contraseña',
+            'nombre' => 'Nombre',
         ];
     }
 
@@ -55,6 +71,7 @@ class SignupForm extends Model
         $user->username = $this->username;
         $user->nombre = $this->nombre;
         $user->email = $this->email;
+        $user->imagen = $this->photo;
         $user->setPassword($this->password);
         $user->generateAuthKey();
         $ses=$user->save() ? $user : null;

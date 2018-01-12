@@ -58,8 +58,7 @@ class SiteController extends Controller
                 'url' => 'http://localhost/Servicio/SistemasPage/common/uploads/photos',
                 'path' => '@common/uploads/photos',
                 'width' => 700,
-                'height' => 300,
-        ]
+                'height' => 300,],
         ];
     }
 

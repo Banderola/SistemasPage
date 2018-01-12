@@ -9,8 +9,8 @@ class ComposerStaticInitfcfa288df89d0761a1c62bfcf644b93e
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '180092cfc969a12e06f2132a203a3184' => __DIR__ . '/..' . '/codeception/verify/src/Codeception/function.php',
     );
 
@@ -19,6 +19,7 @@ class ComposerStaticInitfcfa288df89d0761a1c62bfcf644b93e
         array (
             'yii\\swiftmailer\\' => 16,
             'yii\\jui\\' => 8,
+            'yii\\imagine\\' => 12,
             'yii\\gii\\' => 8,
             'yii\\faker\\' => 10,
             'yii\\debug\\' => 10,
@@ -36,6 +37,7 @@ class ComposerStaticInitfcfa288df89d0761a1c62bfcf644b93e
         ),
         'b' => 
         array (
+            'budyaga\\cropper\\' => 16,
             'bilginnet\\cropper\\' => 18,
         ),
         'W' => 
@@ -88,6 +90,10 @@ class ComposerStaticInitfcfa288df89d0761a1c62bfcf644b93e
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-jui',
         ),
+        'yii\\imagine\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-imagine',
+        ),
         'yii\\gii\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-gii',
@@ -121,6 +127,10 @@ class ComposerStaticInitfcfa288df89d0761a1c62bfcf644b93e
         'cebe\\markdown\\' => 
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
+        ),
+        'budyaga\\cropper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/budyaga/yii2-cropper',
         ),
         'bilginnet\\cropper\\' => 
         array (
@@ -206,6 +216,13 @@ class ComposerStaticInitfcfa288df89d0761a1c62bfcf644b93e
             'Prophecy\\' => 
             array (
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
+            ),
+        ),
+        'I' => 
+        array (
+            'Imagine' => 
+            array (
+                0 => __DIR__ . '/..' . '/imagine/imagine/lib',
             ),
         ),
         'H' => 

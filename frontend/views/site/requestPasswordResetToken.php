@@ -16,6 +16,7 @@ $this->title = 'Request password reset';
 
     <div class="row">
         <div class="col-lg-5">
+            <div class="col-izq">
             <?php $form = ActiveForm::begin(['id' => 'request-password-reset-form']); ?>
 
                 <?= $form->field($model, 'email')->textInput(['autofocus' => true]) ?>
@@ -25,6 +26,7 @@ $this->title = 'Request password reset';
                 </div>
 
             <?php ActiveForm::end(); ?>
+            </div>
         </div>
     </div>
 </div>

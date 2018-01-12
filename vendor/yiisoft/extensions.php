@@ -66,4 +66,22 @@ return array (
       '@yii/jui' => $vendorDir . '/yiisoft/yii2-jui',
     ),
   ),
+  'yiisoft/yii2-imagine' => 
+  array (
+    'name' => 'yiisoft/yii2-imagine',
+    'version' => '2.1.0.0',
+    'alias' => 
+    array (
+      '@yii/imagine' => $vendorDir . '/yiisoft/yii2-imagine',
+    ),
+  ),
+  'budyaga/yii2-cropper' => 
+  array (
+    'name' => 'budyaga/yii2-cropper',
+    'version' => '2.0.1.0',
+    'alias' => 
+    array (
+      '@budyaga/cropper' => $vendorDir . '/budyaga/yii2-cropper',
+    ),
+  ),
 );

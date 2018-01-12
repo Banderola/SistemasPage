@@ -12,7 +12,7 @@ class CuentaForm extends Model
     public $email;
     public $password;
     public $nombre;
-    public $imagen;
+    public $photo;
 
 
     /**
@@ -31,7 +31,7 @@ class CuentaForm extends Model
             
             ['nombre', 'required'],
             ['nombre', 'string', 'min' => 5, 'max' => 255],
-            ['foto', 'safe'],
+            ['photo', 'required'],
         ];
     }
 
@@ -53,7 +53,7 @@ class CuentaForm extends Model
             $user->setPassword($this->password);
             $user->generateAuthKey();
         }
-        $user->imagen=$this->imagen;
+        $user->imagen=$this->photo;
         $ses=$user->save() ? $user : null;
         return $ses;
     }
@@ -61,6 +61,19 @@ class CuentaForm extends Model
     public function fillFromExisting($found){
                 $this->nombre = $found->nombre;
                 $this->email = $found->email;
-                $this->imagen = $found->imagen;
+                $this->photo = $found->imagen;
+    }
+    
+     /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'photo' => 'Avatar',
+            'email' => 'Correo Electronico',
+            'password' => 'Contraseña',
+            'nombre' => 'Nombre',
+        ];
     }
 }
