@@ -24,7 +24,6 @@ class Proyecto extends \yii\db\ActiveRecord
 {
     public $rating;
     public $nombre;
-	public $_image;
     /**
      * @inheritdoc
      */
@@ -33,24 +32,27 @@ class Proyecto extends \yii\db\ActiveRecord
         return 'proyecto';
     }
 	
-	public function beforeSave($insert)
+    /**
+     * @inheritdoc
+     */
+    public function beforeSave($insert)
     {
-        if (is_string($this->_image) && strstr($this->_image, 'data:image')) {
+        if (is_string($this->Imagen) && strstr($this->Imagen, 'data:image')) {
 
             // creating image file as png
-            $data = $this->_image;
+            $data = $this->Imagen;
             $data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $data));
             $fileName = time() . '-' . rand(100000, 999999) . '.png';
             file_put_contents(Yii::getAlias('@uploadPath') . '\\' . $fileName, $data);
             // deleting old image 
             // $this->image is real attribute for filename in table
             // customize your code for your attribute            
-            if (!$this->isNewRecord && !empty($this->imagen)) {
-                unlink(Yii::getAlias('@uploadPath'.'\\'.$this->imagen));
+            if (!$this->isNewRecord && !empty($this->Imagen)) {
+               // unlink(Yii::getAlias('@uploadPath'.'\\'.$this->Imagen));
             }
             
             // set new filename
-            $this->imagen = $fileName;
+            $this->Imagen = $fileName;
         }
 
         return parent::beforeSave($insert);
@@ -65,12 +67,12 @@ class Proyecto extends \yii\db\ActiveRecord
             [['user_id', 'Fecha', 'categoriaProyecto_idcategoriaProyecto'], 'required'],
 			[['user_id', 'categoriaProyecto_idcategoriaProyecto'], 'integer'],
             [['Fecha'], 'safe'],
-            [['Titulo', 'Imagen'], 'string', 'max' => 45],
+            [['Titulo'], 'string', 'max' => 45],
             [['Descripcion'], 'string', 'max' => 255],
             [['Url'], 'string', 'max' => 100],
-			['_image','safe'],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
 			[['categoriaProyecto_idcategoriaProyecto'], 'exist', 'skipOnError' => true, 'targetClass' => Categoriaproyecto::className(), 'targetAttribute' => ['categoriaProyecto_idcategoriaProyecto' => 'idcategoriaProyecto']],
+            [['Imagen'], 'safe'],
         ];
     }
 

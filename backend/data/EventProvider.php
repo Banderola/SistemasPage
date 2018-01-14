@@ -17,6 +17,7 @@ class EventProvider extends \yii\data\ArrayDataProvider
 			$this->allModels[] = [
 				'IdEvento' => $evento->idevento,
 				'Titulo' => $evento->titulo,
+                                'Descripcion' => $evento->descripcion,
 				'Imagen' => $evento->imagen,
 				'Fecha' => $evento->fecha,
 				'Lugar' =>$evento->lugar,

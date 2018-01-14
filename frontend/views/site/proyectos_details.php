@@ -72,7 +72,7 @@ if($model->rating==null){
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="product-details-image">
-                                    <img src="<?= Html::encode($proyecto->Imagen) ?>" alt="">
+                                    <img src="<?=Yii::getAlias('@uploadUrl').'/'.Html::encode($proyecto->Imagen) ?>" alt="">
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-6">
@@ -117,7 +117,7 @@ if($model->rating==null){
                                          <?= Html::tag('div', Html::a('Requiere Iniciar Sesion para Calificar', ['site/login'], ['class' => 'profile-link']), ['class' => 'alert alert-success','style'=>'display: none;','id' => 'alertB']) ?>
                                         <span>Share this product</span>
                                         <div class="social-links">
-                                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                                            <a href="<?=Html::encode($proyecto->Url) ?>"><i class="zmdi zmdi-facebook"></i></a>
          
                                         </div>
                                    
@@ -150,7 +150,7 @@ if($model->rating==null){
                             <div class="col-md-3 col-sm-4">
                                 <div class="single-product-item">
                                     <div class="single-product-image">
-                                        <a href="#"><img src="img/product/1.jpg" alt=""></a>
+                                        <a href="#"><img src="<?=Yii::getAlias('@uploadUrl').'/'.Html::encode($proyecto->Imagen) ?>" alt=""></a>
                                     </div>
                                     <div class="single-product-text">
                                         <h4><?= Html::a(Html::encode($proyecto->Titulo), ['site/proyectosdetail', 'id' => $proyecto->idProyecto]);?></h4>

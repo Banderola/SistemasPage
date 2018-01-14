@@ -20,8 +20,10 @@ class UsForm extends Model
     public function rules()
     {
         return [
-			[['descripcion','imagen'],'safe'],
-			['imagen','default','value'=>'1.jpg']
+                        [['descripcion','imagen'],'required'],
+			[['imagen'],'safe'],
+                        
+			//['imagen','default','value'=>'1.jpg']
         ];
     }
     

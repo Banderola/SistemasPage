@@ -8,7 +8,7 @@ use common\models\Maestro;
 class TeacherForm extends Model
 {
     public $nombre;
-	public $foto;
+	public $imagen;
 	public $descripcion;
 	public $f;
 	public $t;
@@ -18,8 +18,8 @@ class TeacherForm extends Model
     public function rules()
     {
         return [
-            [['nombre'],'required'],
-			[['foto','nombre','descripcion','f','t','g','i'], 'safe'],
+            [['nombre','imagen'],'required'],
+			[['imagen','nombre','descripcion','f','t','g','i'], 'safe'],
 			[['f','t','g','i'],'url']
         ];
     }
@@ -28,7 +28,7 @@ class TeacherForm extends Model
         if($this->validate()){
             $proyecto=new Maestro();
             $proyecto->nombre=$this->nombre;
-            $proyecto->imagen=$this->foto;
+            $proyecto->imagen=$this->imagen;
 			$proyecto->user_id=Yii::$app->getUser()->getId();
 			$proyecto->tipo='Teacher';
 			$proyecto->descripcion=$this->descripcion;
@@ -42,7 +42,7 @@ class TeacherForm extends Model
 	
 	public function modifyExisting($found){
 		if($this->validate()){
-			$found->imagen=$this->foto;
+			$found->imagen=$this->imagen;
 			$found->nombre=$this->nombre;
 			$found->descripcion=$this->descripcion;
 			$found->user_id=Yii::$app->getUser()->getId();
@@ -55,7 +55,7 @@ class TeacherForm extends Model
 	}
 	
 	public function fillFromExisting($found){
-		$this->foto=$found->imagen;
+		$this->imagen=$found->imagen;
 		$this->nombre=$found->nombre;
 		$this->descripcion=$found->descripcion;
 		$this->f=$found->linkFace;

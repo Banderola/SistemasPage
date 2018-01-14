@@ -21,9 +21,9 @@ class FrontpageForm extends Model
     public function rules()
     {
         return [
-            [['descripcion'],'required'],
+            [['descripcion','imagen'],'required'],
 			[['descripcion','imagen'],'safe'],
-			['imagen','default', 'value' => '1.jpg']
+			//['imagen','default', 'value' => '1.jpg']
         ];
     }
     

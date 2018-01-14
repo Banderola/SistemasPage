@@ -12,6 +12,10 @@ class ProjectProvider extends \yii\data\ArrayDataProvider
     {
         //Get all all authors with their articles
 	    $query = Proyecto::find();
+            $query->select('proyecto.*, Nombre AS nombre')
+                ->leftJoin('categoriaproyecto','categoriaProyecto_idcategoriaProyecto=idcategoriaProyecto')
+                ->groupBy('idProyecto')
+                ->with('categoriaProyectoIdcategoriaProyecto');
 		foreach($query->all() as $pro) {
 			//Add rows with the Author, # of articles and last publishing date
 			$this->allModels[] = [
@@ -22,7 +26,7 @@ class ProjectProvider extends \yii\data\ArrayDataProvider
 				'Imagen' => $pro->Imagen,
 				'UserID' => $pro->user_id,
 				'Fecha' => $pro->Fecha,
-				'CategoriaID' =>$pro->categoriaProyecto_idcategoriaProyecto
+				'Categoria' =>$pro->nombre,
 			];
 		}
 	}

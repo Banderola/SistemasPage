@@ -31,11 +31,12 @@ class EventForm extends Model
             $evento=new Evento();
             $evento->titulo=$this->titulo;
             $evento->descripcion=$this->descripcion;
+            $evento->imagen=$this->imagen;
             $evento->user_id=Yii::$app->getUser()->getId();
-			$evento->lugar=$this->lugar;
-			$evento->fecha=$this->fecha;
-			$evento->hora_inicio=$this->horai;
-			$evento->hora_fin=$this->horaf;
+            $evento->lugar=$this->lugar;
+            $evento->fecha=$this->fecha;
+            $evento->hora_inicio=$this->horai;
+            $evento->hora_fin=$this->horaf;
             return $evento->save();
         }
     }

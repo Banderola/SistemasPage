@@ -80,7 +80,7 @@ if($model->rating==null){
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="overlay-effect">
-                                                    <a href="#"><img alt="" src="<?= Html::encode($course->imagen) ?>"></a>
+                                                    <a href="#"><img alt="" src="<?=Yii::getAlias('@uploadUrl').'/'. Html::encode($course->imagen) ?>"></a>
                                                 </div>
                                             </div>  
                                             <div class="col-md-6">
@@ -226,7 +226,7 @@ if($model->rating==null){
                                                 <h1>Imparte</h1>
                                             </div>
                                             <div class="tutor-image">
-                                                <img src="<?= Html::encode($maestro->imagen) ?>" height="126" width="126">
+                                                <img src="<?=Yii::getAlias('@uploadUrl').'/'.Html::encode($maestro->imagen) ?>" height="126" width="126">
                                             </div>
                                             <div class="single-teacher-text">
                                                 <h3><a href="#"><?= Html::encode($maestro->nombre) ?></a></h3>
@@ -247,7 +247,7 @@ if($model->rating==null){
                                         <div class="single-item">
                                             <?php foreach ($courseals as $courseal): ?>
                                             <div class="single-item-image overlay-effect">
-                                                <a href="#"><img alt="" src="<?= Html::encode($courseal->imagen) ?>"></a>
+                                                <a href="#"><img alt="" src="<?=Yii::getAlias('@uploadUrl').'/'.Html::encode($courseal->imagen) ?>"></a>
                                             </div>
                                             <div class="single-item-text">
                                                 <h4><a href="#"><?= Html::encode($courseal->Titulo) ?></a></h4>

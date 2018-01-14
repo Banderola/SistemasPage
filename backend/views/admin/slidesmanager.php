@@ -34,11 +34,9 @@ $dataProvider=new SlideProvider();
 							},
 						],
 					],
-					'IdSlide',
 					'Titulo',
 					'Imagen',
 					'Descripcion',
-					'UserID',
 				],
 			]);
 			?>

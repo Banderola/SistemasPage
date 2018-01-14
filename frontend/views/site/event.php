@@ -13,7 +13,7 @@ $this->title = 'Eventos';
 <div class="site-contact">
   
 <!--Breadcrumb Banner Area Start-->
-                <div class="breadcrumb-banner-area" style="background-image: url('img/banner/<?= $portada->imagen ?>');">
+                <div class="breadcrumb-banner-area" style="background-image: url('<?=Yii::getAlias('@uploadUrl').'/'.$portada->imagen ?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -39,7 +39,7 @@ $this->title = 'Eventos';
                             <div class="col-md-4 col-sm-6">
                                 <div class="single-event-item">
                                     <div class="single-event-image">
-                                        <?= Html::a("<img src='img/event/".Html::encode($evento->imagen)."' alt=''><span>".(new \DateTime($evento->fecha))->format('d M')."</span>", ['site/eventdetail', 'id' => $evento->idevento]);?>
+                                        <?= Html::a("<img src='".Yii::getAlias('@uploadUrl').'/'.Html::encode($evento->imagen)."' alt='' ><span>".(new \DateTime($evento->fecha))->format('d M')."</span>", ['site/eventdetail', 'id' => $evento->idevento]);?>
                                         
                                        
                                     </div>

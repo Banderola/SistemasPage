@@ -18,13 +18,13 @@ class SpecialityForm extends Model
     public $titulo;
     public $descripcion;
     public $categoria;
-	public $maestro_id;
+    public $maestro_id;
 
 
     public function rules()
     {
         return [
-            [['titulo','descripcion','categoria'],'required'],
+            [['titulo','descripcion','categoria','imagen'],'required'],
 			[['imagen','maestro_id'],'safe']
         ];
     }
@@ -62,4 +62,19 @@ class SpecialityForm extends Model
 		$this->categoria=$found->CategoriaEspecialidad_idCategoriaEspecialidad;
 		$this->maestro_id=$found->Maestro_idMaestro;
 	}
+        
+         /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'imagen' => 'Imagen',
+            'titulo' => 'Titulo',
+            'descripcion' => 'Descripcion',
+            'categoria' => 'Categoria',
+            'maestro_id' => 'Maestro',
+            
+        ];
+    }
 }

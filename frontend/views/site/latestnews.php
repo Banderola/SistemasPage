@@ -15,7 +15,7 @@ $this->title = 'Noticias';
 <div class="site-latestnews">
   
 <!--Breadcrumb Banner Area Start-->
-                <div class="breadcrumb-banner-area" style="background-image: url('img/banner/<?= Html::encode($portada->imagen) ?>');">
+                <div class="breadcrumb-banner-area" style="background-image: url('<?=Yii::getAlias('@uploadUrl').'/'.Html::encode($portada->imagen) ?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -41,7 +41,7 @@ $this->title = 'Noticias';
                                 <div class="single-latest-item">
                                     <div class="single-latest-image">
                                         
-                                        <?= Html::a("<img src='img/latest/".Html::encode($noticia->imagen)."' alt=''>", ['site/newsdetails', 'id' => $noticia->idnoticia]);?>
+                                        <?= Html::a("<img src='".Yii::getAlias('@uploadUrl').'/'.Html::encode($noticia->imagen)."' alt='' style='max-width: 664px;'>", ['site/newsdetails', 'id' => $noticia->idnoticia]);?>
                                     </div>
                                     <div class="single-latest-text">
                                        

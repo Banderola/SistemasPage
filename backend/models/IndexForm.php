@@ -14,7 +14,7 @@ use common\models\Paginainicio;
 
 class IndexForm extends Model
 {
-    public $tituloPortada;
+        public $tituloPortada;
 	public $descripcionPortada;
 	public $cantidadAlumnos;
 	public $cantidadPremios;
@@ -26,7 +26,8 @@ class IndexForm extends Model
         return [
 			[['titulo','descripcionPortada','cantidadAlumnos','cantidadPremios','imagenAlumnos','imagenCifras'],'safe'],
 			[['cantidadAlumnos','cantidadPremios'],'integer'],
-			[['imagenAlumnos','imagenCifras'],'default','value'=>'1.jpg']
+                        [['descripcionPortada','cantidadAlumnos','cantidadPremios','imagenAlumnos','imagenCifras'],'required'],
+			//[['imagenAlumnos','imagenCifras'],'default','value'=>'1.jpg']
         ];
     }
     

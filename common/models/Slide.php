@@ -32,10 +32,34 @@ class Slide extends \yii\db\ActiveRecord
         return [
             [['user_id'], 'required'],
             [['user_id'], 'integer'],
-            [['Titulo', 'Imagen'], 'string', 'max' => 45],
+            [['Titulo'], 'string', 'max' => 45],
             [['Descripcion'], 'string', 'max' => 500],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
+            [['Imagen'],'safe'],
         ];
+    }
+    
+    public function beforeSave($insert)
+    {
+        if (is_string($this->Imagen) && strstr($this->Imagen, 'data:image')) {
+
+            // creating image file as png
+            $data = $this->Imagen;
+            $data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $data));
+            $fileName = time() . '-' . rand(100000, 999999) . '.png';
+            file_put_contents(Yii::getAlias('@uploadPath') . '\\' . $fileName, $data);
+            // deleting old image 
+            // $this->image is real attribute for filename in table
+            // customize your code for your attribute            
+            if (!$this->isNewRecord && !empty($this->Imagen)) {
+              //  unlink(Yii::getAlias('@uploadPath'.'\\'.$this->imagen));
+            }
+            
+            // set new filename
+            $this->Imagen = $fileName;
+        }
+
+        return parent::beforeSave($insert);
     }
 
     /**

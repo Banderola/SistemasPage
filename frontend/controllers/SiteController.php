@@ -2,6 +2,7 @@
 namespace frontend\controllers;
 
 use Yii;
+use yii\helpers\Url;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
@@ -85,7 +86,7 @@ class SiteController extends Controller
             ],
             'uploadPhoto' => [
                 'class' => 'budyaga\cropper\actions\UploadAction',
-                'url' => 'http://127.0.0.1/sistemaspage/frontend/web/uploads/user/photo',
+                'url' => Yii::getAlias('@uploadUrl2'),
                 'path' => '@frontend/web/uploads/user/photo',
             ],
         ];

@@ -31,12 +31,35 @@ class Paginanosotros extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['imagen', 'user_id'], 'required'],
+            [['user_id'], 'required'],
             [['user_id'], 'integer'],
-            [['descripcion'], 'string', 'max' => 800],
-            [['imagen'], 'string', 'max' => 100],
+            [['descripcion'], 'string', 'max' => 2000],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
+            [['imagen'],'safe'],
         ];
+    }
+    
+    public function beforeSave($insert)
+    {
+        if (is_string($this->imagen) && strstr($this->imagen, 'data:image')) {
+
+            // creating image file as png
+            $data = $this->imagen;
+            $data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $data));
+            $fileName = time() . '-' . rand(100000, 999999) . '.png';
+            file_put_contents(Yii::getAlias('@uploadPath') . '\\' . $fileName, $data);
+            // deleting old image 
+            // $this->image is real attribute for filename in table
+            // customize your code for your attribute            
+            if (!$this->isNewRecord && !empty($this->imagen)) {
+              //  unlink(Yii::getAlias('@uploadPath'.'\\'.$this->imagen));
+            }
+            
+            // set new filename
+            $this->imagen = $fileName;
+        }
+
+        return parent::beforeSave($insert);
     }
 
     /**

@@ -37,7 +37,6 @@ $dataProvider=new SpecialityCategoryProvider();
 							},
 						],
 					],
-					'idCategoriaEspecialidad',
 					'Nombre',
 				],
 			]);

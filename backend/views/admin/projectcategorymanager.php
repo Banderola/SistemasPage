@@ -37,7 +37,6 @@ $dataProvider=new ProjectCategoryProvider();
 							},
 						],
 					],
-					'idCategoriaProyecto',
 					'Nombre',
 				],
 			]);

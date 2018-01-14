@@ -14,7 +14,7 @@ $this->title = 'Inicio';
                     <div class="preview-2">
                         <div id="nivoslider" class="slides">   
                             <?php $i = 1; foreach($slide as $slide_1): ?>
-                                <img src='img/slider/<?= $slide_1->Imagen ?>' alt='' title='#slider-1-caption<?= $i ?>'/> 
+                                <img src='<?=Yii::getAlias('@uploadUrl').'/'.$slide_1->Imagen ?>' alt='' title='#slider-1-caption<?= $i ?>'/> 
                             <?php $i++; endforeach; ?>
                             <!--<img src="img/slider/1.jpg" alt="" title="#slider-1-caption1"/>-->
                             <!--<img src="img/slider/4.jpg" alt="" title="#slider-1-caption2"/>-->
@@ -68,7 +68,7 @@ $this->title = 'Inicio';
                 </div>
                 <!--End of Slider Area-->
                 <!--About Area Start--> 
-                <div class="about-area" style="background-image: url('img/banner/<?= $portada->imagen ?>');">
+                <div class="about-area" style="background-image: url('<?=Yii::getAlias('@uploadUrl').'/'.$portada->imagen ?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8">
@@ -103,7 +103,7 @@ $this->title = 'Inicio';
                                 <div class="single-item">
                                     <div class="single-item-image overlay-effect">
                                         
-                                        <?= Html::a("<img src='img/course/".Html::encode($especialidad->imagen)."' alt=''>", ['site/coursesdetail', 'id' => $especialidad->idEspecialidades]);?>
+                                        <?= Html::a("<img src='".Yii::getAlias('@uploadUrl').'/'.Html::encode($especialidad->imagen)."' alt=''>", ['site/coursesdetail', 'id' => $especialidad->idEspecialidades]);?>
                                     </div>
                                     <div class="single-item-text">
                                        
@@ -145,7 +145,7 @@ $this->title = 'Inicio';
                 </div>
                 <!--End of Course Area-->
                 <!--Fun Factor Area Start-->
-                <div class="fun-factor-area" style="background-image: url('img/banner/<?=$inicio->imagenCifras?>');">
+                <div class="fun-factor-area" style="background-image: url('<?=Yii::getAlias('@uploadUrl').'/'.$inicio->imagenCifras?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -206,7 +206,7 @@ $this->title = 'Inicio';
                                 <div class="single-latest-item">
                                     <div class="single-latest-image">
                                         
-                                        <?= Html::a("<img src='img/latest/".Html::encode($noticia->imagen)."' alt=''>", ['site/newsdetails', 'id' => $noticia->idnoticia]);?>
+                                        <?= Html::a("<img src='".Yii::getAlias('@uploadUrl').'/'.Html::encode($noticia->imagen)."' alt=''>", ['site/newsdetails', 'id' => $noticia->idnoticia]);?>
                                     </div>
                                     <div class="single-latest-text">
                                        
@@ -252,7 +252,7 @@ $this->title = 'Inicio';
                                 <div class="single-product-item">
                                     <div class="single-product-image">
                                         
-                                        <?= Html::a("<img src='img/product/".Html::encode($proyecto->Imagen)."' alt=''>", ['site/proyectosdetail', 'id' => $proyecto->idProyecto]);?>
+                                        <?= Html::a("<img src='".Yii::getAlias('@uploadUrl').'/'.Html::encode($proyecto->Imagen)."' alt=''>", ['site/proyectosdetail', 'id' => $proyecto->idProyecto]);?>
                                     </div>
                                     <div class="single-product-text">
                                         
@@ -287,7 +287,7 @@ $this->title = 'Inicio';
                 </div>
                 <!--End of Online Product Area-->
                 <!--Testimonial Area Start-->
-                <div class="testimonial-area" style="background-image: url('img/banner/<?=$inicio->imagenAlumnos?>');">
+                <div class="testimonial-area" style="background-image: url('<?=Yii::getAlias('@uploadUrl').'/'.$inicio->imagenAlumnos?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
@@ -296,7 +296,7 @@ $this->title = 'Inicio';
                                         <div class="testimonial-image-slider text-center">
                                             <?php foreach ($alumnos as $alumno): ?>
                                             <div class="sin-testiImage">
-                                                <img src="img/testimonial/<?=Html::encode($alumno->foto)?>" alt="testimonial 1" />
+                                                <img src="<?=Yii::getAlias('@uploadUrl').'/'.Html::encode($alumno->foto)?>" alt="testimonial 1" />
                                             </div>
                                             <?php endforeach; ?>
                                         </div>
@@ -334,7 +334,7 @@ $this->title = 'Inicio';
                             <div class="col-md-4 col-sm-6">
                                 <div class="single-event-item">
                                     <div class="single-event-image">
-                                        <?= Html::a("<img src='img/event/".Html::encode($evento->imagen)."' alt=''><span>".(new \DateTime($evento->fecha))->format('d M')."</span>", ['site/eventdetail', 'id' => $evento->idevento]);?>
+                                        <?= Html::a("<img src='".Yii::getAlias('@uploadUrl').'/'.Html::encode($evento->imagen)."' alt=''><span>".(new \DateTime($evento->fecha))->format('d M')."</span>", ['site/eventdetail', 'id' => $evento->idevento]);?>
                                         
                                        
                                     </div>

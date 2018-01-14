@@ -37,11 +37,9 @@ $dataProvider=new ExperienceProvider();
 							},
 						],
 					],
-					'IdExperiencia',
 					'Descripcion',
 					'Valor',
 					'Orientacion',
-					'UserID',
 				],
 			]);
 			?>

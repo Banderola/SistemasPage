@@ -8,7 +8,7 @@ $this->title = 'Nosotros';
 
 ?>
 <!--Breadcrumb Banner Area Start-->
-<div class="breadcrumb-banner-area" style="background-image: url('img/banner/<?= $portada->imagen ?>');">
+<div class="breadcrumb-banner-area" style="background-image: url('<?= Yii::getAlias('@uploadUrl').'/'.$portada->imagen ?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -46,7 +46,7 @@ $this->title = 'Nosotros';
                             </div>
                             <div class="col-md-6">
                                 <div class="skill-image">
-                                    <img src="img/banner/<?= $nosotros->imagen ?>" alt="">
+                                    <img src="<?=Yii::getAlias('@uploadUrl').'/'.$nosotros->imagen ?>" alt="">
                                 </div>
                             </div>
                         </div>
@@ -167,7 +167,7 @@ $this->title = 'Nosotros';
                             <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="single-teacher-item">
                                     <div class="single-teacher-image">
-                                        <a href="#"><img src="img/teacher/<?= $maestro->imagen ?>" alt=""></a>
+                                        <a href="#"><img src="<?=Yii::getAlias('@uploadUrl').'/'.$maestro->imagen ?>" alt=""></a>
                                     </div>
                                     <div class="single-teacher-text">
                                         <h3><a href="#"><?= $maestro->nombre ?></a></h3>

@@ -34,10 +34,8 @@ $dataProvider=new FrontpageProvider();
 							},
 						],
 					],
-					'IdImagenPortada',
 					'Imagen',
 					'Descripcion',
-					'UserID',
 				],
 			]);
 			?>

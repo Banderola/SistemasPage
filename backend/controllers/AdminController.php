@@ -160,14 +160,6 @@ class AdminController extends Controller
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
-            'uploadPhoto' => [
-                'class' => 'budyaga\cropper\actions\UploadAction',
-                //TODO: ver cual es el link para la foto
-                //'uploadParameter' => 'nombre unico de la imagen con extension',
-                'url' => 'http://localhost/Servicio/SistemasPage/common/uploads/photos',
-                'path' => '@common/uploads/photos',
-                'width' => 700,
-                'height' => 300,],
         ];
     }
 
@@ -303,12 +295,12 @@ class AdminController extends Controller
     }
 	
 	public function actionProject(){
-		$model = new ProjectForm();
-         if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
-            return $this->render('projectsmanager');
-        } else {
-            return $this->render('newproject', ['model' => $model]);
-        }
+            $model = new ProjectForm();
+            if ($model->load(Yii::$app->request->post()) && $model->addNew()) {
+                return $this->render('projectsmanager');
+            } else {
+                return $this->render('newproject', ['model' => $model]);
+            }
 	}
 	
 	public function actionEvent(){
@@ -449,7 +441,7 @@ class AdminController extends Controller
 	public function actionModifyproject($id)
     {
 		$found=Proyecto::findOne($id);
-        $model = new ProjectForm();
+                $model = new ProjectForm();
 		$model->fillFromExisting($found);
          if ($model->load(Yii::$app->request->post()) && $model->modifyExisting($found)) {
             return $this->render('projectsmanager');

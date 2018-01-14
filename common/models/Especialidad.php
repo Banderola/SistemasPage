@@ -28,7 +28,7 @@ class Especialidad extends \yii\db\ActiveRecord
     public $cnt;
     public $rating;
     public $maestro;
-	public $_image;
+    public $especialidad;
     /**
      * @inheritdoc
      */
@@ -37,12 +37,12 @@ class Especialidad extends \yii\db\ActiveRecord
         return 'especialidad';
     }
 	
-	public function beforeSave($insert)
+    public function beforeSave($insert)
     {
-        if (is_string($this->_image) && strstr($this->_image, 'data:image')) {
+        if (is_string($this->imagen) && strstr($this->imagen, 'data:image')) {
 
             // creating image file as png
-            $data = $this->_image;
+            $data = $this->imagen;
             $data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $data));
             $fileName = time() . '-' . rand(100000, 999999) . '.png';
             file_put_contents(Yii::getAlias('@uploadPath') . '\\' . $fileName, $data);
@@ -50,7 +50,7 @@ class Especialidad extends \yii\db\ActiveRecord
             // $this->image is real attribute for filename in table
             // customize your code for your attribute            
             if (!$this->isNewRecord && !empty($this->imagen)) {
-                unlink(Yii::getAlias('@uploadPath'.'\\'.$this->imagen));
+              //  unlink(Yii::getAlias('@uploadPath'.'\\'.$this->imagen));
             }
             
             // set new filename
@@ -68,12 +68,12 @@ class Especialidad extends \yii\db\ActiveRecord
         return [
             [['Visitas', 'user_id', 'CategoriaEspecialidad_idCategoriaEspecialidad', 'Maestro_idMaestro'], 'integer'],
             [['user_id', 'CategoriaEspecialidad_idCategoriaEspecialidad', 'Maestro_idMaestro'], 'required'],
-            [['Titulo', 'imagen'], 'string', 'max' => 45],
+            [['Titulo'], 'string', 'max' => 45],
             [['Descripcion'], 'string', 'max' => 255],
             [['CategoriaEspecialidad_idCategoriaEspecialidad'], 'exist', 'skipOnError' => true, 'targetClass' => Categoriaespecialidad::className(), 'targetAttribute' => ['CategoriaEspecialidad_idCategoriaEspecialidad' => 'idCategoriaEspecialidad']],
             [['Maestro_idMaestro'], 'exist', 'skipOnError' => true, 'targetClass' => Maestro::className(), 'targetAttribute' => ['Maestro_idMaestro' => 'idMaestro']],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
-			[['_image','Maestro_idMaestro'],'safe']
+            [['imagen','Maestro_idMaestro'],'safe']
         ];
     }
 

@@ -66,7 +66,7 @@ $model->descripcion='';
                                     <div class="single-event-item">
                                         <div class="single-event-image">
                                             <a href="#">
-                                                <img alt="" src="<?= Html::encode($evento->imagen) ?>" height="801" width="285">
+                                                <img alt="" src="<?= Yii::getAlias('@uploadUrl').'/'.Html::encode($evento->imagen) ?>" height="801" width="285">
                                                 <span><?= (new \DateTime($evento->fecha))->format('d M') ?></span>
                                             </a>
                                         </div>
@@ -148,7 +148,7 @@ $model->descripcion='';
                                             <?php foreach ($eventosals as $evento): ?>
                                             <div class="recent-content-item">
                                                 
-                                                <?= Html::a("<img src='".Html::encode($evento->imagen)."' alt='' height='67' width='67'>", ['site/eventdetail', 'id' => $evento->idevento]);?>
+                                                <?= Html::a("<img src='".Yii::getAlias('@uploadUrl').'/'.Html::encode($evento->imagen)."' alt='' height='90' width='90'>", ['site/eventdetail', 'id' => $evento->idevento]);?>
                                                 <div class="recent-text">
                                                     <h4><?= Html::a(Html::encode($evento->titulo), ['site/eventdetail', 'id' => $evento->idevento]);?></h4>
                                                     <div class="single-item-comment-view">

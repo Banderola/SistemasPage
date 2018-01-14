@@ -34,7 +34,6 @@ $dataProvider=new TeacherProvider();
 							},
 						],
 					],
-					'IdMaestro',
 					'Nombre',
 					'Foto',
 					'Descripcion',

@@ -15,7 +15,7 @@ class NewsForm extends Model
     public function rules()
     {
         return [
-            [['titulo','descripcion','link'],'required'],
+            [['titulo','descripcion','link','imagen'],'required'],
 			['imagen', 'safe']
         ];
     }
@@ -25,6 +25,7 @@ class NewsForm extends Model
             $noticia=new Noticia();
             $noticia->titulo=$this->titulo;
             $noticia->descripcion=$this->descripcion;
+            $noticia->imagen=$this->imagen;
             $noticia->link=$this->link;
             $noticia->user_id=Yii::$app->getUser()->getId();
             $noticia->visitas=0;

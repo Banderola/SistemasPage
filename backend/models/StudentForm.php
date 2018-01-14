@@ -7,7 +7,7 @@ use common\models\Alumno;
 
 class StudentForm extends Model
 {
-    public $nombre;
+        public $nombre;
 	public $foto;
 	public $comentario;
 	public $fechaComentario;
@@ -15,8 +15,8 @@ class StudentForm extends Model
     public function rules()
     {
         return [
-            [['nombre'],'required'],
-			[['foto','nombre','comentario','fechaComentario'], 'safe']
+            [['nombre','foto'],'required'],
+			[['foto','nombre','comentario','fechaComentario'], 'safe'],
         ];
     }
 	
@@ -25,9 +25,9 @@ class StudentForm extends Model
             $proyecto=new Alumno();
             $proyecto->nombre=$this->nombre;
             $proyecto->foto=$this->foto;
-			$proyecto->user_id=Yii::$app->getUser()->getId();
-			$proyecto->descripcion=$this->comentario;
-			$proyecto->fecha=$this->fechaComentario;
+            $proyecto->user_id=Yii::$app->getUser()->getId();
+            $proyecto->descripcion=$this->comentario;
+            $proyecto->fecha=$this->fechaComentario;
             return $proyecto->save();
         }
     }

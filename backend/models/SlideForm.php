@@ -22,7 +22,7 @@ class SlideForm extends Model
     public function rules()
     {
         return [
-            [['titulo','descripcion'],'required'],
+            [['titulo','descripcion','imagen'],'required'],
 			[['titulo','descripcion','imagen'],'safe'],
         ];
     }

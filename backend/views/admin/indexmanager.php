@@ -6,11 +6,16 @@
  * and open the template in the editor.
  */
 
-use yii\grid\GridView;
-use common\models\Paginacontacto;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
+
+$script = <<< JS
+$(document).ready(function() {
+    $("#indexform-imagenalumnos").val('$model->imagenAlumnos');
+    $("#indexform-imagencifras").val('$model->imagenCifras');
+});
+JS;
 
 $this->title = 'Bienvenido';
 ?>
@@ -22,19 +27,19 @@ $this->title = 'Bienvenido';
 	
 		<?php $form = ActiveForm::begin(); ?>
 		<?= $form->field($model, 'tituloPortada') -> textInput();?>
-		<?= $form->field($model, 'descripcionPortada') -> textInput(); ?>
+		<?= $form->field($model, 'descripcionPortada') -> textarea(); ?>
 		<?= $form->field($model, 'cantidadAlumnos') -> textInput(); ?>
 		<?= $form->field($model, 'cantidadPremios') -> textInput(); ?>
 		<?php echo $form->field($model, 'imagenAlumnos')->widget(\bilginnet\cropper\Cropper::className(), [
     'cropperOptions' => [
-        'width' => 236, // must be specified
-        'height' => 234, // must be specified
+        'width' => 1920, // must be specified
+        'height' => 480, // must be specified
      ]
 ]);?>
 <?php echo $form->field($model, 'imagenCifras')->widget(\bilginnet\cropper\Cropper::className(), [
     'cropperOptions' => [
-        'width' => 236, // must be specified
-        'height' => 234, // must be specified
+        'width' => 1600, // must be specified
+        'height' => 481, // must be specified
      ]
 ]);?>
 		
@@ -42,6 +47,11 @@ $this->title = 'Bienvenido';
 			<?= Html::submitButton('Guardar cambios', ['class' => 'btn btn-primary']); ?>
 		</div>
 <?php ActiveForm::end(); ?>
+<?php
+if($model->imagenAlumnos!=null && $model->imagenCifras!=null){
+    $this->registerJs($script);
+}
+?>
 
     </div>
 </div>

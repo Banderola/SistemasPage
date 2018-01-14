@@ -31,10 +31,8 @@ $dataProvider=new LinkProvider();
 							},
 						],
 					],
-					'IdEnlaces',
 					'Titulo',
 					'Link',
-					'UserID',
 				],
 			]);
 			?>

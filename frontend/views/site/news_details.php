@@ -64,7 +64,7 @@ $model->descripcion='';
                             <div class="col-lg-9 col-md-8">
                                 <div class="news-details-content">
                                    <div class="single-latest-item">
-                                        <img src="<?= Html::encode($noticia->imagen) ?>" alt="">  
+                                        <img src="<?=Yii::getAlias('@uploadUrl').'/'.Html::encode($noticia->imagen) ?>" alt="">  
                                         <div class="single-latest-text">
                                             <h3><?= Html::encode($noticia->titulo) ?></h3> 
                                             <div class="single-item-comment-view">

@@ -14,7 +14,7 @@ $this->title = 'Proyectos';
 <div class="site-shopgrid">
     
 <!--Breadcrumb Banner Area Start-->
-                <div class="breadcrumb-banner-area" style="background-image: url('img/banner/<?= $portada->imagen ?>');">
+                <div class="breadcrumb-banner-area" style="background-image: url('<?=Yii::getAlias('@uploadUrl').'/'.$portada->imagen ?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -40,7 +40,7 @@ $this->title = 'Proyectos';
                                 <div class="single-product-item">
                                     <div class="single-product-image">
                                         
-                                        <?= Html::a("<img src='img/product/".Html::encode($proyecto->Imagen)."' alt=''>", ['site/proyectosdetail', 'id' => $proyecto->idProyecto]);?>
+                                        <?= Html::a("<img src='".Yii::getAlias('@uploadUrl').'/'.Html::encode($proyecto->Imagen)."' alt=''>", ['site/proyectosdetail', 'id' => $proyecto->idProyecto]);?>
                                     </div>
                                     <div class="single-product-text">
                                         

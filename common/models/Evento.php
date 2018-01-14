@@ -38,13 +38,37 @@ class Evento extends \yii\db\ActiveRecord
     {
         return [
             [['fecha', 'hora_inicio', 'hora_fin'], 'safe'],
-            [['user_id'], 'required'],
+            [['user_id','imagen'], 'required'],
             [['user_id'], 'integer'],
-            [['titulo', 'imagen', 'lugar'], 'string', 'max' => 45],
+            [['titulo', 'lugar'], 'string', 'max' => 45],
             [['descripcion'], 'string', 'max' => 255],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
-			[['fecha'], 'default', 'value' => date('Y-m-d')]
+            [['fecha'], 'default', 'value' => date('Y-m-d')],
+            [['imagen'],'safe'],
         ];
+    }
+    
+    public function beforeSave($insert)
+    {
+        if (is_string($this->imagen) && strstr($this->imagen, 'data:image')) {
+
+            // creating image file as png
+            $data = $this->imagen;
+            $data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $data));
+            $fileName = time() . '-' . rand(100000, 999999) . '.png';
+            file_put_contents(Yii::getAlias('@uploadPath') . '\\' . $fileName, $data);
+            // deleting old image 
+            // $this->image is real attribute for filename in table
+            // customize your code for your attribute            
+            if (!$this->isNewRecord && !empty($this->imagen)) {
+              //  unlink(Yii::getAlias('@uploadPath'.'\\'.$this->imagen));
+            }
+            
+            // set new filename
+            $this->imagen = $fileName;
+        }
+
+        return parent::beforeSave($insert);
     }
 
     /**

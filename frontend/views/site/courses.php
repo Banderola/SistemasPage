@@ -17,7 +17,7 @@ $this->title = 'Especialidades';
 <div class="site-courses">
    
   <!--Breadcrumb Banner Area Start-->
-                <div class="breadcrumb-banner-area" style="background-image: url('img/banner/<?= Html::encode($portada->imagen) ?>');">
+                <div class="breadcrumb-banner-area" style="background-image: url('<?=Yii::getAlias('@uploadUrl').'/'.Html::encode($portada->imagen) ?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -78,7 +78,7 @@ $this->title = 'Especialidades';
                                 <div class="single-item">
                                     <div class="single-item-image overlay-effect">
                                         
-                                        <?= Html::a("<img src='img/course/".Html::encode($especialidad->imagen)."' alt=''>", ['site/coursesdetail', 'id' => $especialidad->idEspecialidades]);?>
+                                        <?= Html::a("<img src='".Yii::getAlias('@uploadUrl').'/'.Html::encode($especialidad->imagen)."' alt=''>", ['site/coursesdetail', 'id' => $especialidad->idEspecialidades]);?>
                                     </div>
                                     <div class="single-item-text">
                                        

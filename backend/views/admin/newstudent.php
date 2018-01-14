@@ -8,29 +8,36 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use yii\helpers\Url;
-use yii\helpers\ArrayHelper;
-use common\models\Categoriaespecialidad;
-use common\models\Maestro;
 use yii\jui\DatePicker;
-    
+
+$script = <<< JS
+$(document).ready(function() {
+    $("#studentform-foto").val('$model->foto');
+});
+JS;
+
 $this->title=' Alumno';
 ?>
 <h1><?= Html::encode($this->title) ?></h1>
 <?php $form = ActiveForm::begin(); ?>
     <?= $form->field($model, 'nombre') -> textInput();?>
-    <?= $form->field($model, 'comentario') -> textInput(); ?>
+    <?= $form->field($model, 'comentario') -> textarea(); ?>
 	<?= $form->field($model, 'fechaComentario') -> widget(DatePicker::className(),[
 		'dateFormat'=>'php:Y-m-d',
 		'clientOptions' => ['defaultDate' => '+1']
 	]);?>
-    <?php echo $form->field($model, '_image')->widget(\bilginnet\cropper\Cropper::className(), [
+    <?php echo $form->field($model, 'foto')->widget(\bilginnet\cropper\Cropper::className(), [
     'cropperOptions' => [
-        'width' => 236, // must be specified
-        'height' => 234, // must be specified
+        'width' => 81, // must be specified
+        'height' => 81, // must be specified
      ]
 ]);?>
     <div class="form-group">
         <?= Html::submitButton('Guardar', ['class' => 'btn btn-primary']); ?>
     </div>
 <?php ActiveForm::end(); ?>
+<?php
+if($model->foto!=null){
+    $this->registerJs($script);
+}
+?>

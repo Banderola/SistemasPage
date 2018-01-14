@@ -12,7 +12,7 @@ $this->title = 'Contacto';
 ?>
 <div class="site-contact">
  <!--Breadcrumb Banner Area Start-->
-                <div class="breadcrumb-banner-area" style="background-image: url('img/banner/<?= $portada->imagen ?>');">
+                <div class="breadcrumb-banner-area" style="background-image: url('<?= Yii::getAlias('@uploadUrl').'/'.$portada->imagen ?>');">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">

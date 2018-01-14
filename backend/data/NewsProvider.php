@@ -17,6 +17,7 @@ class NewsProvider extends \yii\data\ArrayDataProvider
 			$this->allModels[] = [
 				'Idnoticia' => $noticia->idnoticia,
 				'Titulo' => $noticia->titulo,
+                                'Descripcion' => $noticia->descripcion,
 				'Imagen' => $noticia->imagen,
 				'Visitas' => $noticia->visitas,
 				'User_ID' => $noticia->user_id,

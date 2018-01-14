@@ -31,14 +31,13 @@ $dataProvider=new EventProvider();
 							},
 						],
 					],
-					'IdEvento',
 					'Titulo',
+					'Descripcion',                                                                
 					'Imagen',
 					'Fecha',
 					'Lugar',
 					'HoraInicio',
 					'HoraFin',
-					'User_ID',
 				],
 			]);
 			?>

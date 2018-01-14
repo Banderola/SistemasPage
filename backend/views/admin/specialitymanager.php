@@ -37,13 +37,13 @@ $dataProvider=new SpecialityProvider();
 							},
 						],
 					],
-					'IdEspecialidades',
+					
 					'Titulo',
+                                        'Descripcion',
 					'Imagen',
 					'Visitas',
-					'UserID',
-					'CategoriaEspecialidad',
-					'MaestroId',
+					'Especialidad',
+					'Maestro',
 				],
 			]);
 			?>
