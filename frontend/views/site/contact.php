@@ -42,7 +42,7 @@ $this->title = 'Contacto';
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4">
-                                <h4 class="contact-title">contact info</h4>
+                                <h4 class="contact-title">Información de contacto</h4>
                                 <div class="contact-text">
                                     <p><span class="c-icon"><i class="zmdi zmdi-phone"></i></span><span class="c-text"><?= $contacto->telefono ?></span></p>
                                     <p><span class="c-icon"><i class="zmdi zmdi-email"></i></span><span class="c-text"><?= $contacto->correo ?></span></p>
@@ -51,7 +51,7 @@ $this->title = 'Contacto';
                                     Dhaka-1200, UK-->
                                         </span></p>
                                 </div>
-                                <h4 class="contact-title">social media</h4>
+                                <h4 class="contact-title">Redes sociales</h4>
                                 <div class="link-social">
                                     <a href="<?= $contacto->faceLink ?>"><i class="zmdi zmdi-facebook"></i></a>
                                     <a href="<?= $contacto->rssLink ?>"><i class="zmdi zmdi-rss"></i></a>
@@ -61,36 +61,41 @@ $this->title = 'Contacto';
                                 </div>
                             </div>
                             <div class="col-md-7">
-                                <h4 class="contact-title">send your massage</h4>
-                                <form id="contact-form" action="mail.php" method="post">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <input type="text" name="name" placeholder="name">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="email" name="email" placeholder="Email">
-                                        </div>
-                                        <div class="col-md-12">
-                                            <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-                                            <button type="submit" class="button-default">SUBMIT</button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <p class="form-messege"></p>
+                                <h4 class="contact-title">Envía tu mensaje</h4>
+                                <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
+
+                <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
+
+                <?= $form->field($model, 'email') ?>
+
+                <?= $form->field($model, 'subject') ?>
+
+                <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
+
+                <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
+                    'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
+                ]) ?>
+
+                <div class="form-group">
+                    <?= Html::submitButton('Enviar', ['class' => 'button-default', 'name' => 'button-default']) ?>
+                </div>
+
+            <?php ActiveForm::end(); ?>
+                               
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--End of Contact Form-->
  
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuU_0_uLMnFM-2oWod_fzC0atPZj7dHlU"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5MSXtuXlv2Tma8PslZARGWHDeEyk2b8I"></script>
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <script>
             function initialize() {
               var mapOptions = {
                 zoom: 15,
                 scrollwheel: false,
-                center: new google.maps.LatLng(23.763494, 90.432226)
+                center: new google.maps.LatLng(22.7839516, -102.6157299)
               };
 
               var map = new google.maps.Map(document.getElementById('googleMap'),

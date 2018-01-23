@@ -193,7 +193,7 @@ $this->title = 'Inicio';
                             <div class="col-md-12">
                                 <div class="section-title-wrapper">
                                     <div class="section-title">
-                                        <h3>Ultimas Noticias</h3>
+                                        <h3>Últimas Noticias</h3>
                                         <p>There are many variations of passages</p>
                                     </div>
                                 </div>

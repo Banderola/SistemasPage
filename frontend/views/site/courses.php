@@ -41,7 +41,7 @@ $this->title = 'Especialidades';
                             <div class="col-md-10 col-md-offset-1">
                                             
                                     
-                                    <div class="form-container">
+                                    <div class="form-container" >
               
                                         <div class="box-select">
                                             <div class="select large">

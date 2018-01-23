@@ -50,7 +50,7 @@ class SignupForm extends Model
         return [
             'photo' => 'Avatar',
             'username' => 'Nombre de Usuario',
-            'email' => 'Correo Electronico',
+            'email' => 'Correo Electrónico',
             'password' => 'Contraseña',
             'nombre' => 'Nombre',
         ];

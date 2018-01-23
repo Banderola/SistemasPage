@@ -32,7 +32,7 @@ $this->title = 'Nosotros';
                             <div class="col-md-12">
                                 <div class="section-title-wrapper">
                                     <div class="section-title">
-                                        <h3>Who we are</h3>
+                                        <h3>¿Quiénes Somos?</h3>
                                         <p>There are many variations of passages</p>
                                     </div>
                                 </div>
@@ -60,7 +60,7 @@ $this->title = 'Nosotros';
                             <div class="col-md-12">
                                 <div class="section-title-wrapper">
                                     <div class="section-title">
-                                        <h3>Skills and Experience</h3>
+                                        <h3>Habilidades y Experiencia</h3>
                                         <p>There are many variations of passages</p>
                                     </div>
                                 </div> 
@@ -156,7 +156,7 @@ $this->title = 'Nosotros';
                             <div class="col-md-12">
                                 <div class="section-title-wrapper">
                                     <div class="section-title">
-                                        <h3>OUR TEACHERS</h3>
+                                        <h3>NUESTROS PROFESORES</h3>
                                         <p>There are many variations of passages of Lorem Ipsum</p>
                                     </div>
                                 </div>

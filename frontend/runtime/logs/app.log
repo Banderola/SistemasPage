@@ -34165,3 +34165,1516 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1515795915.536
     'REQUEST_TIME' => 1515795915
 ]
+2018-01-22 19:25:29 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:25:29 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '804770f13371a922cb7399233cb93e288a3339fbb44110b29083c2d7c743f335a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"gfgNeYiCo4MfqxxLofFnafJspBZ4j41a\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/sistemaspage/frontend/web/index.php?r=site%2Fevent'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=804770f13371a922cb7399233cb93e288a3339fbb44110b29083c2d7c743f335a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22gfgNeYiCo4MfqxxLofFnafJspBZ4j41a%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49629'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516645529.149
+    'REQUEST_TIME' => 1516645529
+]
+2018-01-22 19:25:42 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:25:41 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/sistemaspage/frontend/web/index.php?r=site%2Fevent'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49639'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516645541.939
+    'REQUEST_TIME' => 1516645541
+]
+2018-01-22 19:33:25 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:33:25 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49675'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646005.016
+    'REQUEST_TIME' => 1516646005
+]
+2018-01-22 19:33:28 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:33:28 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49678'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646008.646
+    'REQUEST_TIME' => 1516646008
+]
+2018-01-22 19:33:34 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:33:34 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/sistemaspage/frontend/web/index.php?r=site%2Fevent'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49682'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646014.054
+    'REQUEST_TIME' => 1516646014
+]
+2018-01-22 19:35:06 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:35:06 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/sistemaspage/frontend/web/index.php?r=site%2Fevent'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49723'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646106.649
+    'REQUEST_TIME' => 1516646106
+]
+2018-01-22 19:35:08 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:35:08 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49725'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646108.582
+    'REQUEST_TIME' => 1516646108
+]
+2018-01-22 19:35:59 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:35:59 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49760'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646159.74
+    'REQUEST_TIME' => 1516646159
+]
+2018-01-22 19:36:00 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:36:00 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49762'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646160.822
+    'REQUEST_TIME' => 1516646160
+]
+2018-01-22 19:36:15 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:36:14 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49769'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646174.959
+    'REQUEST_TIME' => 1516646174
+]
+2018-01-22 19:36:16 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:36:16 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49772'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646176.421
+    'REQUEST_TIME' => 1516646176
+]
+2018-01-22 19:36:17 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:36:17 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49775'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646176.993
+    'REQUEST_TIME' => 1516646176
+]
+2018-01-22 19:36:20 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:36:20 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49777'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646180.887
+    'REQUEST_TIME' => 1516646180
+]
+2018-01-22 19:37:03 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model2 in C:\xampp\htdocs\SistemasPage\frontend\views\site\contact.php:67
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\frontend\views\site\contact.php(67): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('contact', Array, Object(frontend\controllers\SiteController))
+#5 C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php(190): yii\base\Controller->render('contact', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionContact()
+#7 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#10 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#11 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-01-22 19:37:03 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49802'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646223.597
+    'REQUEST_TIME' => 1516646223
+]
+2018-01-22 19:39:49 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:39:49 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49808'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646389.167
+    'REQUEST_TIME' => 1516646389
+]
+2018-01-22 19:40:14 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:40:14 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49824'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646414.235
+    'REQUEST_TIME' => 1516646414
+]
+2018-01-22 19:41:00 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:41:00 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49832'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646460.024
+    'REQUEST_TIME' => 1516646460
+]
+2018-01-22 19:41:08 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:41:08 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49837'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646468.207
+    'REQUEST_TIME' => 1516646468
+]
+2018-01-22 19:41:21 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][error][Error] Error: Class 'frontend\controllers\ContactForm' not found in C:\xampp\htdocs\SistemasPage\frontend\controllers\SiteController.php:179
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionContact()
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('contact', Array)
+#4 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/contact', Array)
+#5 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2018-01-22 19:41:21 [::1][-][rihq7r1p7qga7iefbe5pe66iv6][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+    'advanced-frontend' => 'rihq7r1p7qga7iefbe5pe66iv6'
+    '_csrf-frontend' => '63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"¾3G²ò­ë`à|l_Y*ì`p]nÈr°ÉÔ”~\0\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nivnni'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D; advanced-frontend=rihq7r1p7qga7iefbe5pe66iv6; _csrf-frontend=63f4aa66b24cd72f08542d565785159733e9870ca2f96501445c4c1a95166606a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%14%BE3G%B2%F2%AD%05%EB%60%E0%7Cl_Y%2A%02%EC%60p%5Dn%1C%C8r%B0%C9%D4%94%06%7E%00%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '49843'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/sistemaspage/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/sistemaspage/frontend/web/index.php'
+    'PHP_SELF' => '/sistemaspage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516646481.024
+    'REQUEST_TIME' => 1516646481
+]
+2018-01-23 19:03:13 [::1][-][84e0m03oln8n5vk8bvcb7fl2d5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/acerca in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('acerca', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/acerca', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: PÃ¡gina no encontrada. in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-01-23 19:03:13 [::1][-][84e0m03oln8n5vk8bvcb7fl2d5][info][application] $_GET = [
+    'r' => 'site/acerca'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '84e0m03oln8n5vk8bvcb7fl2d5'
+    '_csrf-frontend' => '30323c3dd3bd790f0f403d46825b6628de080e1033d04cdc16d46e24af093c4fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Ý”ÎõU¸ôÅá-xóëçìµ’%þ¯…ã„Î(øÔ¿ÊÇ\";}'
+    'advanced-backend' => '8e6ib8rhtvbpg4k51usfp0fn72'
+    '_csrf-backend' => '6478b0d951a864b3f54d7ff5e3efef1120efc8fa0b9c3753632fdc0e15eb7fc1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ØDÍÈ\'I<¦ø‘«RÙù9¼¡}‹½WœtxGÜ¦Žs\";}'
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'dekukx'
+    '__captcha/site/captchacount' => 1
+    '__returnUrl' => '/SistemasPage/frontend/web/index.php?r=site%2Fcoursesdetail&id=1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php'
+    'HTTP_COOKIE' => 'advanced-frontend=84e0m03oln8n5vk8bvcb7fl2d5; _csrf-frontend=30323c3dd3bd790f0f403d46825b6628de080e1033d04cdc16d46e24af093c4fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%DD%94%CE%F5U%B8%F4%C5%E1-x%F3%EB%E7%1C%EC%B5%92%25%FE%0F%AF%85%E3%84%CE%28%F8%D4%BF%CA%C7%22%3B%7D; advanced-backend=8e6ib8rhtvbpg4k51usfp0fn72; _csrf-backend=6478b0d951a864b3f54d7ff5e3efef1120efc8fa0b9c3753632fdc0e15eb7fc1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%D8D%CD%C8%27%0DI%3C%A6%F8%91%ABR%D9%03%F99%BC%A1%7D%8B%BDW%9CtxG%DC%03%A6%8Es%22%3B%7D; _identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '54306'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Facerca'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Facerca'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516730593.034
+    'REQUEST_TIME' => 1516730593
+]
+2018-01-23 19:20:09 [::1][-][84e0m03oln8n5vk8bvcb7fl2d5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/acerca in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('acerca', Array)
+#1 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/acerca', Array)
+#2 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: PÃ¡gina no encontrada. in C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\xampp\htdocs\SistemasPage\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\SistemasPage\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-01-23 19:20:09 [::1][-][84e0m03oln8n5vk8bvcb7fl2d5][info][application] $_GET = [
+    'r' => 'site/acerca'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '84e0m03oln8n5vk8bvcb7fl2d5'
+    '_csrf-frontend' => '30323c3dd3bd790f0f403d46825b6628de080e1033d04cdc16d46e24af093c4fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Ý”ÎõU¸ôÅá-xóëçìµ’%þ¯…ã„Î(øÔ¿ÊÇ\";}'
+    'advanced-backend' => '8e6ib8rhtvbpg4k51usfp0fn72'
+    '_csrf-backend' => '6478b0d951a864b3f54d7ff5e3efef1120efc8fa0b9c3753632fdc0e15eb7fc1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ØDÍÈ\'I<¦ø‘«RÙù9¼¡}‹½WœtxGÜ¦Žs\";}'
+    '_identity-backend' => '534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'dekukx'
+    '__captcha/site/captchacount' => 1
+    '__returnUrl' => '/SistemasPage/frontend/web/index.php?r=site%2Fcoursesdetail&id=1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-MX,es-ES;q=0.9,es;q=0.7,es-AR;q=0.6,es-CL;q=0.4,en-US;q=0.3,en;q=0.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/SistemasPage/frontend/web/index.php?r=site%2Findex'
+    'HTTP_COOKIE' => 'advanced-frontend=84e0m03oln8n5vk8bvcb7fl2d5; _csrf-frontend=30323c3dd3bd790f0f403d46825b6628de080e1033d04cdc16d46e24af093c4fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%DD%94%CE%F5U%B8%F4%C5%E1-x%F3%EB%E7%1C%EC%B5%92%25%FE%0F%AF%85%E3%84%CE%28%F8%D4%BF%CA%C7%22%3B%7D; advanced-backend=8e6ib8rhtvbpg4k51usfp0fn72; _csrf-backend=6478b0d951a864b3f54d7ff5e3efef1120efc8fa0b9c3753632fdc0e15eb7fc1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%D8D%CD%C8%27%0DI%3C%A6%F8%91%ABR%D9%03%F99%BC%A1%7D%8B%BDW%9CtxG%DC%03%A6%8Es%22%3B%7D; _identity-backend=534dc15f7eb85b113a185ebcb926150e30c48eb37a4a1b226256c8c24cc11fbea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22O9x1fl_JQmaHUUMfM7AW1iLfIdMEUJCf%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\xampp\\php;C:\\Users\\edson\\AppData\\Local\\Microsoft\\WindowsApps;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.0.2n PHP/7.0.26'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/SistemasPage/frontend/web/index.php'
+    'REMOTE_PORT' => '54558'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Facerca'
+    'REQUEST_URI' => '/SistemasPage/frontend/web/index.php?r=site%2Facerca'
+    'SCRIPT_NAME' => '/SistemasPage/frontend/web/index.php'
+    'PHP_SELF' => '/SistemasPage/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1516731609.346
+    'REQUEST_TIME' => 1516731609
+]

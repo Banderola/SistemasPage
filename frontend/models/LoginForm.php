@@ -80,7 +80,9 @@ class LoginForm extends Model
     public function attributeLabels()
     {
         return [
-            'rememberMe' => 'Recordar',
+            'username' => 'Nombre de Usuario',
+            'password' => 'Contraseña',
+            'rememberMe' => 'Recordarme',
         ];
     }
 }

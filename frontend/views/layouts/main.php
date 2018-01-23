@@ -66,7 +66,7 @@ $enlaces = $this->params['model_enlaces']
                                                  ?>
                                             </ul>
                                         </div>
-                                        <div class="content"><a href="#"><i class="zmdi zmdi-favorite"></i> Wishlist</a></div>
+                                        <div class="content"><?=Html::a('<i class="zmdi zmdi-favorite"></i>', ['site/acerca'])?></div>
                                         
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@ $enlaces = $this->params['model_enlaces']
                             <div class="row">
                                 <div class="col-md-3 col-sm-12">
                                     <div class="logo">
-                                        <a href="index.html"><img src="img/logo/logo.png" alt="EDUCAT"></a>
+                                        <a href="index.php"><img src="img/logo/upiiz.png" alt="UPIIZ" width="120" height="120"></a>
                                     </div>
                                 </div>
                                 <div class="col-md-9 hidden-sm hidden-xs">
@@ -158,16 +158,16 @@ $enlaces = $this->params['model_enlaces']
                         <div class="row">
                             <div class="col-md-5 col-sm-5">
                                 <div class="newsletter-content">
-                                    <h3>SUBSCRIBE</h3>
-                                    <h2>TO OUR NEWSLETTER</h2>
+                                    <h3>SUSCRÍBETE</h3>
+                                    <h2>A NUESTRO BOLETÍN</h2>
                                 </div>
                             </div>
                             <div class="col-md-7 col-sm-7">
                                 <div class="newsletter-form angle">
                                     <form action="#" id="mc-form" class="mc-form footer-newsletter fix">
                                         <div class="subscribe-form">
-                                            <input id="mc-email" type="email" name="email" placeholder="Enter your email address...">
-                                            <button id="mc-submit" type="submit">SUBSCRIBE</button>
+                                            <input id="mc-email" type="email" name="email" placeholder="Ingrese su correo electónico...">
+                                            <button id="mc-submit" type="submit">SUSCRÍBETE</button>
                                         </div>    
                                     </form>
                                     <!-- mailchimp-alerts Start -->
@@ -204,7 +204,7 @@ $enlaces = $this->params['model_enlaces']
                             </div>
                             <div class="col-md-3 col-sm-4">
                                 <div class="single-footer-widget">
-                                    <h3>GET IN TOUCH</h3>
+                                    <h3>Contacto</h3>
                                     <span><i class="fa fa-phone"></i><?= $contacto->telefono ?></span>
                                     <span><i class="fa fa-envelope"></i><?= $contacto->correo ?></span>
                                     <span><i class="fa fa-globe"></i><?= $contacto->paginaWeb ?></span>
@@ -213,7 +213,7 @@ $enlaces = $this->params['model_enlaces']
                             </div>
                             <div class="col-md-3 hidden-sm">
                                 <div class="single-footer-widget">
-                                    <h3>Useful Links</h3>
+                                    <h3>Enlaces</h3>
                                     <ul class="footer-list">
                                         <?php foreach($enlaces as $enlace): ?>
                                         <li><a href="<?= $enlace->link ?>"><?= $enlace->titulo ?></a></li>
@@ -256,7 +256,7 @@ $enlaces = $this->params['model_enlaces']
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 col-sm-7">
-                                <span>Copyright &copy; EDUCAT 2016.All right reserved.Created by <a href="#">Devitems</a></span>
+                                <span>Copyright &copy; UPIIZ 2018. All right reserved.</span>
                             </div>
                             <div class="col-md-6 col-sm-5">
                                 <div class="column-right">

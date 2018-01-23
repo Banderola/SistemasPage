@@ -30,6 +30,7 @@ use common\models\User;
 use yii\data\Pagination;
 use frontend\models\ComentarForm;
 use frontend\models\CuentaForm;
+use frontend\models\ContactForm;
 use yii\db\Expression;
 
 /**
@@ -166,6 +167,11 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
+    
+    public function actionAcerca()
+    {
+       return $this->render('acerca');
+    }
 
     /**
      * Displays contact page.
@@ -176,23 +182,23 @@ class SiteController extends Controller
     {
         $model_portada = Paginaimagenportada::findOne(7);
         
-       // $model = new ContactForm();
-      //  if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-          //  if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-           //     Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
-         //   } else {
-         //       Yii::$app->session->setFlash('error', 'There was an error sending email.');
-        //    }
+        $model = new ContactForm();
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
+                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+            } else {
+                Yii::$app->session->setFlash('error', 'There was an error sending email.');
+            }
 
-         //   return $this->refresh();
-       // } else {
+           return $this->refresh();
+        } else {
         return $this->render('contact', [
-                'portada' => $model_portada,
+                'portada' => $model_portada, 'model' => $model,
             ]);
            // return $this->render('contact', [
        //         'model' => $model,
       //      ]);
-     //   }
+        }
     }
     
     public function actionCuenta()

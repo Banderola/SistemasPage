@@ -71,7 +71,7 @@ class CuentaForm extends Model
     {
         return [
             'photo' => 'Avatar',
-            'email' => 'Correo Electronico',
+            'email' => 'Correo Electrónico',
             'password' => 'Contraseña',
             'nombre' => 'Nombre',
         ];
