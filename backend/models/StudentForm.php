@@ -34,6 +34,7 @@ class StudentForm extends Model
 	
 	public function modifyExisting($found){
 		if($this->validate()){
+                        $found->imagenOld=$found->foto;
 			$found->foto=$this->foto;
 			$found->nombre=$this->nombre;
 			$found->descripcion=$this->comentario;

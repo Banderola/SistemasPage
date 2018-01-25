@@ -16,13 +16,18 @@
 		$lenew= $lenew . $aux2[$i] . '/';
 	}
 	$baseUrl = str_replace('/backend/web', '', $lenew);
-    $baseUrl = str_replace('/frontend/web', '', $baseUrl);
+        $baseUrl = str_replace('/frontend/web', '', $baseUrl);
         $baseUrl2=$baseUrl . 'frontend/web/uploads/user/photo';
 	$baseUrl= $baseUrl . 'common/';
+        
+        
     Yii::setAlias('@uploadUrl', $baseUrl.'uploads/'); //backend url
-	$aux2=str_replace("\\config","",(dirname(__FILE__)));
-    Yii::setAlias('@uploadPath', $aux2.'\\uploads\\'); 
     Yii::setAlias('@uploadUrl2', $baseUrl2); //frontend url
+    
+    $aux2=str_replace("\\config","",(dirname(__FILE__)));//path backend
+    Yii::setAlias('@uploadPath', $aux2.'\\uploads\\'); 
+    
+    
 return [
     'components' => [
         'db' => [

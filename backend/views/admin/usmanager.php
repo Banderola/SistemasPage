@@ -28,8 +28,8 @@ $this->title = 'Bienvenido';
 		<?= $form->field($model, 'descripcion') -> textarea();?>
 		<?php echo $form->field($model, 'imagen')->widget(\bilginnet\cropper\Cropper::className(), [
     'cropperOptions' => [
-        'width' => 3650, // must be specified
-        'height' => 2681, // must be specified
+        'width' => 1600, // must be specified
+        'height' => 1160, // must be specified
      ]
 ]);?>
 		<div class="form-group">

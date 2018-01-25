@@ -40,6 +40,7 @@ class SlideForm extends Model
 	
 	public function modifyExisting($found){
 		if($this->validate()){
+                        $found->imagenOld=$found->Imagen;
 			$found->Titulo=$this->titulo;
 			$found->Descripcion=$this->descripcion;
 			$found->Imagen=$this->imagen;

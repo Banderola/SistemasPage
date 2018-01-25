@@ -47,6 +47,8 @@ class IndexForm extends Model
 	
 	public function modifyExisting($found){
 		if($this->validate()){
+                        $found->imagenOld1=$found->imagenAlumnos;
+                        $found->imagenOld2=$found->imagenCifras;
 			$found->user_id=Yii::$app->getUser()->getId();
 			$found->tituloPortada=$this->tituloPortada;
 			$found->descripcionPortada=$this->descripcionPortada;

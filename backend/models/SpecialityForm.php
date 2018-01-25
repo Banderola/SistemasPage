@@ -45,6 +45,7 @@ class SpecialityForm extends Model
 	
 	public function modifyExisting($found){
 		if($this->validate()){
+                        $found->imagenOld=$found->imagen;
 			$found->imagen=$this->imagen;
 			$found->Titulo=$this->titulo;
 			$found->Descripcion=$this->descripcion;

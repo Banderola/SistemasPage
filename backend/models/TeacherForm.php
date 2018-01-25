@@ -42,6 +42,7 @@ class TeacherForm extends Model
 	
 	public function modifyExisting($found){
 		if($this->validate()){
+                        $found->imagenOld=$found->imagen;
 			$found->imagen=$this->imagen;
 			$found->nombre=$this->nombre;
 			$found->descripcion=$this->descripcion;

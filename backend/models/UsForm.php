@@ -39,6 +39,7 @@ class UsForm extends Model
 	
 	public function modifyExisting($found){
 		if($this->validate()){
+                        $found->imagenOld=$found->imagen;
 			$found->user_id=Yii::$app->getUser()->getId();
 			$found->descripcion=$this->descripcion;
 			$found->imagen=$this->imagen;

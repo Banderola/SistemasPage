@@ -16,6 +16,7 @@ use Yii;
  */
 class Slide extends \yii\db\ActiveRecord
 {
+    public $imagenOld;
     /**
      * @inheritdoc
      */
@@ -51,8 +52,8 @@ class Slide extends \yii\db\ActiveRecord
             // deleting old image 
             // $this->image is real attribute for filename in table
             // customize your code for your attribute            
-            if (!$this->isNewRecord && !empty($this->Imagen)) {
-              //  unlink(Yii::getAlias('@uploadPath'.'\\'.$this->imagen));
+            if (!$this->isNewRecord && !empty($this->imagenOld) && file_exists (Yii::getAlias('@uploadPath').'\\'.$this->imagenOld)) {
+                unlink(Yii::getAlias('@uploadPath').'\\'.$this->imagenOld);
             }
             
             // set new filename

@@ -37,6 +37,7 @@ class ProjectForm extends Model
 	
 	public function modifyExisting($found){
 		if($this->validate()){
+                        $found->imagenOld=$found->Imagen;
 			$found->Imagen=$this->imagen;
 			$found->Titulo=$this->titulo;
 			$found->Descripcion=$this->descripcion;

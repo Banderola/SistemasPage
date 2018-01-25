@@ -43,6 +43,7 @@ class EventForm extends Model
 	
 	public function modifyExisting($found){
 		if($this->validate()){
+                        $found->imagenOld=$found->Imagen;
 			$found->imagen=$this->imagen;
 			$found->titulo=$this->titulo;
 			$found->descripcion=$this->descripcion;

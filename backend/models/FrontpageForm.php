@@ -39,6 +39,7 @@ class FrontpageForm extends Model
 	
 	public function modifyExisting($found){
 		if($this->validate()){
+                        $found->imagenOld=$found->imagen;
 			$found->descripcion=$this->descripcion;
 			$found->imagen=$this->imagen;
 			return $found->save();

@@ -36,6 +36,7 @@ class NewsForm extends Model
 	
 	public function modifyExisting($found){
 		if($this->validate()){
+                        $found->imagenOld=$found->imagen;
 			$found->imagen=$this->imagen;
 			$found->titulo=$this->titulo;
 			$found->descripcion=$this->descripcion;

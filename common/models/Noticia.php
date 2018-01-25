@@ -21,6 +21,7 @@ use Yii;
 class Noticia extends \yii\db\ActiveRecord
 {
     public $cnt;
+    public $imagenOld;
     /**
      * @inheritdoc
      */
@@ -43,9 +44,9 @@ class Noticia extends \yii\db\ActiveRecord
             file_put_contents(Yii::getAlias('@uploadPath') . '\\' . $fileName, $data);
             // deleting old image 
             // $this->image is real attribute for filename in table
-            // customize your code for your attribute            
-            if (!$this->isNewRecord && !empty($this->imagen)) {
-               // unlink(Yii::getAlias('@uploadPath'.'\\'.$this->imagen));
+            // customize your code for your attribute     
+            if (!$this->isNewRecord && !empty($this->imagenOld) && file_exists (Yii::getAlias('@uploadPath').'\\'.$this->imagenOld)) {
+                unlink(Yii::getAlias('@uploadPath').'\\'.$this->imagenOld);
             }
             
             // set new filename
